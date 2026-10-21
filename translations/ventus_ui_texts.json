@@ -1,0 +1,4581 @@
+{
+  "source": "lib/l10n/app_{en,az,tr}.arb",
+  "totalKeys": 597,
+  "languages": [
+    "en",
+    "az",
+    "tr"
+  ],
+  "newLanguageField": "new",
+  "screens": [
+    {
+      "screen": "01 · Onboarding / Welcome",
+      "strings": [
+        {
+          "key": "getStarted",
+          "en": "Get started",
+          "az": "Başlayaq",
+          "tr": "Başla",
+          "new": ""
+        },
+        {
+          "key": "haveAccount",
+          "en": "I already have an account",
+          "az": "Artıq hesabım var",
+          "tr": "Zaten hesabım var",
+          "new": ""
+        },
+        {
+          "key": "welcomeHeadline",
+          "en": "Every journey,\nbeautifully planned.",
+          "az": "Hər səyahət,\ngözəl planlanmış.",
+          "tr": "Her yolculuk,\nözenle planlanmış.",
+          "new": ""
+        },
+        {
+          "key": "welcomeSubtitle",
+          "en": "Itinerary, budget, documents and tickets — together in one calm place.",
+          "az": "Marşrut, büdcə, sənədlər və biletlər — hamısı bir sakit yerdə.",
+          "tr": "Rota, bütçe, belgeler ve biletler — hepsi tek bir sakin yerde.",
+          "new": ""
+        },
+        {
+          "key": "welcomeTagline",
+          "en": "YOUR AI TRAVEL COMPANION",
+          "az": "AI SƏYAHƏT BƏLƏDÇİN",
+          "tr": "AI SEYAHAT ARKADAŞIN",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "02 · Sign in",
+      "strings": [
+        {
+          "key": "createAccountAction",
+          "en": "Create account",
+          "az": "Hesab yarat",
+          "tr": "Hesap oluştur",
+          "new": "",
+          "note": "həmçinin: 03 · Create account"
+        },
+        {
+          "key": "emailHint",
+          "en": "name@example.com",
+          "az": "name@example.com",
+          "tr": "name@example.com",
+          "new": "",
+          "note": "həmçinin: 03 · Create account; 05 · Forgot password; 19 · Create trip — travelers; 33 · Collaborators"
+        },
+        {
+          "key": "emailLabel",
+          "en": "Email",
+          "az": "E-poçt",
+          "tr": "E-posta",
+          "new": "",
+          "note": "həmçinin: 03 · Create account; 05 · Forgot password; 33 · Collaborators; 48 · Edit profile"
+        },
+        {
+          "key": "forgot",
+          "en": "Forgot?",
+          "az": "Unutdun?",
+          "tr": "Unuttun mu?",
+          "new": ""
+        },
+        {
+          "key": "newToVentus",
+          "en": "New to Ventus?",
+          "az": "Ventus-da yenisən?",
+          "tr": "Ventus'ta yeni misin?",
+          "new": ""
+        },
+        {
+          "key": "orDivider",
+          "en": "or",
+          "az": "və ya",
+          "tr": "veya",
+          "new": "",
+          "note": "həmçinin: 03 · Create account"
+        },
+        {
+          "key": "passwordLabel",
+          "en": "Password",
+          "az": "Parol",
+          "tr": "Şifre",
+          "new": "",
+          "note": "həmçinin: 03 · Create account"
+        },
+        {
+          "key": "rememberMe",
+          "en": "Remember me",
+          "az": "Məni xatırla",
+          "tr": "Beni hatırla",
+          "new": ""
+        },
+        {
+          "key": "signInAction",
+          "en": "Sign in",
+          "az": "Daxil ol",
+          "tr": "Giriş yap",
+          "new": "",
+          "note": "həmçinin: 03 · Create account"
+        },
+        {
+          "key": "signInSubtitle",
+          "en": "Sign in to continue your journey.",
+          "az": "Səyahətinə davam etmək üçün daxil ol.",
+          "tr": "Yolculuğuna devam etmek için giriş yap.",
+          "new": ""
+        },
+        {
+          "key": "somethingWentWrong",
+          "en": "Something went wrong. Try again.",
+          "az": "Nəsə alınmadı. Yenidən cəhd et.",
+          "tr": "Bir şeyler ters gitti. Tekrar dene.",
+          "new": "",
+          "note": "həmçinin: 03 · Create account; 04 · Verify email; 06 · Reset password; 10 · Auth error messages; 20 · Create trip — review; 21 · Trip hub; 23 · Itinerary; 25 · Checklist; 27 · Documents; 28 · Document detail; 30 · Budget & expenses; 33 · Collaborators; 38 · Tools — currency; 43 · Tools — tip calculator; 45 · Notifications feed; 48 · Edit profile; 51 · Privacy & security; 53 · Change password"
+        },
+        {
+          "key": "welcomeBack",
+          "en": "Welcome back",
+          "az": "Xoş gəldin",
+          "tr": "Tekrar hoş geldin",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "03 · Create account",
+      "strings": [
+        {
+          "key": "acceptTermsError",
+          "en": "Accept the Terms & Privacy Policy to continue.",
+          "az": "Davam etmək üçün Şərtləri və Məxfilik Siyasətini qəbul et.",
+          "tr": "Devam etmek için Şartları ve Gizlilik Politikasını kabul et.",
+          "new": ""
+        },
+        {
+          "key": "agreeTermsRich",
+          "en": "I agree to the [terms] and [privacy].",
+          "az": "[terms] və [privacy] ilə razıyam.",
+          "tr": "[terms] ve [privacy] kabul ediyorum.",
+          "new": ""
+        },
+        {
+          "key": "alreadyHaveAccount",
+          "en": "Already have an account?",
+          "az": "Artıq hesabın var?",
+          "tr": "Zaten hesabın var mı?",
+          "new": ""
+        },
+        {
+          "key": "createAccountSubtitle",
+          "en": "Join Ventus and plan your next trip.",
+          "az": "Ventus-a qoşul və növbəti səyahətini planla.",
+          "tr": "Ventus'a katıl ve sıradaki gezini planla.",
+          "new": ""
+        },
+        {
+          "key": "createAccountTitle",
+          "en": "Create account",
+          "az": "Hesab yarat",
+          "tr": "Hesap oluştur",
+          "new": ""
+        },
+        {
+          "key": "fullNameHint",
+          "en": "Your name",
+          "az": "Adın və soyadın",
+          "tr": "Adın ve soyadın",
+          "new": "",
+          "note": "həmçinin: 48 · Edit profile"
+        },
+        {
+          "key": "fullNameLabel",
+          "en": "Full name",
+          "az": "Ad və soyad",
+          "tr": "Ad soyad",
+          "new": "",
+          "note": "həmçinin: 48 · Edit profile"
+        },
+        {
+          "key": "passwordHintMin",
+          "en": "At least 8 characters",
+          "az": "Ən azı 8 simvol",
+          "tr": "En az 8 karakter",
+          "new": "",
+          "note": "həmçinin: 06 · Reset password"
+        },
+        {
+          "key": "privacyLinkLabel",
+          "en": "Privacy Policy",
+          "az": "Məxfilik Siyasəti",
+          "tr": "Gizlilik Politikası",
+          "new": ""
+        },
+        {
+          "key": "termsLinkLabel",
+          "en": "Terms of Service",
+          "az": "İstifadə Şərtləri",
+          "tr": "Kullanım Şartları",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "04 · Verify email",
+      "strings": [
+        {
+          "key": "verifyEmailBody",
+          "en": "We sent a confirmation link to {email}. Tap it to verify your account, then come back to sign in.",
+          "az": "{email} ünvanına təsdiq linki göndərdik. Hesabını təsdiqləmək üçün linkə toxun, sonra geri qayıdıb daxil ol.",
+          "tr": "{email} adresine bir doğrulama bağlantısı gönderdik. Hesabını doğrulamak için bağlantıya dokun, sonra geri dönüp giriş yap.",
+          "new": "",
+          "note": "dəyişənlər: {email}"
+        },
+        {
+          "key": "verifyEmailResend",
+          "en": "Resend email",
+          "az": "Linki yenidən göndər",
+          "tr": "E-postayı yeniden gönder",
+          "new": ""
+        },
+        {
+          "key": "verifyEmailResent",
+          "en": "Confirmation email sent. Check your inbox.",
+          "az": "Təsdiq e-poçtu göndərildi. Gələnlər qutusunu yoxla.",
+          "tr": "Doğrulama e-postası gönderildi. Gelen kutunu kontrol et.",
+          "new": ""
+        },
+        {
+          "key": "verifyEmailSignIn",
+          "en": "Go to sign in",
+          "az": "Girişə keç",
+          "tr": "Girişe git",
+          "new": ""
+        },
+        {
+          "key": "verifyEmailSpamNote",
+          "en": "Didn’t get it? Check your spam folder or resend.",
+          "az": "Gəlmədi? Spam qovluğuna bax və ya yenidən göndər.",
+          "tr": "Gelmedi mi? Spam klasörüne bak veya yeniden gönder.",
+          "new": ""
+        },
+        {
+          "key": "verifyEmailTitle",
+          "en": "Confirm your email",
+          "az": "E-poçtunu təsdiqlə",
+          "tr": "E-postanı doğrula",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "05 · Forgot password",
+      "strings": [
+        {
+          "key": "backToSignIn",
+          "en": "Back to sign in",
+          "az": "Girişə qayıt",
+          "tr": "Girişe dön",
+          "new": ""
+        },
+        {
+          "key": "forgotBody",
+          "en": "Enter the email linked to your account and we’ll send a reset link.",
+          "az": "Hesabına bağlı e-poçtu yaz, sıfırlama linki göndərək.",
+          "tr": "Hesabına bağlı e-postayı yaz, sana sıfırlama bağlantısı gönderelim.",
+          "new": ""
+        },
+        {
+          "key": "forgotTitle",
+          "en": "Forgot your password?",
+          "az": "Parolunu unutmusan?",
+          "tr": "Şifreni mi unuttun?",
+          "new": ""
+        },
+        {
+          "key": "rememberedIt",
+          "en": "Remembered it?",
+          "az": "Xatırladın?",
+          "tr": "Hatırladın mı?",
+          "new": ""
+        },
+        {
+          "key": "resetPasswordTitle",
+          "en": "Reset password",
+          "az": "Parolu sıfırla",
+          "tr": "Şifreyi sıfırla",
+          "new": "",
+          "note": "həmçinin: 06 · Reset password"
+        },
+        {
+          "key": "sendResetLink",
+          "en": "Send reset link",
+          "az": "Sıfırlama linki göndər",
+          "tr": "Sıfırlama bağlantısı gönder",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "06 · Reset password",
+      "strings": [
+        {
+          "key": "authInvalidOtp",
+          "en": "That code is incorrect or has expired.",
+          "az": "Kod yanlışdır və ya vaxtı keçib.",
+          "tr": "Bu kod yanlış veya süresi dolmuş.",
+          "new": "",
+          "note": "həmçinin: 10 · Auth error messages"
+        },
+        {
+          "key": "confirmPasswordLabel",
+          "en": "Confirm new password",
+          "az": "Yeni parolu təsdiqlə",
+          "tr": "Yeni şifreyi onayla",
+          "new": "",
+          "note": "həmçinin: 53 · Change password"
+        },
+        {
+          "key": "newPasswordLabel",
+          "en": "New password",
+          "az": "Yeni parol",
+          "tr": "Yeni şifre",
+          "new": "",
+          "note": "həmçinin: 53 · Change password"
+        },
+        {
+          "key": "passwordsDontMatch",
+          "en": "Passwords don't match.",
+          "az": "Parollar uyğun gəlmir.",
+          "tr": "Şifreler eşleşmiyor.",
+          "new": "",
+          "note": "həmçinin: 53 · Change password"
+        },
+        {
+          "key": "resetCodeBody",
+          "en": "We emailed a 6-digit code to {email}. Enter it below and choose a new password.",
+          "az": "{email} ünvanına 6 rəqəmli kod göndərdik. Onu aşağıya yaz və yeni parol seç.",
+          "tr": "{email} adresine 6 haneli bir kod gönderdik. Aşağıya yaz ve yeni bir şifre seç.",
+          "new": "",
+          "note": "dəyişənlər: {email}"
+        },
+        {
+          "key": "resetCodeHint",
+          "en": "123456",
+          "az": "123456",
+          "tr": "123456",
+          "new": ""
+        },
+        {
+          "key": "resetCodeLabel",
+          "en": "Reset code",
+          "az": "Bərpa kodu",
+          "tr": "Sıfırlama kodu",
+          "new": ""
+        },
+        {
+          "key": "resetCodeTitle",
+          "en": "Set a new password",
+          "az": "Yeni parol təyin et",
+          "tr": "Yeni bir şifre belirle",
+          "new": ""
+        },
+        {
+          "key": "resetResend",
+          "en": "Resend code",
+          "az": "Kodu yenidən göndər",
+          "tr": "Kodu yeniden gönder",
+          "new": ""
+        },
+        {
+          "key": "resetResent",
+          "en": "A new code is on its way.",
+          "az": "Yeni kod yola düşdü.",
+          "tr": "Yeni bir kod yolda.",
+          "new": ""
+        },
+        {
+          "key": "resetSubmit",
+          "en": "Reset password",
+          "az": "Parolu sıfırla",
+          "tr": "Şifreyi sıfırla",
+          "new": ""
+        },
+        {
+          "key": "resetSuccess",
+          "en": "Password updated. You’re all set.",
+          "az": "Parol yeniləndi. Hər şey hazırdır.",
+          "tr": "Şifre güncellendi. Her şey hazır.",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "07 · Terms & Privacy",
+      "strings": [
+        {
+          "key": "legalContact",
+          "en": "Questions about these terms or your data? Contact us at support@ventus.app.",
+          "az": "Bu şərtlər və ya datan barədə sualın var? Bizimlə əlaqə saxla: support@ventus.app.",
+          "tr": "Bu şartlar veya verilerin hakkında soruların mı var? Bize ulaş: support@ventus.app.",
+          "new": ""
+        },
+        {
+          "key": "legalPrivacyIntro",
+          "en": "This policy explains what information Ventus collects, how we use it, and the choices you have.",
+          "az": "Bu siyasət Ventus-un hansı məlumatı topladığını, necə istifadə etdiyini və sənin seçimlərini izah edir.",
+          "tr": "Bu politika, Ventus'un hangi bilgileri topladığını, nasıl kullandığını ve sahip olduğun seçimleri açıklar.",
+          "new": ""
+        },
+        {
+          "key": "legalPrivacyS1Body",
+          "en": "Account details (your name and email) and the trip data you create — destinations, itineraries, checklists, budgets, documents, and saved places. Your PIN is stored only on your device and is never sent to our servers.",
+          "az": "Hesab məlumatların (adın və e-poçtun) və yaratdığın səyahət datası — istiqamətlər, gün planları, yoxlama siyahıları, büdcələr, sənədlər və saxlanmış yerlər. PIN-in yalnız cihazında saxlanılır və heç vaxt serverlərimizə göndərilmir.",
+          "tr": "Hesap bilgilerin (adın ve e-postan) ve oluşturduğun gezi verileri — varış noktaları, gün planları, kontrol listeleri, bütçeler, belgeler ve kaydedilen yerler. PIN'in yalnızca cihazında saklanır ve sunucularımıza asla gönderilmez.",
+          "new": ""
+        },
+        {
+          "key": "legalPrivacyS1Title",
+          "en": "What we collect",
+          "az": "Nə toplayırıq",
+          "tr": "Neleri topluyoruz",
+          "new": ""
+        },
+        {
+          "key": "legalPrivacyS2Body",
+          "en": "To run your account, sync your trips across devices, and power features like AI planning. When you generate a plan, the relevant trip details are sent to our AI provider (Google Gemini) to create it. We never sell your data.",
+          "az": "Hesabını işlətmək, səyahətlərini cihazlar arasında sinxronlaşdırmaq və AI planlama kimi funksiyalar üçün. Plan yaratdığında lazım olan səyahət təfərrüatları onu hazırlamaq üçün AI provayderimizə (Google Gemini) göndərilir. Datanı heç vaxt satmırıq.",
+          "tr": "Hesabını çalıştırmak, gezilerini cihazlar arasında eşitlemek ve AI planlama gibi özellikleri sağlamak için. Bir plan oluşturduğunda, gereken gezi ayrıntıları onu hazırlamak için AI sağlayıcımıza (Google Gemini) gönderilir. Verilerini asla satmayız.",
+          "new": ""
+        },
+        {
+          "key": "legalPrivacyS2Title",
+          "en": "How we use it",
+          "az": "Necə istifadə edirik",
+          "tr": "Nasıl kullanıyoruz",
+          "new": ""
+        },
+        {
+          "key": "legalPrivacyS3Body",
+          "en": "Your data is stored securely with our backend provider (Supabase) and encrypted in transit. Map, weather, and currency features query third-party services with only the data needed to answer your request.",
+          "az": "Datan backend provayderimizdə (Supabase) təhlükəsiz saxlanılır və ötürülmə zamanı şifrələnir. Xəritə, hava və valyuta funksiyaları üçüncü tərəf xidmətlərinə yalnız sorğunu cavablandırmaq üçün lazım olan datanı göndərir.",
+          "tr": "Verilerin backend sağlayıcımızda (Supabase) güvenle saklanır ve aktarım sırasında şifrelenir. Harita, hava ve döviz özellikleri üçüncü taraf hizmetlerine yalnızca isteğini yanıtlamak için gereken veriyi gönderir.",
+          "new": ""
+        },
+        {
+          "key": "legalPrivacyS3Title",
+          "en": "Storage & security",
+          "az": "Saxlama və təhlükəsizlik",
+          "tr": "Saklama ve güvenlik",
+          "new": ""
+        },
+        {
+          "key": "legalPrivacyS4Body",
+          "en": "You can view and edit your profile, change your password or PIN, and request deletion of your account and data at any time from Settings.",
+          "az": "İstənilən vaxt Tənzimləmələrdən profilini görə və redaktə edə, parolunu və ya PIN-ini dəyişə, hesabının və datanın silinməsini tələb edə bilərsən.",
+          "tr": "İstediğin zaman Ayarlar'dan profilini görüntüleyip düzenleyebilir, şifreni veya PIN'ini değiştirebilir, hesabının ve verilerinin silinmesini talep edebilirsin.",
+          "new": ""
+        },
+        {
+          "key": "legalPrivacyS4Title",
+          "en": "Your rights",
+          "az": "Hüquqların",
+          "tr": "Hakların",
+          "new": ""
+        },
+        {
+          "key": "legalPrivacyTitle",
+          "en": "Privacy Policy",
+          "az": "Məxfilik Siyasəti",
+          "tr": "Gizlilik Politikası",
+          "new": ""
+        },
+        {
+          "key": "legalTermsIntro",
+          "en": "Welcome to Ventus. By creating an account and using the app, you agree to these Terms. If you do not agree, please do not use Ventus.",
+          "az": "Ventus-a xoş gəldin. Hesab yaradıb tətbiqdən istifadə etməklə bu Şərtləri qəbul edirsən. Razı deyilsənsə, Ventus-dan istifadə etmə.",
+          "tr": "Ventus'a hoş geldin. Bir hesap oluşturup uygulamayı kullanarak bu Şartları kabul edersin. Kabul etmiyorsan lütfen Ventus'u kullanma.",
+          "new": ""
+        },
+        {
+          "key": "legalTermsS1Body",
+          "en": "Ventus helps you plan and organize trips. Use it only for lawful, personal purposes, and do not misuse, copy, or try to disrupt the service. AI-generated plans and suggestions are for guidance only — always verify times, prices, visas, and bookings yourself.",
+          "az": "Ventus səyahətlərini planlamağa və təşkil etməyə kömək edir. Yalnız qanuni, şəxsi məqsədlər üçün istifadə et; xidməti sui-istifadə etmə, kopyalama və ya pozmağa cəhd etmə. AI ilə yaradılan planlar və təkliflər yalnız istiqamətləndirmə üçündür — vaxtları, qiymətləri, vizaları və rezervasiyaları həmişə özün yoxla.",
+          "tr": "Ventus gezilerini planlamana ve düzenlemene yardımcı olur. Yalnızca yasal, kişisel amaçlarla kullan; hizmeti kötüye kullanma, kopyalama veya bozmaya çalışma. AI tarafından oluşturulan planlar ve öneriler yalnızca yol gösterme amaçlıdır — saatleri, fiyatları, vizeleri ve rezervasyonları her zaman kendin doğrula.",
+          "new": ""
+        },
+        {
+          "key": "legalTermsS1Title",
+          "en": "Using Ventus",
+          "az": "Ventus-dan istifadə",
+          "tr": "Ventus'u kullanmak",
+          "new": ""
+        },
+        {
+          "key": "legalTermsS2Body",
+          "en": "You are responsible for keeping your email, password, and PIN secure, and for all activity on your account. Let us know right away if you notice any unauthorized use.",
+          "az": "E-poçtunu, parolunu və PIN-ini təhlükəsiz saxlamaq, eləcə də hesabındakı bütün fəaliyyət sənin məsuliyyətindədir. İcazəsiz istifadə görsən, dərhal bizə bildir.",
+          "tr": "E-postanı, şifreni ve PIN'ini güvende tutmak ve hesabındaki tüm etkinlik senin sorumluluğundadır. Yetkisiz bir kullanım fark edersen hemen bize bildir.",
+          "new": ""
+        },
+        {
+          "key": "legalTermsS2Title",
+          "en": "Your account",
+          "az": "Hesabın",
+          "tr": "Hesabın",
+          "new": ""
+        },
+        {
+          "key": "legalTermsS3Body",
+          "en": "Trips, notes, files, and other content you add remain yours. You grant Ventus permission to store, sync, and process this content solely to provide the app's features to you.",
+          "az": "Əlavə etdiyin səyahətlər, qeydlər, fayllar və digər məzmun səninkidir. Bu məzmunu yalnız tətbiqin funksiyalarını sənə çatdırmaq üçün saxlamaq, sinxronlaşdırmaq və emal etmək məqsədilə Ventus-a icazə verirsən.",
+          "tr": "Eklediğin geziler, notlar, dosyalar ve diğer içerik senindir. Bu içeriği yalnızca uygulamanın özelliklerini sana sunmak amacıyla saklamak, eşitlemek ve işlemek için Ventus'a izin verirsin.",
+          "new": ""
+        },
+        {
+          "key": "legalTermsS3Title",
+          "en": "Your content",
+          "az": "Məzmunun",
+          "tr": "İçeriğin",
+          "new": ""
+        },
+        {
+          "key": "legalTermsS4Body",
+          "en": "Ventus is provided “as is”, without warranties. We may add, change, or remove features, and we are not liable for losses arising from third-party data (maps, weather, AI) or interruptions to the service.",
+          "az": "Ventus “olduğu kimi”, zəmanətsiz təqdim olunur. Funksiyaları əlavə edə, dəyişə və ya silə bilərik; üçüncü tərəf datasından (xəritə, hava, AI) və ya xidmət fasilələrindən yaranan itkilərə görə məsuliyyət daşımırıq.",
+          "tr": "Ventus “olduğu gibi”, garantisiz sunulur. Özellikleri ekleyebilir, değiştirebilir veya kaldırabiliriz; üçüncü taraf verilerinden (harita, hava, AI) veya hizmet kesintilerinden doğan kayıplardan sorumlu değiliz.",
+          "new": ""
+        },
+        {
+          "key": "legalTermsS4Title",
+          "en": "Service & liability",
+          "az": "Xidmət və məsuliyyət",
+          "tr": "Hizmet ve sorumluluk",
+          "new": ""
+        },
+        {
+          "key": "legalTermsTitle",
+          "en": "Terms of Service",
+          "az": "İstifadə Şərtləri",
+          "tr": "Kullanım Şartları",
+          "new": ""
+        },
+        {
+          "key": "legalUpdated",
+          "en": "Last updated: June 2026",
+          "az": "Son yeniləmə: İyun 2026",
+          "tr": "Son güncelleme: Haziran 2026",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "08 · PIN setup",
+      "strings": [
+        {
+          "key": "createPinBody",
+          "en": "Set a 4-digit code for quick, secure access next time.",
+          "az": "Növbəti dəfə tez və təhlükəsiz girmək üçün 4 rəqəmli kod seç.",
+          "tr": "Bir sonraki sefer hızlı ve güvenli girmek için 4 haneli bir kod seç.",
+          "new": ""
+        },
+        {
+          "key": "createPinTitle",
+          "en": "Create a PIN",
+          "az": "PIN yarat",
+          "tr": "PIN oluştur",
+          "new": ""
+        },
+        {
+          "key": "pinTooWeak",
+          "en": "That PIN is too easy to guess. Try a different one.",
+          "az": "Bu PIN çox asan təxmin edilir. Başqa bir kod seç.",
+          "tr": "Bu PIN çok kolay tahmin edilebilir. Farklı bir kod seç.",
+          "new": "",
+          "note": "həmçinin: 52 · Change PIN"
+        }
+      ]
+    },
+    {
+      "screen": "09 · PIN unlock",
+      "strings": [
+        {
+          "key": "enterPinToUnlock",
+          "en": "Enter your PIN to unlock",
+          "az": "Kilidi açmaq üçün PIN-i yaz",
+          "tr": "Kilidi açmak için PIN'ini yaz",
+          "new": ""
+        },
+        {
+          "key": "greeting",
+          "en": "Hi, {name}",
+          "az": "Salam, {name}",
+          "tr": "Merhaba, {name}",
+          "new": "",
+          "note": "dəyişənlər: {name} | həmçinin: 13 · Home"
+        },
+        {
+          "key": "incorrectPin",
+          "en": "Incorrect PIN.",
+          "az": "PIN yanlışdır.",
+          "tr": "PIN yanlış.",
+          "new": ""
+        },
+        {
+          "key": "pinLockedOut",
+          "en": "Too many attempts. Try again in",
+          "az": "Çox sayda yanlış cəhd. Gözlə:",
+          "tr": "Çok fazla hatalı deneme. Bekle:",
+          "new": ""
+        },
+        {
+          "key": "usePasswordInstead",
+          "en": "Use password instead",
+          "az": "Parolla daxil ol",
+          "tr": "Şifreyle giriş yap",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "10 · Auth error messages",
+      "strings": [
+        {
+          "key": "authEmailExists",
+          "en": "An account with this email already exists. Sign in instead.",
+          "az": "Bu e-poçtla artıq hesab var. Daxil ol.",
+          "tr": "Bu e-posta ile zaten bir hesap var. Giriş yap.",
+          "new": ""
+        },
+        {
+          "key": "authEmailNotConfirmed",
+          "en": "Check your inbox to confirm your email, then sign in.",
+          "az": "E-poçtunu təsdiqləmək üçün gələnlər qutusunu yoxla, sonra daxil ol.",
+          "tr": "E-postanı onaylamak için gelen kutunu kontrol et, sonra giriş yap.",
+          "new": ""
+        },
+        {
+          "key": "authInvalidCredentials",
+          "en": "Incorrect email or password.",
+          "az": "E-poçt və ya parol yanlışdır.",
+          "tr": "E-posta veya şifre yanlış.",
+          "new": ""
+        },
+        {
+          "key": "authRateLimited",
+          "en": "Too many attempts. Try again in a few minutes.",
+          "az": "Çox sayda cəhd oldu. Bir az sonra yenidən yoxla.",
+          "tr": "Çok fazla deneme yapıldı. Birkaç dakika sonra tekrar dene.",
+          "new": ""
+        },
+        {
+          "key": "authSamePassword",
+          "en": "New password must be different from the current one.",
+          "az": "Yeni parol cari paroldan fərqli olmalıdır.",
+          "tr": "Yeni şifre mevcut şifreden farklı olmalı.",
+          "new": "",
+          "note": "həmçinin: 53 · Change password"
+        },
+        {
+          "key": "authWeakPassword",
+          "en": "Password is too weak. Use at least 8 characters.",
+          "az": "Parol çox zəifdir. Ən azı 8 simvol istifadə et.",
+          "tr": "Şifre çok zayıf. En az 8 karakter kullan.",
+          "new": "",
+          "note": "həmçinin: 53 · Change password"
+        },
+        {
+          "key": "providerComingSoon",
+          "en": "{provider} sign-in is coming soon.",
+          "az": "{provider} ilə giriş tezliklə.",
+          "tr": "{provider} ile giriş yakında.",
+          "new": "",
+          "note": "dəyişənlər: {provider}"
+        }
+      ]
+    },
+    {
+      "screen": "11 · Form validation messages",
+      "strings": [
+        {
+          "key": "errEmailInvalid",
+          "en": "Enter a valid email",
+          "az": "Düzgün e-poçt ünvanı yaz",
+          "tr": "Geçerli bir e-posta yaz",
+          "new": ""
+        },
+        {
+          "key": "errEmailRequired",
+          "en": "Enter your email",
+          "az": "E-poçtunu yaz",
+          "tr": "E-postanı yaz",
+          "new": ""
+        },
+        {
+          "key": "errNameRequired",
+          "en": "Enter your name",
+          "az": "Adını yaz",
+          "tr": "Adını yaz",
+          "new": ""
+        },
+        {
+          "key": "errPasswordRequired",
+          "en": "Enter your password",
+          "az": "Parolunu yaz",
+          "tr": "Şifreni yaz",
+          "new": ""
+        },
+        {
+          "key": "errPasswordTooShort",
+          "en": "At least 8 characters",
+          "az": "Ən azı 8 simvol",
+          "tr": "En az 8 karakter",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "12 · Bottom navigation",
+      "strings": [
+        {
+          "key": "navHome",
+          "en": "Home",
+          "az": "Ana səhifə",
+          "tr": "Ana Sayfa",
+          "new": ""
+        },
+        {
+          "key": "navProfile",
+          "en": "Profile",
+          "az": "Profil",
+          "tr": "Profil",
+          "new": "",
+          "note": "həmçinin: 46 · Profile"
+        },
+        {
+          "key": "navTools",
+          "en": "Tools",
+          "az": "Alətlər",
+          "tr": "Araçlar",
+          "new": "",
+          "note": "həmçinin: 37 · Tools — home"
+        },
+        {
+          "key": "navTrips",
+          "en": "Trips",
+          "az": "Səyahətlər",
+          "tr": "Geziler",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "13 · Home",
+      "strings": [
+        {
+          "key": "addNewTripShort",
+          "en": "New",
+          "az": "Yeni",
+          "tr": "Yeni",
+          "new": ""
+        },
+        {
+          "key": "budgetRemaining",
+          "en": "Remaining",
+          "az": "Qalıq",
+          "tr": "Kalan",
+          "new": "",
+          "note": "həmçinin: 21 · Trip hub; 30 · Budget & expenses"
+        },
+        {
+          "key": "checklistProgress",
+          "en": "{done} of {total} done",
+          "az": "{total}-dən {done} hazır",
+          "tr": "{done}/{total} tamam",
+          "new": "",
+          "note": "dəyişənlər: {done}, {total} | həmçinin: 21 · Trip hub; 25 · Checklist"
+        },
+        {
+          "key": "couldNotLoadTrips",
+          "en": "Could not load your trips.",
+          "az": "Səyahətlərin yüklənmədi.",
+          "tr": "Gezilerin yüklenemedi.",
+          "new": "",
+          "note": "həmçinin: 15 · All trips"
+        },
+        {
+          "key": "createSheetTitle",
+          "en": "New trip",
+          "az": "Yeni səyahət",
+          "tr": "Yeni gezi",
+          "new": "",
+          "note": "həmçinin: 16 · Create trip — entry sheet"
+        },
+        {
+          "key": "discover",
+          "en": "Discover",
+          "az": "Kəşf et",
+          "tr": "Keşfet",
+          "new": ""
+        },
+        {
+          "key": "documentsCount",
+          "en": "{count, plural, one{{count} file} other{{count} files}}",
+          "az": "{count, plural, one{{count} fayl} other{{count} fayl}}",
+          "tr": "{count, plural, one{{count} dosya} other{{count} dosya}}",
+          "new": "",
+          "note": "dəyişənlər: {count} | ICU plural/select — struktura toxunma | həmçinin: 27 · Documents"
+        },
+        {
+          "key": "firstTripBody",
+          "en": "Write the route by hand, or describe it in a sentence and let AI build it.",
+          "az": "Planı özün yaz, ya da bir cümlə de — qalanını Ventus etsin.",
+          "tr": "Planı kendin yaz ya da bir cümle söyle — gerisini Ventus halletsin.",
+          "new": ""
+        },
+        {
+          "key": "firstTripTitle",
+          "en": "Plan your first trip",
+          "az": "İlk səyahətini planla",
+          "tr": "İlk gezini planla",
+          "new": ""
+        },
+        {
+          "key": "homeNextStop",
+          "en": "Next stop",
+          "az": "Növbəti dayanacaq",
+          "tr": "Sıradaki durak",
+          "new": ""
+        },
+        {
+          "key": "homeSearchHint",
+          "en": "City, country or place",
+          "az": "Şəhər, ölkə və ya yer",
+          "tr": "Şehir, ülke veya yer",
+          "new": ""
+        },
+        {
+          "key": "homeWhereTo",
+          "en": "Where to?",
+          "az": "Hara gedirik?",
+          "tr": "Nereye gidiyoruz?",
+          "new": ""
+        },
+        {
+          "key": "moduleBudget",
+          "en": "Budget",
+          "az": "Büdcə",
+          "tr": "Bütçe",
+          "new": "",
+          "note": "həmçinin: 14 · Trip cards; 21 · Trip hub; 30 · Budget & expenses"
+        },
+        {
+          "key": "moduleChecklist",
+          "en": "Checklist",
+          "az": "Yoxlama siyahısı",
+          "tr": "Kontrol listesi",
+          "new": "",
+          "note": "həmçinin: 21 · Trip hub; 25 · Checklist"
+        },
+        {
+          "key": "moduleDocuments",
+          "en": "Documents",
+          "az": "Sənədlər",
+          "tr": "Belgeler",
+          "new": "",
+          "note": "həmçinin: 21 · Trip hub; 27 · Documents; 28 · Document detail"
+        },
+        {
+          "key": "planNewTrip",
+          "en": "New trip",
+          "az": "Yeni səyahət",
+          "tr": "Yeni gezi",
+          "new": "",
+          "note": "həmçinin: 16 · Create trip — entry sheet"
+        },
+        {
+          "key": "planWithAi",
+          "en": "Plan with AI",
+          "az": "AI ilə planla",
+          "tr": "AI ile planla",
+          "new": "",
+          "note": "həmçinin: 16 · Create trip — entry sheet"
+        },
+        {
+          "key": "seeAll",
+          "en": "See all",
+          "az": "Hamısına bax",
+          "tr": "Tümünü gör",
+          "new": "",
+          "note": "həmçinin: 21 · Trip hub"
+        },
+        {
+          "key": "sponsored",
+          "en": "Sponsored",
+          "az": "Reklam",
+          "tr": "Sponsorlu",
+          "new": ""
+        },
+        {
+          "key": "tripInProgress",
+          "en": "In progress",
+          "az": "Davam edir",
+          "tr": "Devam ediyor",
+          "new": "",
+          "note": "həmçinin: 14 · Trip cards; 21 · Trip hub"
+        },
+        {
+          "key": "tripPickerTitle",
+          "en": "My trips",
+          "az": "Səyahətlərim",
+          "tr": "Gezilerim",
+          "new": ""
+        },
+        {
+          "key": "tryAgain",
+          "en": "Try again",
+          "az": "Yenidən cəhd et",
+          "tr": "Tekrar dene",
+          "new": "",
+          "note": "həmçinin: 38 · Tools — currency; 40 · Tools — weather"
+        },
+        {
+          "key": "yourTrips",
+          "en": "Your trips",
+          "az": "Səyahətlərin",
+          "tr": "Gezilerin",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "14 · Trip cards",
+      "strings": [
+        {
+          "key": "percentPlanned",
+          "en": "{percent}% planned",
+          "az": "{percent}% planlanıb",
+          "tr": "%{percent} planlandı",
+          "new": "",
+          "note": "dəyişənlər: {percent} | həmçinin: 21 · Trip hub"
+        },
+        {
+          "key": "tripDaysToGo",
+          "en": "{count, plural, one{{count} day to go} other{{count} days to go}}",
+          "az": "{count, plural, one{{count} gün qalıb} other{{count} gün qalıb}}",
+          "tr": "{count, plural, one{{count} gün kaldı} other{{count} gün kaldı}}",
+          "new": "",
+          "note": "dəyişənlər: {count} | ICU plural/select — struktura toxunma | həmçinin: 21 · Trip hub"
+        },
+        {
+          "key": "tripToday",
+          "en": "Today",
+          "az": "Bu gün",
+          "tr": "Bugün",
+          "new": "",
+          "note": "həmçinin: 21 · Trip hub"
+        }
+      ]
+    },
+    {
+      "screen": "15 · All trips",
+      "strings": [
+        {
+          "key": "allTrips",
+          "en": "All trips",
+          "az": "Bütün səyahətlər",
+          "tr": "Tüm geziler",
+          "new": ""
+        },
+        {
+          "key": "allTripsEmptyBody",
+          "en": "Your planned and past trips will show up here.",
+          "az": "Planladığın və keçmiş səyahətlərin burada görünəcək.",
+          "tr": "Planladığın ve geçmiş gezilerin burada görünecek.",
+          "new": ""
+        },
+        {
+          "key": "tripsPast",
+          "en": "Past",
+          "az": "Keçmiş",
+          "tr": "Geçmiş",
+          "new": ""
+        },
+        {
+          "key": "tripsUpcoming",
+          "en": "Upcoming",
+          "az": "Qarşıdan gələn",
+          "tr": "Yaklaşan",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "16 · Create trip — entry sheet",
+      "strings": [
+        {
+          "key": "createAiBadge",
+          "en": "FAST",
+          "az": "SÜRƏTLİ",
+          "tr": "HIZLI",
+          "new": ""
+        },
+        {
+          "key": "createAiBody",
+          "en": "Write \"4 days in Rome in October, museums and food\" — get an instant plan.",
+          "az": "\"Oktyabrda 4 gün Romaya, muzeylər və yemək\" yaz — plan hazır olsun.",
+          "tr": "\"Ekimde Roma'ya 4 gün, müzeler ve yemek\" yaz — plan hazır olsun.",
+          "new": ""
+        },
+        {
+          "key": "createManualBody",
+          "en": "Pick the destination, dates and travel companions yourself.",
+          "az": "İstiqamət, tarixlər və həmsəyahətçiləri özün seç.",
+          "tr": "Rotayı, tarihleri ve yol arkadaşlarını kendin seç.",
+          "new": ""
+        },
+        {
+          "key": "createSheetSubtitle",
+          "en": "How do you want to start?",
+          "az": "Necə başlamaq istəyirsən?",
+          "tr": "Nasıl başlamak istersin?",
+          "new": ""
+        },
+        {
+          "key": "sheetClose",
+          "en": "Close",
+          "az": "Bağla",
+          "tr": "Kapat",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "17 · Create trip — destination",
+      "strings": [
+        {
+          "key": "addAnotherStop",
+          "en": "Add another stop",
+          "az": "Başqa dayanacaq əlavə et",
+          "tr": "Başka durak ekle",
+          "new": ""
+        },
+        {
+          "key": "addPlace",
+          "en": "Add “{name}”",
+          "az": "“{name}” əlavə et",
+          "tr": "“{name}” ekle",
+          "new": "",
+          "note": "dəyişənlər: {name}"
+        },
+        {
+          "key": "aiExampleCityLabel",
+          "en": "Short city break",
+          "az": "Qısa şəhər turu",
+          "tr": "Kısa şehir turu",
+          "new": ""
+        },
+        {
+          "key": "aiExampleCityText",
+          "en": "A short 3-day weekend city break — historic sights and local food.",
+          "az": "Həftəsonu qısa 3 günlük şəhər turu — tarixi yerlər və yerli mətbəx.",
+          "tr": "Hafta sonu kısa 3 günlük şehir turu — tarihi yerler ve yerel mutfak.",
+          "new": ""
+        },
+        {
+          "key": "aiExampleFamilyLabel",
+          "en": "Family getaway",
+          "az": "Ailəvi istirahət",
+          "tr": "Aile tatili",
+          "new": ""
+        },
+        {
+          "key": "aiExampleFamilyText",
+          "en": "A 7-day beach holiday in August with our family (2 adults, 2 kids).",
+          "az": "Ailəmizlə (2 böyük, 2 uşaq) avqustda dənizkənarı istirahət, 7 gün.",
+          "tr": "Ailemizle (2 yetişkin, 2 çocuk) ağustosta 7 günlük bir sahil tatili.",
+          "new": ""
+        },
+        {
+          "key": "aiExampleFriendsLabel",
+          "en": "Trip with friends",
+          "az": "Dostlarla macəra",
+          "tr": "Arkadaşlarla gezi",
+          "new": ""
+        },
+        {
+          "key": "aiExampleFriendsText",
+          "en": "A 3-day mountain trip with 4 friends in September, hiking and nature.",
+          "az": "4 dostla sentyabrda dağlıq bir yerə 3 günlük gəzinti və təbiət marşrutu.",
+          "tr": "Eylülde 4 arkadaşla dağlık bir bölgeye 3 günlük doğa yürüyüşü gezisi.",
+          "new": ""
+        },
+        {
+          "key": "aiExampleRomanticLabel",
+          "en": "Romantic weekend",
+          "az": "Romantik həftəsonu",
+          "tr": "Romantik hafta sonu",
+          "new": ""
+        },
+        {
+          "key": "aiExampleRomanticText",
+          "en": "A short romantic getaway for two this weekend, somewhere nearby.",
+          "az": "İki nəfər üçün bu həftə sonu yaxınlıqda romantik bir şəhərə qısa səyahət.",
+          "tr": "Bu hafta sonu yakın bir şehre iki kişilik kısa romantik bir kaçamak.",
+          "new": ""
+        },
+        {
+          "key": "aiExampleSoloLabel",
+          "en": "Solo trip",
+          "az": "Tək səyahət",
+          "tr": "Tek gezi",
+          "new": ""
+        },
+        {
+          "key": "aiExampleSoloText",
+          "en": "A solo 4-day culture-and-relax trip to a quiet city in October.",
+          "az": "Tək başıma, oktyabrda sakit bir şəhərdə 4 günlük mədəniyyət və istirahət səyahəti.",
+          "tr": "Ekimde sakin bir şehre tek başıma 4 günlük kültür ve dinlenme gezisi.",
+          "new": ""
+        },
+        {
+          "key": "aiExampleWinterLabel",
+          "en": "Winter holiday",
+          "az": "Qış tətili",
+          "tr": "Kış tatili",
+          "new": ""
+        },
+        {
+          "key": "aiExampleWinterText",
+          "en": "A 5-day winter holiday at a snowy mountain resort in January, skiing and hot chocolate.",
+          "az": "Yanvarda qarlı bir dağ kurortunda 5 günlük qış tətili, xizək və isti şokolad.",
+          "tr": "Ocakta karlı bir dağ tatil köyünde 5 günlük kayak ve sıcak çikolatalı kış tatili.",
+          "new": ""
+        },
+        {
+          "key": "aiExamplesLabel",
+          "en": "Quick start",
+          "az": "Sürətli başla",
+          "tr": "Hızlı başla",
+          "new": ""
+        },
+        {
+          "key": "aiNeedDescription",
+          "en": "Describe your trip first.",
+          "az": "Əvvəlcə səyahətini təsvir et.",
+          "tr": "Önce gezini tarif et.",
+          "new": ""
+        },
+        {
+          "key": "aiParseEmpty",
+          "en": "Couldn't find a place in that. Try naming a city.",
+          "az": "Burada yer tapılmadı. Bir şəhər adı yazmağa cəhd et.",
+          "tr": "Burada bir yer bulunamadı. Bir şehir adı yazmayı dene.",
+          "new": ""
+        },
+        {
+          "key": "aiParseFailed",
+          "en": "Couldn't read your trip. Try again.",
+          "az": "Səyahətini oxumaq alınmadı. Yenidən cəhd et.",
+          "tr": "Gezin okunamadı. Tekrar dene.",
+          "new": ""
+        },
+        {
+          "key": "aiPlanNetworkError",
+          "en": "Couldn't reach the planner. Check your connection and try again.",
+          "az": "Planlayıcıya çatmaq olmadı. Bağlantını yoxla və yenidən cəhd et.",
+          "tr": "Planlayıcıya ulaşılamadı. Bağlantını kontrol edip tekrar dene.",
+          "new": "",
+          "note": "həmçinin: 20 · Create trip — review; 21 · Trip hub"
+        },
+        {
+          "key": "aiPlanUnavailable",
+          "en": "AI planning isn't available yet.",
+          "az": "AI ilə planlama hələ əlçatan deyil.",
+          "tr": "AI ile planlama henüz kullanılamıyor.",
+          "new": "",
+          "note": "həmçinin: 20 · Create trip — review; 21 · Trip hub"
+        },
+        {
+          "key": "aiPromptHint",
+          "en": "A 5-day food & culture trip to Istanbul and Cappadocia for two, mid-June.",
+          "az": "İki nəfər üçün iyunun ortasında İstanbul və Kappadokiyaya 5 günlük yemək və mədəniyyət səyahəti.",
+          "tr": "İki kişi için haziran ortasında İstanbul ve Kapadokya’ya 5 günlük yemek ve kültür gezisi.",
+          "new": ""
+        },
+        {
+          "key": "aiReadingTrip",
+          "en": "Reading your trip…",
+          "az": "Səyahətin oxunur…",
+          "tr": "Gezin okunuyor…",
+          "new": ""
+        },
+        {
+          "key": "aiSubtitle",
+          "en": "Describe your trip in your own words — Ventus fills in the details.",
+          "az": "Səyahətini öz sözlərinlə təsvir et — Ventus detalları tamamlayar.",
+          "tr": "Gezini kendi kelimelerinle anlat — Ventus detayları tamamlar.",
+          "new": ""
+        },
+        {
+          "key": "aiTitle",
+          "en": "Tell Ventus about your trip",
+          "az": "Ventus-a səyahətin haqqında danış",
+          "tr": "Ventus’a gezini anlat",
+          "new": ""
+        },
+        {
+          "key": "continueAction",
+          "en": "Continue",
+          "az": "Davam et",
+          "tr": "Devam et",
+          "new": "",
+          "note": "həmçinin: 19 · Create trip — travelers"
+        },
+        {
+          "key": "destinationSubtitle",
+          "en": "Add one or more places — Ventus plans the route between them.",
+          "az": "Bir və ya bir neçə yer əlavə et — aralarındakı marşrutu Ventus qurar.",
+          "tr": "Bir veya daha fazla yer ekle — aralarındaki rotayı Ventus planlar.",
+          "new": ""
+        },
+        {
+          "key": "keepTyping",
+          "en": "Type at least 3 letters to search",
+          "az": "Axtarış üçün ən azı 3 hərf yaz",
+          "tr": "Aramak için en az 3 harf yaz",
+          "new": ""
+        },
+        {
+          "key": "placesMatch",
+          "en": "{count} places match “{query}”",
+          "az": "“{query}” üçün {count} yer tapıldı",
+          "tr": "“{query}” ile {count} yer eşleşiyor",
+          "new": "",
+          "note": "dəyişənlər: {count}, {query}"
+        },
+        {
+          "key": "popularRightNow",
+          "en": "Popular right now",
+          "az": "İndi populyar",
+          "tr": "Şu an popüler",
+          "new": ""
+        },
+        {
+          "key": "searchCityCountry",
+          "en": "Search a city or country",
+          "az": "Şəhər və ya ölkə axtar",
+          "tr": "Şehir veya ülke ara",
+          "new": ""
+        },
+        {
+          "key": "searchPlacesFailed",
+          "en": "Couldn’t search — add it manually below.",
+          "az": "Axtarış alınmadı — aşağıdan əl ilə əlavə edə bilərsən.",
+          "tr": "Arama olmadı — aşağıdan elle ekleyebilirsin.",
+          "new": ""
+        },
+        {
+          "key": "searchingPlaces",
+          "en": "Searching…",
+          "az": "Axtarırıq…",
+          "tr": "Arıyoruz…",
+          "new": "",
+          "note": "həmçinin: 23 · Itinerary"
+        },
+        {
+          "key": "whereTo",
+          "en": "Where to?",
+          "az": "Hara?",
+          "tr": "Nereye?",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "18 · Create trip — dates",
+      "strings": [
+        {
+          "key": "datesSubtitle",
+          "en": "Pick your dates, or stay flexible — you can change this later.",
+          "az": "Tarixləri seç, ya da çevik qal — bunu sonra dəyişə bilərsən.",
+          "tr": "Tarihleri seç ya da esnek kal — bunu sonra değiştirebilirsin.",
+          "new": ""
+        },
+        {
+          "key": "nightsCount",
+          "en": "{count, plural, one{{count} night} other{{count} nights}}",
+          "az": "{count, plural, one{{count} gecə} other{{count} gecə}}",
+          "tr": "{count, plural, one{{count} gece} other{{count} gece}}",
+          "new": "",
+          "note": "dəyişənlər: {count} | ICU plural/select — struktura toxunma | həmçinin: 20 · Create trip — review; 21 · Trip hub"
+        },
+        {
+          "key": "presetFlexible",
+          "en": "I’m flexible",
+          "az": "Fərqi yoxdur",
+          "tr": "Fark etmez",
+          "new": ""
+        },
+        {
+          "key": "presetInAMonth",
+          "en": "In a month",
+          "az": "Bir aya",
+          "tr": "Bir ay içinde",
+          "new": ""
+        },
+        {
+          "key": "presetNextWeek",
+          "en": "Next week",
+          "az": "Gələn həftə",
+          "tr": "Gelecek hafta",
+          "new": ""
+        },
+        {
+          "key": "presetThisWeekend",
+          "en": "This weekend",
+          "az": "Bu həftə sonu",
+          "tr": "Bu hafta sonu",
+          "new": ""
+        },
+        {
+          "key": "reviewTrip",
+          "en": "Review trip",
+          "az": "Səyahətə bax",
+          "tr": "Geziyi gözden geçir",
+          "new": ""
+        },
+        {
+          "key": "selectDates",
+          "en": "Select dates",
+          "az": "Tarix seç",
+          "tr": "Tarih seç",
+          "new": "",
+          "note": "həmçinin: 20 · Create trip — review"
+        },
+        {
+          "key": "when",
+          "en": "When?",
+          "az": "Nə vaxt?",
+          "tr": "Ne zaman?",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "19 · Create trip — travelers",
+      "strings": [
+        {
+          "key": "collabPeopleCount",
+          "en": "{count, plural, =1{1 person} other{{count} people}}",
+          "az": "{count, plural, =1{1 nəfər} other{{count} nəfər}}",
+          "tr": "{count, plural, =1{1 kişi} other{{count} kişi}}",
+          "new": "",
+          "note": "dəyişənlər: {count} | ICU plural/select — struktura toxunma | həmçinin: 33 · Collaborators"
+        },
+        {
+          "key": "inviteAdd",
+          "en": "Add",
+          "az": "Əlavə et",
+          "tr": "Ekle",
+          "new": ""
+        },
+        {
+          "key": "inviteAfterCreate",
+          "en": "They'll be invited once you create the trip.",
+          "az": "Səyahəti yaratdıqdan sonra dəvət olunacaqlar.",
+          "tr": "Geziyi oluşturduğunda davet edilecekler.",
+          "new": ""
+        },
+        {
+          "key": "inviteCompanions",
+          "en": "Invite companions",
+          "az": "Həmsəyahətçiləri dəvət et",
+          "tr": "Yol arkadaşlarını davet et",
+          "new": ""
+        },
+        {
+          "key": "inviteCompanionsSub",
+          "en": "Optional · plan together",
+          "az": "İstəyə bağlı · birlikdə planla",
+          "tr": "İsteğe bağlı · birlikte planla",
+          "new": ""
+        },
+        {
+          "key": "inviteEmailInvalid",
+          "en": "Enter a valid email",
+          "az": "Düzgün e-poçt ünvanı yaz",
+          "tr": "Geçerli bir e-posta yaz",
+          "new": "",
+          "note": "həmçinin: 33 · Collaborators"
+        },
+        {
+          "key": "travelerCouple",
+          "en": "Couple",
+          "az": "Cüt",
+          "tr": "Çift",
+          "new": "",
+          "note": "həmçinin: 20 · Create trip — review; 21 · Trip hub"
+        },
+        {
+          "key": "travelerFamily",
+          "en": "Family",
+          "az": "Ailə",
+          "tr": "Aile",
+          "new": "",
+          "note": "həmçinin: 20 · Create trip — review; 21 · Trip hub"
+        },
+        {
+          "key": "travelerFriends",
+          "en": "Friends",
+          "az": "Dostlar",
+          "tr": "Arkadaşlar",
+          "new": "",
+          "note": "həmçinin: 20 · Create trip — review; 21 · Trip hub"
+        },
+        {
+          "key": "travelerSolo",
+          "en": "Solo",
+          "az": "Tək",
+          "tr": "Tek",
+          "new": "",
+          "note": "həmçinin: 20 · Create trip — review; 21 · Trip hub"
+        },
+        {
+          "key": "travelersAdults",
+          "en": "Adults",
+          "az": "Böyüklər",
+          "tr": "Yetişkinler",
+          "new": ""
+        },
+        {
+          "key": "travelersAdultsSub",
+          "en": "Age 13+",
+          "az": "13+ yaş",
+          "tr": "13+ yaş",
+          "new": ""
+        },
+        {
+          "key": "travelersChildren",
+          "en": "Children",
+          "az": "Uşaqlar",
+          "tr": "Çocuklar",
+          "new": ""
+        },
+        {
+          "key": "travelersChildrenSub",
+          "en": "Age 0–12",
+          "az": "0–12 yaş",
+          "tr": "0–12 yaş",
+          "new": ""
+        },
+        {
+          "key": "travelersSubtitle",
+          "en": "This helps Ventus set the right pace and suggestions.",
+          "az": "Bu, Ventus-un sənə uyğun ritm və təkliflər seçməsinə kömək edir.",
+          "tr": "Bu, Ventus’un sana uygun tempoyu ve önerileri seçmesine yardımcı olur.",
+          "new": ""
+        },
+        {
+          "key": "whosComing",
+          "en": "Who’s coming?",
+          "az": "Kim gəlir?",
+          "tr": "Kimler geliyor?",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "20 · Create trip — review",
+      "strings": [
+        {
+          "key": "adultsCount",
+          "en": "{count, plural, one{{count} adult} other{{count} adults}}",
+          "az": "{count, plural, one{{count} böyük} other{{count} böyük}}",
+          "tr": "{count, plural, one{{count} yetişkin} other{{count} yetişkin}}",
+          "new": "",
+          "note": "dəyişənlər: {count} | ICU plural/select — struktura toxunma | həmçinin: 21 · Trip hub"
+        },
+        {
+          "key": "aiGenerating",
+          "en": "Crafting your plan…",
+          "az": "Planın hazırlanır…",
+          "tr": "Planın hazırlanıyor…",
+          "new": "",
+          "note": "həmçinin: 21 · Trip hub"
+        },
+        {
+          "key": "aiPlanEmpty",
+          "en": "Couldn't build a plan. Try again in a moment.",
+          "az": "Plan qurmaq alınmadı. Bir az sonra yenidən cəhd et.",
+          "tr": "Plan oluşturulamadı. Birazdan tekrar dene.",
+          "new": "",
+          "note": "həmçinin: 21 · Trip hub"
+        },
+        {
+          "key": "aiPlanFailed",
+          "en": "Couldn't generate a plan. Try again.",
+          "az": "Plan yaradıla bilmədi. Yenidən cəhd et.",
+          "tr": "Plan oluşturulamadı. Tekrar dene.",
+          "new": "",
+          "note": "həmçinin: 21 · Trip hub"
+        },
+        {
+          "key": "aiPlanReady",
+          "en": "Your plan is ready",
+          "az": "Planın hazırdır",
+          "tr": "Planın hazır",
+          "new": "",
+          "note": "həmçinin: 21 · Trip hub"
+        },
+        {
+          "key": "buildPlanWithAi",
+          "en": "Build my plan with AI",
+          "az": "Planımı AI qursun",
+          "tr": "Planımı AI oluştursun",
+          "new": ""
+        },
+        {
+          "key": "cancel",
+          "en": "Cancel",
+          "az": "Ləğv et",
+          "tr": "İptal",
+          "new": "",
+          "note": "həmçinin: 21 · Trip hub; 23 · Itinerary; 28 · Document detail; 45 · Notifications feed; 46 · Profile; 51 · Privacy & security"
+        },
+        {
+          "key": "childrenCount",
+          "en": "{count, plural, one{{count} child} other{{count} children}}",
+          "az": "{count, plural, one{{count} uşaq} other{{count} uşaq}}",
+          "tr": "{count, plural, one{{count} çocuk} other{{count} çocuk}}",
+          "new": "",
+          "note": "dəyişənlər: {count} | ICU plural/select — struktura toxunma | həmçinin: 21 · Trip hub"
+        },
+        {
+          "key": "createEmptyTrip",
+          "en": "Build it myself",
+          "az": "Özüm quraram",
+          "tr": "Kendim oluştururum",
+          "new": ""
+        },
+        {
+          "key": "datesLabel",
+          "en": "Dates",
+          "az": "Tarixlər",
+          "tr": "Tarihler",
+          "new": ""
+        },
+        {
+          "key": "editAction",
+          "en": "Edit",
+          "az": "Redaktə",
+          "tr": "Düzenle",
+          "new": ""
+        },
+        {
+          "key": "reviewFootnote",
+          "en": "No bookings here — add tickets & documents anytime.",
+          "az": "Burada rezervasiya edilmir — bilet və sənədləri istənilən vaxt əlavə edə bilərsən.",
+          "tr": "Burada rezervasyon yapılmaz — bilet ve belgeleri istediğin zaman ekleyebilirsin.",
+          "new": ""
+        },
+        {
+          "key": "reviewTitle",
+          "en": "Review",
+          "az": "Son baxış",
+          "tr": "Son bakış",
+          "new": ""
+        },
+        {
+          "key": "routeLabel",
+          "en": "Route",
+          "az": "Marşrut",
+          "tr": "Rota",
+          "new": "",
+          "note": "həmçinin: 21 · Trip hub"
+        },
+        {
+          "key": "stopsCount",
+          "en": "{count, plural, one{{count} stop} other{{count} stops}}",
+          "az": "{count, plural, one{{count} dayanacaq} other{{count} dayanacaq}}",
+          "tr": "{count, plural, one{{count} durak} other{{count} durak}}",
+          "new": "",
+          "note": "dəyişənlər: {count} | ICU plural/select — struktura toxunma | həmçinin: 21 · Trip hub; 32 · Map"
+        },
+        {
+          "key": "travelersLabel",
+          "en": "Travelers",
+          "az": "Səyahətçilər",
+          "tr": "Yolcular",
+          "new": "",
+          "note": "həmçinin: 21 · Trip hub"
+        },
+        {
+          "key": "tripCreated",
+          "en": "Trip created",
+          "az": "Səyahət yaradıldı",
+          "tr": "Gezi oluşturuldu",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "21 · Trip hub",
+      "strings": [
+        {
+          "key": "addActivity",
+          "en": "Add activity",
+          "az": "Fəaliyyət əlavə et",
+          "tr": "Etkinlik ekle",
+          "new": "",
+          "note": "həmçinin: 23 · Itinerary"
+        },
+        {
+          "key": "addExpense",
+          "en": "Add expense",
+          "az": "Xərc əlavə et",
+          "tr": "Harcama ekle",
+          "new": "",
+          "note": "həmçinin: 30 · Budget & expenses"
+        },
+        {
+          "key": "aiAssistBody",
+          "en": "Let Ventus draft them for you",
+          "az": "Qoy Ventus onları sənin üçün hazırlasın",
+          "tr": "Bırak Ventus senin için taslak hazırlasın",
+          "new": ""
+        },
+        {
+          "key": "aiAssistTitle",
+          "en": "Some days are still open",
+          "az": "Bəzi günlər hələ boşdur",
+          "tr": "Bazı günler hâlâ boş",
+          "new": ""
+        },
+        {
+          "key": "aiHubBody",
+          "en": "A day-by-day itinerary tuned to your dates, pace and the places you picked — ready in seconds.",
+          "az": "Tarixlərinə, ritminə və seçdiyin yerlərə uyğun gün-gün plan — bir neçə saniyəyə hazır olur.",
+          "tr": "Tarihlerine, temponuna ve seçtiğin yerlere göre günlük plan — saniyeler içinde hazır olur.",
+          "new": ""
+        },
+        {
+          "key": "aiHubGenerate",
+          "en": "Generate my plan",
+          "az": "Planımı yarat",
+          "tr": "Planımı oluştur",
+          "new": ""
+        },
+        {
+          "key": "aiHubTitle",
+          "en": "Let Ventus plan {city}",
+          "az": "{city} planını Ventus qursun",
+          "tr": "{city} planını Ventus yapsın",
+          "new": "",
+          "note": "dəyişənlər: {city}"
+        },
+        {
+          "key": "aiNeedsDestination",
+          "en": "Add a destination first.",
+          "az": "Əvvəlcə istiqamət əlavə et.",
+          "tr": "Önce bir varış noktası ekle.",
+          "new": ""
+        },
+        {
+          "key": "budgetSpentUsed",
+          "en": "{spent} spent · {percent}% used",
+          "az": "{spent} xərclənib · büdcənin {percent}%-i",
+          "tr": "{spent} harcandı · bütçenin %{percent}'i",
+          "new": "",
+          "note": "dəyişənlər: {spent}, {percent} | həmçinin: 30 · Budget & expenses"
+        },
+        {
+          "key": "changeCoverPhoto",
+          "en": "Change cover photo",
+          "az": "Səyahət şəklini dəyiş",
+          "tr": "Kapak fotoğrafını değiştir",
+          "new": ""
+        },
+        {
+          "key": "collaboratorsManageSub",
+          "en": "Invite people to plan together",
+          "az": "Birlikdə planlamaq üçün dəvət et",
+          "tr": "Birlikte planlamak için davet et",
+          "new": ""
+        },
+        {
+          "key": "collaboratorsTitle",
+          "en": "Collaborators",
+          "az": "Birgə planlayanlar",
+          "tr": "Birlikte planlayanlar",
+          "new": "",
+          "note": "həmçinin: 33 · Collaborators"
+        },
+        {
+          "key": "coverUpdated",
+          "en": "Cover updated",
+          "az": "Şəkil yeniləndi",
+          "tr": "Kapak güncellendi",
+          "new": ""
+        },
+        {
+          "key": "deleteConfirm",
+          "en": "Delete",
+          "az": "Sil",
+          "tr": "Sil",
+          "new": "",
+          "note": "həmçinin: 23 · Itinerary; 28 · Document detail; 51 · Privacy & security"
+        },
+        {
+          "key": "deleteTripAction",
+          "en": "Delete trip",
+          "az": "Səyahəti sil",
+          "tr": "Geziyi sil",
+          "new": ""
+        },
+        {
+          "key": "deleteTripBody",
+          "en": "This removes the trip and its details. This can’t be undone.",
+          "az": "Bu, səyahəti və bütün məlumatlarını silir. Geri qaytarmaq mümkün deyil.",
+          "tr": "Bu, geziyi ve tüm ayrıntılarını siler. Geri alınamaz.",
+          "new": ""
+        },
+        {
+          "key": "deleteTripTitle",
+          "en": "Delete this trip?",
+          "az": "Bu səyahəti silmək?",
+          "tr": "Bu gezi silinsin mi?",
+          "new": ""
+        },
+        {
+          "key": "moduleItinerary",
+          "en": "Itinerary",
+          "az": "Gün planı",
+          "tr": "Gün planı",
+          "new": "",
+          "note": "həmçinin: 23 · Itinerary"
+        },
+        {
+          "key": "orStartManually",
+          "en": "Or start manually",
+          "az": "Yaxud əl ilə başla",
+          "tr": "Ya da elle başla",
+          "new": ""
+        },
+        {
+          "key": "planAction",
+          "en": "Plan",
+          "az": "Planla",
+          "tr": "Planla",
+          "new": ""
+        },
+        {
+          "key": "sharedViaVentus",
+          "en": "Planned with Ventus ✈️",
+          "az": "Ventus ilə planlandı ✈️",
+          "tr": "Ventus ile planlandı ✈️",
+          "new": ""
+        },
+        {
+          "key": "startBuildItinerary",
+          "en": "Build itinerary",
+          "az": "Gün planını qur",
+          "tr": "Gün planı oluştur",
+          "new": ""
+        },
+        {
+          "key": "startBuildItinerarySub",
+          "en": "Add days and activities yourself",
+          "az": "Günləri və fəaliyyətləri özün əlavə et",
+          "tr": "Günleri ve etkinlikleri kendin ekle",
+          "new": ""
+        },
+        {
+          "key": "startChecklist",
+          "en": "Create a checklist",
+          "az": "Yoxlama siyahısı yarat",
+          "tr": "Kontrol listesi oluştur",
+          "new": ""
+        },
+        {
+          "key": "startChecklistSub",
+          "en": "Track what to pack and prepare",
+          "az": "Nə götürəcəyini və hazırlayacağını izlə",
+          "tr": "Ne alacağını ve hazırlayacağını takip et",
+          "new": ""
+        },
+        {
+          "key": "startUploadDocs",
+          "en": "Upload tickets & documents",
+          "az": "Bilet və sənədləri yüklə",
+          "tr": "Bilet ve belgeleri yükle",
+          "new": ""
+        },
+        {
+          "key": "startUploadDocsSub",
+          "en": "Flights, hotels, passports — all in one place",
+          "az": "Uçuşlar, otellər, pasportlar — hamısı bir yerdə",
+          "tr": "Uçuşlar, oteller, pasaportlar — hepsi tek yerde",
+          "new": ""
+        },
+        {
+          "key": "tripDeleted",
+          "en": "Trip deleted",
+          "az": "Səyahət silindi",
+          "tr": "Gezi silindi",
+          "new": ""
+        },
+        {
+          "key": "tripDetailsTitle",
+          "en": "Trip details",
+          "az": "Səyahət məlumatları",
+          "tr": "Gezi ayrıntıları",
+          "new": ""
+        },
+        {
+          "key": "tripNotFound",
+          "en": "Trip not found.",
+          "az": "Səyahət tapılmadı.",
+          "tr": "Gezi bulunamadı.",
+          "new": "",
+          "note": "həmçinin: 28 · Document detail"
+        },
+        {
+          "key": "tripOverviewTab",
+          "en": "Overview",
+          "az": "İcmal",
+          "tr": "Genel bakış",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "22 · Trip cover photo",
+      "strings": [
+        {
+          "key": "avatarChooseLibrary",
+          "en": "Choose from library",
+          "az": "Qalereyadan seç",
+          "tr": "Galeriden seç",
+          "new": "",
+          "note": "həmçinin: 48 · Edit profile"
+        },
+        {
+          "key": "avatarTakePhoto",
+          "en": "Take photo",
+          "az": "Şəkil çək",
+          "tr": "Fotoğraf çek",
+          "new": "",
+          "note": "həmçinin: 48 · Edit profile"
+        },
+        {
+          "key": "coverRemove",
+          "en": "Remove cover photo",
+          "az": "Səyahət şəklini sil",
+          "tr": "Kapak fotoğrafını kaldır",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "23 · Itinerary",
+      "strings": [
+        {
+          "key": "activityAddTime",
+          "en": "Add a time",
+          "az": "Vaxt əlavə et",
+          "tr": "Saat ekle",
+          "new": ""
+        },
+        {
+          "key": "activityDayLabel",
+          "en": "Day",
+          "az": "Gün",
+          "tr": "Gün",
+          "new": ""
+        },
+        {
+          "key": "activityKindLabel",
+          "en": "Type",
+          "az": "Növ",
+          "tr": "Tür",
+          "new": ""
+        },
+        {
+          "key": "activityPlaceHint",
+          "en": "e.g. Karaköy",
+          "az": "məs. Karaköy",
+          "tr": "örn. Karaköy",
+          "new": ""
+        },
+        {
+          "key": "activityPlaceLabel",
+          "en": "Place",
+          "az": "Yer",
+          "tr": "Yer",
+          "new": ""
+        },
+        {
+          "key": "activityTimeLabel",
+          "en": "Time",
+          "az": "Vaxt",
+          "tr": "Saat",
+          "new": ""
+        },
+        {
+          "key": "activityTitleHint",
+          "en": "e.g. Bosphorus sunset walk",
+          "az": "məs. Bosfor gün batımı gəzintisi",
+          "tr": "örn. Boğaz gün batımı yürüyüşü",
+          "new": ""
+        },
+        {
+          "key": "activityTitleLabel",
+          "en": "Activity",
+          "az": "Fəaliyyət",
+          "tr": "Etkinlik",
+          "new": ""
+        },
+        {
+          "key": "activityTitleRequired",
+          "en": "Add a short title",
+          "az": "Qısa başlıq yaz",
+          "tr": "Kısa bir başlık yaz",
+          "new": "",
+          "note": "həmçinin: 25 · Checklist"
+        },
+        {
+          "key": "dayLabel",
+          "en": "Day",
+          "az": "Gün",
+          "tr": "Gün",
+          "new": "",
+          "note": "həmçinin: 24 · Itinerary — day chip"
+        },
+        {
+          "key": "deleteActivity",
+          "en": "Delete activity",
+          "az": "Fəaliyyəti sil",
+          "tr": "Etkinliği sil",
+          "new": ""
+        },
+        {
+          "key": "deleteActivityTitle",
+          "en": "Delete this activity?",
+          "az": "Bu fəaliyyəti silmək?",
+          "tr": "Bu etkinlik silinsin mi?",
+          "new": ""
+        },
+        {
+          "key": "editActivity",
+          "en": "Edit activity",
+          "az": "Fəaliyyəti redaktə et",
+          "tr": "Etkinliği düzenle",
+          "new": ""
+        },
+        {
+          "key": "emptyDayBody",
+          "en": "Add your first activity for this day.",
+          "az": "Bu gün üçün ilk fəaliyyətini əlavə et.",
+          "tr": "Bu gün için ilk etkinliğini ekle.",
+          "new": ""
+        },
+        {
+          "key": "emptyDayTitle",
+          "en": "Nothing planned yet",
+          "az": "Hələ heç nə planlanmayıb",
+          "tr": "Henüz bir plan yok",
+          "new": ""
+        },
+        {
+          "key": "kindActivity",
+          "en": "Activity",
+          "az": "Fəaliyyət",
+          "tr": "Etkinlik",
+          "new": ""
+        },
+        {
+          "key": "kindFlight",
+          "en": "Flight",
+          "az": "Uçuş",
+          "tr": "Uçuş",
+          "new": ""
+        },
+        {
+          "key": "kindFood",
+          "en": "Food",
+          "az": "Yemək",
+          "tr": "Yemek",
+          "new": ""
+        },
+        {
+          "key": "kindSight",
+          "en": "Sight",
+          "az": "Görməli yer",
+          "tr": "Gezilecek yer",
+          "new": ""
+        },
+        {
+          "key": "kindStay",
+          "en": "Stay",
+          "az": "Yaşayış",
+          "tr": "Konaklama",
+          "new": ""
+        },
+        {
+          "key": "kindTransport",
+          "en": "Transport",
+          "az": "Nəqliyyat",
+          "tr": "Ulaşım",
+          "new": ""
+        },
+        {
+          "key": "newActivity",
+          "en": "New activity",
+          "az": "Yeni fəaliyyət",
+          "tr": "Yeni etkinlik",
+          "new": ""
+        },
+        {
+          "key": "save",
+          "en": "Save",
+          "az": "Yadda saxla",
+          "tr": "Kaydet",
+          "new": "",
+          "note": "həmçinin: 25 · Checklist; 27 · Documents; 48 · Edit profile"
+        },
+        {
+          "key": "selectTime",
+          "en": "Select time",
+          "az": "Vaxt seç",
+          "tr": "Saat seç",
+          "new": ""
+        },
+        {
+          "key": "setTime",
+          "en": "Set time",
+          "az": "Təsdiq et",
+          "tr": "Onayla",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "25 · Checklist",
+      "strings": [
+        {
+          "key": "addItem",
+          "en": "Add item",
+          "az": "Əlavə et",
+          "tr": "Ekle",
+          "new": ""
+        },
+        {
+          "key": "addToChecklist",
+          "en": "Add to checklist",
+          "az": "Siyahıya əlavə et",
+          "tr": "Listeye ekle",
+          "new": ""
+        },
+        {
+          "key": "checklistCatBeforeYouGo",
+          "en": "Before you go",
+          "az": "Getməzdən əvvəl",
+          "tr": "Gitmeden önce",
+          "new": ""
+        },
+        {
+          "key": "checklistCatOnArrival",
+          "en": "On arrival",
+          "az": "Çatanda",
+          "tr": "Varışta",
+          "new": ""
+        },
+        {
+          "key": "checklistCatPack",
+          "en": "Pack",
+          "az": "Yığ",
+          "tr": "Topla",
+          "new": ""
+        },
+        {
+          "key": "checklistCategoryLabel",
+          "en": "Category",
+          "az": "Kateqoriya",
+          "tr": "Kategori",
+          "new": ""
+        },
+        {
+          "key": "checklistItemHint",
+          "en": "e.g. Passport valid 6+ months",
+          "az": "məs. Pasport 6+ ay etibarlı",
+          "tr": "örn. Pasaport 6+ ay geçerli",
+          "new": ""
+        },
+        {
+          "key": "deleteChecklistItem",
+          "en": "Delete item",
+          "az": "Sil",
+          "tr": "Sil",
+          "new": ""
+        },
+        {
+          "key": "dueBy",
+          "en": "Do by {date}",
+          "az": "{date} tarixinə kimi",
+          "tr": "{date} tarihine kadar",
+          "new": "",
+          "note": "dəyişənlər: {date}"
+        },
+        {
+          "key": "editChecklistItem",
+          "en": "Edit item",
+          "az": "Redaktə et",
+          "tr": "Düzenle",
+          "new": ""
+        },
+        {
+          "key": "emptyChecklistBody",
+          "en": "Add what you need to pack and prepare.",
+          "az": "Yığmalı və hazırlamalı olduqlarını əlavə et.",
+          "tr": "Toplaman ve hazırlaman gerekenleri ekle.",
+          "new": ""
+        },
+        {
+          "key": "emptyChecklistTitle",
+          "en": "Nothing to check off yet",
+          "az": "Hələ qeyd ediləsi heç nə yoxdur",
+          "tr": "Henüz işaretlenecek bir şey yok",
+          "new": ""
+        },
+        {
+          "key": "itemDeleted",
+          "en": "Item deleted",
+          "az": "Silindi",
+          "tr": "Silindi",
+          "new": ""
+        },
+        {
+          "key": "setReminder",
+          "en": "Set a reminder",
+          "az": "Xatırlatma qur",
+          "tr": "Hatırlatma kur",
+          "new": ""
+        },
+        {
+          "key": "undo",
+          "en": "Undo",
+          "az": "Geri qaytar",
+          "tr": "Geri al",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "26 · Checklist — default items",
+      "strings": [
+        {
+          "key": "defChkCash",
+          "en": "Exchange currency / cash",
+          "az": "Valyuta dəyiş / nağd pul",
+          "tr": "Döviz bozdur / nakit",
+          "new": ""
+        },
+        {
+          "key": "defChkCharger",
+          "en": "Charger / adapter",
+          "az": "Şarj cihazı / adapter",
+          "tr": "Şarj cihazı / adaptör",
+          "new": ""
+        },
+        {
+          "key": "defChkCheckin",
+          "en": "Online check-in",
+          "az": "Onlayn check-in et",
+          "tr": "Online check-in",
+          "new": ""
+        },
+        {
+          "key": "defChkHotel",
+          "en": "Hotel check-in",
+          "az": "Otelə check-in",
+          "tr": "Otele check-in",
+          "new": ""
+        },
+        {
+          "key": "defChkId",
+          "en": "ID card",
+          "az": "Şəxsiyyət vəsiqəsi",
+          "tr": "Kimlik kartı",
+          "new": ""
+        },
+        {
+          "key": "defChkInsurance",
+          "en": "Travel insurance",
+          "az": "Səyahət sığortası",
+          "tr": "Seyahat sigortası",
+          "new": ""
+        },
+        {
+          "key": "defChkPassport",
+          "en": "Passport",
+          "az": "Pasport",
+          "tr": "Pasaport",
+          "new": ""
+        },
+        {
+          "key": "defChkSim",
+          "en": "Local SIM / eSIM",
+          "az": "Yerli SIM / eSIM",
+          "tr": "Yerel SIM / eSIM",
+          "new": ""
+        },
+        {
+          "key": "defChkTickets",
+          "en": "Tickets (flight / train)",
+          "az": "Biletlər (uçuş / qatar)",
+          "tr": "Biletler (uçuş / tren)",
+          "new": ""
+        },
+        {
+          "key": "defChkTransport",
+          "en": "Local transport",
+          "az": "Yerli nəqliyyat",
+          "tr": "Yerel ulaşım",
+          "new": ""
+        },
+        {
+          "key": "defChkVisa",
+          "en": "Check / apply for visa",
+          "az": "Vizanı yoxla / al",
+          "tr": "Vize kontrol / başvuru",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "27 · Documents",
+      "strings": [
+        {
+          "key": "addDocumentBody",
+          "en": "Tickets, vouchers & IDs stay private to this trip.",
+          "az": "Biletlər, vauçerlər və şəxsiyyət sənədləri bu səyahətə özəl qalır.",
+          "tr": "Biletler, kuponlar ve kimlikler bu geziye özel kalır.",
+          "new": ""
+        },
+        {
+          "key": "addDocumentTitle",
+          "en": "Add a document",
+          "az": "Sənəd əlavə et",
+          "tr": "Belge ekle",
+          "new": ""
+        },
+        {
+          "key": "deleteDocument",
+          "en": "Delete document",
+          "az": "Sənədi sil",
+          "tr": "Belgeyi sil",
+          "new": ""
+        },
+        {
+          "key": "docDayShort",
+          "en": "Day {day}",
+          "az": "Gün {day}",
+          "tr": "{day}. gün",
+          "new": "",
+          "note": "dəyişənlər: {day} | həmçinin: 28 · Document detail; 30 · Budget & expenses"
+        },
+        {
+          "key": "docDayWithDate",
+          "en": "Day {day} · {date}",
+          "az": "Gün {day} · {date}",
+          "tr": "{day}. gün · {date}",
+          "new": "",
+          "note": "dəyişənlər: {day}, {date} | həmçinin: 28 · Document detail; 30 · Budget & expenses"
+        },
+        {
+          "key": "docFilterAll",
+          "en": "All",
+          "az": "Hamısı",
+          "tr": "Tümü",
+          "new": ""
+        },
+        {
+          "key": "docFilterId",
+          "en": "ID",
+          "az": "Şəxsiyyət",
+          "tr": "Kimlik",
+          "new": ""
+        },
+        {
+          "key": "docGroupIdentity",
+          "en": "Identity",
+          "az": "Şəxsiyyət",
+          "tr": "Kimlik",
+          "new": ""
+        },
+        {
+          "key": "docGroupOther",
+          "en": "Other",
+          "az": "Digər",
+          "tr": "Diğer",
+          "new": ""
+        },
+        {
+          "key": "docGroupStays",
+          "en": "Stays",
+          "az": "Yaşayış",
+          "tr": "Konaklama",
+          "new": ""
+        },
+        {
+          "key": "docGroupTickets",
+          "en": "Tickets",
+          "az": "Biletlər",
+          "tr": "Biletler",
+          "new": ""
+        },
+        {
+          "key": "docGroupTripWide",
+          "en": "Trip-wide",
+          "az": "Bütün səyahət",
+          "tr": "Tüm gezi",
+          "new": ""
+        },
+        {
+          "key": "documentDeleted",
+          "en": "Document deleted",
+          "az": "Sənəd silindi",
+          "tr": "Belge silindi",
+          "new": "",
+          "note": "həmçinin: 28 · Document detail"
+        },
+        {
+          "key": "documentNameHint",
+          "en": "Document name",
+          "az": "Sənədin adı",
+          "tr": "Belge adı",
+          "new": ""
+        },
+        {
+          "key": "documentNameLabel",
+          "en": "Name",
+          "az": "Ad",
+          "tr": "Ad",
+          "new": ""
+        },
+        {
+          "key": "documentTypeLabel",
+          "en": "Type",
+          "az": "Növ",
+          "tr": "Tür",
+          "new": ""
+        },
+        {
+          "key": "editDocumentTitle",
+          "en": "Edit document",
+          "az": "Sənədi redaktə et",
+          "tr": "Belgeyi düzenle",
+          "new": ""
+        },
+        {
+          "key": "emptyDocumentsBody",
+          "en": "Upload your tickets, vouchers and IDs to keep them handy.",
+          "az": "Biletlərini, vauçerlərini və şəxsiyyət sənədlərini yüklə ki, əlin altında olsun.",
+          "tr": "Biletlerini, kuponlarını ve kimliklerini yükle, hep elinin altında olsun.",
+          "new": ""
+        },
+        {
+          "key": "emptyDocumentsTitle",
+          "en": "No documents yet",
+          "az": "Hələ sənəd yoxdur",
+          "tr": "Henüz belge yok",
+          "new": ""
+        },
+        {
+          "key": "linkToDayLabel",
+          "en": "Link to day (optional)",
+          "az": "Günə bağla (istəyə bağlı)",
+          "tr": "Güne bağla (isteğe bağlı)",
+          "new": ""
+        },
+        {
+          "key": "saveDocumentTitle",
+          "en": "Save document",
+          "az": "Sənədi yadda saxla",
+          "tr": "Belgeyi kaydet",
+          "new": ""
+        },
+        {
+          "key": "saveToDocuments",
+          "en": "Save to Documents",
+          "az": "Sənədlərə əlavə et",
+          "tr": "Belgelere kaydet",
+          "new": ""
+        },
+        {
+          "key": "sourceCamera",
+          "en": "Camera",
+          "az": "Kamera",
+          "tr": "Kamera",
+          "new": ""
+        },
+        {
+          "key": "sourceCameraSub",
+          "en": "Scan a paper ticket or ID",
+          "az": "Kağız bilet və ya sənədi skan et",
+          "tr": "Kağıt bir bilet veya kimlik tara",
+          "new": ""
+        },
+        {
+          "key": "sourceFiles",
+          "en": "Files",
+          "az": "Fayllar",
+          "tr": "Dosyalar",
+          "new": ""
+        },
+        {
+          "key": "sourceFilesSub",
+          "en": "PDF, Pages, anything",
+          "az": "PDF, Pages, istənilən fayl",
+          "tr": "PDF, Pages, her şey",
+          "new": ""
+        },
+        {
+          "key": "sourcePhotos",
+          "en": "Photos",
+          "az": "Şəkillər",
+          "tr": "Fotoğraflar",
+          "new": ""
+        },
+        {
+          "key": "sourcePhotosSub",
+          "en": "Pick from your library",
+          "az": "Qalereyadan seç",
+          "tr": "Galerinden seç",
+          "new": ""
+        },
+        {
+          "key": "uploadDocument",
+          "en": "Upload ticket or document",
+          "az": "Bilet və ya sənəd yüklə",
+          "tr": "Bilet veya belge yükle",
+          "new": ""
+        },
+        {
+          "key": "uploadFailed",
+          "en": "Couldn’t upload — try again.",
+          "az": "Yüklənmədi — yenidən cəhd et.",
+          "tr": "Yüklenemedi — tekrar dene.",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "28 · Document detail",
+      "strings": [
+        {
+          "key": "connectToView",
+          "en": "Connect to the internet to view this file.",
+          "az": "Bu faylı görmək üçün internetə qoşul.",
+          "tr": "Bu dosyayı görüntülemek için internete bağlan.",
+          "new": ""
+        },
+        {
+          "key": "deleteDocumentBody",
+          "en": "This permanently removes the file. This can’t be undone.",
+          "az": "Bu, faylı həmişəlik silir. Geri qaytarmaq mümkün deyil.",
+          "tr": "Bu, dosyayı kalıcı olarak siler. Geri alınamaz.",
+          "new": ""
+        },
+        {
+          "key": "deleteDocumentTitle",
+          "en": "Delete this document?",
+          "az": "Bu sənəd silinsin?",
+          "tr": "Bu belge silinsin mi?",
+          "new": ""
+        },
+        {
+          "key": "docActionDelete",
+          "en": "Delete",
+          "az": "Sil",
+          "tr": "Sil",
+          "new": ""
+        },
+        {
+          "key": "docActionEdit",
+          "en": "Edit",
+          "az": "Redaktə",
+          "tr": "Düzenle",
+          "new": ""
+        },
+        {
+          "key": "docActionSave",
+          "en": "Save",
+          "az": "Saxla",
+          "tr": "Kaydet",
+          "new": ""
+        },
+        {
+          "key": "docActionShare",
+          "en": "Share",
+          "az": "Paylaş",
+          "tr": "Paylaş",
+          "new": ""
+        },
+        {
+          "key": "documentLinkedTo",
+          "en": "Linked to {day}",
+          "az": "Bağlıdır: {day}",
+          "tr": "Bağlı: {day}",
+          "new": "",
+          "note": "dəyişənlər: {day}"
+        },
+        {
+          "key": "openFile",
+          "en": "Open",
+          "az": "Aç",
+          "tr": "Aç",
+          "new": ""
+        },
+        {
+          "key": "previewUnavailable",
+          "en": "Preview isn’t available here.",
+          "az": "Bu faylı burada göstərə bilmirik.",
+          "tr": "Bu dosyayı burada gösteremiyoruz.",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "29 · Document labels",
+      "strings": [
+        {
+          "key": "docTypeId",
+          "en": "ID",
+          "az": "Şəxsiyyət",
+          "tr": "Kimlik",
+          "new": ""
+        },
+        {
+          "key": "docTypeOther",
+          "en": "Other",
+          "az": "Digər",
+          "tr": "Diğer",
+          "new": ""
+        },
+        {
+          "key": "docTypeStay",
+          "en": "Stay",
+          "az": "Yaşayış",
+          "tr": "Konaklama",
+          "new": ""
+        },
+        {
+          "key": "docTypeTicket",
+          "en": "Ticket",
+          "az": "Bilet",
+          "tr": "Bilet",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "30 · Budget & expenses",
+      "strings": [
+        {
+          "key": "addAmountTo",
+          "en": "Add {amount} to {category}",
+          "az": "{category} üçün {amount} əlavə et",
+          "tr": "{category} için {amount} ekle",
+          "new": "",
+          "note": "dəyişənlər: {amount}, {category}"
+        },
+        {
+          "key": "amountRequired",
+          "en": "Enter an amount",
+          "az": "Məbləği yaz",
+          "tr": "Tutarı yaz",
+          "new": ""
+        },
+        {
+          "key": "budgetAllocateByCategory",
+          "en": "Allocate by category",
+          "az": "Kateqoriyalara böl",
+          "tr": "Kategorilere ayır",
+          "new": ""
+        },
+        {
+          "key": "budgetAllocated",
+          "en": "Allocated",
+          "az": "Bölüşdürülüb",
+          "tr": "Ayrılan",
+          "new": ""
+        },
+        {
+          "key": "budgetByCategory",
+          "en": "By category",
+          "az": "Kateqoriya üzrə",
+          "tr": "Kategoriye göre",
+          "new": ""
+        },
+        {
+          "key": "budgetCurrency",
+          "en": "Currency",
+          "az": "Valyuta",
+          "tr": "Para birimi",
+          "new": "",
+          "note": "həmçinin: 49 · Currency & units"
+        },
+        {
+          "key": "budgetExpenses",
+          "en": "Expenses",
+          "az": "Xərclər",
+          "tr": "Harcamalar",
+          "new": ""
+        },
+        {
+          "key": "budgetLeftPct",
+          "en": "{percent}% left",
+          "az": "{percent}% qalıb",
+          "tr": "%{percent} kaldı",
+          "new": "",
+          "note": "dəyişənlər: {percent}"
+        },
+        {
+          "key": "budgetOfTotal",
+          "en": "of {total}",
+          "az": "{total}-dən",
+          "tr": "/ {total}",
+          "new": "",
+          "note": "dəyişənlər: {total}"
+        },
+        {
+          "key": "budgetSave",
+          "en": "Save budget",
+          "az": "Büdcəni yadda saxla",
+          "tr": "Bütçeyi kaydet",
+          "new": ""
+        },
+        {
+          "key": "budgetTotalLabel",
+          "en": "Total trip budget",
+          "az": "Ümumi səyahət büdcəsi",
+          "tr": "Toplam gezi bütçesi",
+          "new": ""
+        },
+        {
+          "key": "budgetUnassigned",
+          "en": "Unassigned",
+          "az": "Təyin edilməyib",
+          "tr": "Atanmamış",
+          "new": ""
+        },
+        {
+          "key": "editBudget",
+          "en": "Edit budget",
+          "az": "Büdcəni redaktə et",
+          "tr": "Bütçeyi düzenle",
+          "new": ""
+        },
+        {
+          "key": "editExpense",
+          "en": "Edit expense",
+          "az": "Xərci redaktə et",
+          "tr": "Harcamayı düzenle",
+          "new": ""
+        },
+        {
+          "key": "emptyExpensesBody",
+          "en": "No expenses logged yet.",
+          "az": "Hələ xərc yazılmayıb.",
+          "tr": "Henüz harcama eklenmedi.",
+          "new": ""
+        },
+        {
+          "key": "expenseDeleted",
+          "en": "Expense deleted",
+          "az": "Xərc silindi",
+          "tr": "Harcama silindi",
+          "new": ""
+        },
+        {
+          "key": "expenseNoteHint",
+          "en": "Add a note…",
+          "az": "Qeyd əlavə et…",
+          "tr": "Not ekle…",
+          "new": ""
+        },
+        {
+          "key": "setBudgetBody",
+          "en": "Add a total and Ventus tracks what’s left as you spend.",
+          "az": "Ümumi məbləği əlavə et, Ventus xərclədikcə qalanı izləsin.",
+          "tr": "Bir toplam ekle, Ventus harcadıkça kalanı takip etsin.",
+          "new": ""
+        },
+        {
+          "key": "setBudgetTitle",
+          "en": "Set your trip budget",
+          "az": "Səyahət büdcəni təyin et",
+          "tr": "Gezi bütçeni belirle",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "31 · Budget labels",
+      "strings": [
+        {
+          "key": "expCatFood",
+          "en": "Food",
+          "az": "Yemək",
+          "tr": "Yemek",
+          "new": ""
+        },
+        {
+          "key": "expCatOther",
+          "en": "Other",
+          "az": "Digər",
+          "tr": "Diğer",
+          "new": ""
+        },
+        {
+          "key": "expCatSight",
+          "en": "Sights",
+          "az": "Görməli yerlər",
+          "tr": "Gezilecek yerler",
+          "new": ""
+        },
+        {
+          "key": "expCatStay",
+          "en": "Stay",
+          "az": "Yaşayış",
+          "tr": "Konaklama",
+          "new": ""
+        },
+        {
+          "key": "expCatTransport",
+          "en": "Transport",
+          "az": "Nəqliyyat",
+          "tr": "Ulaşım",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "32 · Map",
+      "strings": [
+        {
+          "key": "emptyMapBody",
+          "en": "Add places to your trip and they'll appear here on the map.",
+          "az": "Səyahətinə yerlər əlavə et, onlar burada xəritədə görünəcək.",
+          "tr": "Gezine yerler ekle, burada haritada görünecekler.",
+          "new": ""
+        },
+        {
+          "key": "emptyMapNoCoords",
+          "en": "Your stops don't have locations yet. Add them again from search to pin them on the map.",
+          "az": "Dayanacaqlarının yeri bilinmir. Xəritədə görünsünlər deyə onları axtarışdan yenidən əlavə et.",
+          "tr": "Duraklarının konumu bilinmiyor. Haritada görünsünler diye onları aramadan yeniden ekle.",
+          "new": ""
+        },
+        {
+          "key": "emptyMapTitle",
+          "en": "Nothing to map yet",
+          "az": "Hələ xəritələnəcək bir şey yoxdur",
+          "tr": "Henüz haritalanacak bir şey yok",
+          "new": ""
+        },
+        {
+          "key": "mapRouteTitle",
+          "en": "Route",
+          "az": "Marşrut",
+          "tr": "Rota",
+          "new": ""
+        },
+        {
+          "key": "moduleMap",
+          "en": "Map",
+          "az": "Xəritə",
+          "tr": "Harita",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "33 · Collaborators",
+      "strings": [
+        {
+          "key": "collabAnyoneWithLink",
+          "en": "Anyone with the link",
+          "az": "Linki olan hər kəs",
+          "tr": "Bağlantısı olan herkes",
+          "new": ""
+        },
+        {
+          "key": "collabCopy",
+          "en": "Copy",
+          "az": "Kopyala",
+          "tr": "Kopyala",
+          "new": ""
+        },
+        {
+          "key": "collabInviteSent",
+          "en": "Invite sent · pending",
+          "az": "Dəvət göndərildi · gözləyir",
+          "tr": "Davet gönderildi · bekliyor",
+          "new": ""
+        },
+        {
+          "key": "collabInviteSentToast",
+          "en": "Invite sent",
+          "az": "Dəvət göndərildi",
+          "tr": "Davet gönderildi",
+          "new": ""
+        },
+        {
+          "key": "collabLinkCopied",
+          "en": "Invite link copied",
+          "az": "Dəvət linki kopyalandı",
+          "tr": "Davet bağlantısı kopyalandı",
+          "new": ""
+        },
+        {
+          "key": "collabPending",
+          "en": "Pending",
+          "az": "Gözləyir",
+          "tr": "Bekliyor",
+          "new": ""
+        },
+        {
+          "key": "collabRemoved",
+          "en": "Collaborator removed",
+          "az": "Siyahıdan çıxarıldı",
+          "tr": "Listeden çıkarıldı",
+          "new": ""
+        },
+        {
+          "key": "collabYou",
+          "en": "You",
+          "az": "Sən",
+          "tr": "Sen",
+          "new": ""
+        },
+        {
+          "key": "inviteRoleLabel",
+          "en": "Role",
+          "az": "Rol",
+          "tr": "Rol",
+          "new": ""
+        },
+        {
+          "key": "inviteTitle",
+          "en": "Invite to trip",
+          "az": "Səyahətə dəvət et",
+          "tr": "Geziye davet et",
+          "new": ""
+        },
+        {
+          "key": "removeCollaborator",
+          "en": "Remove",
+          "az": "Çıxar",
+          "tr": "Çıkar",
+          "new": ""
+        },
+        {
+          "key": "roleEditor",
+          "en": "Editor",
+          "az": "Redaktor",
+          "tr": "Düzenleyici",
+          "new": ""
+        },
+        {
+          "key": "roleEditorDesc",
+          "en": "Add & edit itinerary, budget, docs",
+          "az": "Gün planı, büdcə və sənədləri əlavə edib dəyişə bilər",
+          "tr": "Gün planı, bütçe ve belgeleri ekleyip değiştirebilir",
+          "new": ""
+        },
+        {
+          "key": "roleOwner",
+          "en": "Owner",
+          "az": "Sahib",
+          "tr": "Sahip",
+          "new": ""
+        },
+        {
+          "key": "roleViewer",
+          "en": "Viewer",
+          "az": "İzləyici",
+          "tr": "İzleyici",
+          "new": ""
+        },
+        {
+          "key": "roleViewerDesc",
+          "en": "See the trip, can’t make changes",
+          "az": "Səyahəti görə bilər, dəyişiklik edə bilməz",
+          "tr": "Geziyi görebilir, değişiklik yapamaz",
+          "new": ""
+        },
+        {
+          "key": "sendInvite",
+          "en": "Send invite",
+          "az": "Dəvət göndər",
+          "tr": "Davet gönder",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "34 · Explore",
+      "strings": [
+        {
+          "key": "exploreAsk",
+          "en": "Ask Ventus where to go…",
+          "az": "Ventus-dan hara gedəcəyini soruş…",
+          "tr": "Ventus'a nereye gideceğini sor…",
+          "new": ""
+        },
+        {
+          "key": "exploreEmpty",
+          "en": "Nothing to explore yet.",
+          "az": "Hələ kəşf ediləcək bir şey yoxdur.",
+          "tr": "Henüz keşfedilecek bir şey yok.",
+          "new": "",
+          "note": "həmçinin: 35 · Place detail"
+        },
+        {
+          "key": "exploreSubtitle",
+          "en": "Places to inspire your next trip",
+          "az": "Növbəti səyahətin üçün ilham verən yerlər",
+          "tr": "Sonraki gezine ilham verecek yerler",
+          "new": ""
+        },
+        {
+          "key": "exploreTitle",
+          "en": "Discover",
+          "az": "Kəşf et",
+          "tr": "Keşfet",
+          "new": "",
+          "note": "həmçinin: 35 · Place detail; 36 · Saved places"
+        },
+        {
+          "key": "toolsOffline",
+          "en": "Couldn't load. Check your connection.",
+          "az": "Yüklənmədi. Bağlantını yoxla.",
+          "tr": "Yüklenemedi. Bağlantını kontrol et.",
+          "new": "",
+          "note": "həmçinin: 37 · Tools — home; 38 · Tools — currency; 40 · Tools — weather; 42 · Tools — city picker"
+        }
+      ]
+    },
+    {
+      "screen": "35 · Place detail",
+      "strings": [
+        {
+          "key": "destAskPlan",
+          "en": "Ask Ventus to plan a trip here…",
+          "az": "Ventus-dan buraya səyahət planlamasını istə…",
+          "tr": "Ventus'tan buraya gezi planlamasını iste…",
+          "new": ""
+        },
+        {
+          "key": "destGoodToKnow",
+          "en": "Good to know",
+          "az": "Bilməyə dəyər",
+          "tr": "Bilmekte fayda var",
+          "new": ""
+        },
+        {
+          "key": "factBestTime",
+          "en": "Best time",
+          "az": "İdeal vaxt",
+          "tr": "En iyi zaman",
+          "new": ""
+        },
+        {
+          "key": "factCurrency",
+          "en": "Currency",
+          "az": "Valyuta",
+          "tr": "Para birimi",
+          "new": ""
+        },
+        {
+          "key": "factLanguage",
+          "en": "Language",
+          "az": "Dil",
+          "tr": "Dil",
+          "new": ""
+        },
+        {
+          "key": "factTimezone",
+          "en": "Timezone",
+          "az": "Saat qurşağı",
+          "tr": "Saat dilimi",
+          "new": ""
+        },
+        {
+          "key": "planTripHere",
+          "en": "Plan a trip here",
+          "az": "Buraya səyahət planla",
+          "tr": "Buraya gezi planla",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "36 · Saved places",
+      "strings": [
+        {
+          "key": "navSaved",
+          "en": "Saved",
+          "az": "Saxlanılanlar",
+          "tr": "Kaydedilen",
+          "new": "",
+          "note": "həmçinin: 46 · Profile"
+        },
+        {
+          "key": "savedEmptyBody",
+          "en": "Tap the heart on a place in Discover to save it here.",
+          "az": "Kəşf et bölməsində bəyəndiyin yerin ürək işarəsinə toxun — burada yığılsın.",
+          "tr": "Keşfet'te beğendiğin yerin kalp simgesine dokun — burada birikir.",
+          "new": ""
+        },
+        {
+          "key": "savedEmptyTitle",
+          "en": "No saved places yet",
+          "az": "Hələ saxlanan yer yoxdur",
+          "tr": "Henüz kayıtlı yer yok",
+          "new": ""
+        },
+        {
+          "key": "savedSubtitle",
+          "en": "Places you've saved",
+          "az": "Bəyəndiyin yerlər",
+          "tr": "Beğendiğin yerler",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "37 · Tools — home",
+      "strings": [
+        {
+          "key": "clockHome",
+          "en": "Home",
+          "az": "Ev vaxtı",
+          "tr": "Ev saati",
+          "new": "",
+          "note": "həmçinin: 41 · Tools — world clock"
+        },
+        {
+          "key": "tipSubtitle",
+          "en": "Quick gratuity · offline",
+          "az": "Sürətli bəxşiş · oflayn",
+          "tr": "Hızlı bahşiş · çevrimdışı",
+          "new": ""
+        },
+        {
+          "key": "toolCurrency",
+          "en": "Currency converter",
+          "az": "Valyuta çeviricisi",
+          "tr": "Döviz çevirici",
+          "new": "",
+          "note": "həmçinin: 38 · Tools — currency"
+        },
+        {
+          "key": "toolTip",
+          "en": "Tip calculator",
+          "az": "Bəxşiş kalkulyatoru",
+          "tr": "Bahşiş hesaplayıcı",
+          "new": "",
+          "note": "həmçinin: 43 · Tools — tip calculator"
+        },
+        {
+          "key": "toolWorldClock",
+          "en": "Timezone",
+          "az": "Saat qurşağı",
+          "tr": "Saat dilimi",
+          "new": "",
+          "note": "həmçinin: 41 · Tools — world clock"
+        },
+        {
+          "key": "toolsActiveTripBanner",
+          "en": "Active trip: {trip}",
+          "az": "Aktiv səyahət: {trip}",
+          "tr": "Aktif gezi: {trip}",
+          "new": "",
+          "note": "dəyişənlər: {trip}"
+        },
+        {
+          "key": "toolsCurrencyHint",
+          "en": "1 {fromGlyph} = {rate} {toGlyph} · today's rate",
+          "az": "1 {fromGlyph} = {rate} {toGlyph} · bu gün yeniləndi",
+          "tr": "1 {fromGlyph} = {rate} {toGlyph} · bugünkü kur",
+          "new": "",
+          "note": "dəyişənlər: {fromGlyph}, {rate}, {toGlyph}"
+        },
+        {
+          "key": "toolsTimezoneEmptyHint",
+          "en": "Add a city to compare times",
+          "az": "Vaxt fərqini görmək üçün şəhər əlavə et",
+          "tr": "Saat farkını görmek için bir şehir ekle",
+          "new": ""
+        },
+        {
+          "key": "toolsTimezoneHint",
+          "en": "{hours}h between {home} and {away}",
+          "az": "{home} ilə {away} arasında {hours} saat fərq var",
+          "tr": "{home} ile {away} arasında {hours} saat fark var",
+          "new": "",
+          "note": "dəyişənlər: {hours}, {home}, {away}"
+        }
+      ]
+    },
+    {
+      "screen": "38 · Tools — currency",
+      "strings": [
+        {
+          "key": "addToBudgetAsExpense",
+          "en": "Add to budget as an expense",
+          "az": "Büdcəyə xərc kimi əlavə et",
+          "tr": "Bütçeye gider olarak ekle",
+          "new": ""
+        },
+        {
+          "key": "currencyRateUpdated",
+          "en": "Official CBAR rate, {date}. 1 {from} = {rate} {to}",
+          "az": "CBAR rəsmi kursu, {date}. 1 {from} = {rate} {to}",
+          "tr": "CBAR resmi kuru, {date}. 1 {from} = {rate} {to}",
+          "new": "",
+          "note": "dəyişənlər: {date}, {from}, {rate}, {to}"
+        },
+        {
+          "key": "currencyReceiveLabel",
+          "en": "You get",
+          "az": "Alırsan",
+          "tr": "Aldığın",
+          "new": ""
+        },
+        {
+          "key": "currencySendLabel",
+          "en": "You have",
+          "az": "Verirsən",
+          "tr": "Elindeki",
+          "new": ""
+        },
+        {
+          "key": "expenseAdded",
+          "en": "Added to your trip budget.",
+          "az": "Səyahət büdcəsinə əlavə olundu.",
+          "tr": "Gezi bütçesine eklendi.",
+          "new": "",
+          "note": "həmçinin: 43 · Tools — tip calculator"
+        },
+        {
+          "key": "quickAmountsLabel",
+          "en": "Quick amounts",
+          "az": "Tez məbləğlər",
+          "tr": "Hızlı tutarlar",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "39 · Tools — currency picker",
+      "strings": [
+        {
+          "key": "currencyHomeCurrency",
+          "en": "Home currency",
+          "az": "Əsas valyuta",
+          "tr": "Ana para birimi",
+          "new": ""
+        },
+        {
+          "key": "currencyPickerTitle",
+          "en": "Choose a currency",
+          "az": "Valyuta seç",
+          "tr": "Para birimi seç",
+          "new": ""
+        },
+        {
+          "key": "currencySearchHint",
+          "en": "Search currency or country",
+          "az": "Valyuta və ya ölkə axtar",
+          "tr": "Para birimi veya ülke ara",
+          "new": ""
+        },
+        {
+          "key": "currencyTripCurrency",
+          "en": "Active trip currency",
+          "az": "Aktiv səyahət valyutası",
+          "tr": "Aktif gezi para birimi",
+          "new": ""
+        },
+        {
+          "key": "noCitiesFound",
+          "en": "No cities found.",
+          "az": "Şəhər tapılmadı.",
+          "tr": "Şehir bulunamadı.",
+          "new": "",
+          "note": "həmçinin: 42 · Tools — city picker"
+        }
+      ]
+    },
+    {
+      "screen": "40 · Tools — weather",
+      "strings": [
+        {
+          "key": "toolWeather",
+          "en": "Weather",
+          "az": "Hava",
+          "tr": "Hava",
+          "new": ""
+        },
+        {
+          "key": "weatherNextDays",
+          "en": "Next 5 days",
+          "az": "Növbəti 5 gün",
+          "tr": "Sonraki 5 gün",
+          "new": ""
+        },
+        {
+          "key": "weatherToday",
+          "en": "Today",
+          "az": "Bu gün",
+          "tr": "Bugün",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "41 · Tools — world clock",
+      "strings": [
+        {
+          "key": "searchCity",
+          "en": "Search a city",
+          "az": "Şəhər axtar",
+          "tr": "Şehir ara",
+          "new": "",
+          "note": "həmçinin: 42 · Tools — city picker"
+        },
+        {
+          "key": "timezoneAddCity",
+          "en": "Add another city",
+          "az": "Digər şəhər əlavə et",
+          "tr": "Başka bir şehir ekle",
+          "new": ""
+        },
+        {
+          "key": "timezoneDiffLabel",
+          "en": "{hours}h difference",
+          "az": "{hours} saat fərq",
+          "tr": "{hours} saat fark",
+          "new": "",
+          "note": "dəyişənlər: {hours}"
+        },
+        {
+          "key": "timezoneTripTag",
+          "en": "active trip",
+          "az": "aktiv səyahət",
+          "tr": "aktif gezi",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "42 · Tools — city picker",
+      "strings": [
+        {
+          "key": "searchCityHint",
+          "en": "Type a city name…",
+          "az": "Şəhər adı yaz…",
+          "tr": "Şehir adı yaz…",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "43 · Tools — tip calculator",
+      "strings": [
+        {
+          "key": "addAsExpense",
+          "en": "Add as an expense",
+          "az": "Xərc kimi əlavə et",
+          "tr": "Gider olarak ekle",
+          "new": ""
+        },
+        {
+          "key": "tipAmount",
+          "en": "Tip",
+          "az": "Bəxşiş",
+          "tr": "Bahşiş",
+          "new": ""
+        },
+        {
+          "key": "tipBillLabel",
+          "en": "Bill amount",
+          "az": "Hesab məbləği",
+          "tr": "Hesap tutarı",
+          "new": ""
+        },
+        {
+          "key": "tipCustomPercentHint",
+          "en": "Percent",
+          "az": "Faiz",
+          "tr": "Yüzde",
+          "new": ""
+        },
+        {
+          "key": "tipOtherPercent",
+          "en": "Other",
+          "az": "Digər",
+          "tr": "Diğer",
+          "new": ""
+        },
+        {
+          "key": "tipPeopleCount",
+          "en": "{count, plural, one{{count} person} other{{count} people}}",
+          "az": "{count, plural, one{{count} nəfər} other{{count} nəfər}}",
+          "tr": "{count, plural, one{{count} kişi} other{{count} kişi}}",
+          "new": "",
+          "note": "dəyişənlər: {count} | ICU plural/select — struktura toxunma"
+        },
+        {
+          "key": "tipPerPerson",
+          "en": "Per person",
+          "az": "Adambaşı",
+          "tr": "Kişi başı",
+          "new": ""
+        },
+        {
+          "key": "tipPercentLabel",
+          "en": "Tip",
+          "az": "Bəxşiş",
+          "tr": "Bahşiş",
+          "new": ""
+        },
+        {
+          "key": "tipSplitLabel",
+          "en": "Split between",
+          "az": "Neçə nəfər",
+          "tr": "Kaç kişi",
+          "new": ""
+        },
+        {
+          "key": "tipTotal",
+          "en": "Total",
+          "az": "Cəmi",
+          "tr": "Toplam",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "44 · Tools — shared labels",
+      "strings": [
+        {
+          "key": "curAED",
+          "en": "UAE dirham",
+          "az": "BƏƏ dirhəmi",
+          "tr": "BAE dirhemi",
+          "new": ""
+        },
+        {
+          "key": "curAZN",
+          "en": "Azerbaijani manat",
+          "az": "Azərbaycan manatı",
+          "tr": "Azerbaycan manatı",
+          "new": ""
+        },
+        {
+          "key": "curEUR",
+          "en": "Euro",
+          "az": "Avro",
+          "tr": "Euro",
+          "new": ""
+        },
+        {
+          "key": "curGBP",
+          "en": "British pound",
+          "az": "Britaniya funtu",
+          "tr": "İngiliz sterlini",
+          "new": ""
+        },
+        {
+          "key": "curGEL",
+          "en": "Georgian lari",
+          "az": "Gürcü larisi",
+          "tr": "Gürcistan larisi",
+          "new": ""
+        },
+        {
+          "key": "curTRY",
+          "en": "Turkish lira",
+          "az": "Türk lirəsi",
+          "tr": "Türk lirası",
+          "new": ""
+        },
+        {
+          "key": "curUSD",
+          "en": "US dollar",
+          "az": "ABŞ dolları",
+          "tr": "ABD doları",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "45 · Notifications feed",
+      "strings": [
+        {
+          "key": "notifAcceptInvite",
+          "en": "Accept",
+          "az": "Qəbul et",
+          "tr": "Kabul et",
+          "new": ""
+        },
+        {
+          "key": "notifAccepted",
+          "en": "Accepted",
+          "az": "Qəbul edildi",
+          "tr": "Kabul edildi",
+          "new": ""
+        },
+        {
+          "key": "notifAiReadyBody",
+          "en": "Ventus drafted a plan for {trip}.",
+          "az": "Ventus {trip} üçün plan hazırladı.",
+          "tr": "Ventus {trip} için bir plan hazırladı.",
+          "new": "",
+          "note": "dəyişənlər: {trip}"
+        },
+        {
+          "key": "notifAiReadyTitle",
+          "en": "Your AI day plan is ready",
+          "az": "AI gün planın hazırdır",
+          "tr": "AI gün planın hazır",
+          "new": ""
+        },
+        {
+          "key": "notifCollabInvitedBody",
+          "en": "Added to {trip}. Invite sent.",
+          "az": "{trip} səyahətinə əlavə edildi. Dəvət göndərildi.",
+          "tr": "{trip} gezisine eklendi. Davet gönderildi.",
+          "new": "",
+          "note": "dəyişənlər: {trip}"
+        },
+        {
+          "key": "notifCollabInvitedBodyShort",
+          "en": "Invite sent.",
+          "az": "Dəvət göndərildi.",
+          "tr": "Davet gönderildi.",
+          "new": ""
+        },
+        {
+          "key": "notifCollabInvitedTitle",
+          "en": "Invited {email}",
+          "az": "{email} dəvət olundu",
+          "tr": "{email} davet edildi",
+          "new": "",
+          "note": "dəyişənlər: {email}"
+        },
+        {
+          "key": "notifConfirmDeleteAllBody",
+          "en": "This permanently removes all your notifications. This can’t be undone.",
+          "az": "Bu, bütün bildirişlərini həmişəlik silir. Geri qaytarmaq mümkün deyil.",
+          "tr": "Bu, tüm bildirimlerini kalıcı olarak siler. Geri alınamaz.",
+          "new": ""
+        },
+        {
+          "key": "notifConfirmDeleteAllTitle",
+          "en": "Delete all notifications?",
+          "az": "Bütün bildirişlər silinsin?",
+          "tr": "Tüm bildirimler silinsin mi?",
+          "new": ""
+        },
+        {
+          "key": "notifConfirmMarkAllReadBody",
+          "en": "All notifications will be marked as read.",
+          "az": "Bütün bildirişlər oxunmuş kimi işarələnəcək.",
+          "tr": "Tüm bildirimler okundu olarak işaretlenecek.",
+          "new": ""
+        },
+        {
+          "key": "notifConfirmMarkAllReadTitle",
+          "en": "Mark all as read?",
+          "az": "Hamısı oxunmuş işarələnsin?",
+          "tr": "Hepsi okundu olarak işaretlensin mi?",
+          "new": ""
+        },
+        {
+          "key": "notifDeleteAll",
+          "en": "Delete all",
+          "az": "Hamısını sil",
+          "tr": "Hepsini sil",
+          "new": ""
+        },
+        {
+          "key": "notifDeleteAllConfirm",
+          "en": "Delete all",
+          "az": "Hamısını sil",
+          "tr": "Hepsini sil",
+          "new": ""
+        },
+        {
+          "key": "notifEarlier",
+          "en": "Earlier",
+          "az": "Daha əvvəl",
+          "tr": "Daha önce",
+          "new": ""
+        },
+        {
+          "key": "notifEmptyBody",
+          "en": "Trip activity and AI updates will show up here.",
+          "az": "Səyahət fəaliyyəti və AI yenilikləri burada görünəcək.",
+          "tr": "Gezi etkinliği ve AI güncellemeleri burada görünecek.",
+          "new": ""
+        },
+        {
+          "key": "notifEmptyTitle",
+          "en": "No notifications yet",
+          "az": "Hələ bildiriş yoxdur",
+          "tr": "Henüz bildirim yok",
+          "new": ""
+        },
+        {
+          "key": "notifGenericTitle",
+          "en": "Update",
+          "az": "Yenilik",
+          "tr": "Güncelleme",
+          "new": ""
+        },
+        {
+          "key": "notifMarkRead",
+          "en": "Mark all read",
+          "az": "Hamısını oxunmuş işarələ",
+          "tr": "Hepsini okundu işaretle",
+          "new": ""
+        },
+        {
+          "key": "notifMarkReadConfirm",
+          "en": "Mark read",
+          "az": "Oxunmuş işarələ",
+          "tr": "Okundu işaretle",
+          "new": ""
+        },
+        {
+          "key": "notifToday",
+          "en": "Today",
+          "az": "Bu gün",
+          "tr": "Bugün",
+          "new": ""
+        },
+        {
+          "key": "notifWelcomeBody",
+          "en": "Your account is ready. Plan your first trip and let Ventus handle the details.",
+          "az": "Hesabın hazırdır. İlk səyahətini planla, qalanını Ventus-a burax.",
+          "tr": "Hesabın hazır. İlk gezini planla, gerisini Ventus halletsin.",
+          "new": ""
+        },
+        {
+          "key": "notifWelcomeTitle",
+          "en": "Welcome to Ventus 👋",
+          "az": "Ventus-a xoş gəldin 👋",
+          "tr": "Ventus'a hoş geldin 👋",
+          "new": ""
+        },
+        {
+          "key": "notificationsTitle",
+          "en": "Notifications",
+          "az": "Bildirişlər",
+          "tr": "Bildirimler",
+          "new": ""
+        },
+        {
+          "key": "timeDaysAgo",
+          "en": "{count}d ago",
+          "az": "{count} gün əvvəl",
+          "tr": "{count} gün önce",
+          "new": "",
+          "note": "dəyişənlər: {count}"
+        },
+        {
+          "key": "timeHoursAgo",
+          "en": "{count}h ago",
+          "az": "{count} saat əvvəl",
+          "tr": "{count} sa önce",
+          "new": "",
+          "note": "dəyişənlər: {count}"
+        },
+        {
+          "key": "timeJustNow",
+          "en": "Just now",
+          "az": "İndicə",
+          "tr": "Az önce",
+          "new": ""
+        },
+        {
+          "key": "timeMinutesAgo",
+          "en": "{count}m ago",
+          "az": "{count} dəq əvvəl",
+          "tr": "{count} dk önce",
+          "new": "",
+          "note": "dəyişənlər: {count}"
+        },
+        {
+          "key": "timeYesterday",
+          "en": "Yesterday",
+          "az": "Dünən",
+          "tr": "Dün",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "46 · Profile",
+      "strings": [
+        {
+          "key": "collabNoTrips",
+          "en": "Create a trip first to invite people.",
+          "az": "Kimisə dəvət etmək üçün əvvəlcə səyahət yarat.",
+          "tr": "Birini davet etmek için önce bir gezi oluştur.",
+          "new": ""
+        },
+        {
+          "key": "collabPickTrip",
+          "en": "Choose a trip",
+          "az": "Səyahət seç",
+          "tr": "Bir gezi seç",
+          "new": ""
+        },
+        {
+          "key": "goVentusPro",
+          "en": "Go Ventus Pro",
+          "az": "Ventus Pro-ya keç",
+          "tr": "Ventus Pro'ya geç",
+          "new": ""
+        },
+        {
+          "key": "goVentusProSub",
+          "en": "Unlimited trips, offline maps & more",
+          "az": "Limitsiz səyahət, oflayn xəritələr və daha çox",
+          "tr": "Sınırsız gezi, çevrimdışı haritalar ve daha fazlası",
+          "new": ""
+        },
+        {
+          "key": "logOut",
+          "en": "Log out",
+          "az": "Çıxış",
+          "tr": "Çıkış yap",
+          "new": "",
+          "note": "həmçinin: 51 · Privacy & security"
+        },
+        {
+          "key": "menuCollaborators",
+          "en": "Collaborators",
+          "az": "Birgə planlayanlar",
+          "tr": "Birlikte planlayanlar",
+          "new": ""
+        },
+        {
+          "key": "menuCurrencyUnits",
+          "en": "Currency & units",
+          "az": "Valyuta və vahidlər",
+          "tr": "Para birimi ve birimler",
+          "new": "",
+          "note": "həmçinin: 49 · Currency & units"
+        },
+        {
+          "key": "menuPrivacySecurity",
+          "en": "Privacy & security",
+          "az": "Məxfilik və təhlükəsizlik",
+          "tr": "Gizlilik ve güvenlik",
+          "new": "",
+          "note": "həmçinin: 51 · Privacy & security"
+        },
+        {
+          "key": "menuSettings",
+          "en": "Settings",
+          "az": "Tənzimləmələr",
+          "tr": "Ayarlar",
+          "new": ""
+        },
+        {
+          "key": "notificationSettingsTitle",
+          "en": "Notification settings",
+          "az": "Bildiriş ayarları",
+          "tr": "Bildirim ayarları",
+          "new": "",
+          "note": "həmçinin: 50 · Notification settings"
+        },
+        {
+          "key": "profileEdit",
+          "en": "Edit",
+          "az": "Redaktə",
+          "tr": "Düzenle",
+          "new": ""
+        },
+        {
+          "key": "profileSectionAccount",
+          "en": "Account",
+          "az": "Hesab",
+          "tr": "Hesap",
+          "new": ""
+        },
+        {
+          "key": "profileSectionPreferences",
+          "en": "Preferences",
+          "az": "Tərcihlər",
+          "tr": "Tercihler",
+          "new": ""
+        },
+        {
+          "key": "signOut",
+          "en": "Sign out",
+          "az": "Çıxış",
+          "tr": "Çıkış yap",
+          "new": "",
+          "note": "həmçinin: 51 · Privacy & security"
+        },
+        {
+          "key": "signOutBody",
+          "en": "You can sign back in any time.",
+          "az": "İstədiyin vaxt yenidən daxil ola bilərsən.",
+          "tr": "İstediğin zaman tekrar giriş yapabilirsin.",
+          "new": "",
+          "note": "həmçinin: 51 · Privacy & security"
+        },
+        {
+          "key": "signOutTitle",
+          "en": "Sign out?",
+          "az": "Çıxış edilsin?",
+          "tr": "Çıkış yapılsın mı?",
+          "new": "",
+          "note": "həmçinin: 51 · Privacy & security"
+        },
+        {
+          "key": "statCities",
+          "en": "Cities",
+          "az": "Şəhər",
+          "tr": "Şehir",
+          "new": ""
+        },
+        {
+          "key": "statCountries",
+          "en": "Countries",
+          "az": "Ölkə",
+          "tr": "Ülke",
+          "new": ""
+        },
+        {
+          "key": "statTrips",
+          "en": "Trips",
+          "az": "Səyahət",
+          "tr": "Gezi",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "47 · Settings",
+      "strings": [
+        {
+          "key": "appearance",
+          "en": "Appearance",
+          "az": "Görünüş",
+          "tr": "Görünüm",
+          "new": ""
+        },
+        {
+          "key": "language",
+          "en": "Language",
+          "az": "Dil",
+          "tr": "Dil",
+          "new": ""
+        },
+        {
+          "key": "settingsTitle",
+          "en": "Settings",
+          "az": "Tənzimləmələr",
+          "tr": "Ayarlar",
+          "new": ""
+        },
+        {
+          "key": "systemDefault",
+          "en": "System default",
+          "az": "Sistem dili",
+          "tr": "Sistem dili",
+          "new": ""
+        },
+        {
+          "key": "themeDark",
+          "en": "Dark",
+          "az": "Qaranlıq",
+          "tr": "Koyu",
+          "new": ""
+        },
+        {
+          "key": "themeLight",
+          "en": "Light",
+          "az": "İşıqlı",
+          "tr": "Açık",
+          "new": ""
+        },
+        {
+          "key": "themeSystem",
+          "en": "System",
+          "az": "Sistem",
+          "tr": "Sistem",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "48 · Edit profile",
+      "strings": [
+        {
+          "key": "avatarRemove",
+          "en": "Remove photo",
+          "az": "Şəkli sil",
+          "tr": "Fotoğrafı kaldır",
+          "new": ""
+        },
+        {
+          "key": "changePhoto",
+          "en": "Change photo",
+          "az": "Şəkli dəyiş",
+          "tr": "Fotoğrafı değiştir",
+          "new": ""
+        },
+        {
+          "key": "editProfileTitle",
+          "en": "Edit profile",
+          "az": "Profili redaktə et",
+          "tr": "Profili düzenle",
+          "new": ""
+        },
+        {
+          "key": "emailReadonlyNote",
+          "en": "Email can't be changed here.",
+          "az": "E-poçt burada dəyişdirilə bilməz.",
+          "tr": "E-posta buradan değiştirilemez.",
+          "new": ""
+        },
+        {
+          "key": "nameRequired",
+          "en": "Enter your name",
+          "az": "Adını yaz",
+          "tr": "Adını yaz",
+          "new": ""
+        },
+        {
+          "key": "profileEditUnavailable",
+          "en": "Sign in to edit your profile.",
+          "az": "Profili redaktə etmək üçün daxil ol.",
+          "tr": "Profili düzenlemek için giriş yap.",
+          "new": ""
+        },
+        {
+          "key": "profileSaveFailed",
+          "en": "Couldn't save your profile. Try again.",
+          "az": "Profil saxlanmadı. Yenidən cəhd et.",
+          "tr": "Profil kaydedilemedi. Tekrar dene.",
+          "new": ""
+        },
+        {
+          "key": "profileSaved",
+          "en": "Profile updated",
+          "az": "Profil yeniləndi",
+          "tr": "Profil güncellendi",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "49 · Currency & units",
+      "strings": [
+        {
+          "key": "measurementSystem",
+          "en": "Measurement",
+          "az": "Ölçü sistemi",
+          "tr": "Ölçü sistemi",
+          "new": ""
+        },
+        {
+          "key": "unitImperial",
+          "en": "Imperial",
+          "az": "İmperial",
+          "tr": "Emperyal",
+          "new": ""
+        },
+        {
+          "key": "unitImperialDesc",
+          "en": "Miles, °F",
+          "az": "Mil, °F",
+          "tr": "Mil, °F",
+          "new": ""
+        },
+        {
+          "key": "unitMetric",
+          "en": "Metric",
+          "az": "Metrik",
+          "tr": "Metrik",
+          "new": ""
+        },
+        {
+          "key": "unitMetricDesc",
+          "en": "Kilometres, °C",
+          "az": "Kilometr, °C",
+          "tr": "Kilometre, °C",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "50 · Notification settings",
+      "strings": [
+        {
+          "key": "notifCheckInDeparture",
+          "en": "Check-in & departure",
+          "az": "Check-in və yola düşmə",
+          "tr": "Check-in ve kalkış",
+          "new": ""
+        },
+        {
+          "key": "notifChecklistReminders",
+          "en": "Checklist reminders",
+          "az": "Yoxlama siyahısı",
+          "tr": "Kontrol listesi",
+          "new": ""
+        },
+        {
+          "key": "notifChecklistRemindersSub",
+          "en": "Due-date nudges",
+          "az": "Son tarix xatırlatmaları",
+          "tr": "Son tarih hatırlatmaları",
+          "new": ""
+        },
+        {
+          "key": "notifCollaboratorChanges",
+          "en": "Collaborator changes",
+          "az": "Səyahətdə dəyişikliklər",
+          "tr": "Gezideki değişiklikler",
+          "new": ""
+        },
+        {
+          "key": "notifCollaboratorChangesSub",
+          "en": "When someone edits the trip",
+          "az": "Kimsə səyahəti dəyişəndə",
+          "tr": "Biri geziyi değiştirdiğinde",
+          "new": ""
+        },
+        {
+          "key": "notifDocumentExpiry",
+          "en": "Document expiry",
+          "az": "Sənədin müddəti",
+          "tr": "Belgenin süresi",
+          "new": ""
+        },
+        {
+          "key": "notifDocumentExpirySub",
+          "en": "Passport & visa checks",
+          "az": "Pasport və viza yoxlamaları",
+          "tr": "Pasaport ve vize kontrolleri",
+          "new": ""
+        },
+        {
+          "key": "notifItineraryUpdates",
+          "en": "Itinerary updates",
+          "az": "Gün planı yenilikləri",
+          "tr": "Gün planı güncellemeleri",
+          "new": ""
+        },
+        {
+          "key": "notifProductNews",
+          "en": "Product news & offers",
+          "az": "Məhsul xəbərləri və təkliflər",
+          "tr": "Ürün haberleri ve teklifler",
+          "new": ""
+        },
+        {
+          "key": "notifSectionTravelAlerts",
+          "en": "Travel alerts",
+          "az": "Səyahət xəbərdarlıqları",
+          "tr": "Seyahat uyarıları",
+          "new": ""
+        },
+        {
+          "key": "notifSectionTripActivity",
+          "en": "Trip activity",
+          "az": "Səyahət fəaliyyəti",
+          "tr": "Gezi etkinliği",
+          "new": ""
+        },
+        {
+          "key": "notifSectionVentus",
+          "en": "Ventus",
+          "az": "Ventus",
+          "tr": "Ventus",
+          "new": ""
+        },
+        {
+          "key": "notifTravelTips",
+          "en": "Travel tips",
+          "az": "Səyahət məsləhətləri",
+          "tr": "Seyahat ipuçları",
+          "new": ""
+        },
+        {
+          "key": "notifWeatherChanges",
+          "en": "Weather changes",
+          "az": "Hava dəyişiklikləri",
+          "tr": "Hava değişiklikleri",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "51 · Privacy & security",
+      "strings": [
+        {
+          "key": "accountDeleted",
+          "en": "Your account has been deleted",
+          "az": "Hesabın silindi",
+          "tr": "Hesabın silindi",
+          "new": ""
+        },
+        {
+          "key": "changePasswordTitle",
+          "en": "Change password",
+          "az": "Parolu dəyiş",
+          "tr": "Şifreyi değiştir",
+          "new": "",
+          "note": "həmçinin: 53 · Change password"
+        },
+        {
+          "key": "deleteAccountBody",
+          "en": "This permanently deletes your account and all your trips. This can't be undone.",
+          "az": "Bu, hesabını və bütün səyahətlərini həmişəlik silir. Geri qaytarmaq mümkün deyil.",
+          "tr": "Bu, hesabını ve tüm gezilerini kalıcı olarak siler. Geri alınamaz.",
+          "new": ""
+        },
+        {
+          "key": "deleteAccountTitle",
+          "en": "Delete account?",
+          "az": "Hesab silinsin?",
+          "tr": "Hesap silinsin mi?",
+          "new": ""
+        },
+        {
+          "key": "privacyChangePasswordSub",
+          "en": "Update your account password",
+          "az": "Hesab parolunu yenilə",
+          "tr": "Hesap şifreni güncelle",
+          "new": ""
+        },
+        {
+          "key": "privacyChangePin",
+          "en": "Change PIN",
+          "az": "PIN-i dəyiş",
+          "tr": "PIN'i değiştir",
+          "new": ""
+        },
+        {
+          "key": "privacyChangePinSub",
+          "en": "Quick-unlock PIN for this device",
+          "az": "Bu cihaz üçün sürətli kilid PIN-i",
+          "tr": "Bu cihaz için hızlı kilit PIN'i",
+          "new": ""
+        },
+        {
+          "key": "privacyDeleteAccount",
+          "en": "Delete account",
+          "az": "Hesabı sil",
+          "tr": "Hesabı sil",
+          "new": ""
+        },
+        {
+          "key": "privacyDeleteAccountSub",
+          "en": "Permanently remove your account and data",
+          "az": "Hesabını və məlumatlarını həmişəlik sil",
+          "tr": "Hesabını ve verilerini kalıcı olarak sil",
+          "new": ""
+        },
+        {
+          "key": "privacySectionAccount",
+          "en": "Account",
+          "az": "Hesab",
+          "tr": "Hesap",
+          "new": ""
+        },
+        {
+          "key": "privacySectionAppLock",
+          "en": "App lock",
+          "az": "Tətbiq kilidi",
+          "tr": "Uygulama kilidi",
+          "new": ""
+        },
+        {
+          "key": "privacySectionDanger",
+          "en": "Danger zone",
+          "az": "Hesabın silinməsi",
+          "tr": "Hesabı silme",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "52 · Change PIN",
+      "strings": [
+        {
+          "key": "changePinConfirmBody",
+          "en": "Type your new PIN again to confirm.",
+          "az": "Təsdiq üçün yeni PIN-i bir də yaz.",
+          "tr": "Onaylamak için yeni PIN'i bir daha yaz.",
+          "new": ""
+        },
+        {
+          "key": "changePinConfirmTitle",
+          "en": "Re-enter new PIN",
+          "az": "Yeni PIN-i təkrarla",
+          "tr": "Yeni PIN'i tekrar gir",
+          "new": ""
+        },
+        {
+          "key": "changePinMismatch",
+          "en": "PINs didn't match. Start again.",
+          "az": "PIN-lər uyğun gəlmədi. Yenidən başla.",
+          "tr": "PIN'ler eşleşmedi. Baştan başla.",
+          "new": ""
+        },
+        {
+          "key": "changePinNewBody",
+          "en": "Pick a 4-digit PIN you'll remember.",
+          "az": "Yadda saxlayacağın 4 rəqəmli PIN seç.",
+          "tr": "Hatırlayacağın 4 haneli bir PIN seç.",
+          "new": ""
+        },
+        {
+          "key": "changePinNewTitle",
+          "en": "Choose a new PIN",
+          "az": "Yeni PIN seç",
+          "tr": "Yeni PIN seç",
+          "new": ""
+        },
+        {
+          "key": "changePinTitle",
+          "en": "Change PIN",
+          "az": "PIN-i dəyiş",
+          "tr": "PIN'i değiştir",
+          "new": ""
+        },
+        {
+          "key": "changePinVerifyBody",
+          "en": "Confirm it's you before changing your PIN.",
+          "az": "Dəyişməzdən əvvəl sənin olduğunu yoxlayaq.",
+          "tr": "Değiştirmeden önce senin olduğunu doğrulayalım.",
+          "new": ""
+        },
+        {
+          "key": "changePinVerifyTitle",
+          "en": "Enter current PIN",
+          "az": "Cari PIN-i yaz",
+          "tr": "Mevcut PIN'i yaz",
+          "new": ""
+        },
+        {
+          "key": "changePinWrong",
+          "en": "Incorrect PIN. Try again.",
+          "az": "PIN yanlışdır. Yenidən cəhd et.",
+          "tr": "PIN yanlış. Tekrar dene.",
+          "new": ""
+        },
+        {
+          "key": "pinChanged",
+          "en": "PIN updated",
+          "az": "PIN yeniləndi",
+          "tr": "PIN güncellendi",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "53 · Change password",
+      "strings": [
+        {
+          "key": "changePasswordAction",
+          "en": "Update password",
+          "az": "Parolu yenilə",
+          "tr": "Şifreyi güncelle",
+          "new": ""
+        },
+        {
+          "key": "currentPasswordIncorrect",
+          "en": "Current password is incorrect.",
+          "az": "Cari parol yanlışdır.",
+          "tr": "Mevcut şifre yanlış.",
+          "new": ""
+        },
+        {
+          "key": "currentPasswordLabel",
+          "en": "Current password",
+          "az": "Cari parol",
+          "tr": "Mevcut şifre",
+          "new": ""
+        },
+        {
+          "key": "passwordChanged",
+          "en": "Password updated",
+          "az": "Parol yeniləndi",
+          "tr": "Şifre güncellendi",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "54 · Ventus Pro",
+      "strings": [
+        {
+          "key": "proBilledMonthly",
+          "en": "billed monthly",
+          "az": "aylıq ödəniş",
+          "tr": "aylık faturalandırılır",
+          "new": ""
+        },
+        {
+          "key": "proBillingMonthly",
+          "en": "Monthly",
+          "az": "Aylıq",
+          "tr": "Aylık",
+          "new": ""
+        },
+        {
+          "key": "proBillingYearly",
+          "en": "Yearly",
+          "az": "İllik",
+          "tr": "Yıllık",
+          "new": ""
+        },
+        {
+          "key": "proColFeature",
+          "en": "Feature",
+          "az": "Funksiya",
+          "tr": "Özellik",
+          "new": ""
+        },
+        {
+          "key": "proColFree",
+          "en": "Free",
+          "az": "Pulsuz",
+          "tr": "Ücretsiz",
+          "new": ""
+        },
+        {
+          "key": "proColPro",
+          "en": "Pro",
+          "az": "Pro",
+          "tr": "Pro",
+          "new": ""
+        },
+        {
+          "key": "proComingSoon",
+          "en": "We're still building Ventus Pro. We'll let you know when it's ready.",
+          "az": "Ventus Pro üzərində işləyirik. Hazır olan kimi xəbər verəcəyik.",
+          "tr": "Ventus Pro'yu hâlâ geliştiriyoruz. Hazır olduğunda haber vereceğiz.",
+          "new": ""
+        },
+        {
+          "key": "proCtaTrial",
+          "en": "Start 7-day free trial",
+          "az": "7 günlük pulsuz sınağı başlat",
+          "tr": "7 günlük ücretsiz denemeyi başlat",
+          "new": ""
+        },
+        {
+          "key": "proFreeAiPlansPerMonth",
+          "en": "5/mo",
+          "az": "5/ay",
+          "tr": "5/ay",
+          "new": ""
+        },
+        {
+          "key": "proPerMonth",
+          "en": "/mo",
+          "az": "/ay",
+          "tr": "/ay",
+          "new": ""
+        },
+        {
+          "key": "proPerYear",
+          "en": "/yr",
+          "az": "/il",
+          "tr": "/yıl",
+          "new": ""
+        },
+        {
+          "key": "proRowAiPlans",
+          "en": "AI day plans",
+          "az": "AI gün planları",
+          "tr": "AI gün planları",
+          "new": ""
+        },
+        {
+          "key": "proRowCollaborators",
+          "en": "Collaborators",
+          "az": "Birgə planlayanlar",
+          "tr": "Birlikte planlayanlar",
+          "new": ""
+        },
+        {
+          "key": "proRowOfflineMaps",
+          "en": "Offline maps",
+          "az": "Oflayn xəritələr",
+          "tr": "Çevrimdışı haritalar",
+          "new": ""
+        },
+        {
+          "key": "proRowTrips",
+          "en": "Active trips",
+          "az": "Aktiv səyahətlər",
+          "tr": "Aktif geziler",
+          "new": ""
+        },
+        {
+          "key": "proRowVault",
+          "en": "Document vault",
+          "az": "Sənəd seyfi",
+          "tr": "Belge kasası",
+          "new": ""
+        },
+        {
+          "key": "proSave",
+          "en": "Save 30%",
+          "az": "30% qənaət",
+          "tr": "%30 tasarruf",
+          "new": ""
+        },
+        {
+          "key": "proTagline",
+          "en": "Plan without limits.",
+          "az": "Limitsiz planla.",
+          "tr": "Sınırsız planla.",
+          "new": ""
+        },
+        {
+          "key": "proThenMonthly",
+          "en": "Then $4.99/mo · cancel anytime",
+          "az": "Sonra $4.99/ay · istənilən vaxt ləğv et",
+          "tr": "Sonra $4.99/ay · istediğin zaman iptal et",
+          "new": ""
+        },
+        {
+          "key": "proThenYearly",
+          "en": "Then $41.99/yr · cancel anytime",
+          "az": "Sonra $41.99/il · istənilən vaxt ləğv et",
+          "tr": "Sonra $41.99/yıl · istediğin zaman iptal et",
+          "new": ""
+        },
+        {
+          "key": "proTitle",
+          "en": "Ventus Pro",
+          "az": "Ventus Pro",
+          "tr": "Ventus Pro",
+          "new": ""
+        },
+        {
+          "key": "proYearlyEquiv",
+          "en": "≈ $3.50/mo",
+          "az": "≈ $3.50/ay",
+          "tr": "≈ $3.50/ay",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "screen": "55 · Not currently shown (leftover keys)",
+      "strings": [
+        {
+          "key": "agreeTerms",
+          "en": "I agree to the Terms & Privacy Policy",
+          "az": "Şərtlər və Məxfilik Siyasəti ilə razıyam",
+          "tr": "Şartları ve Gizlilik Politikasını kabul ediyorum",
+          "new": ""
+        },
+        {
+          "key": "appName",
+          "en": "Ventus",
+          "az": "Ventus",
+          "tr": "Ventus",
+          "new": ""
+        },
+        {
+          "key": "comingSoon",
+          "en": "Coming soon",
+          "az": "Tezliklə",
+          "tr": "Yakında",
+          "new": ""
+        },
+        {
+          "key": "currencyAllLabel",
+          "en": "All currencies",
+          "az": "Bütün valyutalar",
+          "tr": "Tüm para birimleri",
+          "new": ""
+        },
+        {
+          "key": "currencyUpdated",
+          "en": "Updated {date}",
+          "az": "Yeniləndi {date}",
+          "tr": "Güncellendi {date}",
+          "new": "",
+          "note": "dəyişənlər: {date}"
+        },
+        {
+          "key": "deleteExpense",
+          "en": "Delete expense",
+          "az": "Xərci sil",
+          "tr": "Harcamayı sil",
+          "new": ""
+        },
+        {
+          "key": "deleteExpenseTitle",
+          "en": "Delete this expense?",
+          "az": "Bu xərc silinsin?",
+          "tr": "Bu harcama silinsin mi?",
+          "new": ""
+        },
+        {
+          "key": "emptyHomeBody",
+          "en": "Start a trip and Ventus builds the plan, budget and checklist — all in one place.",
+          "az": "Səyahətini başlat — plan, büdcə və yoxlama siyahısı bir yerdə qurulsun.",
+          "tr": "Bir gezi başlat — plan, bütçe ve kontrol listesi tek yerde kurulsun.",
+          "new": ""
+        },
+        {
+          "key": "menuNotifications",
+          "en": "Notifications",
+          "az": "Bildirişlər",
+          "tr": "Bildirimler",
+          "new": ""
+        },
+        {
+          "key": "menuSavedPlaces",
+          "en": "Saved places",
+          "az": "Saxlanan yerlər",
+          "tr": "Kayıtlı yerler",
+          "new": ""
+        },
+        {
+          "key": "notifNewCount",
+          "en": "{count} new",
+          "az": "{count} yeni",
+          "tr": "{count} yeni",
+          "new": "",
+          "note": "dəyişənlər: {count}"
+        },
+        {
+          "key": "planWithAiSubtitle",
+          "en": "Tell me where you’re going next",
+          "az": "Növbəti dəfə hara gedirsən?",
+          "tr": "Sıradaki gezin nereye?",
+          "new": ""
+        },
+        {
+          "key": "popularDestinations",
+          "en": "Popular destinations",
+          "az": "Populyar istiqamətlər",
+          "tr": "Popüler destinasyonlar",
+          "new": ""
+        },
+        {
+          "key": "recent",
+          "en": "Recent",
+          "az": "Son",
+          "tr": "Son",
+          "new": ""
+        },
+        {
+          "key": "renameChecklistItem",
+          "en": "Rename item",
+          "az": "Adını dəyiş",
+          "tr": "Adını değiştir",
+          "new": ""
+        },
+        {
+          "key": "resetSent",
+          "en": "Reset link sent. Check your inbox.",
+          "az": "Sıfırlama linki göndərildi. Poçtunu yoxla.",
+          "tr": "Sıfırlama bağlantısı gönderildi. Gelen kutunu kontrol et.",
+          "new": ""
+        },
+        {
+          "key": "setBudget",
+          "en": "Set a budget",
+          "az": "Büdcə təyin et",
+          "tr": "Bütçe belirle",
+          "new": ""
+        },
+        {
+          "key": "statKmFlown",
+          "en": "km flown",
+          "az": "km uçuş",
+          "tr": "km uçuş",
+          "new": ""
+        },
+        {
+          "key": "tipExampleBill",
+          "en": "Bill {glyph}0 · 0%",
+          "az": "Hesab {glyph}0 · 0%",
+          "tr": "Hesap {glyph}0 · 0%",
+          "new": "",
+          "note": "dəyişənlər: {glyph}"
+        },
+        {
+          "key": "toolsSectionMoney",
+          "en": "Money",
+          "az": "Pul",
+          "tr": "Para",
+          "new": ""
+        },
+        {
+          "key": "toolsSectionWeather",
+          "en": "Weather & time",
+          "az": "Hava və saat",
+          "tr": "Hava ve saat",
+          "new": ""
+        },
+        {
+          "key": "toolsSubtitle",
+          "en": "Handy on the road · works offline",
+          "az": "Yolda lazım olanlar · oflayn işləyir",
+          "tr": "Yolda pratik · çevrimdışı çalışır",
+          "new": ""
+        },
+        {
+          "key": "ventusUnderstood",
+          "en": "Ventus understood",
+          "az": "Ventus anladı",
+          "tr": "Ventus anladı",
+          "new": ""
+        },
+        {
+          "key": "welcomeToVentus",
+          "en": "Welcome to Ventus",
+          "az": "Ventus-a xoş gəldin",
+          "tr": "Ventus'a hoş geldin",
+          "new": ""
+        },
+        {
+          "key": "whereToFirst",
+          "en": "Where to first?",
+          "az": "Əvvəlcə hara?",
+          "tr": "Önce nereye?",
+          "new": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,957 @@
+{
+  "@@locale": "az",
+  "appName": "Ventus",
+  "welcomeBack": "Xoş gəldin",
+  "welcomeToVentus": "Ventus-a xoş gəldin",
+  "greeting": "Salam, {name}",
+  "yourTrips": "Səyahətlərin",
+  "seeAll": "Hamısına bax",
+  "allTrips": "Bütün səyahətlər",
+  "tripsUpcoming": "Qarşıdan gələn",
+  "tripsPast": "Keçmiş",
+  "allTripsEmptyBody": "Planladığın və keçmiş səyahətlərin burada görünəcək.",
+  "sharedViaVentus": "Ventus ilə planlandı ✈️",
+  "discover": "Kəşf et",
+  "sponsored": "Reklam",
+  "planWithAi": "AI ilə planla",
+  "planWithAiSubtitle": "Növbəti dəfə hara gedirsən?",
+  "whereToFirst": "Əvvəlcə hara?",
+  "emptyHomeBody": "Planı özün yaz, ya da bir cümlə de — qalanını Ventus etsin.",
+  "planNewTrip": "Yeni səyahət",
+  "tripDaysToGo": "{count, plural, one{{count} gün qalıb} other{{count} gün qalıb}}",
+  "tripToday": "Bu gün",
+  "tripInProgress": "Davam edir",
+  "percentPlanned": "{percent}% planlanıb",
+  "tripStartPlanning": "Planlamağa başla",
+  "couldNotLoadTrips": "Səyahətlərin yüklənmədi.",
+  "tryAgain": "Yenidən cəhd et",
+  "signOutTitle": "Çıxış edilsin?",
+  "signOutBody": "İstədiyin vaxt yenidən daxil ola bilərsən.",
+  "cancel": "Ləğv et",
+  "back": "Geri",
+  "setPasswordTitle": "Parol təyin et",
+  "setPasswordAction": "Parolu təyin et",
+  "setPasswordNote": "Google ilə daxil olmusan, ona görə hesabında hələ parol yoxdur. Parol təyin etsən, e-poçtunla da giriş edə biləcəksən.",
+  "passwordSet": "Parol təyin edildi.",
+  "dismiss": "Bağla",
+  "showPassword": "Parolu göstər",
+  "hidePassword": "Parolu gizlət",
+  "notificationsTitleShort": "Bildirişlər",
+  "offlineBanner": "Oflaynsan — dəyişikliklər qayıdanda sinxronlaşacaq.",
+  "edit": "Redaktə",
+  "clear": "Təmizlə",
+  "savedAdd": "Yadda saxla",
+  "savedRemove": "Seçilmişlərdən çıxar",
+  "signOut": "Çıxış",
+  "comingSoon": "Tezliklə",
+  "somethingWentWrong": "Nəsə alınmadı. Yenidən cəhd et.",
+  "navHome": "Ana səhifə",
+  "navTrips": "Səyahətlər",
+  "navSaved": "Saxlanılanlar",
+  "navTools": "Alətlər",
+  "navProfile": "Profil",
+  "homeTripSoon": "Səyahət yaxınlaşır",
+  "homeTripToday": "Bu gün yola çıxırsan",
+  "homeTripOngoing": "Səyahət davam edir",
+  "homeWhereTo": "Hara gedirik?",
+  "homeSearchHint": "Şəhər, ölkə və ya yer",
+  "createSheetTitle": "Yeni səyahət",
+  "createSheetSubtitle": "Necə başlamaq istəyirsən?",
+  "createAiBadge": "SÜRƏTLİ",
+  "createAiBody": "\"Oktyabrda 4 gün Romaya, muzeylər və yemək\" yaz — plan hazır olsun.",
+  "createManualBody": "İstiqamət, tarixlər və həmsəyahətçiləri özün seç.",
+  "sheetClose": "Bağla",
+  "tripPickerTitle": "Səyahətlərim",
+  "addNewTripShort": "Yeni",
+  "emptyHomeTitle": "Növbəti səyahətini planla",
+  "toolsSubtitle": "Yolda lazım olanlar · oflayn işləyir",
+  "toolCurrency": "Valyuta çeviricisi",
+  "toolWeather": "Hava",
+  "toolWorldClock": "Saat qurşağı",
+  "toolTip": "Bəxşiş kalkulyatoru",
+  "toolsSectionWeather": "Hava və saat",
+  "toolsSectionMoney": "Pul",
+  "toolsOffline": "Yüklənmədi. Bağlantını yoxla.",
+  "clockHome": "Ev vaxtı",
+  "clockBehindHome": "Ev vaxtından {hours} saat geri",
+  "@clockBehindHome": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      }
+    }
+  },
+  "clockAheadOfHome": "Ev vaxtından {hours} saat irəli",
+  "@clockAheadOfHome": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      }
+    }
+  },
+  "clockSameAsHome": "Ev vaxtı ilə eyni",
+  "clockSameShort": "Eyni",
+  "clockYesterday": "Dünən",
+  "clockHourShort": "s",
+  "clockCityRemoved": "Şəhər silindi",
+  "currencyUpdated": "Yeniləndi {date}",
+  "@currencyUpdated": {
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "curUSD": "ABŞ dolları",
+  "curEUR": "Avro",
+  "curGBP": "Britaniya funtu",
+  "curTRY": "Türk lirəsi",
+  "curAZN": "Azərbaycan manatı",
+  "curAED": "BƏƏ dirhəmi",
+  "curGEL": "Gürcü larisi",
+  "toolsActiveTripBanner": "Aktiv səyahət: {trip}",
+  "@toolsActiveTripBanner": {
+    "placeholders": {
+      "trip": {}
+    }
+  },
+  "toolsCurrencyHint": "1 {fromGlyph} = {rate} {toGlyph} · {when}",
+  "@toolsCurrencyHint": {
+    "placeholders": {
+      "fromGlyph": {},
+      "rate": {},
+      "toGlyph": {},
+      "when": {}
+    }
+  },
+  "toolsRateToday": "bu gün",
+  "toolsTimezoneHint": "{away} · {hours} saat fərq",
+  "@toolsTimezoneHint": {
+    "placeholders": {
+      "hours": {},
+      "away": {}
+    }
+  },
+  "toolsTimezoneEmptyHint": "Şəhər əlavə et, fərqi gör",
+  "toolsWeatherHint": "{temp}° · {city}",
+  "@toolsWeatherHint": {
+    "placeholders": {
+      "temp": {},
+      "city": {}
+    }
+  },
+  "currencyAmountLabel": "Çevirdiyin məbləğ",
+  "currencyConvertedLabel": "Çevrilmiş məbləğ",
+  "currencyRateLine": "1 {from} = {rate} {to}",
+  "@currencyRateLine": {
+    "placeholders": {
+      "from": {},
+      "rate": {},
+      "to": {}
+    }
+  },
+  "currencyRateSourceMarket": "Bazar kursu · {date}",
+  "@currencyRateSourceMarket": {
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "currencyRateSource": "Mərkəzi Bankın rəsmi kursu · {date}",
+  "@currencyRateSource": {
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "quickAmountsLabel": "Tez məbləğlər",
+  "addToBudgetAsExpense": "Büdcəyə xərc kimi əlavə et",
+  "expenseAdded": "Səyahət büdcəsinə əlavə olundu.",
+  "currencyPickerTitle": "Valyuta seç",
+  "currencySearchHint": "Valyuta və ya ölkə axtar",
+  "currencyAllLabel": "Bütün valyutalar",
+  "currencyHomeCurrency": "Əsas valyuta",
+  "currencyTripCurrency": "Aktiv səyahət valyutası",
+  "timezoneTripTag": "aktiv səyahət",
+  "tipOtherPercent": "Digər",
+  "tipCustomPercentHint": "Faiz",
+  "weatherToday": "Bu gün",
+  "weatherNextDays": "Növbəti 5 gün",
+  "weatherNow": "İndi",
+  "weatherTomorrow": "Sabah",
+  "weatherFeelsLike": "Hiss olunan",
+  "weatherWind": "Külək",
+  "weatherHumidity": "Rütubət",
+  "weatherRainChance": "Yağış ehtimalı",
+  "weatherSunrise": "Gün çıxır",
+  "weatherSunset": "Gün batır",
+  "weatherWindKmh": "{value} km/s",
+  "@weatherWindKmh": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "weatherWindMph": "{value} mph",
+  "@weatherWindMph": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "wxClear": "Aydın",
+  "wxPartly": "Az buludlu",
+  "wxCloudy": "Buludlu",
+  "wxFog": "Dumanlı",
+  "wxDrizzle": "Çiskin",
+  "wxRain": "Yağışlı",
+  "wxSnow": "Qarlı",
+  "wxStorm": "Ildırımlı leysan",
+  "tipSubtitle": "Sürətli bəxşiş · oflayn",
+  "tipTotal": "Cəmi",
+  "tipAmount": "Bəxşiş",
+  "tipPerPerson": "Adambaşı",
+  "tipBillLabel": "Hesab məbləği",
+  "tipPercentLabel": "Bəxşiş",
+  "tipSplitLabel": "Neçə nəfər",
+  "tipExampleBill": "Hesab {glyph}0 · 0%",
+  "tipPeopleCount": "{count, plural, one{{count} nəfər} other{{count} nəfər}}",
+  "@tipPeopleCount": {
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "searchCity": "Şəhər axtar",
+  "searchCityHint": "Şəhər adı yaz…",
+  "noCitiesFound": "Şəhər tapılmadı.",
+  "exploreTitle": "Kəşf et",
+  "exploreSubtitle": "İlham verən yerlər",
+  "exploreAsk": "Ventus-dan soruş",
+  "exploreEmpty": "Hələ kəşf ediləcək bir şey yoxdur.",
+  "exploreSearchHint": "Şəhər və ya ölkə axtar",
+  "exploreNoMatches": "\"{query}\" üzrə heç nə tapılmadı.",
+  "@exploreNoMatches": {
+    "placeholders": {
+      "query": {}
+    }
+  },
+  "exploreCuratedSection": "Ventus-da",
+  "exploreOtherPlacesSection": "Digər yerlər",
+  "exploreSearching": "Axtarılır…",
+  "exploreStartTripHere": "Buraya səyahət planla",
+  "savedTitleShort": "Seçilmişlər",
+  "planTripHere": "Buraya səyahət planla",
+  "factCurrency": "Valyuta",
+  "factLanguage": "Dil",
+  "factBestTime": "İdeal vaxt",
+  "factTimezone": "Saat qurşağı",
+  "destGoodToKnow": "Bilməyə dəyər",
+  "destAskPlan": "Ventus-la planla",
+  "readMore": "Daha çox",
+  "readLess": "Daha az",
+  "savedEmptyTitle": "Hələ saxlanan yer yoxdur",
+  "savedEmptyBody": "Kəşf et-də bəyəndiyin yerlərə ürək bas.",
+  "welcomeTagline": "AI SƏYAHƏT BƏLƏDÇİN",
+  "welcomeHeadline": "Hər səyahət,\ngözəl planlanmış.",
+  "welcomeSubtitle": "Marşrut, büdcə, sənədlər və biletlər — hamısı bir sakit yerdə.",
+  "getStarted": "Başlayaq",
+  "haveAccount": "Artıq hesabım var",
+  "signInSubtitle": "Səyahətinə davam etmək üçün daxil ol.",
+  "emailLabel": "E-poçt",
+  "emailHint": "name@example.com",
+  "passwordLabel": "Parol",
+  "rememberMe": "Məni xatırla",
+  "forgot": "Unutdun?",
+  "signInAction": "Daxil ol",
+  "orDivider": "və ya",
+  "newToVentus": "Ventus-da yenisən?",
+  "createAccountAction": "Hesab yarat",
+  "providerComingSoon": "{provider} ilə giriş tezliklə.",
+  "createAccountTitle": "Hesab yarat",
+  "createAccountSubtitle": "Ventus-a qoşul və növbəti səyahətini planla.",
+  "fullNameLabel": "Ad və soyad",
+  "fullNameHint": "Adın və soyadın",
+  "passwordHintMin": "Ən azı 8 simvol",
+  "agreeTerms": "Şərtlər və Məxfilik Siyasəti ilə razıyam",
+  "agreeTermsRich": "[terms] və [privacy] ilə razıyam.",
+  "termsLinkLabel": "İstifadə Şərtləri",
+  "privacyLinkLabel": "Məxfilik Siyasəti",
+  "acceptTermsError": "Davam etmək üçün Şərtləri və Məxfilik Siyasətini qəbul et.",
+  "alreadyHaveAccount": "Artıq hesabın var?",
+  "resetPasswordTitle": "Parolu sıfırla",
+  "forgotTitle": "Parolunu unutmusan?",
+  "forgotBody": "Hesabına bağlı e-poçtu yaz, sıfırlama linki göndərək.",
+  "sendResetLink": "Sıfırlama linki göndər",
+  "resetSent": "Sıfırlama linki göndərildi. Poçtunu yoxla.",
+  "rememberedIt": "Xatırladın?",
+  "backToSignIn": "Girişə qayıt",
+  "verifyEmailTitle": "E-poçtunu təsdiqlə",
+  "verifyEmailBody": "{email} ünvanına təsdiq linki göndərdik. Hesabını təsdiqləmək üçün linkə toxun, sonra geri qayıdıb daxil ol.",
+  "@verifyEmailBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "verifyEmailSpamNote": "Gəlmədi? Spam qovluğuna bax və ya yenidən göndər.",
+  "verifyEmailResend": "Linki yenidən göndər",
+  "verifyEmailResent": "Təsdiq e-poçtu göndərildi. Gələnlər qutusunu yoxla.",
+  "verifyEmailSignIn": "Girişə keç",
+  "resetCodeTitle": "Yeni parol təyin et",
+  "resetCodeBody": "{email} ünvanına 6 rəqəmli kod göndərdik. Onu aşağıya yaz və yeni parol seç.",
+  "@resetCodeBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "resetCodeLabel": "Bərpa kodu",
+  "resetCodeHint": "123456",
+  "resetSubmit": "Parolu sıfırla",
+  "resetSuccess": "Parol yeniləndi. Hər şey hazırdır.",
+  "resetResend": "Kodu yenidən göndər",
+  "resetResent": "Yeni kod yola düşdü.",
+  "authInvalidOtp": "Kod yanlışdır və ya vaxtı keçib.",
+  "authRateLimited": "Çox sayda cəhd oldu. Bir az sonra yenidən yoxla.",
+  "legalUpdated": "Son yeniləmə: İyun 2026",
+  "legalContact": "Bu şərtlər və ya datan barədə sualın var? Bizimlə əlaqə saxla: support@ventus.app.",
+  "legalTermsTitle": "İstifadə Şərtləri",
+  "legalTermsIntro": "Ventus-a xoş gəldin. Hesab yaradıb tətbiqdən istifadə etməklə bu Şərtləri qəbul edirsən. Razı deyilsənsə, Ventus-dan istifadə etmə.",
+  "legalTermsS1Title": "Ventus-dan istifadə",
+  "legalTermsS1Body": "Ventus səyahətlərini planlamağa və təşkil etməyə kömək edir. Yalnız qanuni, şəxsi məqsədlər üçün istifadə et; xidməti sui-istifadə etmə, kopyalama və ya pozmağa cəhd etmə. AI ilə yaradılan planlar və təkliflər yalnız istiqamətləndirmə üçündür — vaxtları, qiymətləri, vizaları və rezervasiyaları həmişə özün yoxla.",
+  "legalTermsS2Title": "Hesabın",
+  "legalTermsS2Body": "E-poçtunu, parolunu və PIN-ini təhlükəsiz saxlamaq, eləcə də hesabındakı bütün fəaliyyət sənin məsuliyyətindədir. İcazəsiz istifadə görsən, dərhal bizə bildir.",
+  "legalTermsS3Title": "Məzmunun",
+  "legalTermsS3Body": "Əlavə etdiyin səyahətlər, qeydlər, fayllar və digər məzmun səninkidir. Bu məzmunu yalnız tətbiqin funksiyalarını sənə çatdırmaq üçün saxlamaq, sinxronlaşdırmaq və emal etmək məqsədilə Ventus-a icazə verirsən.",
+  "legalTermsS4Title": "Xidmət və məsuliyyət",
+  "legalTermsS4Body": "Ventus “olduğu kimi”, zəmanətsiz təqdim olunur. Funksiyaları əlavə edə, dəyişə və ya silə bilərik; üçüncü tərəf datasından (xəritə, hava, AI) və ya xidmət fasilələrindən yaranan itkilərə görə məsuliyyət daşımırıq.",
+  "legalPrivacyTitle": "Məxfilik Siyasəti",
+  "legalPrivacyIntro": "Bu siyasət Ventus-un hansı məlumatı topladığını, necə istifadə etdiyini və sənin seçimlərini izah edir.",
+  "legalPrivacyS1Title": "Nə toplayırıq",
+  "legalPrivacyS1Body": "Hesab məlumatların (adın və e-poçtun) və yaratdığın səyahət datası — istiqamətlər, gün planları, yoxlama siyahıları, büdcələr, sənədlər və saxlanmış yerlər. PIN-in yalnız cihazında saxlanılır və heç vaxt serverlərimizə göndərilmir.",
+  "legalPrivacyS2Title": "Necə istifadə edirik",
+  "legalPrivacyS2Body": "Hesabını işlətmək, səyahətlərini cihazlar arasında sinxronlaşdırmaq və AI planlama kimi funksiyalar üçün. Plan yaratdığında lazım olan səyahət təfərrüatları onu hazırlamaq üçün AI provayderimizə (Google Gemini) göndərilir. Datanı heç vaxt satmırıq.",
+  "legalPrivacyS3Title": "Saxlama və təhlükəsizlik",
+  "legalPrivacyS3Body": "Datan backend provayderimizdə (Supabase) təhlükəsiz saxlanılır və ötürülmə zamanı şifrələnir. Xəritə, hava və valyuta funksiyaları üçüncü tərəf xidmətlərinə yalnız sorğunu cavablandırmaq üçün lazım olan datanı göndərir.",
+  "legalPrivacyS4Title": "Hüquqların",
+  "legalPrivacyS4Body": "İstənilən vaxt Tənzimləmələrdən profilini görə və redaktə edə, parolunu və ya PIN-ini dəyişə, hesabının və datanın silinməsini tələb edə bilərsən.",
+  "createPinTitle": "PIN yarat",
+  "createPinBody": "Növbəti dəfə tez və təhlükəsiz girmək üçün 4 rəqəmli kod seç.",
+  "enterPinToUnlock": "Kilidi açmaq üçün PIN-i yaz",
+  "usePasswordInstead": "Parolla daxil ol",
+  "incorrectPin": "PIN yanlışdır.",
+  "errEmailRequired": "E-poçtunu yaz",
+  "errEmailInvalid": "Düzgün e-poçt ünvanı yaz",
+  "errPasswordRequired": "Parolunu yaz",
+  "errPasswordTooShort": "Ən azı 8 simvol",
+  "errNameRequired": "Adını yaz",
+  "authInvalidCredentials": "E-poçt və ya parol yanlışdır.",
+  "authEmailExists": "Bu e-poçtla artıq hesab var. Daxil ol.",
+  "authEmailNotConfirmed": "E-poçtunu təsdiqləmək üçün gələnlər qutusunu yoxla, sonra daxil ol.",
+  "profileEdit": "Redaktə",
+  "editProfileTitle": "Profili redaktə et",
+  "changePhoto": "Şəkli dəyiş",
+  "avatarTakePhoto": "Şəkil çək",
+  "avatarChooseLibrary": "Qalereyadan seç",
+  "avatarRemove": "Şəkli sil",
+  "emailReadonlyNote": "E-poçt burada dəyişdirilə bilməz.",
+  "nameRequired": "Adını yaz",
+  "profileSaved": "Profil yeniləndi",
+  "profileSaveFailed": "Profil saxlanmadı. Yenidən cəhd et.",
+  "profileEditUnavailable": "Profili redaktə etmək üçün daxil ol.",
+  "measurementSystem": "Ölçü sistemi",
+  "unitMetric": "Metrik",
+  "unitMetricDesc": "Kilometr, °C",
+  "unitImperial": "İmperial",
+  "unitImperialDesc": "Mil, °F",
+  "notificationSettingsTitle": "Bildiriş ayarları",
+  "notifSectionTripActivity": "Səyahət fəaliyyəti",
+  "notifSectionTravelAlerts": "Səyahət xəbərdarlıqları",
+  "notifSectionVentus": "Ventus",
+  "notifCollaboratorChanges": "Səyahətdə dəyişikliklər",
+  "notifCollaboratorChangesSub": "Kimsə səyahəti dəyişəndə",
+  "notifItineraryUpdates": "Gün planı yenilikləri",
+  "notifChecklistReminders": "Yoxlama siyahısı",
+  "notifChecklistRemindersSub": "Son tarix xatırlatmaları",
+  "notifWeatherChanges": "Hava dəyişiklikləri",
+  "notifDocumentExpiry": "Sənədin müddəti",
+  "notifDocumentExpirySub": "Pasport və viza yoxlamaları",
+  "notifCheckInDeparture": "Check-in və yola düşmə",
+  "notifTravelTips": "Səyahət məsləhətləri",
+  "notifProductNews": "Məhsul xəbərləri və təkliflər",
+  "collaboratorsTitle": "Birgə planlayanlar",
+  "collaboratorsManageSub": "Birlikdə planlamaq üçün dəvət et",
+  "collabPeopleCount": "{count, plural, =1{1 nəfər} other{{count} nəfər}}",
+  "@collabPeopleCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "collabPending": "Gözləyir",
+  "collabRemoved": "Siyahıdan çıxarıldı",
+  "collabAnyoneWithLink": "Linki olan hər kəs",
+  "collabCopy": "Kopyala",
+  "collabLinkCopied": "Dəvət linki kopyalandı",
+  "collabYou": "Sən",
+  "roleOwner": "Sahib",
+  "roleEditor": "Redaktor",
+  "roleViewer": "İzləyici",
+  "roleEditorDesc": "Gün planı, büdcə və sənədləri əlavə edib dəyişə bilər",
+  "roleViewerDesc": "Səyahəti görə bilər, dəyişiklik edə bilməz",
+  "collabInviteSent": "Dəvət göndərildi · gözləyir",
+  "removeCollaborator": "Çıxar",
+  "inviteTitle": "Səyahətə dəvət et",
+  "inviteRoleLabel": "Rol",
+  "inviteEmailInvalid": "Düzgün e-poçt ünvanı yaz",
+  "sendInvite": "Dəvət göndər",
+  "collabInviteSentToast": "Dəvət göndərildi",
+  "collabPickTrip": "Səyahət seç",
+  "collabNoTrips": "Kimisə dəvət etmək üçün əvvəlcə səyahət yarat.",
+  "statCountries": "Ölkə",
+  "statCities": "Şəhər",
+  "statKmFlown": "km uçuş",
+  "statTrips": "Səyahət",
+  "goVentusPro": "Ventus Pro-ya keç",
+  "goVentusProSub": "Limitsiz səyahət, oflayn xəritələr və daha çox",
+  "menuCollaborators": "Birgə planlayanlar",
+  "menuNotifications": "Bildirişlər",
+  "menuSavedPlaces": "Saxlanan yerlər",
+  "menuCurrencyUnits": "Valyuta və vahidlər",
+  "menuSettings": "Tənzimləmələr",
+  "menuPrivacySecurity": "Məxfilik və təhlükəsizlik",
+  "profileSectionPreferences": "Tərcihlər",
+  "profileSectionAccount": "Hesab",
+  "logOut": "Çıxış",
+  "settingsTitle": "Tənzimləmələr",
+  "appearance": "Görünüş",
+  "themeSystem": "Sistem",
+  "themeLight": "İşıqlı",
+  "themeDark": "Qaranlıq",
+  "language": "Dil",
+  "systemDefault": "Sistem dili",
+  "whereTo": "Hara?",
+  "destinationSubtitle": "Bir və ya bir neçə yer əlavə et — aralarındakı marşrutu Ventus qurar.",
+  "searchCityCountry": "Şəhər və ya ölkə axtar",
+  "popularRightNow": "İndi populyar",
+  "addAnotherStop": "Başqa dayanacaq əlavə et",
+  "recent": "Son",
+  "popularDestinations": "Populyar istiqamətlər",
+  "placesMatch": "“{query}” üçün {count} yer tapıldı",
+  "addPlace": "“{name}” əlavə et",
+  "continueAction": "Davam et",
+  "searchingPlaces": "Axtarırıq…",
+  "keepTyping": "Axtarış üçün ən azı 3 hərf yaz",
+  "searchPlacesFailed": "Axtarış alınmadı — aşağıdan əl ilə əlavə edə bilərsən.",
+  "aiTitle": "Ventus-a səyahətin haqqında danış",
+  "aiSubtitle": "Səyahətini öz sözlərinlə təsvir et — Ventus detalları tamamlayar.",
+  "aiPromptHint": "İki nəfər üçün iyunun ortasında İstanbul və Kappadokiyaya 5 günlük yemək və mədəniyyət səyahəti.",
+  "ventusUnderstood": "Ventus anladı",
+  "aiExamplesLabel": "Sürətli başla",
+  "aiExampleRomanticLabel": "Romantik həftəsonu",
+  "aiExampleRomanticText": "İki nəfər üçün bu həftə sonu yaxınlıqda romantik bir şəhərə qısa səyahət.",
+  "aiExampleFamilyLabel": "Ailəvi istirahət",
+  "aiExampleFamilyText": "Ailəmizlə (2 böyük, 2 uşaq) avqustda dənizkənarı istirahət, 7 gün.",
+  "aiExampleFriendsLabel": "Dostlarla macəra",
+  "aiExampleFriendsText": "4 dostla sentyabrda dağlıq bir yerə 3 günlük gəzinti və təbiət marşrutu.",
+  "aiExampleSoloLabel": "Tək səyahət",
+  "aiExampleSoloText": "Tək başıma, oktyabrda sakit bir şəhərdə 4 günlük mədəniyyət və istirahət səyahəti.",
+  "aiExampleCityLabel": "Qısa şəhər turu",
+  "aiExampleCityText": "Həftəsonu qısa 3 günlük şəhər turu — tarixi yerlər və yerli mətbəx.",
+  "aiExampleWinterLabel": "Qış tətili",
+  "aiExampleWinterText": "Yanvarda qarlı bir dağ kurortunda 5 günlük qış tətili, xizək və isti şokolad.",
+  "whosComing": "Kim gəlir?",
+  "travelersSubtitle": "Bu, Ventus-un sənə uyğun ritm və təkliflər seçməsinə kömək edir.",
+  "travelerSolo": "Tək",
+  "travelerCouple": "Cüt",
+  "travelerFamily": "Ailə",
+  "travelerFriends": "Dostlar",
+  "travelersAdults": "Böyüklər",
+  "travelersAdultsSub": "13+ yaş",
+  "travelersChildren": "Uşaqlar",
+  "travelersChildrenSub": "0–12 yaş",
+  "inviteCompanions": "Həmsəyahətçiləri dəvət et",
+  "inviteCompanionsSub": "İstəyə bağlı · birlikdə planla",
+  "inviteAdd": "Əlavə et",
+  "inviteAfterCreate": "Səyahəti yaratdıqdan sonra dəvət olunacaqlar.",
+  "when": "Nə vaxt?",
+  "datesSubtitle": "Tarixləri seç, ya da çevik qal — bunu sonra dəyişə bilərsən.",
+  "presetThisWeekend": "Bu həftə sonu",
+  "presetNextWeek": "Gələn həftə",
+  "presetInAMonth": "Bir aya",
+  "presetFlexible": "Fərqi yoxdur",
+  "reviewTrip": "Səyahətə bax",
+  "selectDates": "Tarix seç",
+  "nightsCount": "{count, plural, one{{count} gecə} other{{count} gecə}}",
+  "reviewTitle": "Son baxış",
+  "stopsCount": "{count, plural, one{{count} dayanacaq} other{{count} dayanacaq}}",
+  "routeLabel": "Marşrut",
+  "travelersLabel": "Səyahətçilər",
+  "datesLabel": "Tarixlər",
+  "editAction": "Redaktə",
+  "adultsCount": "{count, plural, one{{count} böyük} other{{count} böyük}}",
+  "childrenCount": "{count, plural, one{{count} uşaq} other{{count} uşaq}}",
+  "buildPlanWithAi": "Planımı AI qursun",
+  "createEmptyTrip": "Özüm quraram",
+  "reviewFootnote": "Burada rezervasiya edilmir — bilet və sənədləri istənilən vaxt əlavə edə bilərsən.",
+  "tripCreated": "Səyahət yaradıldı",
+  "tripNotFound": "Səyahət tapılmadı.",
+  "tripDetailsTitle": "Səyahət məlumatları",
+  "tripOverviewTab": "İcmal",
+  "moduleItinerary": "Gün planı",
+  "moduleBudget": "Büdcə",
+  "moduleDocuments": "Sənədlər",
+  "moduleChecklist": "Yoxlama siyahısı",
+  "moduleChecklistShort": "Yoxlama",
+  "moduleMap": "Xəritə",
+  "seeOnMap": "Xəritədə gör",
+  "mapRouteTitle": "Marşrut",
+  "emptyMapTitle": "Hələ xəritələnəcək bir şey yoxdur",
+  "emptyMapBody": "Səyahətinə yerlər əlavə et, onlar burada xəritədə görünəcək.",
+  "emptyMapNoCoords": "Bu səyahətdəki yerlərin koordinatı hələ bilinmir. Onları xəritəyə çıxarmaq üçün aşağıya toxun.",
+  "mapFilterAll": "Hamısı",
+  "mapLocating": "Yerlər tapılır…",
+  "mapFindPlaces": "Yerləri tap",
+  "mapMissingPlaces": "{count, plural, one{{count} yerin xəritədə yeri yoxdur} other{{count} yerin xəritədə yeri yoxdur}}",
+  "mapPlacesCount": "{count, plural, one{{count} yer} other{{count} yer}}",
+  "mapDayDistance": "~{km} km",
+  "mapDayEmpty": "Bu günün planında xəritəyə düşən yer yoxdur",
+  "mapShowInPlan": "Gün planında göstər",
+  "mapLocated": "{count, plural, one{{count} yer xəritəyə əlavə olundu} other{{count} yer xəritəyə əlavə olundu}}",
+  "mapNothingLocated": "Yeni yer tapılmadı",
+  "mapLocateFailed": "Yerləri tapmaq alınmadı. İnternetini yoxla.",
+  "aiHubTitle": "{city} planını Ventus qursun",
+  "@aiHubTitle": {
+    "placeholders": {
+      "city": {
+        "type": "String"
+      }
+    }
+  },
+  "aiHubBody": "Tarixlərinə, ritminə və seçdiyin yerlərə uyğun gün-gün plan — bir neçə saniyəyə hazır olur.",
+  "aiHubGenerate": "Planımı yarat",
+  "aiGenerating": "Planın hazırlanır…",
+  "aiPlanReady": "Planın hazırdır",
+  "aiNeedsDestination": "Əvvəlcə istiqamət əlavə et.",
+  "aiPlanUnavailable": "AI ilə planlama hələ əlçatan deyil.",
+  "aiPlanNetworkError": "Planlayıcıya çatmaq olmadı. Bağlantını yoxla və yenidən cəhd et.",
+  "aiPlanEmpty": "Plan qurmaq alınmadı. Bir az sonra yenidən cəhd et.",
+  "aiPlanFailed": "Plan yaradıla bilmədi. Yenidən cəhd et.",
+  "aiNeedDescription": "Əvvəlcə səyahətini təsvir et.",
+  "aiReadingTrip": "Səyahətin oxunur…",
+  "aiParseEmpty": "Burada yer tapılmadı. Bir şəhər adı yazmağa cəhd et.",
+  "aiParseFailed": "Səyahətini oxumaq alınmadı. Yenidən cəhd et.",
+  "orStartManually": "Yaxud əl ilə başla",
+  "startBuildItinerary": "Gün planını qur",
+  "startBuildItinerarySub": "Günləri və fəaliyyətləri özün əlavə et",
+  "startUploadDocs": "Bilet və sənədləri yüklə",
+  "startUploadDocsSub": "Uçuşlar, otellər, pasportlar — hamısı bir yerdə",
+  "startChecklist": "Yoxlama siyahısı yarat",
+  "startChecklistSub": "Nə götürəcəyini və hazırlayacağını izlə",
+  "deleteTripAction": "Səyahəti sil",
+  "deleteTripTitle": "Bu səyahəti silmək?",
+  "deleteTripBody": "Bu, səyahəti və bütün məlumatlarını silir. Geri qaytarmaq mümkün deyil.",
+  "deleteConfirm": "Sil",
+  "tripDeleted": "Səyahət silindi",
+  "dayLabel": "Gün",
+  "emptyDayTitle": "Hələ heç nə planlanmayıb",
+  "emptyDayBody": "Bu gün üçün ilk fəaliyyətini əlavə et.",
+  "addActivity": "Fəaliyyət əlavə et",
+  "newActivity": "Yeni fəaliyyət",
+  "editActivity": "Fəaliyyəti redaktə et",
+  "activityTitleLabel": "Fəaliyyət",
+  "activityTitleHint": "məs. Bosfor gün batımı gəzintisi",
+  "activityTitleRequired": "Qısa başlıq yaz",
+  "activityPlaceLabel": "Yer",
+  "activityPlaceHint": "məs. Karaköy",
+  "activityTimeLabel": "Vaxt",
+  "activityAddTime": "Vaxt əlavə et",
+  "activityKindLabel": "Növ",
+  "activityDayLabel": "Gün",
+  "kindFlight": "Uçuş",
+  "kindStay": "Yaşayış",
+  "kindFood": "Yemək",
+  "kindSight": "Görməli yer",
+  "kindTransport": "Nəqliyyat",
+  "kindActivity": "Fəaliyyət",
+  "save": "Yadda saxla",
+  "selectTime": "Vaxt seç",
+  "setTime": "Təsdiq et",
+  "deleteActivity": "Fəaliyyəti sil",
+  "deleteActivityTitle": "Bu fəaliyyəti silmək?",
+  "aiAssistTitle": "Bəzi günlər hələ boşdur",
+  "aiAssistBody": "Qoy Ventus onları sənin üçün hazırlasın",
+  "planAction": "Planla",
+  "checklistProgress": "{total}-dən {done} hazır",
+  "@checklistProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "checklistItemHint": "məs. Pasport 6+ ay etibarlı",
+  "renameChecklistItem": "Adını dəyiş",
+  "itemDeleted": "Silindi",
+  "undo": "Geri qaytar",
+  "emptyChecklistTitle": "Hələ qeyd ediləsi heç nə yoxdur",
+  "emptyChecklistBody": "Yığmalı və hazırlamalı olduqlarını əlavə et.",
+  "checklistCatBeforeYouGo": "Getməzdən əvvəl",
+  "checklistCatPack": "Yığ",
+  "checklistCatOnArrival": "Çatanda",
+  "defChkVisa": "Vizanı yoxla / al",
+  "defChkInsurance": "Səyahət sığortası",
+  "defChkCheckin": "Onlayn check-in et",
+  "defChkCash": "Valyuta dəyiş / nağd pul",
+  "defChkPassport": "Pasport",
+  "defChkTickets": "Biletlər (uçuş / qatar)",
+  "defChkId": "Şəxsiyyət vəsiqəsi",
+  "defChkCharger": "Şarj cihazı / adapter",
+  "defChkSim": "Yerli SIM / eSIM",
+  "defChkHotel": "Otelə check-in",
+  "defChkTransport": "Yerli nəqliyyat",
+  "addItem": "Maddə əlavə et",
+  "addToChecklist": "Siyahıya əlavə et",
+  "editChecklistItem": "Redaktə et",
+  "deleteChecklistItem": "Sil",
+  "checklistCategoryLabel": "Kateqoriya",
+  "setReminder": "Xatırlatma qur",
+  "dueBy": "{date} tarixinə kimi",
+  "@dueBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "documentsCount": "{count, plural, one{{count} fayl} other{{count} fayl}}",
+  "@documentsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "docPhotoName": "Şəkil",
+  "docFileName": "Fayl",
+  "docGroupTickets": "Biletlər",
+  "docGroupStays": "Yaşayış",
+  "docGroupIdentity": "Şəxsiyyət",
+  "docGroupOther": "Digər",
+  "docGroupTripWide": "Bütün səyahət",
+  "docTypeTicket": "Bilet",
+  "docTypeStay": "Yaşayış",
+  "docTypeId": "Şəxsiyyət",
+  "docTypeOther": "Digər",
+  "uploadDocument": "Sənəd yüklə",
+  "addDocumentTitle": "Sənəd əlavə et",
+  "addDocumentBody": "Biletlər, vauçerlər və şəxsiyyət sənədləri bu səyahətə özəl qalır.",
+  "sourceFiles": "Fayllar",
+  "sourceFilesSub": "PDF, Pages, istənilən fayl",
+  "sourceCamera": "Kamera",
+  "sourceCameraSub": "Kağız bilet və ya sənədi skan et",
+  "sourcePhotos": "Şəkillər",
+  "sourcePhotosSub": "Qalereyadan seç",
+  "saveDocumentTitle": "Sənədi yadda saxla",
+  "documentTypeLabel": "Növ",
+  "linkToDayLabel": "Günə bağla (istəyə bağlı)",
+  "saveToDocuments": "Sənədlərə əlavə et",
+  "docDayWithDate": "Gün {day} · {date}",
+  "@docDayWithDate": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "docDayShort": "Gün {day}",
+  "@docDayShort": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "editDocumentTitle": "Sənədi redaktə et",
+  "documentNameLabel": "Ad",
+  "documentNameHint": "Sənədin adı",
+  "deleteDocument": "Sənədi sil",
+  "deleteDocumentTitle": "Bu sənəd silinsin?",
+  "deleteDocumentBody": "Bu, faylı həmişəlik silir. Geri qaytarmaq mümkün deyil.",
+  "documentDeleted": "Sənəd silindi",
+  "docActionShare": "Paylaş",
+  "docActionSave": "Saxla",
+  "docActionEdit": "Redaktə",
+  "docActionDelete": "Sil",
+  "documentLinkedTo": "Bağlıdır: {day}",
+  "@documentLinkedTo": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "openFile": "Aç",
+  "previewUnavailable": "Bu faylı burada göstərə bilmirik.",
+  "connectToView": "Bu faylı görmək üçün internetə qoşul.",
+  "emptyDocumentsTitle": "Hələ sənəd yoxdur",
+  "emptyDocumentsBody": "Biletlərini, vauçerlərini və şəxsiyyət sənədlərini yüklə ki, əlin altında olsun.",
+  "uploadFailed": "Yüklənmədi — yenidən cəhd et.",
+  "budgetRemaining": "Qalıq",
+  "budgetOfTotal": "{total}-dən",
+  "@budgetOfTotal": {
+    "placeholders": {
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "budgetSpentUsed": "{spent} xərclənib · büdcənin {percent}%-i",
+  "@budgetSpentUsed": {
+    "placeholders": {
+      "spent": {
+        "type": "String"
+      },
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "budgetLeftPct": "{percent}% qalıb",
+  "@budgetLeftPct": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "budgetByCategory": "Kateqoriya üzrə",
+  "budgetExpenses": "Xərclər",
+  "addExpense": "Xərc əlavə et",
+  "editExpense": "Xərci redaktə et",
+  "editBudget": "Büdcəni redaktə et",
+  "budgetTotalLabel": "Ümumi səyahət büdcəsi",
+  "budgetAllocateByCategory": "Kateqoriyalara böl",
+  "budgetAllocated": "Bölüşdürülüb",
+  "budgetSave": "Büdcəni yadda saxla",
+  "budgetCurrency": "Valyuta",
+  "expCatStay": "Yaşayış",
+  "expCatFood": "Yemək",
+  "expCatSight": "Görməli yerlər",
+  "expCatTransport": "Nəqliyyat",
+  "expCatOther": "Digər",
+  "expenseNoteHint": "Qeyd əlavə et…",
+  "addAmountTo": "{category} üçün {amount} əlavə et",
+  "@addAmountTo": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "category": {
+        "type": "String"
+      }
+    }
+  },
+  "budgetUnassigned": "Təyin edilməyib",
+  "deleteExpense": "Xərci sil",
+  "deleteExpenseTitle": "Bu xərc silinsin?",
+  "expenseDeleted": "Xərc silindi",
+  "amountRequired": "Məbləği yaz",
+  "emptyExpensesBody": "Hələ xərc yazılmayıb.",
+  "setBudgetTitle": "Səyahət büdcəni təyin et",
+  "setBudgetBody": "Ümumi məbləği əlavə et, Ventus xərclədikcə qalanı izləsin.",
+  "setBudget": "Büdcə təyin et",
+  "privacySectionAppLock": "Tətbiq kilidi",
+  "privacySectionAccount": "Hesab",
+  "privacySectionDanger": "Hesabın silinməsi",
+  "privacyChangePin": "PIN-i dəyiş",
+  "privacyChangePinSub": "Bu cihaz üçün sürətli kilid PIN-i",
+  "privacyChangePasswordSub": "Hesab parolunu yenilə",
+  "privacyDeleteAccount": "Hesabı sil",
+  "privacyDeleteAccountSub": "Hesabını və məlumatlarını həmişəlik sil",
+  "deleteAccountTitle": "Hesab silinsin?",
+  "deleteAccountBody": "Bu, hesabını və bütün səyahətlərini həmişəlik silir. Geri qaytarmaq mümkün deyil.",
+  "accountDeleted": "Hesabın silindi",
+  "changePinTitle": "PIN-i dəyiş",
+  "changePinVerifyTitle": "Cari PIN-i yaz",
+  "changePinVerifyBody": "Dəyişməzdən əvvəl sənin olduğunu yoxlayaq.",
+  "changePinNewTitle": "Yeni PIN seç",
+  "changePinNewBody": "Yadda saxlayacağın 4 rəqəmli PIN seç.",
+  "changePinConfirmTitle": "Yeni PIN-i təkrarla",
+  "changePinConfirmBody": "Təsdiq üçün yeni PIN-i bir də yaz.",
+  "changePinWrong": "PIN yanlışdır. Yenidən cəhd et.",
+  "changePinMismatch": "PIN-lər uyğun gəlmədi. Yenidən başla.",
+  "pinChanged": "PIN yeniləndi",
+  "pinTooWeak": "Bu PIN çox asan təxmin edilir. Başqa bir kod seç.",
+  "pinLockedOut": "Çox sayda yanlış cəhd. Gözlə:",
+  "changePasswordTitle": "Parolu dəyiş",
+  "changePasswordAction": "Parolu yenilə",
+  "currentPasswordLabel": "Cari parol",
+  "newPasswordLabel": "Yeni parol",
+  "confirmPasswordLabel": "Yeni parolu təsdiqlə",
+  "passwordsDontMatch": "Parollar uyğun gəlmir.",
+  "currentPasswordIncorrect": "Cari parol yanlışdır.",
+  "passwordChanged": "Parol yeniləndi",
+  "authWeakPassword": "Parol çox zəifdir. Ən azı 8 simvol istifadə et.",
+  "authSamePassword": "Yeni parol cari paroldan fərqli olmalıdır.",
+  "proTitle": "Ventus Pro",
+  "proTagline": "Limitsiz planla.",
+  "proBillingYearly": "İllik",
+  "proBillingMonthly": "Aylıq",
+  "proSave": "30% qənaət",
+  "proPerYear": "/il",
+  "proPerMonth": "/ay",
+  "proYearlyEquiv": "≈ $3.50/ay",
+  "proBilledMonthly": "aylıq ödəniş",
+  "proColFeature": "Funksiya",
+  "proColFree": "Pulsuz",
+  "proColPro": "Pro",
+  "proRowTrips": "Aktiv səyahətlər",
+  "proRowAiPlans": "AI gün planları",
+  "proRowOfflineMaps": "Oflayn xəritələr",
+  "proRowCollaborators": "Birgə planlayanlar",
+  "proRowVault": "Sənəd seyfi",
+  "proFreeAiPlansPerMonth": "5/ay",
+  "proCtaTrial": "7 günlük pulsuz sınağı başlat",
+  "proComingSoon": "Ventus Pro üzərində işləyirik. Hazır olan kimi xəbər verəcəyik.",
+  "proThenYearly": "Sonra $41.99/il · istənilən vaxt ləğv et",
+  "proThenMonthly": "Sonra $4.99/ay · istənilən vaxt ləğv et",
+  "notificationsTitle": "Bildirişlər",
+  "notifToday": "Bu gün",
+  "notifEarlier": "Daha əvvəl",
+  "notifMarkRead": "Hamısını oxunmuş işarələ",
+  "notifEmptyTitle": "Hələ bildiriş yoxdur",
+  "notifEmptyBody": "Səyahət fəaliyyəti və AI yenilikləri burada görünəcək.",
+  "notifNewCount": "{count} yeni",
+  "@notifNewCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifCollabInvitedTitle": "{email} dəvət olundu",
+  "@notifCollabInvitedTitle": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "notifCollabInvitedBody": "{trip} səyahətinə əlavə edildi. Dəvət göndərildi.",
+  "@notifCollabInvitedBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "notifCollabInvitedBodyShort": "Dəvət göndərildi.",
+  "notifAccepted": "Qəbul edildi",
+  "notifAcceptInvite": "Qəbul et",
+  "notifAiReadyTitle": "AI gün planın hazırdır",
+  "notifAiReadyBody": "Ventus {trip} üçün plan hazırladı.",
+  "@notifAiReadyBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "notifGenericTitle": "Yenilik",
+  "notifWelcomeTitle": "Ventus-a xoş gəldin 👋",
+  "notifWelcomeBody": "Hesabın hazırdır. İlk səyahətini planla, qalanını Ventus-a burax.",
+  "timeJustNow": "İndicə",
+  "timeMinutesAgo": "{count} dəq əvvəl",
+  "@timeMinutesAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "timeHoursAgo": "{count} saat əvvəl",
+  "@timeHoursAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "timeYesterday": "Dünən",
+  "timeDaysAgo": "{count} gün əvvəl",
+  "@timeDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeCoverPhoto": "Səyahət şəklini dəyiş",
+  "coverUpdated": "Şəkil yeniləndi",
+  "coverRemove": "Səyahət şəklini sil",
+  "notifDeleteAll": "Hamısını sil",
+  "notifConfirmMarkAllReadTitle": "Hamısı oxunmuş işarələnsin?",
+  "notifConfirmMarkAllReadBody": "Bütün bildirişlər oxunmuş kimi işarələnəcək.",
+  "notifConfirmDeleteAllTitle": "Bütün bildirişlər silinsin?",
+  "notifConfirmDeleteAllBody": "Bu, bütün bildirişlərini həmişəlik silir. Geri qaytarmaq mümkün deyil.",
+  "notifMarkReadConfirm": "Oxunmuş işarələ",
+  "notifDeleteAllConfirm": "Hamısını sil",
+  "tripStatDaysLeft": "gün qalıb",
+  "tripStatPlanned": "planlanıb",
+  "greetingMorning": "Sabahın xeyir, {name}",
+  "greetingAfternoon": "Günortan xeyir, {name}",
+  "greetingEvening": "Axşamın xeyir, {name}",
+  "nextStepEyebrow": "Növbəti addım",
+  "nextStepPlanTitle": "Gündəlik planı qur",
+  "nextStepPlanBody": "İlk fəaliyyəti əlavə et, qalanı asan gələcək.",
+  "nextStepChecklistTitle": "Yoxlama siyahısı yarat",
+  "nextStepChecklistBody": "Çıxmazdan əvvəl nələri unutmamalısan?",
+  "nextStepBudgetTitle": "Büdcəni təyin et",
+  "nextStepBudgetBody": "Xərclərini baş verdikcə izlə.",
+  "nextStepDocsTitle": "Sənədlərini əlavə et",
+  "nextStepDocsBody": "Bilet və rezervasiyalar bir yerdə dursun.",
+  "planCompleteTitle": "Plan hazırdır",
+  "planCompleteBody": "Hər gün planlanıb. Yaxşı yol!",
+  "tripDeleteOwnerOnly": "Səyahəti yalnız sahibi silə bilər.",
+  "collabTripOwner": "Səyahət sahibi",
+  "overviewReadiness": "Hazırlıq",
+  "overviewNextUp": "Növbəti fəaliyyət",
+  "readinessDaysPlanned": "{planned}/{total} gün planlanıb",
+  "readinessActivities": "{count, plural, one{{count} fəaliyyət} other{{count} fəaliyyət}}",
+  "readinessBudgetNotSet": "Təyin edilməyib",
+  "readinessNoDocs": "Heç nə yüklənməyib",
+  "readinessEmpty": "Hələ boşdur",
+  "openInMaps": "Xəritədə aç",
+  "taxiSection": "Taksi",
+  "datesPickStartOnly": "{count, plural, one{{count} gecə} other{{count} gecə}} yazmısan, sadəcə yola çıxacağın günü seç.",
+  "checklistAllDone": "Hər şey hazırdır. Yaxşı yol!",
+  "profileSectionSupport": "Dəstək",
+  "menuAbout": "Haqqında",
+  "menuHelp": "Yardım",
+  "menuContact": "Bizimlə əlaqə",
+  "aboutTagline": "Səyahətini bir yerdə planla, saxla və izlə.",
+  "aboutLegalSection": "Hüquqi",
+  "contactMailSubject": "Ventus dəstək",
+  "contactMailBody": "Salam, sualım/probleməm:\n\n\n— Tətbiq: {version}\n— Cihaz: {device}",
+  "contactMailFailed": "Mail tətbiqi açılmadı. Bizə bu ünvana yaz: support@ventus.app",
+  "helpQ1": "Səyahəti necə yaradım?",
+  "helpA1": "Əsas ekranda mərkəzdəki + düyməsinə bas, yeri və tarixi seç. İstəsən, “AI ilə planla” seçib səyahətini mətnlə də yaza bilərsən — yeri, tarixi və neçə nəfər olduğunu özü tapacaq.",
+  "helpQ2": "AI plan necə işləyir?",
+  "helpA2": "Səyahətin səhifəsində “Planımı yarat” düyməsinə bas, Ventus gün-gün plan təklif edəcək. Bunlar istiqamətləndirmə üçündür — vaxtları, qiymətləri və rezervasiyaları həmişə özün yoxla.",
+  "helpQ3": "İnternet olmadan işləyir?",
+  "helpA3": "Səyahətlərin, gün planın, yoxlama siyahın və büdcən cihazında saxlanılır, internet olmayanda da açılır. Qayıdanda özü sinxronlaşır. AI, xəritə, hava və valyuta isə internet tələb edir.",
+  "helpQ4": "Sənədlərim harada saxlanılır?",
+  "helpA4": "Biletlərin və digər sənədlərin şəxsi, yalnız sənə açıq yerdə təhlükəsiz saxlanılır. Özün paylaşmasan, heç kim görmür.",
+  "helpQ5": "Yeri xəritədə necə açım?",
+  "helpA5": "Gün planında fəaliyyət kartının sağındakı kompas ikonuna bas. Telefonundakı xəritə və taksi tətbiqləri çıxacaq, birini seç.",
+  "helpQ6": "Hesabımı necə silim?",
+  "helpA6": "Profil → Məxfilik və təhlükəsizlik → Hesabı sil. Bu, hesabını və bütün səyahətlərini həmişəlik silir, geri qaytarmaq mümkün deyil."
+}

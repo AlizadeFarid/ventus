@@ -1,0 +1,601 @@
+﻿Screen,Key,EN,AZ,TR,NEW_LANG,Note
+01 · Onboarding / Welcome,getStarted,Get started,Başlayaq,Başla,,
+01 · Onboarding / Welcome,haveAccount,I already have an account,Artıq hesabım var,Zaten hesabım var,,
+01 · Onboarding / Welcome,welcomeHeadline,"Every journey,
+beautifully planned.","Hər səyahət,
+gözəl planlanmış.","Her yolculuk,
+özenle planlanmış.",,
+01 · Onboarding / Welcome,welcomeSubtitle,"Itinerary, budget, documents and tickets — together in one calm place.","Marşrut, büdcə, sənədlər və biletlər — hamısı bir sakit yerdə.","Rota, bütçe, belgeler ve biletler — hepsi tek bir sakin yerde.",,
+01 · Onboarding / Welcome,welcomeTagline,YOUR AI TRAVEL COMPANION,AI SƏYAHƏT BƏLƏDÇİN,AI SEYAHAT ARKADAŞIN,,
+02 · Sign in,createAccountAction,Create account,Hesab yarat,Hesap oluştur,,həmçinin: 03 · Create account
+02 · Sign in,emailHint,name@example.com,name@example.com,name@example.com,,həmçinin: 03 · Create account; 05 · Forgot password; 19 · Create trip — travelers; 33 · Collaborators
+02 · Sign in,emailLabel,Email,E-poçt,E-posta,,həmçinin: 03 · Create account; 05 · Forgot password; 33 · Collaborators; 48 · Edit profile
+02 · Sign in,forgot,Forgot?,Unutdun?,Unuttun mu?,,
+02 · Sign in,newToVentus,New to Ventus?,Ventus-da yenisən?,Ventus'ta yeni misin?,,
+02 · Sign in,orDivider,or,və ya,veya,,həmçinin: 03 · Create account
+02 · Sign in,passwordLabel,Password,Parol,Şifre,,həmçinin: 03 · Create account
+02 · Sign in,rememberMe,Remember me,Məni xatırla,Beni hatırla,,
+02 · Sign in,signInAction,Sign in,Daxil ol,Giriş yap,,həmçinin: 03 · Create account
+02 · Sign in,signInSubtitle,Sign in to continue your journey.,Səyahətinə davam etmək üçün daxil ol.,Yolculuğuna devam etmek için giriş yap.,,
+02 · Sign in,somethingWentWrong,Something went wrong. Try again.,Nəsə alınmadı. Yenidən cəhd et.,Bir şeyler ters gitti. Tekrar dene.,,həmçinin: 03 · Create account; 04 · Verify email; 06 · Reset password; 10 · Auth error messages; 20 · Create trip — review; 21 · Trip hub; 23 · Itinerary; 25 · Checklist; 27 · Documents; 28 · Document detail; 30 · Budget & expenses; 33 · Collaborators; 38 · Tools — currency; 43 · Tools — tip calculator; 45 · Notifications feed; 48 · Edit profile; 51 · Privacy & security; 53 · Change password
+02 · Sign in,welcomeBack,Welcome back,Xoş gəldin,Tekrar hoş geldin,,
+03 · Create account,acceptTermsError,Accept the Terms & Privacy Policy to continue.,Davam etmək üçün Şərtləri və Məxfilik Siyasətini qəbul et.,Devam etmek için Şartları ve Gizlilik Politikasını kabul et.,,
+03 · Create account,agreeTermsRich,I agree to the [terms] and [privacy].,[terms] və [privacy] ilə razıyam.,[terms] ve [privacy] kabul ediyorum.,,
+03 · Create account,alreadyHaveAccount,Already have an account?,Artıq hesabın var?,Zaten hesabın var mı?,,
+03 · Create account,createAccountSubtitle,Join Ventus and plan your next trip.,Ventus-a qoşul və növbəti səyahətini planla.,Ventus'a katıl ve sıradaki gezini planla.,,
+03 · Create account,createAccountTitle,Create account,Hesab yarat,Hesap oluştur,,
+03 · Create account,fullNameHint,Your name,Adın və soyadın,Adın ve soyadın,,həmçinin: 48 · Edit profile
+03 · Create account,fullNameLabel,Full name,Ad və soyad,Ad soyad,,həmçinin: 48 · Edit profile
+03 · Create account,passwordHintMin,At least 8 characters,Ən azı 8 simvol,En az 8 karakter,,həmçinin: 06 · Reset password
+03 · Create account,privacyLinkLabel,Privacy Policy,Məxfilik Siyasəti,Gizlilik Politikası,,
+03 · Create account,termsLinkLabel,Terms of Service,İstifadə Şərtləri,Kullanım Şartları,,
+04 · Verify email,verifyEmailBody,"We sent a confirmation link to {email}. Tap it to verify your account, then come back to sign in.","{email} ünvanına təsdiq linki göndərdik. Hesabını təsdiqləmək üçün linkə toxun, sonra geri qayıdıb daxil ol.","{email} adresine bir doğrulama bağlantısı gönderdik. Hesabını doğrulamak için bağlantıya dokun, sonra geri dönüp giriş yap.",,dəyişənlər: {email}
+04 · Verify email,verifyEmailResend,Resend email,Linki yenidən göndər,E-postayı yeniden gönder,,
+04 · Verify email,verifyEmailResent,Confirmation email sent. Check your inbox.,Təsdiq e-poçtu göndərildi. Gələnlər qutusunu yoxla.,Doğrulama e-postası gönderildi. Gelen kutunu kontrol et.,,
+04 · Verify email,verifyEmailSignIn,Go to sign in,Girişə keç,Girişe git,,
+04 · Verify email,verifyEmailSpamNote,Didn’t get it? Check your spam folder or resend.,Gəlmədi? Spam qovluğuna bax və ya yenidən göndər.,Gelmedi mi? Spam klasörüne bak veya yeniden gönder.,,
+04 · Verify email,verifyEmailTitle,Confirm your email,E-poçtunu təsdiqlə,E-postanı doğrula,,
+05 · Forgot password,backToSignIn,Back to sign in,Girişə qayıt,Girişe dön,,
+05 · Forgot password,forgotBody,Enter the email linked to your account and we’ll send a reset link.,"Hesabına bağlı e-poçtu yaz, sıfırlama linki göndərək.","Hesabına bağlı e-postayı yaz, sana sıfırlama bağlantısı gönderelim.",,
+05 · Forgot password,forgotTitle,Forgot your password?,Parolunu unutmusan?,Şifreni mi unuttun?,,
+05 · Forgot password,rememberedIt,Remembered it?,Xatırladın?,Hatırladın mı?,,
+05 · Forgot password,resetPasswordTitle,Reset password,Parolu sıfırla,Şifreyi sıfırla,,həmçinin: 06 · Reset password
+05 · Forgot password,sendResetLink,Send reset link,Sıfırlama linki göndər,Sıfırlama bağlantısı gönder,,
+06 · Reset password,authInvalidOtp,That code is incorrect or has expired.,Kod yanlışdır və ya vaxtı keçib.,Bu kod yanlış veya süresi dolmuş.,,həmçinin: 10 · Auth error messages
+06 · Reset password,confirmPasswordLabel,Confirm new password,Yeni parolu təsdiqlə,Yeni şifreyi onayla,,həmçinin: 53 · Change password
+06 · Reset password,newPasswordLabel,New password,Yeni parol,Yeni şifre,,həmçinin: 53 · Change password
+06 · Reset password,passwordsDontMatch,Passwords don't match.,Parollar uyğun gəlmir.,Şifreler eşleşmiyor.,,həmçinin: 53 · Change password
+06 · Reset password,resetCodeBody,We emailed a 6-digit code to {email}. Enter it below and choose a new password.,{email} ünvanına 6 rəqəmli kod göndərdik. Onu aşağıya yaz və yeni parol seç.,{email} adresine 6 haneli bir kod gönderdik. Aşağıya yaz ve yeni bir şifre seç.,,dəyişənlər: {email}
+06 · Reset password,resetCodeHint,123456,123456,123456,,
+06 · Reset password,resetCodeLabel,Reset code,Bərpa kodu,Sıfırlama kodu,,
+06 · Reset password,resetCodeTitle,Set a new password,Yeni parol təyin et,Yeni bir şifre belirle,,
+06 · Reset password,resetResend,Resend code,Kodu yenidən göndər,Kodu yeniden gönder,,
+06 · Reset password,resetResent,A new code is on its way.,Yeni kod yola düşdü.,Yeni bir kod yolda.,,
+06 · Reset password,resetSubmit,Reset password,Parolu sıfırla,Şifreyi sıfırla,,
+06 · Reset password,resetSuccess,Password updated. You’re all set.,Parol yeniləndi. Hər şey hazırdır.,Şifre güncellendi. Her şey hazır.,,
+07 · Terms & Privacy,legalContact,Questions about these terms or your data? Contact us at support@ventus.app.,Bu şərtlər və ya datan barədə sualın var? Bizimlə əlaqə saxla: support@ventus.app.,Bu şartlar veya verilerin hakkında soruların mı var? Bize ulaş: support@ventus.app.,,
+07 · Terms & Privacy,legalPrivacyIntro,"This policy explains what information Ventus collects, how we use it, and the choices you have.","Bu siyasət Ventus-un hansı məlumatı topladığını, necə istifadə etdiyini və sənin seçimlərini izah edir.","Bu politika, Ventus'un hangi bilgileri topladığını, nasıl kullandığını ve sahip olduğun seçimleri açıklar.",,
+07 · Terms & Privacy,legalPrivacyS1Body,"Account details (your name and email) and the trip data you create — destinations, itineraries, checklists, budgets, documents, and saved places. Your PIN is stored only on your device and is never sent to our servers.","Hesab məlumatların (adın və e-poçtun) və yaratdığın səyahət datası — istiqamətlər, gün planları, yoxlama siyahıları, büdcələr, sənədlər və saxlanmış yerlər. PIN-in yalnız cihazında saxlanılır və heç vaxt serverlərimizə göndərilmir.","Hesap bilgilerin (adın ve e-postan) ve oluşturduğun gezi verileri — varış noktaları, gün planları, kontrol listeleri, bütçeler, belgeler ve kaydedilen yerler. PIN'in yalnızca cihazında saklanır ve sunucularımıza asla gönderilmez.",,
+07 · Terms & Privacy,legalPrivacyS1Title,What we collect,Nə toplayırıq,Neleri topluyoruz,,
+07 · Terms & Privacy,legalPrivacyS2Body,"To run your account, sync your trips across devices, and power features like AI planning. When you generate a plan, the relevant trip details are sent to our AI provider (Google Gemini) to create it. We never sell your data.","Hesabını işlətmək, səyahətlərini cihazlar arasında sinxronlaşdırmaq və AI planlama kimi funksiyalar üçün. Plan yaratdığında lazım olan səyahət təfərrüatları onu hazırlamaq üçün AI provayderimizə (Google Gemini) göndərilir. Datanı heç vaxt satmırıq.","Hesabını çalıştırmak, gezilerini cihazlar arasında eşitlemek ve AI planlama gibi özellikleri sağlamak için. Bir plan oluşturduğunda, gereken gezi ayrıntıları onu hazırlamak için AI sağlayıcımıza (Google Gemini) gönderilir. Verilerini asla satmayız.",,
+07 · Terms & Privacy,legalPrivacyS2Title,How we use it,Necə istifadə edirik,Nasıl kullanıyoruz,,
+07 · Terms & Privacy,legalPrivacyS3Body,"Your data is stored securely with our backend provider (Supabase) and encrypted in transit. Map, weather, and currency features query third-party services with only the data needed to answer your request.","Datan backend provayderimizdə (Supabase) təhlükəsiz saxlanılır və ötürülmə zamanı şifrələnir. Xəritə, hava və valyuta funksiyaları üçüncü tərəf xidmətlərinə yalnız sorğunu cavablandırmaq üçün lazım olan datanı göndərir.","Verilerin backend sağlayıcımızda (Supabase) güvenle saklanır ve aktarım sırasında şifrelenir. Harita, hava ve döviz özellikleri üçüncü taraf hizmetlerine yalnızca isteğini yanıtlamak için gereken veriyi gönderir.",,
+07 · Terms & Privacy,legalPrivacyS3Title,Storage & security,Saxlama və təhlükəsizlik,Saklama ve güvenlik,,
+07 · Terms & Privacy,legalPrivacyS4Body,"You can view and edit your profile, change your password or PIN, and request deletion of your account and data at any time from Settings.","İstənilən vaxt Tənzimləmələrdən profilini görə və redaktə edə, parolunu və ya PIN-ini dəyişə, hesabının və datanın silinməsini tələb edə bilərsən.","İstediğin zaman Ayarlar'dan profilini görüntüleyip düzenleyebilir, şifreni veya PIN'ini değiştirebilir, hesabının ve verilerinin silinmesini talep edebilirsin.",,
+07 · Terms & Privacy,legalPrivacyS4Title,Your rights,Hüquqların,Hakların,,
+07 · Terms & Privacy,legalPrivacyTitle,Privacy Policy,Məxfilik Siyasəti,Gizlilik Politikası,,
+07 · Terms & Privacy,legalTermsIntro,"Welcome to Ventus. By creating an account and using the app, you agree to these Terms. If you do not agree, please do not use Ventus.","Ventus-a xoş gəldin. Hesab yaradıb tətbiqdən istifadə etməklə bu Şərtləri qəbul edirsən. Razı deyilsənsə, Ventus-dan istifadə etmə.",Ventus'a hoş geldin. Bir hesap oluşturup uygulamayı kullanarak bu Şartları kabul edersin. Kabul etmiyorsan lütfen Ventus'u kullanma.,,
+07 · Terms & Privacy,legalTermsS1Body,"Ventus helps you plan and organize trips. Use it only for lawful, personal purposes, and do not misuse, copy, or try to disrupt the service. AI-generated plans and suggestions are for guidance only — always verify times, prices, visas, and bookings yourself.","Ventus səyahətlərini planlamağa və təşkil etməyə kömək edir. Yalnız qanuni, şəxsi məqsədlər üçün istifadə et; xidməti sui-istifadə etmə, kopyalama və ya pozmağa cəhd etmə. AI ilə yaradılan planlar və təkliflər yalnız istiqamətləndirmə üçündür — vaxtları, qiymətləri, vizaları və rezervasiyaları həmişə özün yoxla.","Ventus gezilerini planlamana ve düzenlemene yardımcı olur. Yalnızca yasal, kişisel amaçlarla kullan; hizmeti kötüye kullanma, kopyalama veya bozmaya çalışma. AI tarafından oluşturulan planlar ve öneriler yalnızca yol gösterme amaçlıdır — saatleri, fiyatları, vizeleri ve rezervasyonları her zaman kendin doğrula.",,
+07 · Terms & Privacy,legalTermsS1Title,Using Ventus,Ventus-dan istifadə,Ventus'u kullanmak,,
+07 · Terms & Privacy,legalTermsS2Body,"You are responsible for keeping your email, password, and PIN secure, and for all activity on your account. Let us know right away if you notice any unauthorized use.","E-poçtunu, parolunu və PIN-ini təhlükəsiz saxlamaq, eləcə də hesabındakı bütün fəaliyyət sənin məsuliyyətindədir. İcazəsiz istifadə görsən, dərhal bizə bildir.","E-postanı, şifreni ve PIN'ini güvende tutmak ve hesabındaki tüm etkinlik senin sorumluluğundadır. Yetkisiz bir kullanım fark edersen hemen bize bildir.",,
+07 · Terms & Privacy,legalTermsS2Title,Your account,Hesabın,Hesabın,,
+07 · Terms & Privacy,legalTermsS3Body,"Trips, notes, files, and other content you add remain yours. You grant Ventus permission to store, sync, and process this content solely to provide the app's features to you.","Əlavə etdiyin səyahətlər, qeydlər, fayllar və digər məzmun səninkidir. Bu məzmunu yalnız tətbiqin funksiyalarını sənə çatdırmaq üçün saxlamaq, sinxronlaşdırmaq və emal etmək məqsədilə Ventus-a icazə verirsən.","Eklediğin geziler, notlar, dosyalar ve diğer içerik senindir. Bu içeriği yalnızca uygulamanın özelliklerini sana sunmak amacıyla saklamak, eşitlemek ve işlemek için Ventus'a izin verirsin.",,
+07 · Terms & Privacy,legalTermsS3Title,Your content,Məzmunun,İçeriğin,,
+07 · Terms & Privacy,legalTermsS4Body,"Ventus is provided “as is”, without warranties. We may add, change, or remove features, and we are not liable for losses arising from third-party data (maps, weather, AI) or interruptions to the service.","Ventus “olduğu kimi”, zəmanətsiz təqdim olunur. Funksiyaları əlavə edə, dəyişə və ya silə bilərik; üçüncü tərəf datasından (xəritə, hava, AI) və ya xidmət fasilələrindən yaranan itkilərə görə məsuliyyət daşımırıq.","Ventus “olduğu gibi”, garantisiz sunulur. Özellikleri ekleyebilir, değiştirebilir veya kaldırabiliriz; üçüncü taraf verilerinden (harita, hava, AI) veya hizmet kesintilerinden doğan kayıplardan sorumlu değiliz.",,
+07 · Terms & Privacy,legalTermsS4Title,Service & liability,Xidmət və məsuliyyət,Hizmet ve sorumluluk,,
+07 · Terms & Privacy,legalTermsTitle,Terms of Service,İstifadə Şərtləri,Kullanım Şartları,,
+07 · Terms & Privacy,legalUpdated,Last updated: June 2026,Son yeniləmə: İyun 2026,Son güncelleme: Haziran 2026,,
+08 · PIN setup,createPinBody,"Set a 4-digit code for quick, secure access next time.",Növbəti dəfə tez və təhlükəsiz girmək üçün 4 rəqəmli kod seç.,Bir sonraki sefer hızlı ve güvenli girmek için 4 haneli bir kod seç.,,
+08 · PIN setup,createPinTitle,Create a PIN,PIN yarat,PIN oluştur,,
+08 · PIN setup,pinTooWeak,That PIN is too easy to guess. Try a different one.,Bu PIN çox asan təxmin edilir. Başqa bir kod seç.,Bu PIN çok kolay tahmin edilebilir. Farklı bir kod seç.,,həmçinin: 52 · Change PIN
+09 · PIN unlock,enterPinToUnlock,Enter your PIN to unlock,Kilidi açmaq üçün PIN-i yaz,Kilidi açmak için PIN'ini yaz,,
+09 · PIN unlock,greeting,"Hi, {name}","Salam, {name}","Merhaba, {name}",,dəyişənlər: {name} | həmçinin: 13 · Home
+09 · PIN unlock,incorrectPin,Incorrect PIN.,PIN yanlışdır.,PIN yanlış.,,
+09 · PIN unlock,pinLockedOut,Too many attempts. Try again in,Çox sayda yanlış cəhd. Gözlə:,Çok fazla hatalı deneme. Bekle:,,
+09 · PIN unlock,usePasswordInstead,Use password instead,Parolla daxil ol,Şifreyle giriş yap,,
+10 · Auth error messages,authEmailExists,An account with this email already exists. Sign in instead.,Bu e-poçtla artıq hesab var. Daxil ol.,Bu e-posta ile zaten bir hesap var. Giriş yap.,,
+10 · Auth error messages,authEmailNotConfirmed,"Check your inbox to confirm your email, then sign in.","E-poçtunu təsdiqləmək üçün gələnlər qutusunu yoxla, sonra daxil ol.","E-postanı onaylamak için gelen kutunu kontrol et, sonra giriş yap.",,
+10 · Auth error messages,authInvalidCredentials,Incorrect email or password.,E-poçt və ya parol yanlışdır.,E-posta veya şifre yanlış.,,
+10 · Auth error messages,authRateLimited,Too many attempts. Try again in a few minutes.,Çox sayda cəhd oldu. Bir az sonra yenidən yoxla.,Çok fazla deneme yapıldı. Birkaç dakika sonra tekrar dene.,,
+10 · Auth error messages,authSamePassword,New password must be different from the current one.,Yeni parol cari paroldan fərqli olmalıdır.,Yeni şifre mevcut şifreden farklı olmalı.,,həmçinin: 53 · Change password
+10 · Auth error messages,authWeakPassword,Password is too weak. Use at least 8 characters.,Parol çox zəifdir. Ən azı 8 simvol istifadə et.,Şifre çok zayıf. En az 8 karakter kullan.,,həmçinin: 53 · Change password
+10 · Auth error messages,providerComingSoon,{provider} sign-in is coming soon.,{provider} ilə giriş tezliklə.,{provider} ile giriş yakında.,,dəyişənlər: {provider}
+11 · Form validation messages,errEmailInvalid,Enter a valid email,Düzgün e-poçt ünvanı yaz,Geçerli bir e-posta yaz,,
+11 · Form validation messages,errEmailRequired,Enter your email,E-poçtunu yaz,E-postanı yaz,,
+11 · Form validation messages,errNameRequired,Enter your name,Adını yaz,Adını yaz,,
+11 · Form validation messages,errPasswordRequired,Enter your password,Parolunu yaz,Şifreni yaz,,
+11 · Form validation messages,errPasswordTooShort,At least 8 characters,Ən azı 8 simvol,En az 8 karakter,,
+12 · Bottom navigation,navHome,Home,Ana səhifə,Ana Sayfa,,
+12 · Bottom navigation,navProfile,Profile,Profil,Profil,,həmçinin: 46 · Profile
+12 · Bottom navigation,navTools,Tools,Alətlər,Araçlar,,həmçinin: 37 · Tools — home
+12 · Bottom navigation,navTrips,Trips,Səyahətlər,Geziler,,
+13 · Home,addNewTripShort,New,Yeni,Yeni,,
+13 · Home,budgetRemaining,Remaining,Qalıq,Kalan,,həmçinin: 21 · Trip hub; 30 · Budget & expenses
+13 · Home,checklistProgress,{done} of {total} done,{total}-dən {done} hazır,{done}/{total} tamam,,"dəyişənlər: {done}, {total} | həmçinin: 21 · Trip hub; 25 · Checklist"
+13 · Home,couldNotLoadTrips,Could not load your trips.,Səyahətlərin yüklənmədi.,Gezilerin yüklenemedi.,,həmçinin: 15 · All trips
+13 · Home,createSheetTitle,New trip,Yeni səyahət,Yeni gezi,,həmçinin: 16 · Create trip — entry sheet
+13 · Home,discover,Discover,Kəşf et,Keşfet,,
+13 · Home,documentsCount,"{count, plural, one{{count} file} other{{count} files}}","{count, plural, one{{count} fayl} other{{count} fayl}}","{count, plural, one{{count} dosya} other{{count} dosya}}",,dəyişənlər: {count} | ICU plural/select — struktura toxunma | həmçinin: 27 · Documents
+13 · Home,firstTripBody,"Write the route by hand, or describe it in a sentence and let AI build it.","Planı özün yaz, ya da bir cümlə de — qalanını Ventus etsin.",Planı kendin yaz ya da bir cümle söyle — gerisini Ventus halletsin.,,
+13 · Home,firstTripTitle,Plan your first trip,İlk səyahətini planla,İlk gezini planla,,
+13 · Home,homeNextStop,Next stop,Növbəti dayanacaq,Sıradaki durak,,
+13 · Home,homeSearchHint,"City, country or place","Şəhər, ölkə və ya yer","Şehir, ülke veya yer",,
+13 · Home,homeWhereTo,Where to?,Hara gedirik?,Nereye gidiyoruz?,,
+13 · Home,moduleBudget,Budget,Büdcə,Bütçe,,həmçinin: 14 · Trip cards; 21 · Trip hub; 30 · Budget & expenses
+13 · Home,moduleChecklist,Checklist,Yoxlama siyahısı,Kontrol listesi,,həmçinin: 21 · Trip hub; 25 · Checklist
+13 · Home,moduleDocuments,Documents,Sənədlər,Belgeler,,həmçinin: 21 · Trip hub; 27 · Documents; 28 · Document detail
+13 · Home,planNewTrip,New trip,Yeni səyahət,Yeni gezi,,həmçinin: 16 · Create trip — entry sheet
+13 · Home,planWithAi,Plan with AI,AI ilə planla,AI ile planla,,həmçinin: 16 · Create trip — entry sheet
+13 · Home,seeAll,See all,Hamısına bax,Tümünü gör,,həmçinin: 21 · Trip hub
+13 · Home,sponsored,Sponsored,Reklam,Sponsorlu,,
+13 · Home,tripInProgress,In progress,Davam edir,Devam ediyor,,həmçinin: 14 · Trip cards; 21 · Trip hub
+13 · Home,tripPickerTitle,My trips,Səyahətlərim,Gezilerim,,
+13 · Home,tryAgain,Try again,Yenidən cəhd et,Tekrar dene,,həmçinin: 38 · Tools — currency; 40 · Tools — weather
+13 · Home,yourTrips,Your trips,Səyahətlərin,Gezilerin,,
+14 · Trip cards,percentPlanned,{percent}% planned,{percent}% planlanıb,%{percent} planlandı,,dəyişənlər: {percent} | həmçinin: 21 · Trip hub
+14 · Trip cards,tripDaysToGo,"{count, plural, one{{count} day to go} other{{count} days to go}}","{count, plural, one{{count} gün qalıb} other{{count} gün qalıb}}","{count, plural, one{{count} gün kaldı} other{{count} gün kaldı}}",,dəyişənlər: {count} | ICU plural/select — struktura toxunma | həmçinin: 21 · Trip hub
+14 · Trip cards,tripToday,Today,Bu gün,Bugün,,həmçinin: 21 · Trip hub
+15 · All trips,allTrips,All trips,Bütün səyahətlər,Tüm geziler,,
+15 · All trips,allTripsEmptyBody,Your planned and past trips will show up here.,Planladığın və keçmiş səyahətlərin burada görünəcək.,Planladığın ve geçmiş gezilerin burada görünecek.,,
+15 · All trips,tripsPast,Past,Keçmiş,Geçmiş,,
+15 · All trips,tripsUpcoming,Upcoming,Qarşıdan gələn,Yaklaşan,,
+16 · Create trip — entry sheet,createAiBadge,FAST,SÜRƏTLİ,HIZLI,,
+16 · Create trip — entry sheet,createAiBody,"Write ""4 days in Rome in October, museums and food"" — get an instant plan.","""Oktyabrda 4 gün Romaya, muzeylər və yemək"" yaz — plan hazır olsun.","""Ekimde Roma'ya 4 gün, müzeler ve yemek"" yaz — plan hazır olsun.",,
+16 · Create trip — entry sheet,createManualBody,"Pick the destination, dates and travel companions yourself.","İstiqamət, tarixlər və həmsəyahətçiləri özün seç.","Rotayı, tarihleri ve yol arkadaşlarını kendin seç.",,
+16 · Create trip — entry sheet,createSheetSubtitle,How do you want to start?,Necə başlamaq istəyirsən?,Nasıl başlamak istersin?,,
+16 · Create trip — entry sheet,sheetClose,Close,Bağla,Kapat,,
+17 · Create trip — destination,addAnotherStop,Add another stop,Başqa dayanacaq əlavə et,Başka durak ekle,,
+17 · Create trip — destination,addPlace,Add “{name}”,“{name}” əlavə et,“{name}” ekle,,dəyişənlər: {name}
+17 · Create trip — destination,aiExampleCityLabel,Short city break,Qısa şəhər turu,Kısa şehir turu,,
+17 · Create trip — destination,aiExampleCityText,A short 3-day weekend city break — historic sights and local food.,Həftəsonu qısa 3 günlük şəhər turu — tarixi yerlər və yerli mətbəx.,Hafta sonu kısa 3 günlük şehir turu — tarihi yerler ve yerel mutfak.,,
+17 · Create trip — destination,aiExampleFamilyLabel,Family getaway,Ailəvi istirahət,Aile tatili,,
+17 · Create trip — destination,aiExampleFamilyText,"A 7-day beach holiday in August with our family (2 adults, 2 kids).","Ailəmizlə (2 böyük, 2 uşaq) avqustda dənizkənarı istirahət, 7 gün.","Ailemizle (2 yetişkin, 2 çocuk) ağustosta 7 günlük bir sahil tatili.",,
+17 · Create trip — destination,aiExampleFriendsLabel,Trip with friends,Dostlarla macəra,Arkadaşlarla gezi,,
+17 · Create trip — destination,aiExampleFriendsText,"A 3-day mountain trip with 4 friends in September, hiking and nature.",4 dostla sentyabrda dağlıq bir yerə 3 günlük gəzinti və təbiət marşrutu.,Eylülde 4 arkadaşla dağlık bir bölgeye 3 günlük doğa yürüyüşü gezisi.,,
+17 · Create trip — destination,aiExampleRomanticLabel,Romantic weekend,Romantik həftəsonu,Romantik hafta sonu,,
+17 · Create trip — destination,aiExampleRomanticText,"A short romantic getaway for two this weekend, somewhere nearby.",İki nəfər üçün bu həftə sonu yaxınlıqda romantik bir şəhərə qısa səyahət.,Bu hafta sonu yakın bir şehre iki kişilik kısa romantik bir kaçamak.,,
+17 · Create trip — destination,aiExampleSoloLabel,Solo trip,Tək səyahət,Tek gezi,,
+17 · Create trip — destination,aiExampleSoloText,A solo 4-day culture-and-relax trip to a quiet city in October.,"Tək başıma, oktyabrda sakit bir şəhərdə 4 günlük mədəniyyət və istirahət səyahəti.",Ekimde sakin bir şehre tek başıma 4 günlük kültür ve dinlenme gezisi.,,
+17 · Create trip — destination,aiExampleWinterLabel,Winter holiday,Qış tətili,Kış tatili,,
+17 · Create trip — destination,aiExampleWinterText,"A 5-day winter holiday at a snowy mountain resort in January, skiing and hot chocolate.","Yanvarda qarlı bir dağ kurortunda 5 günlük qış tətili, xizək və isti şokolad.",Ocakta karlı bir dağ tatil köyünde 5 günlük kayak ve sıcak çikolatalı kış tatili.,,
+17 · Create trip — destination,aiExamplesLabel,Quick start,Sürətli başla,Hızlı başla,,
+17 · Create trip — destination,aiNeedDescription,Describe your trip first.,Əvvəlcə səyahətini təsvir et.,Önce gezini tarif et.,,
+17 · Create trip — destination,aiParseEmpty,Couldn't find a place in that. Try naming a city.,Burada yer tapılmadı. Bir şəhər adı yazmağa cəhd et.,Burada bir yer bulunamadı. Bir şehir adı yazmayı dene.,,
+17 · Create trip — destination,aiParseFailed,Couldn't read your trip. Try again.,Səyahətini oxumaq alınmadı. Yenidən cəhd et.,Gezin okunamadı. Tekrar dene.,,
+17 · Create trip — destination,aiPlanNetworkError,Couldn't reach the planner. Check your connection and try again.,Planlayıcıya çatmaq olmadı. Bağlantını yoxla və yenidən cəhd et.,Planlayıcıya ulaşılamadı. Bağlantını kontrol edip tekrar dene.,,həmçinin: 20 · Create trip — review; 21 · Trip hub
+17 · Create trip — destination,aiPlanUnavailable,AI planning isn't available yet.,AI ilə planlama hələ əlçatan deyil.,AI ile planlama henüz kullanılamıyor.,,həmçinin: 20 · Create trip — review; 21 · Trip hub
+17 · Create trip — destination,aiPromptHint,"A 5-day food & culture trip to Istanbul and Cappadocia for two, mid-June.",İki nəfər üçün iyunun ortasında İstanbul və Kappadokiyaya 5 günlük yemək və mədəniyyət səyahəti.,İki kişi için haziran ortasında İstanbul ve Kapadokya’ya 5 günlük yemek ve kültür gezisi.,,
+17 · Create trip — destination,aiReadingTrip,Reading your trip…,Səyahətin oxunur…,Gezin okunuyor…,,
+17 · Create trip — destination,aiSubtitle,Describe your trip in your own words — Ventus fills in the details.,Səyahətini öz sözlərinlə təsvir et — Ventus detalları tamamlayar.,Gezini kendi kelimelerinle anlat — Ventus detayları tamamlar.,,
+17 · Create trip — destination,aiTitle,Tell Ventus about your trip,Ventus-a səyahətin haqqında danış,Ventus’a gezini anlat,,
+17 · Create trip — destination,continueAction,Continue,Davam et,Devam et,,həmçinin: 19 · Create trip — travelers
+17 · Create trip — destination,destinationSubtitle,Add one or more places — Ventus plans the route between them.,Bir və ya bir neçə yer əlavə et — aralarındakı marşrutu Ventus qurar.,Bir veya daha fazla yer ekle — aralarındaki rotayı Ventus planlar.,,
+17 · Create trip — destination,keepTyping,Type at least 3 letters to search,Axtarış üçün ən azı 3 hərf yaz,Aramak için en az 3 harf yaz,,
+17 · Create trip — destination,placesMatch,{count} places match “{query}”,“{query}” üçün {count} yer tapıldı,“{query}” ile {count} yer eşleşiyor,,"dəyişənlər: {count}, {query}"
+17 · Create trip — destination,popularRightNow,Popular right now,İndi populyar,Şu an popüler,,
+17 · Create trip — destination,searchCityCountry,Search a city or country,Şəhər və ya ölkə axtar,Şehir veya ülke ara,,
+17 · Create trip — destination,searchPlacesFailed,Couldn’t search — add it manually below.,Axtarış alınmadı — aşağıdan əl ilə əlavə edə bilərsən.,Arama olmadı — aşağıdan elle ekleyebilirsin.,,
+17 · Create trip — destination,searchingPlaces,Searching…,Axtarırıq…,Arıyoruz…,,həmçinin: 23 · Itinerary
+17 · Create trip — destination,whereTo,Where to?,Hara?,Nereye?,,
+18 · Create trip — dates,datesSubtitle,"Pick your dates, or stay flexible — you can change this later.","Tarixləri seç, ya da çevik qal — bunu sonra dəyişə bilərsən.",Tarihleri seç ya da esnek kal — bunu sonra değiştirebilirsin.,,
+18 · Create trip — dates,nightsCount,"{count, plural, one{{count} night} other{{count} nights}}","{count, plural, one{{count} gecə} other{{count} gecə}}","{count, plural, one{{count} gece} other{{count} gece}}",,dəyişənlər: {count} | ICU plural/select — struktura toxunma | həmçinin: 20 · Create trip — review; 21 · Trip hub
+18 · Create trip — dates,presetFlexible,I’m flexible,Fərqi yoxdur,Fark etmez,,
+18 · Create trip — dates,presetInAMonth,In a month,Bir aya,Bir ay içinde,,
+18 · Create trip — dates,presetNextWeek,Next week,Gələn həftə,Gelecek hafta,,
+18 · Create trip — dates,presetThisWeekend,This weekend,Bu həftə sonu,Bu hafta sonu,,
+18 · Create trip — dates,reviewTrip,Review trip,Səyahətə bax,Geziyi gözden geçir,,
+18 · Create trip — dates,selectDates,Select dates,Tarix seç,Tarih seç,,həmçinin: 20 · Create trip — review
+18 · Create trip — dates,when,When?,Nə vaxt?,Ne zaman?,,
+19 · Create trip — travelers,collabPeopleCount,"{count, plural, =1{1 person} other{{count} people}}","{count, plural, =1{1 nəfər} other{{count} nəfər}}","{count, plural, =1{1 kişi} other{{count} kişi}}",,dəyişənlər: {count} | ICU plural/select — struktura toxunma | həmçinin: 33 · Collaborators
+19 · Create trip — travelers,inviteAdd,Add,Əlavə et,Ekle,,
+19 · Create trip — travelers,inviteAfterCreate,They'll be invited once you create the trip.,Səyahəti yaratdıqdan sonra dəvət olunacaqlar.,Geziyi oluşturduğunda davet edilecekler.,,
+19 · Create trip — travelers,inviteCompanions,Invite companions,Həmsəyahətçiləri dəvət et,Yol arkadaşlarını davet et,,
+19 · Create trip — travelers,inviteCompanionsSub,Optional · plan together,İstəyə bağlı · birlikdə planla,İsteğe bağlı · birlikte planla,,
+19 · Create trip — travelers,inviteEmailInvalid,Enter a valid email,Düzgün e-poçt ünvanı yaz,Geçerli bir e-posta yaz,,həmçinin: 33 · Collaborators
+19 · Create trip — travelers,travelerCouple,Couple,Cüt,Çift,,həmçinin: 20 · Create trip — review; 21 · Trip hub
+19 · Create trip — travelers,travelerFamily,Family,Ailə,Aile,,həmçinin: 20 · Create trip — review; 21 · Trip hub
+19 · Create trip — travelers,travelerFriends,Friends,Dostlar,Arkadaşlar,,həmçinin: 20 · Create trip — review; 21 · Trip hub
+19 · Create trip — travelers,travelerSolo,Solo,Tək,Tek,,həmçinin: 20 · Create trip — review; 21 · Trip hub
+19 · Create trip — travelers,travelersAdults,Adults,Böyüklər,Yetişkinler,,
+19 · Create trip — travelers,travelersAdultsSub,Age 13+,13+ yaş,13+ yaş,,
+19 · Create trip — travelers,travelersChildren,Children,Uşaqlar,Çocuklar,,
+19 · Create trip — travelers,travelersChildrenSub,Age 0–12,0–12 yaş,0–12 yaş,,
+19 · Create trip — travelers,travelersSubtitle,This helps Ventus set the right pace and suggestions.,"Bu, Ventus-un sənə uyğun ritm və təkliflər seçməsinə kömək edir.","Bu, Ventus’un sana uygun tempoyu ve önerileri seçmesine yardımcı olur.",,
+19 · Create trip — travelers,whosComing,Who’s coming?,Kim gəlir?,Kimler geliyor?,,
+20 · Create trip — review,adultsCount,"{count, plural, one{{count} adult} other{{count} adults}}","{count, plural, one{{count} böyük} other{{count} böyük}}","{count, plural, one{{count} yetişkin} other{{count} yetişkin}}",,dəyişənlər: {count} | ICU plural/select — struktura toxunma | həmçinin: 21 · Trip hub
+20 · Create trip — review,aiGenerating,Crafting your plan…,Planın hazırlanır…,Planın hazırlanıyor…,,həmçinin: 21 · Trip hub
+20 · Create trip — review,aiPlanEmpty,Couldn't build a plan. Try again in a moment.,Plan qurmaq alınmadı. Bir az sonra yenidən cəhd et.,Plan oluşturulamadı. Birazdan tekrar dene.,,həmçinin: 21 · Trip hub
+20 · Create trip — review,aiPlanFailed,Couldn't generate a plan. Try again.,Plan yaradıla bilmədi. Yenidən cəhd et.,Plan oluşturulamadı. Tekrar dene.,,həmçinin: 21 · Trip hub
+20 · Create trip — review,aiPlanReady,Your plan is ready,Planın hazırdır,Planın hazır,,həmçinin: 21 · Trip hub
+20 · Create trip — review,buildPlanWithAi,Build my plan with AI,Planımı AI qursun,Planımı AI oluştursun,,
+20 · Create trip — review,cancel,Cancel,Ləğv et,İptal,,həmçinin: 21 · Trip hub; 23 · Itinerary; 28 · Document detail; 45 · Notifications feed; 46 · Profile; 51 · Privacy & security
+20 · Create trip — review,childrenCount,"{count, plural, one{{count} child} other{{count} children}}","{count, plural, one{{count} uşaq} other{{count} uşaq}}","{count, plural, one{{count} çocuk} other{{count} çocuk}}",,dəyişənlər: {count} | ICU plural/select — struktura toxunma | həmçinin: 21 · Trip hub
+20 · Create trip — review,createEmptyTrip,Build it myself,Özüm quraram,Kendim oluştururum,,
+20 · Create trip — review,datesLabel,Dates,Tarixlər,Tarihler,,
+20 · Create trip — review,editAction,Edit,Redaktə,Düzenle,,
+20 · Create trip — review,reviewFootnote,No bookings here — add tickets & documents anytime.,Burada rezervasiya edilmir — bilet və sənədləri istənilən vaxt əlavə edə bilərsən.,Burada rezervasyon yapılmaz — bilet ve belgeleri istediğin zaman ekleyebilirsin.,,
+20 · Create trip — review,reviewTitle,Review,Son baxış,Son bakış,,
+20 · Create trip — review,routeLabel,Route,Marşrut,Rota,,həmçinin: 21 · Trip hub
+20 · Create trip — review,stopsCount,"{count, plural, one{{count} stop} other{{count} stops}}","{count, plural, one{{count} dayanacaq} other{{count} dayanacaq}}","{count, plural, one{{count} durak} other{{count} durak}}",,dəyişənlər: {count} | ICU plural/select — struktura toxunma | həmçinin: 21 · Trip hub; 32 · Map
+20 · Create trip — review,travelersLabel,Travelers,Səyahətçilər,Yolcular,,həmçinin: 21 · Trip hub
+20 · Create trip — review,tripCreated,Trip created,Səyahət yaradıldı,Gezi oluşturuldu,,
+21 · Trip hub,addActivity,Add activity,Fəaliyyət əlavə et,Etkinlik ekle,,həmçinin: 23 · Itinerary
+21 · Trip hub,addExpense,Add expense,Xərc əlavə et,Harcama ekle,,həmçinin: 30 · Budget & expenses
+21 · Trip hub,aiAssistBody,Let Ventus draft them for you,Qoy Ventus onları sənin üçün hazırlasın,Bırak Ventus senin için taslak hazırlasın,,
+21 · Trip hub,aiAssistTitle,Some days are still open,Bəzi günlər hələ boşdur,Bazı günler hâlâ boş,,
+21 · Trip hub,aiHubBody,"A day-by-day itinerary tuned to your dates, pace and the places you picked — ready in seconds.","Tarixlərinə, ritminə və seçdiyin yerlərə uyğun gün-gün plan — bir neçə saniyəyə hazır olur.","Tarihlerine, temponuna ve seçtiğin yerlere göre günlük plan — saniyeler içinde hazır olur.",,
+21 · Trip hub,aiHubGenerate,Generate my plan,Planımı yarat,Planımı oluştur,,
+21 · Trip hub,aiHubTitle,Let Ventus plan {city},{city} planını Ventus qursun,{city} planını Ventus yapsın,,dəyişənlər: {city}
+21 · Trip hub,aiNeedsDestination,Add a destination first.,Əvvəlcə istiqamət əlavə et.,Önce bir varış noktası ekle.,,
+21 · Trip hub,budgetSpentUsed,{spent} spent · {percent}% used,{spent} xərclənib · büdcənin {percent}%-i,{spent} harcandı · bütçenin %{percent}'i,,"dəyişənlər: {spent}, {percent} | həmçinin: 30 · Budget & expenses"
+21 · Trip hub,changeCoverPhoto,Change cover photo,Səyahət şəklini dəyiş,Kapak fotoğrafını değiştir,,
+21 · Trip hub,collaboratorsManageSub,Invite people to plan together,Birlikdə planlamaq üçün dəvət et,Birlikte planlamak için davet et,,
+21 · Trip hub,collaboratorsTitle,Collaborators,Birgə planlayanlar,Birlikte planlayanlar,,həmçinin: 33 · Collaborators
+21 · Trip hub,coverUpdated,Cover updated,Şəkil yeniləndi,Kapak güncellendi,,
+21 · Trip hub,deleteConfirm,Delete,Sil,Sil,,həmçinin: 23 · Itinerary; 28 · Document detail; 51 · Privacy & security
+21 · Trip hub,deleteTripAction,Delete trip,Səyahəti sil,Geziyi sil,,
+21 · Trip hub,deleteTripBody,This removes the trip and its details. This can’t be undone.,"Bu, səyahəti və bütün məlumatlarını silir. Geri qaytarmaq mümkün deyil.","Bu, geziyi ve tüm ayrıntılarını siler. Geri alınamaz.",,
+21 · Trip hub,deleteTripTitle,Delete this trip?,Bu səyahəti silmək?,Bu gezi silinsin mi?,,
+21 · Trip hub,moduleItinerary,Itinerary,Gün planı,Gün planı,,həmçinin: 23 · Itinerary
+21 · Trip hub,orStartManually,Or start manually,Yaxud əl ilə başla,Ya da elle başla,,
+21 · Trip hub,planAction,Plan,Planla,Planla,,
+21 · Trip hub,sharedViaVentus,Planned with Ventus ✈️,Ventus ilə planlandı ✈️,Ventus ile planlandı ✈️,,
+21 · Trip hub,startBuildItinerary,Build itinerary,Gün planını qur,Gün planı oluştur,,
+21 · Trip hub,startBuildItinerarySub,Add days and activities yourself,Günləri və fəaliyyətləri özün əlavə et,Günleri ve etkinlikleri kendin ekle,,
+21 · Trip hub,startChecklist,Create a checklist,Yoxlama siyahısı yarat,Kontrol listesi oluştur,,
+21 · Trip hub,startChecklistSub,Track what to pack and prepare,Nə götürəcəyini və hazırlayacağını izlə,Ne alacağını ve hazırlayacağını takip et,,
+21 · Trip hub,startUploadDocs,Upload tickets & documents,Bilet və sənədləri yüklə,Bilet ve belgeleri yükle,,
+21 · Trip hub,startUploadDocsSub,"Flights, hotels, passports — all in one place","Uçuşlar, otellər, pasportlar — hamısı bir yerdə","Uçuşlar, oteller, pasaportlar — hepsi tek yerde",,
+21 · Trip hub,tripDeleted,Trip deleted,Səyahət silindi,Gezi silindi,,
+21 · Trip hub,tripDetailsTitle,Trip details,Səyahət məlumatları,Gezi ayrıntıları,,
+21 · Trip hub,tripNotFound,Trip not found.,Səyahət tapılmadı.,Gezi bulunamadı.,,həmçinin: 28 · Document detail
+21 · Trip hub,tripOverviewTab,Overview,İcmal,Genel bakış,,
+22 · Trip cover photo,avatarChooseLibrary,Choose from library,Qalereyadan seç,Galeriden seç,,həmçinin: 48 · Edit profile
+22 · Trip cover photo,avatarTakePhoto,Take photo,Şəkil çək,Fotoğraf çek,,həmçinin: 48 · Edit profile
+22 · Trip cover photo,coverRemove,Remove cover photo,Səyahət şəklini sil,Kapak fotoğrafını kaldır,,
+23 · Itinerary,activityAddTime,Add a time,Vaxt əlavə et,Saat ekle,,
+23 · Itinerary,activityDayLabel,Day,Gün,Gün,,
+23 · Itinerary,activityKindLabel,Type,Növ,Tür,,
+23 · Itinerary,activityPlaceHint,e.g. Karaköy,məs. Karaköy,örn. Karaköy,,
+23 · Itinerary,activityPlaceLabel,Place,Yer,Yer,,
+23 · Itinerary,activityTimeLabel,Time,Vaxt,Saat,,
+23 · Itinerary,activityTitleHint,e.g. Bosphorus sunset walk,məs. Bosfor gün batımı gəzintisi,örn. Boğaz gün batımı yürüyüşü,,
+23 · Itinerary,activityTitleLabel,Activity,Fəaliyyət,Etkinlik,,
+23 · Itinerary,activityTitleRequired,Add a short title,Qısa başlıq yaz,Kısa bir başlık yaz,,həmçinin: 25 · Checklist
+23 · Itinerary,dayLabel,Day,Gün,Gün,,həmçinin: 24 · Itinerary — day chip
+23 · Itinerary,deleteActivity,Delete activity,Fəaliyyəti sil,Etkinliği sil,,
+23 · Itinerary,deleteActivityTitle,Delete this activity?,Bu fəaliyyəti silmək?,Bu etkinlik silinsin mi?,,
+23 · Itinerary,editActivity,Edit activity,Fəaliyyəti redaktə et,Etkinliği düzenle,,
+23 · Itinerary,emptyDayBody,Add your first activity for this day.,Bu gün üçün ilk fəaliyyətini əlavə et.,Bu gün için ilk etkinliğini ekle.,,
+23 · Itinerary,emptyDayTitle,Nothing planned yet,Hələ heç nə planlanmayıb,Henüz bir plan yok,,
+23 · Itinerary,kindActivity,Activity,Fəaliyyət,Etkinlik,,
+23 · Itinerary,kindFlight,Flight,Uçuş,Uçuş,,
+23 · Itinerary,kindFood,Food,Yemək,Yemek,,
+23 · Itinerary,kindSight,Sight,Görməli yer,Gezilecek yer,,
+23 · Itinerary,kindStay,Stay,Yaşayış,Konaklama,,
+23 · Itinerary,kindTransport,Transport,Nəqliyyat,Ulaşım,,
+23 · Itinerary,newActivity,New activity,Yeni fəaliyyət,Yeni etkinlik,,
+23 · Itinerary,save,Save,Yadda saxla,Kaydet,,həmçinin: 25 · Checklist; 27 · Documents; 48 · Edit profile
+23 · Itinerary,selectTime,Select time,Vaxt seç,Saat seç,,
+23 · Itinerary,setTime,Set time,Təsdiq et,Onayla,,
+25 · Checklist,addItem,Add item,Əlavə et,Ekle,,
+25 · Checklist,addToChecklist,Add to checklist,Siyahıya əlavə et,Listeye ekle,,
+25 · Checklist,checklistCatBeforeYouGo,Before you go,Getməzdən əvvəl,Gitmeden önce,,
+25 · Checklist,checklistCatOnArrival,On arrival,Çatanda,Varışta,,
+25 · Checklist,checklistCatPack,Pack,Yığ,Topla,,
+25 · Checklist,checklistCategoryLabel,Category,Kateqoriya,Kategori,,
+25 · Checklist,checklistItemHint,e.g. Passport valid 6+ months,məs. Pasport 6+ ay etibarlı,örn. Pasaport 6+ ay geçerli,,
+25 · Checklist,deleteChecklistItem,Delete item,Sil,Sil,,
+25 · Checklist,dueBy,Do by {date},{date} tarixinə kimi,{date} tarihine kadar,,dəyişənlər: {date}
+25 · Checklist,editChecklistItem,Edit item,Redaktə et,Düzenle,,
+25 · Checklist,emptyChecklistBody,Add what you need to pack and prepare.,Yığmalı və hazırlamalı olduqlarını əlavə et.,Toplaman ve hazırlaman gerekenleri ekle.,,
+25 · Checklist,emptyChecklistTitle,Nothing to check off yet,Hələ qeyd ediləsi heç nə yoxdur,Henüz işaretlenecek bir şey yok,,
+25 · Checklist,itemDeleted,Item deleted,Silindi,Silindi,,
+25 · Checklist,setReminder,Set a reminder,Xatırlatma qur,Hatırlatma kur,,
+25 · Checklist,undo,Undo,Geri qaytar,Geri al,,
+26 · Checklist — default items,defChkCash,Exchange currency / cash,Valyuta dəyiş / nağd pul,Döviz bozdur / nakit,,
+26 · Checklist — default items,defChkCharger,Charger / adapter,Şarj cihazı / adapter,Şarj cihazı / adaptör,,
+26 · Checklist — default items,defChkCheckin,Online check-in,Onlayn check-in et,Online check-in,,
+26 · Checklist — default items,defChkHotel,Hotel check-in,Otelə check-in,Otele check-in,,
+26 · Checklist — default items,defChkId,ID card,Şəxsiyyət vəsiqəsi,Kimlik kartı,,
+26 · Checklist — default items,defChkInsurance,Travel insurance,Səyahət sığortası,Seyahat sigortası,,
+26 · Checklist — default items,defChkPassport,Passport,Pasport,Pasaport,,
+26 · Checklist — default items,defChkSim,Local SIM / eSIM,Yerli SIM / eSIM,Yerel SIM / eSIM,,
+26 · Checklist — default items,defChkTickets,Tickets (flight / train),Biletlər (uçuş / qatar),Biletler (uçuş / tren),,
+26 · Checklist — default items,defChkTransport,Local transport,Yerli nəqliyyat,Yerel ulaşım,,
+26 · Checklist — default items,defChkVisa,Check / apply for visa,Vizanı yoxla / al,Vize kontrol / başvuru,,
+27 · Documents,addDocumentBody,"Tickets, vouchers & IDs stay private to this trip.","Biletlər, vauçerlər və şəxsiyyət sənədləri bu səyahətə özəl qalır.","Biletler, kuponlar ve kimlikler bu geziye özel kalır.",,
+27 · Documents,addDocumentTitle,Add a document,Sənəd əlavə et,Belge ekle,,
+27 · Documents,deleteDocument,Delete document,Sənədi sil,Belgeyi sil,,
+27 · Documents,docDayShort,Day {day},Gün {day},{day}. gün,,dəyişənlər: {day} | həmçinin: 28 · Document detail; 30 · Budget & expenses
+27 · Documents,docDayWithDate,Day {day} · {date},Gün {day} · {date},{day}. gün · {date},,"dəyişənlər: {day}, {date} | həmçinin: 28 · Document detail; 30 · Budget & expenses"
+27 · Documents,docFilterAll,All,Hamısı,Tümü,,
+27 · Documents,docFilterId,ID,Şəxsiyyət,Kimlik,,
+27 · Documents,docGroupIdentity,Identity,Şəxsiyyət,Kimlik,,
+27 · Documents,docGroupOther,Other,Digər,Diğer,,
+27 · Documents,docGroupStays,Stays,Yaşayış,Konaklama,,
+27 · Documents,docGroupTickets,Tickets,Biletlər,Biletler,,
+27 · Documents,docGroupTripWide,Trip-wide,Bütün səyahət,Tüm gezi,,
+27 · Documents,documentDeleted,Document deleted,Sənəd silindi,Belge silindi,,həmçinin: 28 · Document detail
+27 · Documents,documentNameHint,Document name,Sənədin adı,Belge adı,,
+27 · Documents,documentNameLabel,Name,Ad,Ad,,
+27 · Documents,documentTypeLabel,Type,Növ,Tür,,
+27 · Documents,editDocumentTitle,Edit document,Sənədi redaktə et,Belgeyi düzenle,,
+27 · Documents,emptyDocumentsBody,"Upload your tickets, vouchers and IDs to keep them handy.","Biletlərini, vauçerlərini və şəxsiyyət sənədlərini yüklə ki, əlin altında olsun.","Biletlerini, kuponlarını ve kimliklerini yükle, hep elinin altında olsun.",,
+27 · Documents,emptyDocumentsTitle,No documents yet,Hələ sənəd yoxdur,Henüz belge yok,,
+27 · Documents,linkToDayLabel,Link to day (optional),Günə bağla (istəyə bağlı),Güne bağla (isteğe bağlı),,
+27 · Documents,saveDocumentTitle,Save document,Sənədi yadda saxla,Belgeyi kaydet,,
+27 · Documents,saveToDocuments,Save to Documents,Sənədlərə əlavə et,Belgelere kaydet,,
+27 · Documents,sourceCamera,Camera,Kamera,Kamera,,
+27 · Documents,sourceCameraSub,Scan a paper ticket or ID,Kağız bilet və ya sənədi skan et,Kağıt bir bilet veya kimlik tara,,
+27 · Documents,sourceFiles,Files,Fayllar,Dosyalar,,
+27 · Documents,sourceFilesSub,"PDF, Pages, anything","PDF, Pages, istənilən fayl","PDF, Pages, her şey",,
+27 · Documents,sourcePhotos,Photos,Şəkillər,Fotoğraflar,,
+27 · Documents,sourcePhotosSub,Pick from your library,Qalereyadan seç,Galerinden seç,,
+27 · Documents,uploadDocument,Upload ticket or document,Bilet və ya sənəd yüklə,Bilet veya belge yükle,,
+27 · Documents,uploadFailed,Couldn’t upload — try again.,Yüklənmədi — yenidən cəhd et.,Yüklenemedi — tekrar dene.,,
+28 · Document detail,connectToView,Connect to the internet to view this file.,Bu faylı görmək üçün internetə qoşul.,Bu dosyayı görüntülemek için internete bağlan.,,
+28 · Document detail,deleteDocumentBody,This permanently removes the file. This can’t be undone.,"Bu, faylı həmişəlik silir. Geri qaytarmaq mümkün deyil.","Bu, dosyayı kalıcı olarak siler. Geri alınamaz.",,
+28 · Document detail,deleteDocumentTitle,Delete this document?,Bu sənəd silinsin?,Bu belge silinsin mi?,,
+28 · Document detail,docActionDelete,Delete,Sil,Sil,,
+28 · Document detail,docActionEdit,Edit,Redaktə,Düzenle,,
+28 · Document detail,docActionSave,Save,Saxla,Kaydet,,
+28 · Document detail,docActionShare,Share,Paylaş,Paylaş,,
+28 · Document detail,documentLinkedTo,Linked to {day},Bağlıdır: {day},Bağlı: {day},,dəyişənlər: {day}
+28 · Document detail,openFile,Open,Aç,Aç,,
+28 · Document detail,previewUnavailable,Preview isn’t available here.,Bu faylı burada göstərə bilmirik.,Bu dosyayı burada gösteremiyoruz.,,
+29 · Document labels,docTypeId,ID,Şəxsiyyət,Kimlik,,
+29 · Document labels,docTypeOther,Other,Digər,Diğer,,
+29 · Document labels,docTypeStay,Stay,Yaşayış,Konaklama,,
+29 · Document labels,docTypeTicket,Ticket,Bilet,Bilet,,
+30 · Budget & expenses,addAmountTo,Add {amount} to {category},{category} üçün {amount} əlavə et,{category} için {amount} ekle,,"dəyişənlər: {amount}, {category}"
+30 · Budget & expenses,amountRequired,Enter an amount,Məbləği yaz,Tutarı yaz,,
+30 · Budget & expenses,budgetAllocateByCategory,Allocate by category,Kateqoriyalara böl,Kategorilere ayır,,
+30 · Budget & expenses,budgetAllocated,Allocated,Bölüşdürülüb,Ayrılan,,
+30 · Budget & expenses,budgetByCategory,By category,Kateqoriya üzrə,Kategoriye göre,,
+30 · Budget & expenses,budgetCurrency,Currency,Valyuta,Para birimi,,həmçinin: 49 · Currency & units
+30 · Budget & expenses,budgetExpenses,Expenses,Xərclər,Harcamalar,,
+30 · Budget & expenses,budgetLeftPct,{percent}% left,{percent}% qalıb,%{percent} kaldı,,dəyişənlər: {percent}
+30 · Budget & expenses,budgetOfTotal,of {total},{total}-dən,/ {total},,dəyişənlər: {total}
+30 · Budget & expenses,budgetSave,Save budget,Büdcəni yadda saxla,Bütçeyi kaydet,,
+30 · Budget & expenses,budgetTotalLabel,Total trip budget,Ümumi səyahət büdcəsi,Toplam gezi bütçesi,,
+30 · Budget & expenses,budgetUnassigned,Unassigned,Təyin edilməyib,Atanmamış,,
+30 · Budget & expenses,editBudget,Edit budget,Büdcəni redaktə et,Bütçeyi düzenle,,
+30 · Budget & expenses,editExpense,Edit expense,Xərci redaktə et,Harcamayı düzenle,,
+30 · Budget & expenses,emptyExpensesBody,No expenses logged yet.,Hələ xərc yazılmayıb.,Henüz harcama eklenmedi.,,
+30 · Budget & expenses,expenseDeleted,Expense deleted,Xərc silindi,Harcama silindi,,
+30 · Budget & expenses,expenseNoteHint,Add a note…,Qeyd əlavə et…,Not ekle…,,
+30 · Budget & expenses,setBudgetBody,Add a total and Ventus tracks what’s left as you spend.,"Ümumi məbləği əlavə et, Ventus xərclədikcə qalanı izləsin.","Bir toplam ekle, Ventus harcadıkça kalanı takip etsin.",,
+30 · Budget & expenses,setBudgetTitle,Set your trip budget,Səyahət büdcəni təyin et,Gezi bütçeni belirle,,
+31 · Budget labels,expCatFood,Food,Yemək,Yemek,,
+31 · Budget labels,expCatOther,Other,Digər,Diğer,,
+31 · Budget labels,expCatSight,Sights,Görməli yerlər,Gezilecek yerler,,
+31 · Budget labels,expCatStay,Stay,Yaşayış,Konaklama,,
+31 · Budget labels,expCatTransport,Transport,Nəqliyyat,Ulaşım,,
+32 · Map,emptyMapBody,Add places to your trip and they'll appear here on the map.,"Səyahətinə yerlər əlavə et, onlar burada xəritədə görünəcək.","Gezine yerler ekle, burada haritada görünecekler.",,
+32 · Map,emptyMapNoCoords,Your stops don't have locations yet. Add them again from search to pin them on the map.,Dayanacaqlarının yeri bilinmir. Xəritədə görünsünlər deyə onları axtarışdan yenidən əlavə et.,Duraklarının konumu bilinmiyor. Haritada görünsünler diye onları aramadan yeniden ekle.,,
+32 · Map,emptyMapTitle,Nothing to map yet,Hələ xəritələnəcək bir şey yoxdur,Henüz haritalanacak bir şey yok,,
+32 · Map,mapRouteTitle,Route,Marşrut,Rota,,
+32 · Map,moduleMap,Map,Xəritə,Harita,,
+33 · Collaborators,collabAnyoneWithLink,Anyone with the link,Linki olan hər kəs,Bağlantısı olan herkes,,
+33 · Collaborators,collabCopy,Copy,Kopyala,Kopyala,,
+33 · Collaborators,collabInviteSent,Invite sent · pending,Dəvət göndərildi · gözləyir,Davet gönderildi · bekliyor,,
+33 · Collaborators,collabInviteSentToast,Invite sent,Dəvət göndərildi,Davet gönderildi,,
+33 · Collaborators,collabLinkCopied,Invite link copied,Dəvət linki kopyalandı,Davet bağlantısı kopyalandı,,
+33 · Collaborators,collabPending,Pending,Gözləyir,Bekliyor,,
+33 · Collaborators,collabRemoved,Collaborator removed,Siyahıdan çıxarıldı,Listeden çıkarıldı,,
+33 · Collaborators,collabYou,You,Sən,Sen,,
+33 · Collaborators,inviteRoleLabel,Role,Rol,Rol,,
+33 · Collaborators,inviteTitle,Invite to trip,Səyahətə dəvət et,Geziye davet et,,
+33 · Collaborators,removeCollaborator,Remove,Çıxar,Çıkar,,
+33 · Collaborators,roleEditor,Editor,Redaktor,Düzenleyici,,
+33 · Collaborators,roleEditorDesc,"Add & edit itinerary, budget, docs","Gün planı, büdcə və sənədləri əlavə edib dəyişə bilər","Gün planı, bütçe ve belgeleri ekleyip değiştirebilir",,
+33 · Collaborators,roleOwner,Owner,Sahib,Sahip,,
+33 · Collaborators,roleViewer,Viewer,İzləyici,İzleyici,,
+33 · Collaborators,roleViewerDesc,"See the trip, can’t make changes","Səyahəti görə bilər, dəyişiklik edə bilməz","Geziyi görebilir, değişiklik yapamaz",,
+33 · Collaborators,sendInvite,Send invite,Dəvət göndər,Davet gönder,,
+34 · Explore,exploreAsk,Ask Ventus where to go…,Ventus-dan hara gedəcəyini soruş…,Ventus'a nereye gideceğini sor…,,
+34 · Explore,exploreEmpty,Nothing to explore yet.,Hələ kəşf ediləcək bir şey yoxdur.,Henüz keşfedilecek bir şey yok.,,həmçinin: 35 · Place detail
+34 · Explore,exploreSubtitle,Places to inspire your next trip,Növbəti səyahətin üçün ilham verən yerlər,Sonraki gezine ilham verecek yerler,,
+34 · Explore,exploreTitle,Discover,Kəşf et,Keşfet,,həmçinin: 35 · Place detail; 36 · Saved places
+34 · Explore,toolsOffline,Couldn't load. Check your connection.,Yüklənmədi. Bağlantını yoxla.,Yüklenemedi. Bağlantını kontrol et.,,həmçinin: 37 · Tools — home; 38 · Tools — currency; 40 · Tools — weather; 42 · Tools — city picker
+35 · Place detail,destAskPlan,Ask Ventus to plan a trip here…,Ventus-dan buraya səyahət planlamasını istə…,Ventus'tan buraya gezi planlamasını iste…,,
+35 · Place detail,destGoodToKnow,Good to know,Bilməyə dəyər,Bilmekte fayda var,,
+35 · Place detail,factBestTime,Best time,İdeal vaxt,En iyi zaman,,
+35 · Place detail,factCurrency,Currency,Valyuta,Para birimi,,
+35 · Place detail,factLanguage,Language,Dil,Dil,,
+35 · Place detail,factTimezone,Timezone,Saat qurşağı,Saat dilimi,,
+35 · Place detail,planTripHere,Plan a trip here,Buraya səyahət planla,Buraya gezi planla,,
+36 · Saved places,navSaved,Saved,Saxlanılanlar,Kaydedilen,,həmçinin: 46 · Profile
+36 · Saved places,savedEmptyBody,Tap the heart on a place in Discover to save it here.,Kəşf et bölməsində bəyəndiyin yerin ürək işarəsinə toxun — burada yığılsın.,Keşfet'te beğendiğin yerin kalp simgesine dokun — burada birikir.,,
+36 · Saved places,savedEmptyTitle,No saved places yet,Hələ saxlanan yer yoxdur,Henüz kayıtlı yer yok,,
+36 · Saved places,savedSubtitle,Places you've saved,Bəyəndiyin yerlər,Beğendiğin yerler,,
+37 · Tools — home,clockHome,Home,Ev vaxtı,Ev saati,,həmçinin: 41 · Tools — world clock
+37 · Tools — home,tipSubtitle,Quick gratuity · offline,Sürətli bəxşiş · oflayn,Hızlı bahşiş · çevrimdışı,,
+37 · Tools — home,toolCurrency,Currency converter,Valyuta çeviricisi,Döviz çevirici,,həmçinin: 38 · Tools — currency
+37 · Tools — home,toolTip,Tip calculator,Bəxşiş kalkulyatoru,Bahşiş hesaplayıcı,,həmçinin: 43 · Tools — tip calculator
+37 · Tools — home,toolWorldClock,Timezone,Saat qurşağı,Saat dilimi,,həmçinin: 41 · Tools — world clock
+37 · Tools — home,toolsActiveTripBanner,Active trip: {trip},Aktiv səyahət: {trip},Aktif gezi: {trip},,dəyişənlər: {trip}
+37 · Tools — home,toolsCurrencyHint,1 {fromGlyph} = {rate} {toGlyph} · today's rate,1 {fromGlyph} = {rate} {toGlyph} · bu gün yeniləndi,1 {fromGlyph} = {rate} {toGlyph} · bugünkü kur,,"dəyişənlər: {fromGlyph}, {rate}, {toGlyph}"
+37 · Tools — home,toolsTimezoneEmptyHint,Add a city to compare times,Vaxt fərqini görmək üçün şəhər əlavə et,Saat farkını görmek için bir şehir ekle,,
+37 · Tools — home,toolsTimezoneHint,{hours}h between {home} and {away},{home} ilə {away} arasında {hours} saat fərq var,{home} ile {away} arasında {hours} saat fark var,,"dəyişənlər: {hours}, {home}, {away}"
+38 · Tools — currency,addToBudgetAsExpense,Add to budget as an expense,Büdcəyə xərc kimi əlavə et,Bütçeye gider olarak ekle,,
+38 · Tools — currency,currencyRateUpdated,"Official CBAR rate, {date}. 1 {from} = {rate} {to}","CBAR rəsmi kursu, {date}. 1 {from} = {rate} {to}","CBAR resmi kuru, {date}. 1 {from} = {rate} {to}",,"dəyişənlər: {date}, {from}, {rate}, {to}"
+38 · Tools — currency,currencyReceiveLabel,You get,Alırsan,Aldığın,,
+38 · Tools — currency,currencySendLabel,You have,Verirsən,Elindeki,,
+38 · Tools — currency,expenseAdded,Added to your trip budget.,Səyahət büdcəsinə əlavə olundu.,Gezi bütçesine eklendi.,,həmçinin: 43 · Tools — tip calculator
+38 · Tools — currency,quickAmountsLabel,Quick amounts,Tez məbləğlər,Hızlı tutarlar,,
+39 · Tools — currency picker,currencyHomeCurrency,Home currency,Əsas valyuta,Ana para birimi,,
+39 · Tools — currency picker,currencyPickerTitle,Choose a currency,Valyuta seç,Para birimi seç,,
+39 · Tools — currency picker,currencySearchHint,Search currency or country,Valyuta və ya ölkə axtar,Para birimi veya ülke ara,,
+39 · Tools — currency picker,currencyTripCurrency,Active trip currency,Aktiv səyahət valyutası,Aktif gezi para birimi,,
+39 · Tools — currency picker,noCitiesFound,No cities found.,Şəhər tapılmadı.,Şehir bulunamadı.,,həmçinin: 42 · Tools — city picker
+40 · Tools — weather,toolWeather,Weather,Hava,Hava,,
+40 · Tools — weather,weatherNextDays,Next 5 days,Növbəti 5 gün,Sonraki 5 gün,,
+40 · Tools — weather,weatherToday,Today,Bu gün,Bugün,,
+41 · Tools — world clock,searchCity,Search a city,Şəhər axtar,Şehir ara,,həmçinin: 42 · Tools — city picker
+41 · Tools — world clock,timezoneAddCity,Add another city,Digər şəhər əlavə et,Başka bir şehir ekle,,
+41 · Tools — world clock,timezoneDiffLabel,{hours}h difference,{hours} saat fərq,{hours} saat fark,,dəyişənlər: {hours}
+41 · Tools — world clock,timezoneTripTag,active trip,aktiv səyahət,aktif gezi,,
+42 · Tools — city picker,searchCityHint,Type a city name…,Şəhər adı yaz…,Şehir adı yaz…,,
+43 · Tools — tip calculator,addAsExpense,Add as an expense,Xərc kimi əlavə et,Gider olarak ekle,,
+43 · Tools — tip calculator,tipAmount,Tip,Bəxşiş,Bahşiş,,
+43 · Tools — tip calculator,tipBillLabel,Bill amount,Hesab məbləği,Hesap tutarı,,
+43 · Tools — tip calculator,tipCustomPercentHint,Percent,Faiz,Yüzde,,
+43 · Tools — tip calculator,tipOtherPercent,Other,Digər,Diğer,,
+43 · Tools — tip calculator,tipPeopleCount,"{count, plural, one{{count} person} other{{count} people}}","{count, plural, one{{count} nəfər} other{{count} nəfər}}","{count, plural, one{{count} kişi} other{{count} kişi}}",,dəyişənlər: {count} | ICU plural/select — struktura toxunma
+43 · Tools — tip calculator,tipPerPerson,Per person,Adambaşı,Kişi başı,,
+43 · Tools — tip calculator,tipPercentLabel,Tip,Bəxşiş,Bahşiş,,
+43 · Tools — tip calculator,tipSplitLabel,Split between,Neçə nəfər,Kaç kişi,,
+43 · Tools — tip calculator,tipTotal,Total,Cəmi,Toplam,,
+44 · Tools — shared labels,curAED,UAE dirham,BƏƏ dirhəmi,BAE dirhemi,,
+44 · Tools — shared labels,curAZN,Azerbaijani manat,Azərbaycan manatı,Azerbaycan manatı,,
+44 · Tools — shared labels,curEUR,Euro,Avro,Euro,,
+44 · Tools — shared labels,curGBP,British pound,Britaniya funtu,İngiliz sterlini,,
+44 · Tools — shared labels,curGEL,Georgian lari,Gürcü larisi,Gürcistan larisi,,
+44 · Tools — shared labels,curTRY,Turkish lira,Türk lirəsi,Türk lirası,,
+44 · Tools — shared labels,curUSD,US dollar,ABŞ dolları,ABD doları,,
+45 · Notifications feed,notifAcceptInvite,Accept,Qəbul et,Kabul et,,
+45 · Notifications feed,notifAccepted,Accepted,Qəbul edildi,Kabul edildi,,
+45 · Notifications feed,notifAiReadyBody,Ventus drafted a plan for {trip}.,Ventus {trip} üçün plan hazırladı.,Ventus {trip} için bir plan hazırladı.,,dəyişənlər: {trip}
+45 · Notifications feed,notifAiReadyTitle,Your AI day plan is ready,AI gün planın hazırdır,AI gün planın hazır,,
+45 · Notifications feed,notifCollabInvitedBody,Added to {trip}. Invite sent.,{trip} səyahətinə əlavə edildi. Dəvət göndərildi.,{trip} gezisine eklendi. Davet gönderildi.,,dəyişənlər: {trip}
+45 · Notifications feed,notifCollabInvitedBodyShort,Invite sent.,Dəvət göndərildi.,Davet gönderildi.,,
+45 · Notifications feed,notifCollabInvitedTitle,Invited {email},{email} dəvət olundu,{email} davet edildi,,dəyişənlər: {email}
+45 · Notifications feed,notifConfirmDeleteAllBody,This permanently removes all your notifications. This can’t be undone.,"Bu, bütün bildirişlərini həmişəlik silir. Geri qaytarmaq mümkün deyil.","Bu, tüm bildirimlerini kalıcı olarak siler. Geri alınamaz.",,
+45 · Notifications feed,notifConfirmDeleteAllTitle,Delete all notifications?,Bütün bildirişlər silinsin?,Tüm bildirimler silinsin mi?,,
+45 · Notifications feed,notifConfirmMarkAllReadBody,All notifications will be marked as read.,Bütün bildirişlər oxunmuş kimi işarələnəcək.,Tüm bildirimler okundu olarak işaretlenecek.,,
+45 · Notifications feed,notifConfirmMarkAllReadTitle,Mark all as read?,Hamısı oxunmuş işarələnsin?,Hepsi okundu olarak işaretlensin mi?,,
+45 · Notifications feed,notifDeleteAll,Delete all,Hamısını sil,Hepsini sil,,
+45 · Notifications feed,notifDeleteAllConfirm,Delete all,Hamısını sil,Hepsini sil,,
+45 · Notifications feed,notifEarlier,Earlier,Daha əvvəl,Daha önce,,
+45 · Notifications feed,notifEmptyBody,Trip activity and AI updates will show up here.,Səyahət fəaliyyəti və AI yenilikləri burada görünəcək.,Gezi etkinliği ve AI güncellemeleri burada görünecek.,,
+45 · Notifications feed,notifEmptyTitle,No notifications yet,Hələ bildiriş yoxdur,Henüz bildirim yok,,
+45 · Notifications feed,notifGenericTitle,Update,Yenilik,Güncelleme,,
+45 · Notifications feed,notifMarkRead,Mark all read,Hamısını oxunmuş işarələ,Hepsini okundu işaretle,,
+45 · Notifications feed,notifMarkReadConfirm,Mark read,Oxunmuş işarələ,Okundu işaretle,,
+45 · Notifications feed,notifToday,Today,Bu gün,Bugün,,
+45 · Notifications feed,notifWelcomeBody,Your account is ready. Plan your first trip and let Ventus handle the details.,"Hesabın hazırdır. İlk səyahətini planla, qalanını Ventus-a burax.","Hesabın hazır. İlk gezini planla, gerisini Ventus halletsin.",,
+45 · Notifications feed,notifWelcomeTitle,Welcome to Ventus 👋,Ventus-a xoş gəldin 👋,Ventus'a hoş geldin 👋,,
+45 · Notifications feed,notificationsTitle,Notifications,Bildirişlər,Bildirimler,,
+45 · Notifications feed,timeDaysAgo,{count}d ago,{count} gün əvvəl,{count} gün önce,,dəyişənlər: {count}
+45 · Notifications feed,timeHoursAgo,{count}h ago,{count} saat əvvəl,{count} sa önce,,dəyişənlər: {count}
+45 · Notifications feed,timeJustNow,Just now,İndicə,Az önce,,
+45 · Notifications feed,timeMinutesAgo,{count}m ago,{count} dəq əvvəl,{count} dk önce,,dəyişənlər: {count}
+45 · Notifications feed,timeYesterday,Yesterday,Dünən,Dün,,
+46 · Profile,collabNoTrips,Create a trip first to invite people.,Kimisə dəvət etmək üçün əvvəlcə səyahət yarat.,Birini davet etmek için önce bir gezi oluştur.,,
+46 · Profile,collabPickTrip,Choose a trip,Səyahət seç,Bir gezi seç,,
+46 · Profile,goVentusPro,Go Ventus Pro,Ventus Pro-ya keç,Ventus Pro'ya geç,,
+46 · Profile,goVentusProSub,"Unlimited trips, offline maps & more","Limitsiz səyahət, oflayn xəritələr və daha çox","Sınırsız gezi, çevrimdışı haritalar ve daha fazlası",,
+46 · Profile,logOut,Log out,Çıxış,Çıkış yap,,həmçinin: 51 · Privacy & security
+46 · Profile,menuCollaborators,Collaborators,Birgə planlayanlar,Birlikte planlayanlar,,
+46 · Profile,menuCurrencyUnits,Currency & units,Valyuta və vahidlər,Para birimi ve birimler,,həmçinin: 49 · Currency & units
+46 · Profile,menuPrivacySecurity,Privacy & security,Məxfilik və təhlükəsizlik,Gizlilik ve güvenlik,,həmçinin: 51 · Privacy & security
+46 · Profile,menuSettings,Settings,Tənzimləmələr,Ayarlar,,
+46 · Profile,notificationSettingsTitle,Notification settings,Bildiriş ayarları,Bildirim ayarları,,həmçinin: 50 · Notification settings
+46 · Profile,profileEdit,Edit,Redaktə,Düzenle,,
+46 · Profile,profileSectionAccount,Account,Hesab,Hesap,,
+46 · Profile,profileSectionPreferences,Preferences,Tərcihlər,Tercihler,,
+46 · Profile,signOut,Sign out,Çıxış,Çıkış yap,,həmçinin: 51 · Privacy & security
+46 · Profile,signOutBody,You can sign back in any time.,İstədiyin vaxt yenidən daxil ola bilərsən.,İstediğin zaman tekrar giriş yapabilirsin.,,həmçinin: 51 · Privacy & security
+46 · Profile,signOutTitle,Sign out?,Çıxış edilsin?,Çıkış yapılsın mı?,,həmçinin: 51 · Privacy & security
+46 · Profile,statCities,Cities,Şəhər,Şehir,,
+46 · Profile,statCountries,Countries,Ölkə,Ülke,,
+46 · Profile,statTrips,Trips,Səyahət,Gezi,,
+47 · Settings,appearance,Appearance,Görünüş,Görünüm,,
+47 · Settings,language,Language,Dil,Dil,,
+47 · Settings,settingsTitle,Settings,Tənzimləmələr,Ayarlar,,
+47 · Settings,systemDefault,System default,Sistem dili,Sistem dili,,
+47 · Settings,themeDark,Dark,Qaranlıq,Koyu,,
+47 · Settings,themeLight,Light,İşıqlı,Açık,,
+47 · Settings,themeSystem,System,Sistem,Sistem,,
+48 · Edit profile,avatarRemove,Remove photo,Şəkli sil,Fotoğrafı kaldır,,
+48 · Edit profile,changePhoto,Change photo,Şəkli dəyiş,Fotoğrafı değiştir,,
+48 · Edit profile,editProfileTitle,Edit profile,Profili redaktə et,Profili düzenle,,
+48 · Edit profile,emailReadonlyNote,Email can't be changed here.,E-poçt burada dəyişdirilə bilməz.,E-posta buradan değiştirilemez.,,
+48 · Edit profile,nameRequired,Enter your name,Adını yaz,Adını yaz,,
+48 · Edit profile,profileEditUnavailable,Sign in to edit your profile.,Profili redaktə etmək üçün daxil ol.,Profili düzenlemek için giriş yap.,,
+48 · Edit profile,profileSaveFailed,Couldn't save your profile. Try again.,Profil saxlanmadı. Yenidən cəhd et.,Profil kaydedilemedi. Tekrar dene.,,
+48 · Edit profile,profileSaved,Profile updated,Profil yeniləndi,Profil güncellendi,,
+49 · Currency & units,measurementSystem,Measurement,Ölçü sistemi,Ölçü sistemi,,
+49 · Currency & units,unitImperial,Imperial,İmperial,Emperyal,,
+49 · Currency & units,unitImperialDesc,"Miles, °F","Mil, °F","Mil, °F",,
+49 · Currency & units,unitMetric,Metric,Metrik,Metrik,,
+49 · Currency & units,unitMetricDesc,"Kilometres, °C","Kilometr, °C","Kilometre, °C",,
+50 · Notification settings,notifCheckInDeparture,Check-in & departure,Check-in və yola düşmə,Check-in ve kalkış,,
+50 · Notification settings,notifChecklistReminders,Checklist reminders,Yoxlama siyahısı,Kontrol listesi,,
+50 · Notification settings,notifChecklistRemindersSub,Due-date nudges,Son tarix xatırlatmaları,Son tarih hatırlatmaları,,
+50 · Notification settings,notifCollaboratorChanges,Collaborator changes,Səyahətdə dəyişikliklər,Gezideki değişiklikler,,
+50 · Notification settings,notifCollaboratorChangesSub,When someone edits the trip,Kimsə səyahəti dəyişəndə,Biri geziyi değiştirdiğinde,,
+50 · Notification settings,notifDocumentExpiry,Document expiry,Sənədin müddəti,Belgenin süresi,,
+50 · Notification settings,notifDocumentExpirySub,Passport & visa checks,Pasport və viza yoxlamaları,Pasaport ve vize kontrolleri,,
+50 · Notification settings,notifItineraryUpdates,Itinerary updates,Gün planı yenilikləri,Gün planı güncellemeleri,,
+50 · Notification settings,notifProductNews,Product news & offers,Məhsul xəbərləri və təkliflər,Ürün haberleri ve teklifler,,
+50 · Notification settings,notifSectionTravelAlerts,Travel alerts,Səyahət xəbərdarlıqları,Seyahat uyarıları,,
+50 · Notification settings,notifSectionTripActivity,Trip activity,Səyahət fəaliyyəti,Gezi etkinliği,,
+50 · Notification settings,notifSectionVentus,Ventus,Ventus,Ventus,,
+50 · Notification settings,notifTravelTips,Travel tips,Səyahət məsləhətləri,Seyahat ipuçları,,
+50 · Notification settings,notifWeatherChanges,Weather changes,Hava dəyişiklikləri,Hava değişiklikleri,,
+51 · Privacy & security,accountDeleted,Your account has been deleted,Hesabın silindi,Hesabın silindi,,
+51 · Privacy & security,changePasswordTitle,Change password,Parolu dəyiş,Şifreyi değiştir,,həmçinin: 53 · Change password
+51 · Privacy & security,deleteAccountBody,This permanently deletes your account and all your trips. This can't be undone.,"Bu, hesabını və bütün səyahətlərini həmişəlik silir. Geri qaytarmaq mümkün deyil.","Bu, hesabını ve tüm gezilerini kalıcı olarak siler. Geri alınamaz.",,
+51 · Privacy & security,deleteAccountTitle,Delete account?,Hesab silinsin?,Hesap silinsin mi?,,
+51 · Privacy & security,privacyChangePasswordSub,Update your account password,Hesab parolunu yenilə,Hesap şifreni güncelle,,
+51 · Privacy & security,privacyChangePin,Change PIN,PIN-i dəyiş,PIN'i değiştir,,
+51 · Privacy & security,privacyChangePinSub,Quick-unlock PIN for this device,Bu cihaz üçün sürətli kilid PIN-i,Bu cihaz için hızlı kilit PIN'i,,
+51 · Privacy & security,privacyDeleteAccount,Delete account,Hesabı sil,Hesabı sil,,
+51 · Privacy & security,privacyDeleteAccountSub,Permanently remove your account and data,Hesabını və məlumatlarını həmişəlik sil,Hesabını ve verilerini kalıcı olarak sil,,
+51 · Privacy & security,privacySectionAccount,Account,Hesab,Hesap,,
+51 · Privacy & security,privacySectionAppLock,App lock,Tətbiq kilidi,Uygulama kilidi,,
+51 · Privacy & security,privacySectionDanger,Danger zone,Hesabın silinməsi,Hesabı silme,,
+52 · Change PIN,changePinConfirmBody,Type your new PIN again to confirm.,Təsdiq üçün yeni PIN-i bir də yaz.,Onaylamak için yeni PIN'i bir daha yaz.,,
+52 · Change PIN,changePinConfirmTitle,Re-enter new PIN,Yeni PIN-i təkrarla,Yeni PIN'i tekrar gir,,
+52 · Change PIN,changePinMismatch,PINs didn't match. Start again.,PIN-lər uyğun gəlmədi. Yenidən başla.,PIN'ler eşleşmedi. Baştan başla.,,
+52 · Change PIN,changePinNewBody,Pick a 4-digit PIN you'll remember.,Yadda saxlayacağın 4 rəqəmli PIN seç.,Hatırlayacağın 4 haneli bir PIN seç.,,
+52 · Change PIN,changePinNewTitle,Choose a new PIN,Yeni PIN seç,Yeni PIN seç,,
+52 · Change PIN,changePinTitle,Change PIN,PIN-i dəyiş,PIN'i değiştir,,
+52 · Change PIN,changePinVerifyBody,Confirm it's you before changing your PIN.,Dəyişməzdən əvvəl sənin olduğunu yoxlayaq.,Değiştirmeden önce senin olduğunu doğrulayalım.,,
+52 · Change PIN,changePinVerifyTitle,Enter current PIN,Cari PIN-i yaz,Mevcut PIN'i yaz,,
+52 · Change PIN,changePinWrong,Incorrect PIN. Try again.,PIN yanlışdır. Yenidən cəhd et.,PIN yanlış. Tekrar dene.,,
+52 · Change PIN,pinChanged,PIN updated,PIN yeniləndi,PIN güncellendi,,
+53 · Change password,changePasswordAction,Update password,Parolu yenilə,Şifreyi güncelle,,
+53 · Change password,currentPasswordIncorrect,Current password is incorrect.,Cari parol yanlışdır.,Mevcut şifre yanlış.,,
+53 · Change password,currentPasswordLabel,Current password,Cari parol,Mevcut şifre,,
+53 · Change password,passwordChanged,Password updated,Parol yeniləndi,Şifre güncellendi,,
+54 · Ventus Pro,proBilledMonthly,billed monthly,aylıq ödəniş,aylık faturalandırılır,,
+54 · Ventus Pro,proBillingMonthly,Monthly,Aylıq,Aylık,,
+54 · Ventus Pro,proBillingYearly,Yearly,İllik,Yıllık,,
+54 · Ventus Pro,proColFeature,Feature,Funksiya,Özellik,,
+54 · Ventus Pro,proColFree,Free,Pulsuz,Ücretsiz,,
+54 · Ventus Pro,proColPro,Pro,Pro,Pro,,
+54 · Ventus Pro,proComingSoon,We're still building Ventus Pro. We'll let you know when it's ready.,Ventus Pro üzərində işləyirik. Hazır olan kimi xəbər verəcəyik.,Ventus Pro'yu hâlâ geliştiriyoruz. Hazır olduğunda haber vereceğiz.,,
+54 · Ventus Pro,proCtaTrial,Start 7-day free trial,7 günlük pulsuz sınağı başlat,7 günlük ücretsiz denemeyi başlat,,
+54 · Ventus Pro,proFreeAiPlansPerMonth,5/mo,5/ay,5/ay,,
+54 · Ventus Pro,proPerMonth,/mo,/ay,/ay,,
+54 · Ventus Pro,proPerYear,/yr,/il,/yıl,,
+54 · Ventus Pro,proRowAiPlans,AI day plans,AI gün planları,AI gün planları,,
+54 · Ventus Pro,proRowCollaborators,Collaborators,Birgə planlayanlar,Birlikte planlayanlar,,
+54 · Ventus Pro,proRowOfflineMaps,Offline maps,Oflayn xəritələr,Çevrimdışı haritalar,,
+54 · Ventus Pro,proRowTrips,Active trips,Aktiv səyahətlər,Aktif geziler,,
+54 · Ventus Pro,proRowVault,Document vault,Sənəd seyfi,Belge kasası,,
+54 · Ventus Pro,proSave,Save 30%,30% qənaət,%30 tasarruf,,
+54 · Ventus Pro,proTagline,Plan without limits.,Limitsiz planla.,Sınırsız planla.,,
+54 · Ventus Pro,proThenMonthly,Then $4.99/mo · cancel anytime,Sonra $4.99/ay · istənilən vaxt ləğv et,Sonra $4.99/ay · istediğin zaman iptal et,,
+54 · Ventus Pro,proThenYearly,Then $41.99/yr · cancel anytime,Sonra $41.99/il · istənilən vaxt ləğv et,Sonra $41.99/yıl · istediğin zaman iptal et,,
+54 · Ventus Pro,proTitle,Ventus Pro,Ventus Pro,Ventus Pro,,
+54 · Ventus Pro,proYearlyEquiv,≈ $3.50/mo,≈ $3.50/ay,≈ $3.50/ay,,
+55 · Not currently shown (leftover keys),agreeTerms,I agree to the Terms & Privacy Policy,Şərtlər və Məxfilik Siyasəti ilə razıyam,Şartları ve Gizlilik Politikasını kabul ediyorum,,
+55 · Not currently shown (leftover keys),appName,Ventus,Ventus,Ventus,,
+55 · Not currently shown (leftover keys),comingSoon,Coming soon,Tezliklə,Yakında,,
+55 · Not currently shown (leftover keys),currencyAllLabel,All currencies,Bütün valyutalar,Tüm para birimleri,,
+55 · Not currently shown (leftover keys),currencyUpdated,Updated {date},Yeniləndi {date},Güncellendi {date},,dəyişənlər: {date}
+55 · Not currently shown (leftover keys),deleteExpense,Delete expense,Xərci sil,Harcamayı sil,,
+55 · Not currently shown (leftover keys),deleteExpenseTitle,Delete this expense?,Bu xərc silinsin?,Bu harcama silinsin mi?,,
+55 · Not currently shown (leftover keys),emptyHomeBody,"Start a trip and Ventus builds the plan, budget and checklist — all in one place.","Səyahətini başlat — plan, büdcə və yoxlama siyahısı bir yerdə qurulsun.","Bir gezi başlat — plan, bütçe ve kontrol listesi tek yerde kurulsun.",,
+55 · Not currently shown (leftover keys),menuNotifications,Notifications,Bildirişlər,Bildirimler,,
+55 · Not currently shown (leftover keys),menuSavedPlaces,Saved places,Saxlanan yerlər,Kayıtlı yerler,,
+55 · Not currently shown (leftover keys),notifNewCount,{count} new,{count} yeni,{count} yeni,,dəyişənlər: {count}
+55 · Not currently shown (leftover keys),planWithAiSubtitle,Tell me where you’re going next,Növbəti dəfə hara gedirsən?,Sıradaki gezin nereye?,,
+55 · Not currently shown (leftover keys),popularDestinations,Popular destinations,Populyar istiqamətlər,Popüler destinasyonlar,,
+55 · Not currently shown (leftover keys),recent,Recent,Son,Son,,
+55 · Not currently shown (leftover keys),renameChecklistItem,Rename item,Adını dəyiş,Adını değiştir,,
+55 · Not currently shown (leftover keys),resetSent,Reset link sent. Check your inbox.,Sıfırlama linki göndərildi. Poçtunu yoxla.,Sıfırlama bağlantısı gönderildi. Gelen kutunu kontrol et.,,
+55 · Not currently shown (leftover keys),setBudget,Set a budget,Büdcə təyin et,Bütçe belirle,,
+55 · Not currently shown (leftover keys),statKmFlown,km flown,km uçuş,km uçuş,,
+55 · Not currently shown (leftover keys),tipExampleBill,Bill {glyph}0 · 0%,Hesab {glyph}0 · 0%,Hesap {glyph}0 · 0%,,dəyişənlər: {glyph}
+55 · Not currently shown (leftover keys),toolsSectionMoney,Money,Pul,Para,,
+55 · Not currently shown (leftover keys),toolsSectionWeather,Weather & time,Hava və saat,Hava ve saat,,
+55 · Not currently shown (leftover keys),toolsSubtitle,Handy on the road · works offline,Yolda lazım olanlar · oflayn işləyir,Yolda pratik · çevrimdışı çalışır,,
+55 · Not currently shown (leftover keys),ventusUnderstood,Ventus understood,Ventus anladı,Ventus anladı,,
+55 · Not currently shown (leftover keys),welcomeToVentus,Welcome to Ventus,Ventus-a xoş gəldin,Ventus'a hoş geldin,,
+55 · Not currently shown (leftover keys),whereToFirst,Where to first?,Əvvəlcə hara?,Önce nereye?,,

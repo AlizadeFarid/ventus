@@ -1,0 +1,1004 @@
+{
+  "source": "Supabase public.destinations (live)",
+  "totalStrings": 114,
+  "languages": [
+    "en",
+    "az",
+    "tr"
+  ],
+  "newLanguageField": "new",
+  "cities": [
+    {
+      "id": "paris",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "Paris",
+          "az": "Paris",
+          "tr": "Paris",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "France",
+          "az": "Fransa",
+          "tr": "Fransa",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "The city of romance, art, fashion and iconic landmarks, famous for the Eiffel Tower, Louvre Museum, charming streets and exceptional French cuisine.",
+          "az": "Romantika, sənət və moda şəhəri — Eyfel qülləsi, Luvr muzeyi, füsunkar küçələri və gözəl fransız mətbəxi ilə məşhurdur.",
+          "tr": "Eyfel Kulesi, Louvre Müzesi, büyüleyici sokakları ve muhteşem Fransız mutfağıyla ünlü, romantizm, sanat ve moda şehri.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "Euro (€)",
+          "az": "Avro (€)",
+          "tr": "Euro (€)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "French",
+          "az": "Fransız dili",
+          "tr": "Fransızca",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "Apr–Jun",
+          "az": "Aprel–İyun",
+          "tr": "Nisan–Haziran",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "dubai",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "Dubai",
+          "az": "Dubay",
+          "tr": "Dubai",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "United Arab Emirates",
+          "az": "Birləşmiş Ərəb Əmirlikləri",
+          "tr": "Birleşik Arap Emirlikleri",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "A futuristic city known for luxury shopping, impressive skyscrapers, desert adventures, beautiful beaches and world-famous attractions like Burj Khalifa.",
+          "az": "Futuristik bir şəhər — lüks alış-veriş mərkəzləri, nəhəng göydələnlər, səhra macəraları, gözəl çimərliklər və Burc Xəlifə kimi dünya şöhrətli məkanlarla tanınır.",
+          "tr": "Lüks alışveriş, etkileyici gökdelenler, çöl maceraları, güzel plajlar ve Burj Halife gibi dünyaca ünlü cazibe merkezleriyle tanınan fütüristik şehir.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "UAE Dirham (AED)",
+          "az": "BƏƏ Dirhəmi (AED)",
+          "tr": "BAE Dirhemi (AED)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "Arabic",
+          "az": "Ərəb dili",
+          "tr": "Arapça",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "Nov–Mar",
+          "az": "Noyabr–Mart",
+          "tr": "Kasım–Mart",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "istanbul",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "Istanbul",
+          "az": "İstanbul",
+          "tr": "İstanbul",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "Türkiye",
+          "az": "Türkiyə",
+          "tr": "Türkiye",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "A unique city connecting Europe and Asia, offering historic mosques, vibrant bazaars, Bosphorus views, delicious cuisine and a fascinating cultural atmosphere.",
+          "az": "Avropa ilə Asiyanı birləşdirən eşsiz bir şəhər — tarixi məscidləri, canlı bazarları, Bosfor mənzərələri, ləzzətli mətbəxi və valehedici mədəni atmosferi ilə seçilir.",
+          "tr": "Avrupa ile Asya'yı birleştiren, tarihi camileri, canlı çarşıları, Boğaz manzaraları, lezzetli mutfağı ve büyüleyici kültürel atmosferiyle eşsiz bir şehir.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "Turkish Lira (₺)",
+          "az": "Türk Lirəsi (₺)",
+          "tr": "Türk Lirası (₺)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "Turkish",
+          "az": "Türk dili",
+          "tr": "Türkçe",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "Apr–May",
+          "az": "Aprel–May",
+          "tr": "Nisan–Mayıs",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "london",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "London",
+          "az": "London",
+          "tr": "Londra",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "United Kingdom",
+          "az": "Birləşmiş Krallıq",
+          "tr": "Birleşik Krallık",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "A dynamic global city filled with historic landmarks, royal palaces, world-class museums, diverse neighborhoods, famous theaters and iconic British culture.",
+          "az": "Tarixi abidələri, kral sarayları, dünya səviyyəli muzeyləri, rəngarəng rayonları, məşhur teatrları və özünəməxsus Britaniya mədəniyyəti ilə dolu dinamik bir qlobal şəhər.",
+          "tr": "Tarihi anıtlar, kraliyet sarayları, dünya standartlarında müzeler, çeşitli mahalleler, ünlü tiyatrolar ve özgün İngiliz kültürüyle dolu dinamik bir küresel şehir.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "Pound Sterling (£)",
+          "az": "Funt Sterlinq (£)",
+          "tr": "İngiliz Sterlini (£)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "English",
+          "az": "İngilis dili",
+          "tr": "İngilizce",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "May–Sep",
+          "az": "May–Sentyabr",
+          "tr": "Mayıs–Eylül",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "rome",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "Rome",
+          "az": "Roma",
+          "tr": "Roma",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "Italy",
+          "az": "İtaliya",
+          "tr": "İtalya",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "The Eternal City layers nearly three thousand years of history into its streets — Roman ruins, Baroque fountains and Renaissance art sit a short walk apart. Expect long lunches, espresso on your feet, and golden light on travertine at dusk.",
+          "az": "Əbədi Şəhər küçələrində demək olar ki, üç min illik tarixi yaşadır — Roma xarabalıqları, Barokko fəvvarələri və İntibah sənəti bir-birinə bir neçə addım məsafəsindədir. Uzun nahar fasilələri, ayaqüstü içilən espresso və qürub vaxtı travertin daşların üzərinə düşən qızılı işıq səni gözləyir.",
+          "tr": "Ebedi Şehir, sokaklarında neredeyse üç bin yıllık tarihi bir araya getirir — Roma kalıntıları, Barok çeşmeler ve Rönesans sanatı birkaç adım ötede. Uzun öğle yemekleri, ayaküstü espresso ve gün batımında traverten üzerinde altın ışık sizi bekliyor.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "Euro (€)",
+          "az": "Avro (€)",
+          "tr": "Euro (€)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "Italian",
+          "az": "İtalyan dili",
+          "tr": "İtalyanca",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "Apr–Jun",
+          "az": "Apr–İyun",
+          "tr": "Nis–Haz",
+          "new": ""
+        },
+        {
+          "field": "Tip 1 — title",
+          "path": "tips[0].title",
+          "en": "Skip the line",
+          "az": "Növbəni keç",
+          "tr": "Sırayı atla",
+          "new": ""
+        },
+        {
+          "field": "Tip 1 — body",
+          "path": "tips[0].body",
+          "en": "Book Colosseum and Vatican tickets online to avoid long queues.",
+          "az": "Uzun növbələrdən qaçmaq üçün Kolizey və Vatikan biletlərini əvvəlcədən onlayn al.",
+          "tr": "Uzun kuyruklardan kaçınmak için Kolezyum ve Vatikan biletlerini çevrimiçi alın.",
+          "new": ""
+        },
+        {
+          "field": "Tip 2 — title",
+          "path": "tips[1].title",
+          "en": "Tipping is optional",
+          "az": "Bəxşiş istəyə bağlıdır",
+          "tr": "Bahşiş isteğe bağlı",
+          "new": ""
+        },
+        {
+          "field": "Tip 2 — body",
+          "path": "tips[1].body",
+          "en": "A coperto (cover charge) is common; round up the bill for great service.",
+          "az": "Restoranlarda coperto (masa haqqı) adətən hesaba əlavə olunur; yaxşı xidmətə görə isə hesabı yuvarlaqlaşdıra bilərsən.",
+          "tr": "Coperto (kuver ücreti) yaygındır; iyi servis için hesabı yukarı yuvarlayın.",
+          "new": ""
+        },
+        {
+          "field": "Tip 3 — title",
+          "path": "tips[2].title",
+          "en": "Validate your ticket",
+          "az": "Biletini ştampla",
+          "tr": "Biletinizi onaylayın",
+          "new": ""
+        },
+        {
+          "field": "Tip 3 — body",
+          "path": "tips[2].body",
+          "en": "Stamp bus and metro tickets on board or risk a fine.",
+          "az": "Avtobusa və ya metroya mindikdə biletini ştampla, əks halda cərimə ala bilərsən.",
+          "tr": "Otobüs ve metro biletlerini araçta damgalayın yoksa ceza yiyebilirsiniz.",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "barcelona",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "Barcelona",
+          "az": "Barselona",
+          "tr": "Barselona",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "Spain",
+          "az": "İspaniya",
+          "tr": "İspanya",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "A vibrant Mediterranean city famous for Gaudí architecture, beautiful beaches, lively streets, creative neighborhoods and exceptional Catalan cuisine.",
+          "az": "Aralıq dənizinin canlı şəhəri — Qaudinin memarlığı, gözəl çimərlikləri, hərəkətli küçələri, yaradıcı rayonları və mükəmməl katalon mətbəxi ilə məşhurdur.",
+          "tr": "Gaudí mimarisi, güzel plajları, hareketli sokakları, yaratıcı mahalleleri ve mükemmel Katalan mutfağıyla ünlü canlı bir Akdeniz şehri.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "Euro (€)",
+          "az": "Avro (€)",
+          "tr": "Euro (€)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "Spanish",
+          "az": "İspan dili",
+          "tr": "İspanyolca",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "May–Jun",
+          "az": "May–İyun",
+          "tr": "Mayıs–Haziran",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "amsterdam",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "Amsterdam",
+          "az": "Amsterdam",
+          "tr": "Amsterdam",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "Netherlands",
+          "az": "Niderland",
+          "tr": "Hollanda",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "A charming European city known for picturesque canals, cycling culture, historic architecture, museums, cozy cafés and relaxed urban atmosphere.",
+          "az": "Mənzərəli kanalları, velosiped mədəniyyəti, tarixi memarlığı, muzeyləri, rahat kafeləri və dinc atmosferi ilə tanınan cazibədar bir Avropa şəhəri.",
+          "tr": "Pitoresk kanalları, bisiklet kültürü, tarihi mimarisi, müzeleri, samimi kafeleri ve rahat kent atmosferiyle bilinen büyüleyici bir Avrupa şehri.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "Euro (€)",
+          "az": "Avro (€)",
+          "tr": "Euro (€)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "Dutch",
+          "az": "Niderland dili",
+          "tr": "Felemenkçe",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "Apr–May",
+          "az": "Aprel–May",
+          "tr": "Nisan–Mayıs",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "tokyo",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "Tokyo",
+          "az": "Tokio",
+          "tr": "Tokyo",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "Japan",
+          "az": "Yaponiya",
+          "tr": "Japonya",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "A fascinating blend of futuristic technology, ancient traditions, vibrant neighborhoods, incredible food, peaceful temples and unforgettable Japanese culture.",
+          "az": "Futuristik texnologiyanın, qədim ənənələrin, canlı rayonların, inanılmaz yeməklərin, dinc məbədlərin və unudulmaz yapon mədəniyyətinin valehedici qarışığıdır.",
+          "tr": "Fütüristik teknoloji, kadim gelenekler, canlı mahalleler, inanılmaz lezzetler, huzurlu tapınaklar ve unutulmaz Japon kültürünün büyüleyici karışımı.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "Japanese Yen (¥)",
+          "az": "Yapon Yeni (¥)",
+          "tr": "Japon Yeni (¥)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "Japanese",
+          "az": "Yapon dili",
+          "tr": "Japonca",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "Mar–May",
+          "az": "Mart–May",
+          "tr": "Mart–Mayıs",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "new-york",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "New York",
+          "az": "Nyu-York",
+          "tr": "New York",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "United States",
+          "az": "Amerika Birləşmiş Ştatları",
+          "tr": "Amerika Birleşik Devletleri",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "A legendary metropolis known for Times Square, Central Park, Broadway, diverse neighborhoods, world-class museums and an energetic urban lifestyle.",
+          "az": "Times Square, Central Park, Broadway, rəngarəng rayonları, dünya səviyyəli muzeyləri və enerjili şəhər həyatı ilə tanınan əfsanəvi bir meqapolis.",
+          "tr": "Times Meydanı, Central Park, Broadway, çeşitli mahalleler, dünya standartlarında müzeler ve enerjik şehir yaşamıyla bilinen efsanevi bir metropol.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "US Dollar ($)",
+          "az": "ABŞ Dolları ($)",
+          "tr": "Amerikan Doları ($)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "English",
+          "az": "İngilis dili",
+          "tr": "İngilizce",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "Apr–Jun",
+          "az": "Aprel–İyun",
+          "tr": "Nisan–Haziran",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "bangkok",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "Bangkok",
+          "az": "Banqkok",
+          "tr": "Bangkok",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "Thailand",
+          "az": "Tailand",
+          "tr": "Tayland",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "A lively Asian capital famous for ornate temples, floating markets, delicious street food, vibrant nightlife and an exciting mix of tradition and modernity.",
+          "az": "Zəngin naxışlı məbədləri, üzən bazarları, ləzzətli küçə yeməkləri, canlı gecə həyatı və ənənə ilə müasirliyin maraqlı qovuşuğu ilə seçilən canlı bir Asiya paytaxtı.",
+          "tr": "Süslü tapınaklar, yüzen pazarlar, lezzetli sokak yemekleri, canlı gece hayatı ve gelenekle modernliğin heyecan verici karışımıyla ünlü hareketli bir Asya başkenti.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "Thai Baht (฿)",
+          "az": "Tayland Bahtı (฿)",
+          "tr": "Tayland Bahtı (฿)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "Thai",
+          "az": "Tay dili",
+          "tr": "Tayca",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "Nov–Feb",
+          "az": "Noyabr–Fevral",
+          "tr": "Kasım–Şubat",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "singapore",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "Singapore",
+          "az": "Sinqapur",
+          "tr": "Singapur",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "Singapore",
+          "az": "Sinqapur",
+          "tr": "Singapur",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "A modern island city famous for futuristic architecture, clean streets, diverse cuisine, lush gardens and impressive attractions like Marina Bay Sands.",
+          "az": "Futuristik memarlığı, təmiz küçələri, rəngarəng mətbəxi, yaşıl bağları və Marina Bay Sands kimi təsirli məkanları ilə tanınan müasir bir ada-şəhər.",
+          "tr": "Fütüristik mimarisi, temiz sokakları, çeşitli mutfağı, yemyeşil bahçeleri ve Marina Bay Sands gibi etkileyici cazibe merkezleriyle ünlü modern bir ada şehri.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "Singapore Dollar (S$)",
+          "az": "Sinqapur Dolları (S$)",
+          "tr": "Singapur Doları (S$)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "English",
+          "az": "İngilis dili",
+          "tr": "İngilizce",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "Feb–Apr",
+          "az": "Fevral–Aprel",
+          "tr": "Şubat–Nisan",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "vienna",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "Vienna",
+          "az": "Vyana",
+          "tr": "Viyana",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "Austria",
+          "az": "Avstriya",
+          "tr": "Avusturya",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "A sophisticated European capital celebrated for imperial palaces, classical music, elegant architecture, historic cafés and rich cultural heritage.",
+          "az": "İmperator sarayları, klassik musiqi ənənəsi, zərif memarlığı, tarixi kafeləri və zəngin mədəni irsi ilə tanınan incə bir Avropa paytaxtı.",
+          "tr": "İmparatorluk sarayları, klasik müzik, zarif mimarisi, tarihi kafeleri ve zengin kültürel mirasıyla ünlü sofistike bir Avrupa başkenti.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "Euro (€)",
+          "az": "Avro (€)",
+          "tr": "Euro (€)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "German",
+          "az": "Alman dili",
+          "tr": "Almanca",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "Apr–Jun",
+          "az": "Aprel–İyun",
+          "tr": "Nisan–Haziran",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "prague",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "Prague",
+          "az": "Praqa",
+          "tr": "Prag",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "Czech Republic",
+          "az": "Çexiya",
+          "tr": "Çekya",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "A fairy-tale European city with medieval streets, beautiful castles, historic bridges, charming squares and a distinctive Central European atmosphere.",
+          "az": "Orta əsr küçələri, gözəl qalaları, tarixi körpüləri, cazibədar meydanları və özünəməxsus Mərkəzi Avropa ab-havası ilə əsl bir nağıl şəhəridir.",
+          "tr": "Ortaçağ sokakları, güzel kaleleri, tarihi köprüleri, büyüleyici meydanları ve kendine özgü Orta Avrupa atmosferiyle bir masal şehri.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "Czech Koruna (Kč)",
+          "az": "Çex Korunası (Kč)",
+          "tr": "Çek Korunası (Kč)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "Czech",
+          "az": "Çex dili",
+          "tr": "Çekçe",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "Apr–May",
+          "az": "Aprel–May",
+          "tr": "Nisan–Mayıs",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "lisbon",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "Lisbon",
+          "az": "Lissabon",
+          "tr": "Lizbon",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "Portugal",
+          "az": "Portuqaliya",
+          "tr": "Portekiz",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "Portugal's hilly capital tumbles down to the Tagus in pastel tiles and rattling trams. Follow the smell of custard tarts through Alfama's lanes, then catch fado and a sunset view from a miradouro.",
+          "az": "Portuqaliyanın təpələr üzərində qurulmuş paytaxtı — rəngli kafel divarları və taqqıltılı tramvayları ilə Tejo çayına doğru enir. Alfamanın dar küçələrində pastel de nata ətrini izlə, fado musiqisinə qulaq as, sonra bir miradourodan (mənzərə meydançasından) qürub mənzərəsinə tamaşa et.",
+          "tr": "Portekiz'in tepelik başkenti, pastel karolar ve tıkırdayan tramvaylarla Tejo'ya doğru iner. Alfama'nın dar sokaklarında pastel de nata kokusunu takip edin, ardından fado dinleyin ve bir miradouro'dan gün batımını izleyin.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "Euro (€)",
+          "az": "Avro (€)",
+          "tr": "Euro (€)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "Portuguese",
+          "az": "Portuqal dili",
+          "tr": "Portekizce",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "Mar–Jun",
+          "az": "Mar–İyun",
+          "tr": "Mar–Haz",
+          "new": ""
+        },
+        {
+          "field": "Tip 1 — title",
+          "path": "tips[0].title",
+          "en": "Get a Viva Viagem card",
+          "az": "Viva Viagem kartı al",
+          "tr": "Viva Viagem kartı alın",
+          "new": ""
+        },
+        {
+          "field": "Tip 1 — body",
+          "path": "tips[0].body",
+          "en": "One rechargeable card covers trams, metro and ferries.",
+          "az": "Tək bir doldurulan kartla tramvay, metro və bərələrdən istifadə edə bilərsən.",
+          "tr": "Tek bir yüklenebilir kart tramvay, metro ve feribotları kapsar.",
+          "new": ""
+        },
+        {
+          "field": "Tip 2 — title",
+          "path": "tips[1].title",
+          "en": "Wear good shoes",
+          "az": "Rahat ayaqqabı geyin",
+          "tr": "İyi ayakkabı giyin",
+          "new": ""
+        },
+        {
+          "field": "Tip 2 — body",
+          "path": "tips[1].body",
+          "en": "The seven hills mean steep, cobbled streets everywhere.",
+          "az": "Şəhər yeddi təpə üzərində qurulub, ona görə hər yerdə dik və daş döşəli küçələrlə rastlaşacaqsan.",
+          "tr": "Yedi tepe, her yerde dik ve arnavut kaldırımlı sokaklar demek.",
+          "new": ""
+        },
+        {
+          "field": "Tip 3 — title",
+          "path": "tips[2].title",
+          "en": "Try a pastel de nata",
+          "az": "Pastel de nata-nı sına",
+          "tr": "Pastel de nata deneyin",
+          "new": ""
+        },
+        {
+          "field": "Tip 3 — body",
+          "path": "tips[2].body",
+          "en": "Best warm with cinnamon — Belém has the famous original.",
+          "az": "Ən dadlısı isti və üzərinə darçın səpilmiş halda olur — məşhur orijinalını Belém rayonunda tapa bilərsən.",
+          "tr": "En iyisi sıcak ve tarçınlı — ünlü orijinali Belém'de.",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "athens",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "Athens",
+          "az": "Afina",
+          "tr": "Atina",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "Greece",
+          "az": "Yunanıstan",
+          "tr": "Yunanistan",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "A historic Mediterranean capital where ancient ruins, vibrant neighborhoods, traditional Greek cuisine and modern city life come together.",
+          "az": "Qədim xarabalıqların, canlı rayonların, ənənəvi yunan mətbəxinin və müasir şəhər həyatının bir araya gəldiyi tarixi bir Aralıq dənizi paytaxtı.",
+          "tr": "Antik kalıntıların, canlı mahallelerin, geleneksel Yunan mutfağının ve modern şehir hayatının bir araya geldiği tarihi bir Akdeniz başkenti.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "Euro (€)",
+          "az": "Avro (€)",
+          "tr": "Euro (€)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "Greek",
+          "az": "Yunan dili",
+          "tr": "Yunanca",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "Apr–Jun",
+          "az": "Aprel–İyun",
+          "tr": "Nisan–Haziran",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "id": "bali",
+      "fields": [
+        {
+          "field": "City name",
+          "path": "name",
+          "en": "Bali",
+          "az": "Bali",
+          "tr": "Bali",
+          "new": ""
+        },
+        {
+          "field": "Country",
+          "path": "country",
+          "en": "Indonesia",
+          "az": "İndoneziya",
+          "tr": "Endonezya",
+          "new": ""
+        },
+        {
+          "field": "Description",
+          "path": "description",
+          "en": "Indonesia's island of temples, terraced rice fields and surf breaks. Days drift between jungle waterfalls, beach clubs and incense-scented shrines, while warm hospitality follows you everywhere.",
+          "az": "İndoneziyanın məbədləri, pilləli düyü tarlaları və sörf dalğaları ilə tanınan adası. Günlər meşə şəlalələri, çimərlik klubları və buxur ətirli ziyarətgahlar arasında keçir, isti qonaqpərvərlik isə hər yerdə səni izləyir.",
+          "tr": "Endonezya'nın tapınaklar, teraslı pirinç tarlaları ve sörf dalgaları adası. Günler orman şelaleleri, plaj kulüpleri ve tütsü kokulu tapınaklar arasında geçerken, sıcak misafirperverlik her yerde sizi takip eder.",
+          "new": ""
+        },
+        {
+          "field": "Currency fact",
+          "path": "currency",
+          "en": "Rupiah (Rp)",
+          "az": "Rupi (Rp)",
+          "tr": "Rupiah (Rp)",
+          "new": ""
+        },
+        {
+          "field": "Language fact",
+          "path": "language",
+          "en": "Indonesian",
+          "az": "İndoneziya dili",
+          "tr": "Endonezyaca",
+          "new": ""
+        },
+        {
+          "field": "Best time fact",
+          "path": "best_time",
+          "en": "Apr–Oct",
+          "az": "Apr–Okt",
+          "tr": "Nis–Eki",
+          "new": ""
+        },
+        {
+          "field": "Tip 1 — title",
+          "path": "tips[0].title",
+          "en": "Carry some cash",
+          "az": "Yanında nağd pul saxla",
+          "tr": "Yanınızda nakit bulundurun",
+          "new": ""
+        },
+        {
+          "field": "Tip 1 — body",
+          "path": "tips[0].body",
+          "en": "Many warungs and markets are cash-only; ATMs are common in towns.",
+          "az": "Bir çox varunq (yerli kafe) və bazar yalnız nağd pul qəbul edir; bankomatlara isə şəhərlərdə tez-tez rast gəlinir.",
+          "tr": "Birçok warung ve pazar yalnızca nakit kabul eder; ATM'ler kasabalarda yaygındır.",
+          "new": ""
+        },
+        {
+          "field": "Tip 2 — title",
+          "path": "tips[1].title",
+          "en": "Dress for temples",
+          "az": "Məbədlər üçün münasib geyin",
+          "tr": "Tapınaklar için giyinin",
+          "new": ""
+        },
+        {
+          "field": "Tip 2 — body",
+          "path": "tips[1].body",
+          "en": "Cover shoulders and knees; sarongs are often provided at entrances.",
+          "az": "Çiyinlərini və dizlərini örtən geyim seç; giriş qapılarında adətən pulsuz sarong təklif olunur.",
+          "tr": "Omuzları ve dizleri örtün; girişlerde genellikle sarong verilir.",
+          "new": ""
+        },
+        {
+          "field": "Tip 3 — title",
+          "path": "tips[2].title",
+          "en": "Hire a scooter or driver",
+          "az": "Skuter və ya sürücü tut",
+          "tr": "Scooter veya şoför tutun",
+          "new": ""
+        },
+        {
+          "field": "Tip 3 — body",
+          "path": "tips[2].body",
+          "en": "Traffic is busy — a private driver is cheap for day trips.",
+          "az": "Yollar sıxlıqlı olur — günlük gəzintilər üçün şəxsi sürücü tutmaq ucuz başa gəlir.",
+          "tr": "Trafik yoğun — günlük geziler için özel şoför ucuzdur.",
+          "new": ""
+        }
+      ]
+    }
+  ]
+}

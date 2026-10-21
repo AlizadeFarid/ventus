@@ -1,0 +1,957 @@
+{
+  "@@locale": "tr",
+  "appName": "Ventus",
+  "welcomeBack": "Tekrar hoş geldin",
+  "welcomeToVentus": "Ventus'a hoş geldin",
+  "greeting": "Merhaba, {name}",
+  "yourTrips": "Gezilerin",
+  "seeAll": "Tümünü gör",
+  "allTrips": "Tüm geziler",
+  "tripsUpcoming": "Yaklaşan",
+  "tripsPast": "Geçmiş",
+  "allTripsEmptyBody": "Planladığın ve geçmiş gezilerin burada görünecek.",
+  "sharedViaVentus": "Ventus ile planlandı ✈️",
+  "discover": "Keşfet",
+  "sponsored": "Sponsorlu",
+  "planWithAi": "AI ile planla",
+  "planWithAiSubtitle": "Sıradaki gezin nereye?",
+  "whereToFirst": "Önce nereye?",
+  "emptyHomeBody": "Planı kendin yaz ya da bir cümle söyle — gerisini Ventus halletsin.",
+  "planNewTrip": "Yeni gezi",
+  "tripDaysToGo": "{count, plural, one{{count} gün kaldı} other{{count} gün kaldı}}",
+  "tripToday": "Bugün",
+  "tripInProgress": "Devam ediyor",
+  "percentPlanned": "%{percent} planlandı",
+  "tripStartPlanning": "Planlamaya başla",
+  "couldNotLoadTrips": "Gezilerin yüklenemedi.",
+  "tryAgain": "Tekrar dene",
+  "signOutTitle": "Çıkış yapılsın mı?",
+  "signOutBody": "İstediğin zaman tekrar giriş yapabilirsin.",
+  "cancel": "İptal",
+  "back": "Geri",
+  "setPasswordTitle": "Şifre belirle",
+  "setPasswordAction": "Şifreyi belirle",
+  "setPasswordNote": "Google ile giriş yaptın, bu yüzden hesabında henüz şifre yok. Bir şifre belirlersen e-postanla da giriş yapabilirsin.",
+  "passwordSet": "Şifre belirlendi.",
+  "dismiss": "Kapat",
+  "showPassword": "Şifreyi göster",
+  "hidePassword": "Şifreyi gizle",
+  "notificationsTitleShort": "Bildirimler",
+  "offlineBanner": "Çevrimdışısın — değişiklikler döndüğünde eşitlenecek.",
+  "edit": "Düzenle",
+  "clear": "Temizle",
+  "savedAdd": "Kaydet",
+  "savedRemove": "Kaydedilenlerden çıkar",
+  "signOut": "Çıkış yap",
+  "comingSoon": "Yakında",
+  "somethingWentWrong": "Bir şeyler ters gitti. Tekrar dene.",
+  "navHome": "Ana Sayfa",
+  "navTrips": "Geziler",
+  "navSaved": "Kaydedilen",
+  "navTools": "Araçlar",
+  "navProfile": "Profil",
+  "homeTripSoon": "Gezin yaklaşıyor",
+  "homeTripToday": "Bugün yola çıkıyorsun",
+  "homeTripOngoing": "Gezin devam ediyor",
+  "homeWhereTo": "Nereye gidiyoruz?",
+  "homeSearchHint": "Şehir, ülke veya yer",
+  "createSheetTitle": "Yeni gezi",
+  "createSheetSubtitle": "Nasıl başlamak istersin?",
+  "createAiBadge": "HIZLI",
+  "createAiBody": "\"Ekimde Roma'ya 4 gün, müzeler ve yemek\" yaz — plan hazır olsun.",
+  "createManualBody": "Rotayı, tarihleri ve yol arkadaşlarını kendin seç.",
+  "sheetClose": "Kapat",
+  "tripPickerTitle": "Gezilerim",
+  "addNewTripShort": "Yeni",
+  "emptyHomeTitle": "Sıradaki gezini planla",
+  "toolsSubtitle": "Yolda pratik · çevrimdışı çalışır",
+  "toolCurrency": "Döviz çevirici",
+  "toolWeather": "Hava",
+  "toolWorldClock": "Saat dilimi",
+  "toolTip": "Bahşiş hesaplayıcı",
+  "toolsSectionWeather": "Hava ve saat",
+  "toolsSectionMoney": "Para",
+  "toolsOffline": "Yüklenemedi. Bağlantını kontrol et.",
+  "clockHome": "Ev saati",
+  "clockBehindHome": "Ev saatinden {hours} saat geri",
+  "@clockBehindHome": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      }
+    }
+  },
+  "clockAheadOfHome": "Ev saatinden {hours} saat ileri",
+  "@clockAheadOfHome": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      }
+    }
+  },
+  "clockSameAsHome": "Ev saatiyle aynı",
+  "clockSameShort": "Aynı",
+  "clockYesterday": "Dün",
+  "clockHourShort": "s",
+  "clockCityRemoved": "Şehir kaldırıldı",
+  "currencyUpdated": "Güncellendi {date}",
+  "@currencyUpdated": {
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "curUSD": "ABD doları",
+  "curEUR": "Euro",
+  "curGBP": "İngiliz sterlini",
+  "curTRY": "Türk lirası",
+  "curAZN": "Azerbaycan manatı",
+  "curAED": "BAE dirhemi",
+  "curGEL": "Gürcistan larisi",
+  "toolsActiveTripBanner": "Aktif gezi: {trip}",
+  "@toolsActiveTripBanner": {
+    "placeholders": {
+      "trip": {}
+    }
+  },
+  "toolsCurrencyHint": "1 {fromGlyph} = {rate} {toGlyph} · {when}",
+  "@toolsCurrencyHint": {
+    "placeholders": {
+      "fromGlyph": {},
+      "rate": {},
+      "toGlyph": {},
+      "when": {}
+    }
+  },
+  "toolsRateToday": "bugün",
+  "toolsTimezoneHint": "{away} · {hours} saat fark",
+  "@toolsTimezoneHint": {
+    "placeholders": {
+      "hours": {},
+      "away": {}
+    }
+  },
+  "toolsTimezoneEmptyHint": "Şehir ekle, farkı gör",
+  "toolsWeatherHint": "{temp}° · {city}",
+  "@toolsWeatherHint": {
+    "placeholders": {
+      "temp": {},
+      "city": {}
+    }
+  },
+  "currencyAmountLabel": "Çevirdiğin tutar",
+  "currencyConvertedLabel": "Çevrilen tutar",
+  "currencyRateLine": "1 {from} = {rate} {to}",
+  "@currencyRateLine": {
+    "placeholders": {
+      "from": {},
+      "rate": {},
+      "to": {}
+    }
+  },
+  "currencyRateSourceMarket": "Piyasa kuru · {date}",
+  "@currencyRateSourceMarket": {
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "currencyRateSource": "Azerbaycan Merkez Bankası resmi kuru · {date}",
+  "@currencyRateSource": {
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "quickAmountsLabel": "Hızlı tutarlar",
+  "addToBudgetAsExpense": "Bütçeye gider olarak ekle",
+  "expenseAdded": "Gezi bütçesine eklendi.",
+  "currencyPickerTitle": "Para birimi seç",
+  "currencySearchHint": "Para birimi veya ülke ara",
+  "currencyAllLabel": "Tüm para birimleri",
+  "currencyHomeCurrency": "Ana para birimi",
+  "currencyTripCurrency": "Aktif gezi para birimi",
+  "timezoneTripTag": "aktif gezi",
+  "tipOtherPercent": "Diğer",
+  "tipCustomPercentHint": "Yüzde",
+  "weatherToday": "Bugün",
+  "weatherNextDays": "Sonraki 5 gün",
+  "weatherNow": "Şimdi",
+  "weatherTomorrow": "Yarın",
+  "weatherFeelsLike": "Hissedilen",
+  "weatherWind": "Rüzgar",
+  "weatherHumidity": "Nem",
+  "weatherRainChance": "Yağış ihtimali",
+  "weatherSunrise": "Gün doğumu",
+  "weatherSunset": "Gün batımı",
+  "weatherWindKmh": "{value} km/sa",
+  "@weatherWindKmh": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "weatherWindMph": "{value} mph",
+  "@weatherWindMph": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "wxClear": "Açık",
+  "wxPartly": "Parçalı bulutlu",
+  "wxCloudy": "Bulutlu",
+  "wxFog": "Sisli",
+  "wxDrizzle": "Çisenti",
+  "wxRain": "Yağmurlu",
+  "wxSnow": "Karlı",
+  "wxStorm": "Gök gürültülü fırtına",
+  "tipSubtitle": "Hızlı bahşiş · çevrimdışı",
+  "tipTotal": "Toplam",
+  "tipAmount": "Bahşiş",
+  "tipPerPerson": "Kişi başı",
+  "tipBillLabel": "Hesap tutarı",
+  "tipPercentLabel": "Bahşiş",
+  "tipSplitLabel": "Kaç kişi",
+  "tipExampleBill": "Hesap {glyph}0 · 0%",
+  "tipPeopleCount": "{count, plural, one{{count} kişi} other{{count} kişi}}",
+  "@tipPeopleCount": {
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "searchCity": "Şehir ara",
+  "searchCityHint": "Şehir adı yaz…",
+  "noCitiesFound": "Şehir bulunamadı.",
+  "exploreTitle": "Keşfet",
+  "exploreSubtitle": "İlham veren yerler",
+  "exploreAsk": "Ventus'a sor",
+  "exploreEmpty": "Henüz keşfedilecek bir şey yok.",
+  "exploreSearchHint": "Şehir veya ülke ara",
+  "exploreNoMatches": "\"{query}\" için sonuç bulunamadı.",
+  "@exploreNoMatches": {
+    "placeholders": {
+      "query": {}
+    }
+  },
+  "exploreCuratedSection": "Ventus'ta",
+  "exploreOtherPlacesSection": "Diğer yerler",
+  "exploreSearching": "Aranıyor…",
+  "exploreStartTripHere": "Buraya gezi planla",
+  "savedTitleShort": "Kaydedilenler",
+  "planTripHere": "Buraya gezi planla",
+  "factCurrency": "Para birimi",
+  "factLanguage": "Dil",
+  "factBestTime": "En iyi zaman",
+  "factTimezone": "Saat dilimi",
+  "destGoodToKnow": "Bilmekte fayda var",
+  "destAskPlan": "Ventus ile planla",
+  "readMore": "Devamı",
+  "readLess": "Daha az",
+  "savedEmptyTitle": "Henüz kayıtlı yer yok",
+  "savedEmptyBody": "Keşfet'te beğendiğin yerlere kalp bas.",
+  "welcomeTagline": "AI SEYAHAT ARKADAŞIN",
+  "welcomeHeadline": "Her yolculuk,\nözenle planlanmış.",
+  "welcomeSubtitle": "Rota, bütçe, belgeler ve biletler — hepsi tek bir sakin yerde.",
+  "getStarted": "Başla",
+  "haveAccount": "Zaten hesabım var",
+  "signInSubtitle": "Yolculuğuna devam etmek için giriş yap.",
+  "emailLabel": "E-posta",
+  "emailHint": "name@example.com",
+  "passwordLabel": "Şifre",
+  "rememberMe": "Beni hatırla",
+  "forgot": "Unuttun mu?",
+  "signInAction": "Giriş yap",
+  "orDivider": "veya",
+  "newToVentus": "Ventus'ta yeni misin?",
+  "createAccountAction": "Hesap oluştur",
+  "providerComingSoon": "{provider} ile giriş yakında.",
+  "createAccountTitle": "Hesap oluştur",
+  "createAccountSubtitle": "Ventus'a katıl ve sıradaki gezini planla.",
+  "fullNameLabel": "Ad soyad",
+  "fullNameHint": "Adın ve soyadın",
+  "passwordHintMin": "En az 8 karakter",
+  "agreeTerms": "Şartları ve Gizlilik Politikasını kabul ediyorum",
+  "agreeTermsRich": "[terms] ve [privacy] kabul ediyorum.",
+  "termsLinkLabel": "Kullanım Şartları",
+  "privacyLinkLabel": "Gizlilik Politikası",
+  "acceptTermsError": "Devam etmek için Şartları ve Gizlilik Politikasını kabul et.",
+  "alreadyHaveAccount": "Zaten hesabın var mı?",
+  "resetPasswordTitle": "Şifreyi sıfırla",
+  "forgotTitle": "Şifreni mi unuttun?",
+  "forgotBody": "Hesabına bağlı e-postayı yaz, sana sıfırlama bağlantısı gönderelim.",
+  "sendResetLink": "Sıfırlama bağlantısı gönder",
+  "resetSent": "Sıfırlama bağlantısı gönderildi. Gelen kutunu kontrol et.",
+  "rememberedIt": "Hatırladın mı?",
+  "backToSignIn": "Girişe dön",
+  "verifyEmailTitle": "E-postanı doğrula",
+  "verifyEmailBody": "{email} adresine bir doğrulama bağlantısı gönderdik. Hesabını doğrulamak için bağlantıya dokun, sonra geri dönüp giriş yap.",
+  "@verifyEmailBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "verifyEmailSpamNote": "Gelmedi mi? Spam klasörüne bak veya yeniden gönder.",
+  "verifyEmailResend": "E-postayı yeniden gönder",
+  "verifyEmailResent": "Doğrulama e-postası gönderildi. Gelen kutunu kontrol et.",
+  "verifyEmailSignIn": "Girişe git",
+  "resetCodeTitle": "Yeni bir şifre belirle",
+  "resetCodeBody": "{email} adresine 6 haneli bir kod gönderdik. Aşağıya yaz ve yeni bir şifre seç.",
+  "@resetCodeBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "resetCodeLabel": "Sıfırlama kodu",
+  "resetCodeHint": "123456",
+  "resetSubmit": "Şifreyi sıfırla",
+  "resetSuccess": "Şifre güncellendi. Her şey hazır.",
+  "resetResend": "Kodu yeniden gönder",
+  "resetResent": "Yeni bir kod yolda.",
+  "authInvalidOtp": "Bu kod yanlış veya süresi dolmuş.",
+  "authRateLimited": "Çok fazla deneme yapıldı. Birkaç dakika sonra tekrar dene.",
+  "legalUpdated": "Son güncelleme: Haziran 2026",
+  "legalContact": "Bu şartlar veya verilerin hakkında soruların mı var? Bize ulaş: support@ventus.app.",
+  "legalTermsTitle": "Kullanım Şartları",
+  "legalTermsIntro": "Ventus'a hoş geldin. Bir hesap oluşturup uygulamayı kullanarak bu Şartları kabul edersin. Kabul etmiyorsan lütfen Ventus'u kullanma.",
+  "legalTermsS1Title": "Ventus'u kullanmak",
+  "legalTermsS1Body": "Ventus gezilerini planlamana ve düzenlemene yardımcı olur. Yalnızca yasal, kişisel amaçlarla kullan; hizmeti kötüye kullanma, kopyalama veya bozmaya çalışma. AI tarafından oluşturulan planlar ve öneriler yalnızca yol gösterme amaçlıdır — saatleri, fiyatları, vizeleri ve rezervasyonları her zaman kendin doğrula.",
+  "legalTermsS2Title": "Hesabın",
+  "legalTermsS2Body": "E-postanı, şifreni ve PIN'ini güvende tutmak ve hesabındaki tüm etkinlik senin sorumluluğundadır. Yetkisiz bir kullanım fark edersen hemen bize bildir.",
+  "legalTermsS3Title": "İçeriğin",
+  "legalTermsS3Body": "Eklediğin geziler, notlar, dosyalar ve diğer içerik senindir. Bu içeriği yalnızca uygulamanın özelliklerini sana sunmak amacıyla saklamak, eşitlemek ve işlemek için Ventus'a izin verirsin.",
+  "legalTermsS4Title": "Hizmet ve sorumluluk",
+  "legalTermsS4Body": "Ventus “olduğu gibi”, garantisiz sunulur. Özellikleri ekleyebilir, değiştirebilir veya kaldırabiliriz; üçüncü taraf verilerinden (harita, hava, AI) veya hizmet kesintilerinden doğan kayıplardan sorumlu değiliz.",
+  "legalPrivacyTitle": "Gizlilik Politikası",
+  "legalPrivacyIntro": "Bu politika, Ventus'un hangi bilgileri topladığını, nasıl kullandığını ve sahip olduğun seçimleri açıklar.",
+  "legalPrivacyS1Title": "Neleri topluyoruz",
+  "legalPrivacyS1Body": "Hesap bilgilerin (adın ve e-postan) ve oluşturduğun gezi verileri — varış noktaları, gün planları, kontrol listeleri, bütçeler, belgeler ve kaydedilen yerler. PIN'in yalnızca cihazında saklanır ve sunucularımıza asla gönderilmez.",
+  "legalPrivacyS2Title": "Nasıl kullanıyoruz",
+  "legalPrivacyS2Body": "Hesabını çalıştırmak, gezilerini cihazlar arasında eşitlemek ve AI planlama gibi özellikleri sağlamak için. Bir plan oluşturduğunda, gereken gezi ayrıntıları onu hazırlamak için AI sağlayıcımıza (Google Gemini) gönderilir. Verilerini asla satmayız.",
+  "legalPrivacyS3Title": "Saklama ve güvenlik",
+  "legalPrivacyS3Body": "Verilerin backend sağlayıcımızda (Supabase) güvenle saklanır ve aktarım sırasında şifrelenir. Harita, hava ve döviz özellikleri üçüncü taraf hizmetlerine yalnızca isteğini yanıtlamak için gereken veriyi gönderir.",
+  "legalPrivacyS4Title": "Hakların",
+  "legalPrivacyS4Body": "İstediğin zaman Ayarlar'dan profilini görüntüleyip düzenleyebilir, şifreni veya PIN'ini değiştirebilir, hesabının ve verilerinin silinmesini talep edebilirsin.",
+  "createPinTitle": "PIN oluştur",
+  "createPinBody": "Bir sonraki sefer hızlı ve güvenli girmek için 4 haneli bir kod seç.",
+  "enterPinToUnlock": "Kilidi açmak için PIN'ini yaz",
+  "usePasswordInstead": "Şifreyle giriş yap",
+  "incorrectPin": "PIN yanlış.",
+  "errEmailRequired": "E-postanı yaz",
+  "errEmailInvalid": "Geçerli bir e-posta yaz",
+  "errPasswordRequired": "Şifreni yaz",
+  "errPasswordTooShort": "En az 8 karakter",
+  "errNameRequired": "Adını yaz",
+  "authInvalidCredentials": "E-posta veya şifre yanlış.",
+  "authEmailExists": "Bu e-posta ile zaten bir hesap var. Giriş yap.",
+  "authEmailNotConfirmed": "E-postanı onaylamak için gelen kutunu kontrol et, sonra giriş yap.",
+  "profileEdit": "Düzenle",
+  "editProfileTitle": "Profili düzenle",
+  "changePhoto": "Fotoğrafı değiştir",
+  "avatarTakePhoto": "Fotoğraf çek",
+  "avatarChooseLibrary": "Galeriden seç",
+  "avatarRemove": "Fotoğrafı kaldır",
+  "emailReadonlyNote": "E-posta buradan değiştirilemez.",
+  "nameRequired": "Adını yaz",
+  "profileSaved": "Profil güncellendi",
+  "profileSaveFailed": "Profil kaydedilemedi. Tekrar dene.",
+  "profileEditUnavailable": "Profili düzenlemek için giriş yap.",
+  "measurementSystem": "Ölçü sistemi",
+  "unitMetric": "Metrik",
+  "unitMetricDesc": "Kilometre, °C",
+  "unitImperial": "Emperyal",
+  "unitImperialDesc": "Mil, °F",
+  "notificationSettingsTitle": "Bildirim ayarları",
+  "notifSectionTripActivity": "Gezi etkinliği",
+  "notifSectionTravelAlerts": "Seyahat uyarıları",
+  "notifSectionVentus": "Ventus",
+  "notifCollaboratorChanges": "Gezideki değişiklikler",
+  "notifCollaboratorChangesSub": "Biri geziyi değiştirdiğinde",
+  "notifItineraryUpdates": "Gün planı güncellemeleri",
+  "notifChecklistReminders": "Kontrol listesi",
+  "notifChecklistRemindersSub": "Son tarih hatırlatmaları",
+  "notifWeatherChanges": "Hava değişiklikleri",
+  "notifDocumentExpiry": "Belgenin süresi",
+  "notifDocumentExpirySub": "Pasaport ve vize kontrolleri",
+  "notifCheckInDeparture": "Check-in ve kalkış",
+  "notifTravelTips": "Seyahat ipuçları",
+  "notifProductNews": "Ürün haberleri ve teklifler",
+  "collaboratorsTitle": "Birlikte planlayanlar",
+  "collaboratorsManageSub": "Birlikte planlamak için davet et",
+  "collabPeopleCount": "{count, plural, =1{1 kişi} other{{count} kişi}}",
+  "@collabPeopleCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "collabPending": "Bekliyor",
+  "collabRemoved": "Listeden çıkarıldı",
+  "collabAnyoneWithLink": "Bağlantısı olan herkes",
+  "collabCopy": "Kopyala",
+  "collabLinkCopied": "Davet bağlantısı kopyalandı",
+  "collabYou": "Sen",
+  "roleOwner": "Sahip",
+  "roleEditor": "Düzenleyici",
+  "roleViewer": "İzleyici",
+  "roleEditorDesc": "Gün planı, bütçe ve belgeleri ekleyip değiştirebilir",
+  "roleViewerDesc": "Geziyi görebilir, değişiklik yapamaz",
+  "collabInviteSent": "Davet gönderildi · bekliyor",
+  "removeCollaborator": "Çıkar",
+  "inviteTitle": "Geziye davet et",
+  "inviteRoleLabel": "Rol",
+  "inviteEmailInvalid": "Geçerli bir e-posta yaz",
+  "sendInvite": "Davet gönder",
+  "collabInviteSentToast": "Davet gönderildi",
+  "collabPickTrip": "Bir gezi seç",
+  "collabNoTrips": "Birini davet etmek için önce bir gezi oluştur.",
+  "statCountries": "Ülke",
+  "statCities": "Şehir",
+  "statKmFlown": "km uçuş",
+  "statTrips": "Gezi",
+  "goVentusPro": "Ventus Pro'ya geç",
+  "goVentusProSub": "Sınırsız gezi, çevrimdışı haritalar ve daha fazlası",
+  "menuCollaborators": "Birlikte planlayanlar",
+  "menuNotifications": "Bildirimler",
+  "menuSavedPlaces": "Kayıtlı yerler",
+  "menuCurrencyUnits": "Para birimi ve birimler",
+  "menuSettings": "Ayarlar",
+  "menuPrivacySecurity": "Gizlilik ve güvenlik",
+  "profileSectionPreferences": "Tercihler",
+  "profileSectionAccount": "Hesap",
+  "logOut": "Çıkış yap",
+  "settingsTitle": "Ayarlar",
+  "appearance": "Görünüm",
+  "themeSystem": "Sistem",
+  "themeLight": "Açık",
+  "themeDark": "Koyu",
+  "language": "Dil",
+  "systemDefault": "Sistem dili",
+  "whereTo": "Nereye?",
+  "destinationSubtitle": "Bir veya daha fazla yer ekle — aralarındaki rotayı Ventus planlar.",
+  "searchCityCountry": "Şehir veya ülke ara",
+  "popularRightNow": "Şu an popüler",
+  "addAnotherStop": "Başka durak ekle",
+  "recent": "Son",
+  "popularDestinations": "Popüler destinasyonlar",
+  "placesMatch": "“{query}” ile {count} yer eşleşiyor",
+  "addPlace": "“{name}” ekle",
+  "continueAction": "Devam et",
+  "searchingPlaces": "Arıyoruz…",
+  "keepTyping": "Aramak için en az 3 harf yaz",
+  "searchPlacesFailed": "Arama olmadı — aşağıdan elle ekleyebilirsin.",
+  "aiTitle": "Ventus’a gezini anlat",
+  "aiSubtitle": "Gezini kendi kelimelerinle anlat — Ventus detayları tamamlar.",
+  "aiPromptHint": "İki kişi için haziran ortasında İstanbul ve Kapadokya’ya 5 günlük yemek ve kültür gezisi.",
+  "aiExamplesLabel": "Hızlı başla",
+  "aiExampleRomanticLabel": "Romantik hafta sonu",
+  "aiExampleRomanticText": "Bu hafta sonu yakın bir şehre iki kişilik kısa romantik bir kaçamak.",
+  "aiExampleFamilyLabel": "Aile tatili",
+  "aiExampleFamilyText": "Ailemizle (2 yetişkin, 2 çocuk) ağustosta 7 günlük bir sahil tatili.",
+  "aiExampleFriendsLabel": "Arkadaşlarla gezi",
+  "aiExampleFriendsText": "Eylülde 4 arkadaşla dağlık bir bölgeye 3 günlük doğa yürüyüşü gezisi.",
+  "aiExampleSoloLabel": "Tek gezi",
+  "aiExampleSoloText": "Ekimde sakin bir şehre tek başıma 4 günlük kültür ve dinlenme gezisi.",
+  "aiExampleCityLabel": "Kısa şehir turu",
+  "aiExampleCityText": "Hafta sonu kısa 3 günlük şehir turu — tarihi yerler ve yerel mutfak.",
+  "aiExampleWinterLabel": "Kış tatili",
+  "aiExampleWinterText": "Ocakta karlı bir dağ tatil köyünde 5 günlük kayak ve sıcak çikolatalı kış tatili.",
+  "ventusUnderstood": "Ventus anladı",
+  "whosComing": "Kimler geliyor?",
+  "travelersSubtitle": "Bu, Ventus’un sana uygun tempoyu ve önerileri seçmesine yardımcı olur.",
+  "travelerSolo": "Tek",
+  "travelerCouple": "Çift",
+  "travelerFamily": "Aile",
+  "travelerFriends": "Arkadaşlar",
+  "travelersAdults": "Yetişkinler",
+  "travelersAdultsSub": "13+ yaş",
+  "travelersChildren": "Çocuklar",
+  "travelersChildrenSub": "0–12 yaş",
+  "inviteCompanions": "Yol arkadaşlarını davet et",
+  "inviteCompanionsSub": "İsteğe bağlı · birlikte planla",
+  "inviteAdd": "Ekle",
+  "inviteAfterCreate": "Geziyi oluşturduğunda davet edilecekler.",
+  "when": "Ne zaman?",
+  "datesSubtitle": "Tarihleri seç ya da esnek kal — bunu sonra değiştirebilirsin.",
+  "presetThisWeekend": "Bu hafta sonu",
+  "presetNextWeek": "Gelecek hafta",
+  "presetInAMonth": "Bir ay içinde",
+  "presetFlexible": "Fark etmez",
+  "reviewTrip": "Geziyi gözden geçir",
+  "selectDates": "Tarih seç",
+  "nightsCount": "{count, plural, one{{count} gece} other{{count} gece}}",
+  "reviewTitle": "Son bakış",
+  "stopsCount": "{count, plural, one{{count} durak} other{{count} durak}}",
+  "routeLabel": "Rota",
+  "travelersLabel": "Yolcular",
+  "datesLabel": "Tarihler",
+  "editAction": "Düzenle",
+  "adultsCount": "{count, plural, one{{count} yetişkin} other{{count} yetişkin}}",
+  "childrenCount": "{count, plural, one{{count} çocuk} other{{count} çocuk}}",
+  "buildPlanWithAi": "Planımı AI oluştursun",
+  "createEmptyTrip": "Kendim oluştururum",
+  "reviewFootnote": "Burada rezervasyon yapılmaz — bilet ve belgeleri istediğin zaman ekleyebilirsin.",
+  "tripCreated": "Gezi oluşturuldu",
+  "tripNotFound": "Gezi bulunamadı.",
+  "tripDetailsTitle": "Gezi ayrıntıları",
+  "tripOverviewTab": "Genel bakış",
+  "moduleItinerary": "Gün planı",
+  "moduleBudget": "Bütçe",
+  "moduleDocuments": "Belgeler",
+  "moduleChecklist": "Kontrol listesi",
+  "moduleChecklistShort": "Kontrol",
+  "moduleMap": "Harita",
+  "seeOnMap": "Haritada gör",
+  "mapRouteTitle": "Rota",
+  "emptyMapTitle": "Henüz haritalanacak bir şey yok",
+  "emptyMapBody": "Gezine yerler ekle, burada haritada görünecekler.",
+  "emptyMapNoCoords": "Bu gezideki yerlerin konumu henüz bilinmiyor. Haritaya eklemek için aşağıya dokun.",
+  "mapFilterAll": "Tümü",
+  "mapLocating": "Yerler bulunuyor…",
+  "mapFindPlaces": "Yerleri bul",
+  "mapMissingPlaces": "{count, plural, one{{count} yerin haritada konumu yok} other{{count} yerin haritada konumu yok}}",
+  "mapPlacesCount": "{count, plural, one{{count} yer} other{{count} yer}}",
+  "mapDayDistance": "~{km} km",
+  "mapDayEmpty": "Bu günün planında haritaya düşen yer yok",
+  "mapShowInPlan": "Gün planında göster",
+  "mapLocated": "{count, plural, one{{count} yer haritaya eklendi} other{{count} yer haritaya eklendi}}",
+  "mapNothingLocated": "Yeni yer bulunamadı",
+  "mapLocateFailed": "Yerler bulunamadı. Bağlantını kontrol et.",
+  "aiHubTitle": "{city} planını Ventus yapsın",
+  "@aiHubTitle": {
+    "placeholders": {
+      "city": {
+        "type": "String"
+      }
+    }
+  },
+  "aiHubBody": "Tarihlerine, temponuna ve seçtiğin yerlere göre günlük plan — saniyeler içinde hazır olur.",
+  "aiHubGenerate": "Planımı oluştur",
+  "aiGenerating": "Planın hazırlanıyor…",
+  "aiPlanReady": "Planın hazır",
+  "aiNeedsDestination": "Önce bir varış noktası ekle.",
+  "aiPlanUnavailable": "AI ile planlama henüz kullanılamıyor.",
+  "aiPlanNetworkError": "Planlayıcıya ulaşılamadı. Bağlantını kontrol edip tekrar dene.",
+  "aiPlanEmpty": "Plan oluşturulamadı. Birazdan tekrar dene.",
+  "aiPlanFailed": "Plan oluşturulamadı. Tekrar dene.",
+  "aiNeedDescription": "Önce gezini tarif et.",
+  "aiReadingTrip": "Gezin okunuyor…",
+  "aiParseEmpty": "Burada bir yer bulunamadı. Bir şehir adı yazmayı dene.",
+  "aiParseFailed": "Gezin okunamadı. Tekrar dene.",
+  "orStartManually": "Ya da elle başla",
+  "startBuildItinerary": "Gün planı oluştur",
+  "startBuildItinerarySub": "Günleri ve etkinlikleri kendin ekle",
+  "startUploadDocs": "Bilet ve belgeleri yükle",
+  "startUploadDocsSub": "Uçuşlar, oteller, pasaportlar — hepsi tek yerde",
+  "startChecklist": "Kontrol listesi oluştur",
+  "startChecklistSub": "Ne alacağını ve hazırlayacağını takip et",
+  "deleteTripAction": "Geziyi sil",
+  "deleteTripTitle": "Bu gezi silinsin mi?",
+  "deleteTripBody": "Bu, geziyi ve tüm ayrıntılarını siler. Geri alınamaz.",
+  "deleteConfirm": "Sil",
+  "tripDeleted": "Gezi silindi",
+  "dayLabel": "Gün",
+  "emptyDayTitle": "Henüz bir plan yok",
+  "emptyDayBody": "Bu gün için ilk etkinliğini ekle.",
+  "addActivity": "Etkinlik ekle",
+  "newActivity": "Yeni etkinlik",
+  "editActivity": "Etkinliği düzenle",
+  "activityTitleLabel": "Etkinlik",
+  "activityTitleHint": "örn. Boğaz gün batımı yürüyüşü",
+  "activityTitleRequired": "Kısa bir başlık yaz",
+  "activityPlaceLabel": "Yer",
+  "activityPlaceHint": "örn. Karaköy",
+  "activityTimeLabel": "Saat",
+  "activityAddTime": "Saat ekle",
+  "activityKindLabel": "Tür",
+  "activityDayLabel": "Gün",
+  "kindFlight": "Uçuş",
+  "kindStay": "Konaklama",
+  "kindFood": "Yemek",
+  "kindSight": "Gezilecek yer",
+  "kindTransport": "Ulaşım",
+  "kindActivity": "Etkinlik",
+  "save": "Kaydet",
+  "selectTime": "Saat seç",
+  "setTime": "Onayla",
+  "deleteActivity": "Etkinliği sil",
+  "deleteActivityTitle": "Bu etkinlik silinsin mi?",
+  "aiAssistTitle": "Bazı günler hâlâ boş",
+  "aiAssistBody": "Bırak Ventus senin için taslak hazırlasın",
+  "planAction": "Planla",
+  "checklistProgress": "{done}/{total} tamam",
+  "@checklistProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "checklistItemHint": "örn. Pasaport 6+ ay geçerli",
+  "renameChecklistItem": "Adını değiştir",
+  "itemDeleted": "Silindi",
+  "undo": "Geri al",
+  "emptyChecklistTitle": "Henüz işaretlenecek bir şey yok",
+  "emptyChecklistBody": "Toplaman ve hazırlaman gerekenleri ekle.",
+  "checklistCatBeforeYouGo": "Gitmeden önce",
+  "checklistCatPack": "Topla",
+  "checklistCatOnArrival": "Varışta",
+  "defChkVisa": "Vize kontrol / başvuru",
+  "defChkInsurance": "Seyahat sigortası",
+  "defChkCheckin": "Online check-in",
+  "defChkCash": "Döviz bozdur / nakit",
+  "defChkPassport": "Pasaport",
+  "defChkTickets": "Biletler (uçuş / tren)",
+  "defChkId": "Kimlik kartı",
+  "defChkCharger": "Şarj cihazı / adaptör",
+  "defChkSim": "Yerel SIM / eSIM",
+  "defChkHotel": "Otele check-in",
+  "defChkTransport": "Yerel ulaşım",
+  "addItem": "Madde ekle",
+  "addToChecklist": "Listeye ekle",
+  "editChecklistItem": "Düzenle",
+  "deleteChecklistItem": "Sil",
+  "checklistCategoryLabel": "Kategori",
+  "setReminder": "Hatırlatma kur",
+  "dueBy": "{date} tarihine kadar",
+  "@dueBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "documentsCount": "{count, plural, one{{count} dosya} other{{count} dosya}}",
+  "@documentsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "docPhotoName": "Fotoğraf",
+  "docFileName": "Dosya",
+  "docGroupTickets": "Biletler",
+  "docGroupStays": "Konaklama",
+  "docGroupIdentity": "Kimlik",
+  "docGroupOther": "Diğer",
+  "docGroupTripWide": "Tüm gezi",
+  "docTypeTicket": "Bilet",
+  "docTypeStay": "Konaklama",
+  "docTypeId": "Kimlik",
+  "docTypeOther": "Diğer",
+  "uploadDocument": "Belge yükle",
+  "addDocumentTitle": "Belge ekle",
+  "addDocumentBody": "Biletler, kuponlar ve kimlikler bu geziye özel kalır.",
+  "sourceFiles": "Dosyalar",
+  "sourceFilesSub": "PDF, Pages, her şey",
+  "sourceCamera": "Kamera",
+  "sourceCameraSub": "Kağıt bir bilet veya kimlik tara",
+  "sourcePhotos": "Fotoğraflar",
+  "sourcePhotosSub": "Galerinden seç",
+  "saveDocumentTitle": "Belgeyi kaydet",
+  "documentTypeLabel": "Tür",
+  "linkToDayLabel": "Güne bağla (isteğe bağlı)",
+  "saveToDocuments": "Belgelere kaydet",
+  "docDayWithDate": "{day}. gün · {date}",
+  "@docDayWithDate": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "docDayShort": "{day}. gün",
+  "@docDayShort": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "editDocumentTitle": "Belgeyi düzenle",
+  "documentNameLabel": "Ad",
+  "documentNameHint": "Belge adı",
+  "deleteDocument": "Belgeyi sil",
+  "deleteDocumentTitle": "Bu belge silinsin mi?",
+  "deleteDocumentBody": "Bu, dosyayı kalıcı olarak siler. Geri alınamaz.",
+  "documentDeleted": "Belge silindi",
+  "docActionShare": "Paylaş",
+  "docActionSave": "Kaydet",
+  "docActionEdit": "Düzenle",
+  "docActionDelete": "Sil",
+  "documentLinkedTo": "Bağlı: {day}",
+  "@documentLinkedTo": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "openFile": "Aç",
+  "previewUnavailable": "Bu dosyayı burada gösteremiyoruz.",
+  "connectToView": "Bu dosyayı görüntülemek için internete bağlan.",
+  "emptyDocumentsTitle": "Henüz belge yok",
+  "emptyDocumentsBody": "Biletlerini, kuponlarını ve kimliklerini yükle, hep elinin altında olsun.",
+  "uploadFailed": "Yüklenemedi — tekrar dene.",
+  "budgetRemaining": "Kalan",
+  "budgetOfTotal": "/ {total}",
+  "@budgetOfTotal": {
+    "placeholders": {
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "budgetSpentUsed": "{spent} harcandı · bütçenin %{percent}'i",
+  "@budgetSpentUsed": {
+    "placeholders": {
+      "spent": {
+        "type": "String"
+      },
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "budgetLeftPct": "%{percent} kaldı",
+  "@budgetLeftPct": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "budgetByCategory": "Kategoriye göre",
+  "budgetExpenses": "Harcamalar",
+  "addExpense": "Harcama ekle",
+  "editExpense": "Harcamayı düzenle",
+  "editBudget": "Bütçeyi düzenle",
+  "budgetTotalLabel": "Toplam gezi bütçesi",
+  "budgetAllocateByCategory": "Kategorilere ayır",
+  "budgetAllocated": "Ayrılan",
+  "budgetSave": "Bütçeyi kaydet",
+  "budgetCurrency": "Para birimi",
+  "expCatStay": "Konaklama",
+  "expCatFood": "Yemek",
+  "expCatSight": "Gezilecek yerler",
+  "expCatTransport": "Ulaşım",
+  "expCatOther": "Diğer",
+  "expenseNoteHint": "Not ekle…",
+  "addAmountTo": "{category} için {amount} ekle",
+  "@addAmountTo": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "category": {
+        "type": "String"
+      }
+    }
+  },
+  "budgetUnassigned": "Atanmamış",
+  "deleteExpense": "Harcamayı sil",
+  "deleteExpenseTitle": "Bu harcama silinsin mi?",
+  "expenseDeleted": "Harcama silindi",
+  "amountRequired": "Tutarı yaz",
+  "emptyExpensesBody": "Henüz harcama eklenmedi.",
+  "setBudgetTitle": "Gezi bütçeni belirle",
+  "setBudgetBody": "Bir toplam ekle, Ventus harcadıkça kalanı takip etsin.",
+  "setBudget": "Bütçe belirle",
+  "privacySectionAppLock": "Uygulama kilidi",
+  "privacySectionAccount": "Hesap",
+  "privacySectionDanger": "Hesabı silme",
+  "privacyChangePin": "PIN'i değiştir",
+  "privacyChangePinSub": "Bu cihaz için hızlı kilit PIN'i",
+  "privacyChangePasswordSub": "Hesap şifreni güncelle",
+  "privacyDeleteAccount": "Hesabı sil",
+  "privacyDeleteAccountSub": "Hesabını ve verilerini kalıcı olarak sil",
+  "deleteAccountTitle": "Hesap silinsin mi?",
+  "deleteAccountBody": "Bu, hesabını ve tüm gezilerini kalıcı olarak siler. Geri alınamaz.",
+  "accountDeleted": "Hesabın silindi",
+  "changePinTitle": "PIN'i değiştir",
+  "changePinVerifyTitle": "Mevcut PIN'i yaz",
+  "changePinVerifyBody": "Değiştirmeden önce senin olduğunu doğrulayalım.",
+  "changePinNewTitle": "Yeni PIN seç",
+  "changePinNewBody": "Hatırlayacağın 4 haneli bir PIN seç.",
+  "changePinConfirmTitle": "Yeni PIN'i tekrar gir",
+  "changePinConfirmBody": "Onaylamak için yeni PIN'i bir daha yaz.",
+  "changePinWrong": "PIN yanlış. Tekrar dene.",
+  "changePinMismatch": "PIN'ler eşleşmedi. Baştan başla.",
+  "pinChanged": "PIN güncellendi",
+  "pinTooWeak": "Bu PIN çok kolay tahmin edilebilir. Farklı bir kod seç.",
+  "pinLockedOut": "Çok fazla hatalı deneme. Bekle:",
+  "changePasswordTitle": "Şifreyi değiştir",
+  "changePasswordAction": "Şifreyi güncelle",
+  "currentPasswordLabel": "Mevcut şifre",
+  "newPasswordLabel": "Yeni şifre",
+  "confirmPasswordLabel": "Yeni şifreyi onayla",
+  "passwordsDontMatch": "Şifreler eşleşmiyor.",
+  "currentPasswordIncorrect": "Mevcut şifre yanlış.",
+  "passwordChanged": "Şifre güncellendi",
+  "authWeakPassword": "Şifre çok zayıf. En az 8 karakter kullan.",
+  "authSamePassword": "Yeni şifre mevcut şifreden farklı olmalı.",
+  "proTitle": "Ventus Pro",
+  "proTagline": "Sınırsız planla.",
+  "proBillingYearly": "Yıllık",
+  "proBillingMonthly": "Aylık",
+  "proSave": "%30 tasarruf",
+  "proPerYear": "/yıl",
+  "proPerMonth": "/ay",
+  "proYearlyEquiv": "≈ $3.50/ay",
+  "proBilledMonthly": "aylık faturalandırılır",
+  "proColFeature": "Özellik",
+  "proColFree": "Ücretsiz",
+  "proColPro": "Pro",
+  "proRowTrips": "Aktif geziler",
+  "proRowAiPlans": "AI gün planları",
+  "proRowOfflineMaps": "Çevrimdışı haritalar",
+  "proRowCollaborators": "Birlikte planlayanlar",
+  "proRowVault": "Belge kasası",
+  "proFreeAiPlansPerMonth": "5/ay",
+  "proCtaTrial": "7 günlük ücretsiz denemeyi başlat",
+  "proComingSoon": "Ventus Pro'yu hâlâ geliştiriyoruz. Hazır olduğunda haber vereceğiz.",
+  "proThenYearly": "Sonra $41.99/yıl · istediğin zaman iptal et",
+  "proThenMonthly": "Sonra $4.99/ay · istediğin zaman iptal et",
+  "notificationsTitle": "Bildirimler",
+  "notifToday": "Bugün",
+  "notifEarlier": "Daha önce",
+  "notifMarkRead": "Hepsini okundu işaretle",
+  "notifEmptyTitle": "Henüz bildirim yok",
+  "notifEmptyBody": "Gezi etkinliği ve AI güncellemeleri burada görünecek.",
+  "notifNewCount": "{count} yeni",
+  "@notifNewCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifCollabInvitedTitle": "{email} davet edildi",
+  "@notifCollabInvitedTitle": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "notifCollabInvitedBody": "{trip} gezisine eklendi. Davet gönderildi.",
+  "@notifCollabInvitedBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "notifCollabInvitedBodyShort": "Davet gönderildi.",
+  "notifAccepted": "Kabul edildi",
+  "notifAcceptInvite": "Kabul et",
+  "notifAiReadyTitle": "AI gün planın hazır",
+  "notifAiReadyBody": "Ventus {trip} için bir plan hazırladı.",
+  "@notifAiReadyBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "notifGenericTitle": "Güncelleme",
+  "notifWelcomeTitle": "Ventus'a hoş geldin 👋",
+  "notifWelcomeBody": "Hesabın hazır. İlk gezini planla, gerisini Ventus halletsin.",
+  "timeJustNow": "Az önce",
+  "timeMinutesAgo": "{count} dk önce",
+  "@timeMinutesAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "timeHoursAgo": "{count} sa önce",
+  "@timeHoursAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "timeYesterday": "Dün",
+  "timeDaysAgo": "{count} gün önce",
+  "@timeDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeCoverPhoto": "Kapak fotoğrafını değiştir",
+  "coverUpdated": "Kapak güncellendi",
+  "coverRemove": "Kapak fotoğrafını kaldır",
+  "notifDeleteAll": "Hepsini sil",
+  "notifConfirmMarkAllReadTitle": "Hepsi okundu olarak işaretlensin mi?",
+  "notifConfirmMarkAllReadBody": "Tüm bildirimler okundu olarak işaretlenecek.",
+  "notifConfirmDeleteAllTitle": "Tüm bildirimler silinsin mi?",
+  "notifConfirmDeleteAllBody": "Bu, tüm bildirimlerini kalıcı olarak siler. Geri alınamaz.",
+  "notifMarkReadConfirm": "Okundu işaretle",
+  "notifDeleteAllConfirm": "Hepsini sil",
+  "tripStatDaysLeft": "gün kaldı",
+  "tripStatPlanned": "planlandı",
+  "greetingMorning": "Günaydın, {name}",
+  "greetingAfternoon": "Tünaydın, {name}",
+  "greetingEvening": "İyi akşamlar, {name}",
+  "nextStepEyebrow": "Sıradaki adım",
+  "nextStepPlanTitle": "Gün gün planını kur",
+  "nextStepPlanBody": "İlk aktiviteyi ekle, gerisi kolay gelir.",
+  "nextStepChecklistTitle": "Kontrol listesi oluştur",
+  "nextStepChecklistBody": "Çıkmadan önce neleri unutmamalısın?",
+  "nextStepBudgetTitle": "Bütçeni belirle",
+  "nextStepBudgetBody": "Harcamalarını yaptıkça takip et.",
+  "nextStepDocsTitle": "Belgelerini ekle",
+  "nextStepDocsBody": "Bilet ve rezervasyonlar tek yerde dursun.",
+  "planCompleteTitle": "Plan hazır",
+  "planCompleteBody": "Her gün planlandı. İyi yolculuklar!",
+  "tripDeleteOwnerOnly": "Geziyi yalnızca sahibi silebilir.",
+  "collabTripOwner": "Gezi sahibi",
+  "overviewReadiness": "Hazırlık",
+  "overviewNextUp": "Sıradaki etkinlik",
+  "readinessDaysPlanned": "{planned}/{total} gün planlandı",
+  "readinessActivities": "{count, plural, one{{count} etkinlik} other{{count} etkinlik}}",
+  "readinessBudgetNotSet": "Belirlenmedi",
+  "readinessNoDocs": "Henüz yüklenmedi",
+  "readinessEmpty": "Henüz boş",
+  "openInMaps": "Haritada aç",
+  "taxiSection": "Taksi",
+  "datesPickStartOnly": "{count, plural, one{{count} gece} other{{count} gece}} yazdın, sadece yola çıkacağın günü seç.",
+  "checklistAllDone": "Her şey hazır. İyi yolculuklar!",
+  "profileSectionSupport": "Destek",
+  "menuAbout": "Hakkında",
+  "menuHelp": "Yardım",
+  "menuContact": "Bize ulaş",
+  "aboutTagline": "Gezini tek yerde planla, sakla ve takip et.",
+  "aboutLegalSection": "Yasal",
+  "contactMailSubject": "Ventus destek",
+  "contactMailBody": "Merhaba, sorum/sorunum:\n\n\n— Uygulama: {version}\n— Cihaz: {device}",
+  "contactMailFailed": "Mail uygulaması açılamadı. Bize şu adrese yaz: support@ventus.app",
+  "helpQ1": "Gezi nasıl oluştururum?",
+  "helpA1": "Ana ekranın ortasındaki + düğmesine bas, yeri ve tarihi seç. İstersen “AI ile planla” seçip gezini bir cümleyle de yazabilirsin; yeri, tarihi ve kaç kişi olduğunu kendisi bulur.",
+  "helpQ2": "AI planı nasıl çalışır?",
+  "helpA2": "Gezi sayfasında “Planımı oluştur” düğmesine bas, Ventus gün gün bir plan önerir. Bunlar yalnızca yönlendirme içindir; saatleri, fiyatları ve rezervasyonları her zaman kendin kontrol et.",
+  "helpQ3": "İnternetsiz çalışır mı?",
+  "helpA3": "Gezilerin, gün planın, kontrol listen ve bütçen telefonunda saklanır, internet olmadan da açılır. Bağlantı gelince kendiliğinden eşitlenir. AI, harita, hava durumu ve döviz için internet gerekir.",
+  "helpQ4": "Belgelerim nerede saklanıyor?",
+  "helpA4": "Biletlerin ve diğer belgelerin yalnızca senin açabildiğin özel bir alanda güvenle saklanır. Sen paylaşmadıkça kimse göremez.",
+  "helpQ5": "Bir yeri haritada nasıl açarım?",
+  "helpA5": "Gün planında etkinlik kartının sağındaki pusula simgesine bas. Telefonundaki harita ve taksi uygulamaları çıkar, birini seç.",
+  "helpQ6": "Hesabımı nasıl silerim?",
+  "helpA6": "Profil → Gizlilik ve güvenlik → Hesabı sil. Bu işlem hesabını ve tüm gezilerini kalıcı olarak siler, geri alınamaz."
+}

@@ -1,0 +1,1120 @@
+{
+  "@@locale": "en",
+  "appName": "Ventus",
+  "welcomeBack": "Welcome back",
+  "welcomeToVentus": "Welcome to Ventus",
+  "greeting": "Hi, {name}",
+  "@greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "yourTrips": "Your trips",
+  "seeAll": "See all",
+  "allTrips": "All trips",
+  "tripsUpcoming": "Upcoming",
+  "tripsPast": "Past",
+  "allTripsEmptyBody": "Your planned and past trips will show up here.",
+  "sharedViaVentus": "Planned with Ventus ✈️",
+  "discover": "Discover",
+  "sponsored": "Sponsored",
+  "planWithAi": "Plan with AI",
+  "planWithAiSubtitle": "Tell me where you’re going next",
+  "whereToFirst": "Where to first?",
+  "emptyHomeBody": "Write the route by hand, or describe it in a sentence and let AI build it.",
+  "planNewTrip": "New trip",
+  "tripDaysToGo": "{count, plural, one{{count} day to go} other{{count} days to go}}",
+  "@tripDaysToGo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tripToday": "Today",
+  "tripInProgress": "In progress",
+  "percentPlanned": "{percent}% planned",
+  "@percentPlanned": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "tripStartPlanning": "Start planning",
+  "couldNotLoadTrips": "Could not load your trips.",
+  "tryAgain": "Try again",
+  "signOutTitle": "Sign out?",
+  "signOutBody": "You can sign back in any time.",
+  "cancel": "Cancel",
+  "back": "Back",
+  "setPasswordTitle": "Set a password",
+  "setPasswordAction": "Set password",
+  "setPasswordNote": "You signed in with Google, so your account has no password yet. Set one and you'll be able to sign in with your email too.",
+  "passwordSet": "Password set.",
+  "dismiss": "Dismiss",
+  "showPassword": "Show password",
+  "hidePassword": "Hide password",
+  "notificationsTitleShort": "Notifications",
+  "offlineBanner": "You're offline — changes sync when you're back.",
+  "edit": "Edit",
+  "clear": "Clear",
+  "savedAdd": "Save",
+  "savedRemove": "Remove from saved",
+  "signOut": "Sign out",
+  "comingSoon": "Coming soon",
+  "somethingWentWrong": "Something went wrong. Try again.",
+  "navHome": "Home",
+  "navTrips": "Trips",
+  "navSaved": "Saved",
+  "navTools": "Tools",
+  "navProfile": "Profile",
+  "homeTripSoon": "Your trip is coming up",
+  "homeTripToday": "You leave today",
+  "homeTripOngoing": "Trip in progress",
+  "homeWhereTo": "Where to?",
+  "homeSearchHint": "City, country or place",
+  "createSheetTitle": "New trip",
+  "createSheetSubtitle": "How do you want to start?",
+  "createAiBadge": "FAST",
+  "createAiBody": "Write \"4 days in Rome in October, museums and food\" — get an instant plan.",
+  "createManualBody": "Pick the destination, dates and travel companions yourself.",
+  "sheetClose": "Close",
+  "tripPickerTitle": "My trips",
+  "addNewTripShort": "New",
+  "emptyHomeTitle": "Plan your next trip",
+  "toolsSubtitle": "Handy on the road · works offline",
+  "toolCurrency": "Currency converter",
+  "toolWeather": "Weather",
+  "toolWorldClock": "Timezone",
+  "toolTip": "Tip calculator",
+  "toolsSectionWeather": "Weather & time",
+  "toolsSectionMoney": "Money",
+  "toolsOffline": "Couldn't load. Check your connection.",
+  "clockHome": "Home",
+  "clockBehindHome": "{hours} h behind home",
+  "@clockBehindHome": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      }
+    }
+  },
+  "clockAheadOfHome": "{hours} h ahead of home",
+  "@clockAheadOfHome": {
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      }
+    }
+  },
+  "clockSameAsHome": "Same time as home",
+  "clockSameShort": "Same",
+  "clockYesterday": "Yesterday",
+  "clockHourShort": "h",
+  "clockCityRemoved": "City removed",
+  "currencyUpdated": "Updated {date}",
+  "@currencyUpdated": {
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "curUSD": "US dollar",
+  "curEUR": "Euro",
+  "curGBP": "British pound",
+  "curTRY": "Turkish lira",
+  "curAZN": "Azerbaijani manat",
+  "curAED": "UAE dirham",
+  "curGEL": "Georgian lari",
+  "toolsActiveTripBanner": "Active trip: {trip}",
+  "@toolsActiveTripBanner": {
+    "placeholders": {
+      "trip": {}
+    }
+  },
+  "toolsCurrencyHint": "1 {fromGlyph} = {rate} {toGlyph} · {when}",
+  "@toolsCurrencyHint": {
+    "placeholders": {
+      "fromGlyph": {},
+      "rate": {},
+      "toGlyph": {},
+      "when": {}
+    }
+  },
+  "toolsRateToday": "today",
+  "toolsTimezoneHint": "{away} · {hours}h difference",
+  "@toolsTimezoneHint": {
+    "placeholders": {
+      "hours": {},
+      "away": {}
+    }
+  },
+  "toolsTimezoneEmptyHint": "Add a city to compare times",
+  "toolsWeatherHint": "{temp}° · {city}",
+  "@toolsWeatherHint": {
+    "placeholders": {
+      "temp": {},
+      "city": {}
+    }
+  },
+  "currencyAmountLabel": "Amount to convert",
+  "currencyConvertedLabel": "Converted amount",
+  "currencyRateLine": "1 {from} = {rate} {to}",
+  "@currencyRateLine": {
+    "placeholders": {
+      "from": {},
+      "rate": {},
+      "to": {}
+    }
+  },
+  "currencyRateSourceMarket": "Market rate · {date}",
+  "@currencyRateSourceMarket": {
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "currencyRateSource": "Central Bank of Azerbaijan official rate · {date}",
+  "@currencyRateSource": {
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "quickAmountsLabel": "Quick amounts",
+  "addToBudgetAsExpense": "Add to budget as an expense",
+  "expenseAdded": "Added to your trip budget.",
+  "currencyPickerTitle": "Choose a currency",
+  "currencySearchHint": "Search currency or country",
+  "currencyAllLabel": "All currencies",
+  "currencyHomeCurrency": "Home currency",
+  "currencyTripCurrency": "Active trip currency",
+  "timezoneTripTag": "active trip",
+  "tipOtherPercent": "Other",
+  "tipCustomPercentHint": "Percent",
+  "weatherToday": "Today",
+  "weatherNextDays": "Next 5 days",
+  "weatherNow": "Now",
+  "weatherTomorrow": "Tomorrow",
+  "weatherFeelsLike": "Feels like",
+  "weatherWind": "Wind",
+  "weatherHumidity": "Humidity",
+  "weatherRainChance": "Chance of rain",
+  "weatherSunrise": "Sunrise",
+  "weatherSunset": "Sunset",
+  "weatherWindKmh": "{value} km/h",
+  "@weatherWindKmh": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "weatherWindMph": "{value} mph",
+  "@weatherWindMph": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "wxClear": "Clear",
+  "wxPartly": "Partly cloudy",
+  "wxCloudy": "Cloudy",
+  "wxFog": "Foggy",
+  "wxDrizzle": "Drizzle",
+  "wxRain": "Rain",
+  "wxSnow": "Snow",
+  "wxStorm": "Thunderstorm",
+  "tipSubtitle": "Quick gratuity · offline",
+  "tipTotal": "Total",
+  "tipAmount": "Tip",
+  "tipPerPerson": "Per person",
+  "tipBillLabel": "Bill amount",
+  "tipPercentLabel": "Tip",
+  "tipSplitLabel": "Split between",
+  "tipExampleBill": "Bill {glyph}0 · 0%",
+  "tipPeopleCount": "{count, plural, one{{count} person} other{{count} people}}",
+  "@tipPeopleCount": {
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "searchCity": "Search a city",
+  "searchCityHint": "Type a city name…",
+  "noCitiesFound": "No cities found.",
+  "exploreTitle": "Discover",
+  "exploreSubtitle": "Places to inspire you",
+  "exploreAsk": "Ask Ventus",
+  "exploreEmpty": "Nothing to explore yet.",
+  "exploreSearchHint": "Search a city or country",
+  "exploreNoMatches": "Nothing matched \"{query}\".",
+  "@exploreNoMatches": {
+    "placeholders": {
+      "query": {}
+    }
+  },
+  "exploreCuratedSection": "In Ventus",
+  "exploreOtherPlacesSection": "Other places",
+  "exploreSearching": "Searching…",
+  "exploreStartTripHere": "Plan a trip here",
+  "savedTitleShort": "Saved",
+  "planTripHere": "Plan a trip here",
+  "factCurrency": "Currency",
+  "factLanguage": "Language",
+  "factBestTime": "Best time",
+  "factTimezone": "Timezone",
+  "destGoodToKnow": "Good to know",
+  "destAskPlan": "Plan with Ventus",
+  "readMore": "Read more",
+  "readLess": "Show less",
+  "savedEmptyTitle": "No saved places yet",
+  "savedEmptyBody": "Tap the heart on places you like in Discover.",
+  "welcomeTagline": "YOUR AI TRAVEL COMPANION",
+  "welcomeHeadline": "Every journey,\nbeautifully planned.",
+  "welcomeSubtitle": "Itinerary, budget, documents and tickets — together in one calm place.",
+  "getStarted": "Get started",
+  "haveAccount": "I already have an account",
+  "signInSubtitle": "Sign in to continue your journey.",
+  "emailLabel": "Email",
+  "emailHint": "name@example.com",
+  "passwordLabel": "Password",
+  "rememberMe": "Remember me",
+  "forgot": "Forgot?",
+  "signInAction": "Sign in",
+  "orDivider": "or",
+  "newToVentus": "New to Ventus?",
+  "createAccountAction": "Create account",
+  "providerComingSoon": "{provider} sign-in is coming soon.",
+  "@providerComingSoon": {
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  },
+  "createAccountTitle": "Create account",
+  "createAccountSubtitle": "Join Ventus and plan your next trip.",
+  "fullNameLabel": "Full name",
+  "fullNameHint": "Your name",
+  "passwordHintMin": "At least 8 characters",
+  "agreeTerms": "I agree to the Terms & Privacy Policy",
+  "agreeTermsRich": "I agree to the [terms] and [privacy].",
+  "termsLinkLabel": "Terms of Service",
+  "privacyLinkLabel": "Privacy Policy",
+  "acceptTermsError": "Accept the Terms & Privacy Policy to continue.",
+  "alreadyHaveAccount": "Already have an account?",
+  "resetPasswordTitle": "Reset password",
+  "forgotTitle": "Forgot your password?",
+  "forgotBody": "Enter the email linked to your account and we’ll send a reset link.",
+  "sendResetLink": "Send reset link",
+  "resetSent": "Reset link sent. Check your inbox.",
+  "rememberedIt": "Remembered it?",
+  "backToSignIn": "Back to sign in",
+  "verifyEmailTitle": "Confirm your email",
+  "verifyEmailBody": "We sent a confirmation link to {email}. Tap it to verify your account, then come back to sign in.",
+  "@verifyEmailBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "verifyEmailSpamNote": "Didn’t get it? Check your spam folder or resend.",
+  "verifyEmailResend": "Resend email",
+  "verifyEmailResent": "Confirmation email sent. Check your inbox.",
+  "verifyEmailSignIn": "Go to sign in",
+  "resetCodeTitle": "Set a new password",
+  "resetCodeBody": "We emailed a 6-digit code to {email}. Enter it below and choose a new password.",
+  "@resetCodeBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "resetCodeLabel": "Reset code",
+  "resetCodeHint": "123456",
+  "resetSubmit": "Reset password",
+  "resetSuccess": "Password updated. You’re all set.",
+  "resetResend": "Resend code",
+  "resetResent": "A new code is on its way.",
+  "authInvalidOtp": "That code is incorrect or has expired.",
+  "authRateLimited": "Too many attempts. Try again in a few minutes.",
+  "legalUpdated": "Last updated: June 2026",
+  "legalContact": "Questions about these terms or your data? Contact us at support@ventus.app.",
+  "legalTermsTitle": "Terms of Service",
+  "legalTermsIntro": "Welcome to Ventus. By creating an account and using the app, you agree to these Terms. If you do not agree, please do not use Ventus.",
+  "legalTermsS1Title": "Using Ventus",
+  "legalTermsS1Body": "Ventus helps you plan and organize trips. Use it only for lawful, personal purposes, and do not misuse, copy, or try to disrupt the service. AI-generated plans and suggestions are for guidance only — always verify times, prices, visas, and bookings yourself.",
+  "legalTermsS2Title": "Your account",
+  "legalTermsS2Body": "You are responsible for keeping your email, password, and PIN secure, and for all activity on your account. Let us know right away if you notice any unauthorized use.",
+  "legalTermsS3Title": "Your content",
+  "legalTermsS3Body": "Trips, notes, files, and other content you add remain yours. You grant Ventus permission to store, sync, and process this content solely to provide the app's features to you.",
+  "legalTermsS4Title": "Service & liability",
+  "legalTermsS4Body": "Ventus is provided “as is”, without warranties. We may add, change, or remove features, and we are not liable for losses arising from third-party data (maps, weather, AI) or interruptions to the service.",
+  "legalPrivacyTitle": "Privacy Policy",
+  "legalPrivacyIntro": "This policy explains what information Ventus collects, how we use it, and the choices you have.",
+  "legalPrivacyS1Title": "What we collect",
+  "legalPrivacyS1Body": "Account details (your name and email) and the trip data you create — destinations, itineraries, checklists, budgets, documents, and saved places. Your PIN is stored only on your device and is never sent to our servers.",
+  "legalPrivacyS2Title": "How we use it",
+  "legalPrivacyS2Body": "To run your account, sync your trips across devices, and power features like AI planning. When you generate a plan, the relevant trip details are sent to our AI provider (Google Gemini) to create it. We never sell your data.",
+  "legalPrivacyS3Title": "Storage & security",
+  "legalPrivacyS3Body": "Your data is stored securely with our backend provider (Supabase) and encrypted in transit. Map, weather, and currency features query third-party services with only the data needed to answer your request.",
+  "legalPrivacyS4Title": "Your rights",
+  "legalPrivacyS4Body": "You can view and edit your profile, change your password or PIN, and request deletion of your account and data at any time from Settings.",
+  "createPinTitle": "Create a PIN",
+  "createPinBody": "Set a 4-digit code for quick, secure access next time.",
+  "enterPinToUnlock": "Enter your PIN to unlock",
+  "usePasswordInstead": "Use password instead",
+  "incorrectPin": "Incorrect PIN.",
+  "errEmailRequired": "Enter your email",
+  "errEmailInvalid": "Enter a valid email",
+  "errPasswordRequired": "Enter your password",
+  "errPasswordTooShort": "At least 8 characters",
+  "errNameRequired": "Enter your name",
+  "authInvalidCredentials": "Incorrect email or password.",
+  "authEmailExists": "An account with this email already exists. Sign in instead.",
+  "authEmailNotConfirmed": "Check your inbox to confirm your email, then sign in.",
+  "profileEdit": "Edit",
+  "editProfileTitle": "Edit profile",
+  "changePhoto": "Change photo",
+  "avatarTakePhoto": "Take photo",
+  "avatarChooseLibrary": "Choose from library",
+  "avatarRemove": "Remove photo",
+  "emailReadonlyNote": "Email can't be changed here.",
+  "nameRequired": "Enter your name",
+  "profileSaved": "Profile updated",
+  "profileSaveFailed": "Couldn't save your profile. Try again.",
+  "profileEditUnavailable": "Sign in to edit your profile.",
+  "measurementSystem": "Measurement",
+  "unitMetric": "Metric",
+  "unitMetricDesc": "Kilometres, °C",
+  "unitImperial": "Imperial",
+  "unitImperialDesc": "Miles, °F",
+  "notificationSettingsTitle": "Notification settings",
+  "notifSectionTripActivity": "Trip activity",
+  "notifSectionTravelAlerts": "Travel alerts",
+  "notifSectionVentus": "Ventus",
+  "notifCollaboratorChanges": "Collaborator changes",
+  "notifCollaboratorChangesSub": "When someone edits the trip",
+  "notifItineraryUpdates": "Itinerary updates",
+  "notifChecklistReminders": "Checklist reminders",
+  "notifChecklistRemindersSub": "Due-date nudges",
+  "notifWeatherChanges": "Weather changes",
+  "notifDocumentExpiry": "Document expiry",
+  "notifDocumentExpirySub": "Passport & visa checks",
+  "notifCheckInDeparture": "Check-in & departure",
+  "notifTravelTips": "Travel tips",
+  "notifProductNews": "Product news & offers",
+  "collaboratorsTitle": "Collaborators",
+  "collaboratorsManageSub": "Invite people to plan together",
+  "collabPeopleCount": "{count, plural, =1{1 person} other{{count} people}}",
+  "@collabPeopleCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "collabPending": "Pending",
+  "collabRemoved": "Collaborator removed",
+  "collabAnyoneWithLink": "Anyone with the link",
+  "collabCopy": "Copy",
+  "collabLinkCopied": "Invite link copied",
+  "collabYou": "You",
+  "roleOwner": "Owner",
+  "roleEditor": "Editor",
+  "roleViewer": "Viewer",
+  "roleEditorDesc": "Add & edit itinerary, budget, docs",
+  "roleViewerDesc": "See the trip, can’t make changes",
+  "collabInviteSent": "Invite sent · pending",
+  "removeCollaborator": "Remove",
+  "inviteTitle": "Invite to trip",
+  "inviteRoleLabel": "Role",
+  "inviteEmailInvalid": "Enter a valid email",
+  "sendInvite": "Send invite",
+  "collabInviteSentToast": "Invite sent",
+  "collabPickTrip": "Choose a trip",
+  "collabNoTrips": "Create a trip first to invite people.",
+  "statCountries": "Countries",
+  "statCities": "Cities",
+  "statKmFlown": "km flown",
+  "statTrips": "Trips",
+  "goVentusPro": "Go Ventus Pro",
+  "goVentusProSub": "Unlimited trips, offline maps & more",
+  "menuCollaborators": "Collaborators",
+  "menuNotifications": "Notifications",
+  "menuSavedPlaces": "Saved places",
+  "menuCurrencyUnits": "Currency & units",
+  "menuSettings": "Settings",
+  "menuPrivacySecurity": "Privacy & security",
+  "profileSectionPreferences": "Preferences",
+  "profileSectionAccount": "Account",
+  "logOut": "Log out",
+  "settingsTitle": "Settings",
+  "appearance": "Appearance",
+  "themeSystem": "System",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "language": "Language",
+  "systemDefault": "System default",
+  "whereTo": "Where to?",
+  "destinationSubtitle": "Add one or more places — Ventus plans the route between them.",
+  "searchCityCountry": "Search a city or country",
+  "popularRightNow": "Popular right now",
+  "addAnotherStop": "Add another stop",
+  "recent": "Recent",
+  "popularDestinations": "Popular destinations",
+  "placesMatch": "{count} places match “{query}”",
+  "@placesMatch": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "addPlace": "Add “{name}”",
+  "@addPlace": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "continueAction": "Continue",
+  "searchingPlaces": "Searching…",
+  "keepTyping": "Type at least 3 letters to search",
+  "searchPlacesFailed": "Couldn’t search — add it manually below.",
+  "aiTitle": "Tell Ventus about your trip",
+  "aiSubtitle": "Describe your trip in your own words — Ventus fills in the details.",
+  "aiPromptHint": "A 5-day food & culture trip to Istanbul and Cappadocia for two, mid-June.",
+  "aiExamplesLabel": "Quick start",
+  "aiExampleRomanticLabel": "Romantic weekend",
+  "aiExampleRomanticText": "A short romantic getaway for two this weekend, somewhere nearby.",
+  "aiExampleFamilyLabel": "Family getaway",
+  "aiExampleFamilyText": "A 7-day beach holiday in August with our family (2 adults, 2 kids).",
+  "aiExampleFriendsLabel": "Trip with friends",
+  "aiExampleFriendsText": "A 3-day mountain trip with 4 friends in September, hiking and nature.",
+  "aiExampleSoloLabel": "Solo trip",
+  "aiExampleSoloText": "A solo 4-day culture-and-relax trip to a quiet city in October.",
+  "aiExampleCityLabel": "Short city break",
+  "aiExampleCityText": "A short 3-day weekend city break — historic sights and local food.",
+  "aiExampleWinterLabel": "Winter holiday",
+  "aiExampleWinterText": "A 5-day winter holiday at a snowy mountain resort in January, skiing and hot chocolate.",
+  "ventusUnderstood": "Ventus understood",
+  "whosComing": "Who’s coming?",
+  "travelersSubtitle": "This helps Ventus set the right pace and suggestions.",
+  "travelerSolo": "Solo",
+  "travelerCouple": "Couple",
+  "travelerFamily": "Family",
+  "travelerFriends": "Friends",
+  "travelersAdults": "Adults",
+  "travelersAdultsSub": "Age 13+",
+  "travelersChildren": "Children",
+  "travelersChildrenSub": "Age 0–12",
+  "inviteCompanions": "Invite companions",
+  "inviteCompanionsSub": "Optional · plan together",
+  "inviteAdd": "Add",
+  "inviteAfterCreate": "They'll be invited once you create the trip.",
+  "when": "When?",
+  "datesSubtitle": "Pick your dates, or stay flexible — you can change this later.",
+  "presetThisWeekend": "This weekend",
+  "presetNextWeek": "Next week",
+  "presetInAMonth": "In a month",
+  "presetFlexible": "I’m flexible",
+  "reviewTrip": "Review trip",
+  "selectDates": "Select dates",
+  "nightsCount": "{count, plural, one{{count} night} other{{count} nights}}",
+  "@nightsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewTitle": "Review",
+  "stopsCount": "{count, plural, one{{count} stop} other{{count} stops}}",
+  "@stopsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "routeLabel": "Route",
+  "travelersLabel": "Travelers",
+  "datesLabel": "Dates",
+  "editAction": "Edit",
+  "adultsCount": "{count, plural, one{{count} adult} other{{count} adults}}",
+  "@adultsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "childrenCount": "{count, plural, one{{count} child} other{{count} children}}",
+  "@childrenCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "buildPlanWithAi": "Build my plan with AI",
+  "createEmptyTrip": "Build it myself",
+  "reviewFootnote": "No bookings here — add tickets & documents anytime.",
+  "tripCreated": "Trip created",
+  "tripNotFound": "Trip not found.",
+  "tripDetailsTitle": "Trip details",
+  "tripOverviewTab": "Overview",
+  "moduleItinerary": "Itinerary",
+  "moduleBudget": "Budget",
+  "moduleDocuments": "Documents",
+  "moduleChecklist": "Checklist",
+  "moduleChecklistShort": "Checklist",
+  "moduleMap": "Map",
+  "seeOnMap": "See on map",
+  "mapRouteTitle": "Route",
+  "emptyMapTitle": "Nothing to map yet",
+  "emptyMapBody": "Add places to your trip and they'll appear here on the map.",
+  "emptyMapNoCoords": "The places on this trip don't have locations yet. Tap below to put them on the map.",
+  "mapFilterAll": "All",
+  "mapLocating": "Finding places…",
+  "mapFindPlaces": "Find places",
+  "mapMissingPlaces": "{count, plural, one{{count} place has no location} other{{count} places have no location}}",
+  "@mapMissingPlaces": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapPlacesCount": "{count, plural, one{{count} place} other{{count} places}}",
+  "@mapPlacesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapDayDistance": "~{km} km",
+  "@mapDayDistance": {
+    "placeholders": {
+      "km": {
+        "type": "String"
+      }
+    }
+  },
+  "mapDayEmpty": "Nothing on this day is on the map yet",
+  "mapShowInPlan": "Show in the day plan",
+  "mapLocated": "{count, plural, one{{count} place added to the map} other{{count} places added to the map}}",
+  "@mapLocated": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mapNothingLocated": "No new places found",
+  "mapLocateFailed": "Couldn't find the places. Check your connection.",
+  "aiHubTitle": "Let Ventus plan {city}",
+  "@aiHubTitle": {
+    "placeholders": {
+      "city": {
+        "type": "String"
+      }
+    }
+  },
+  "aiHubBody": "A day-by-day itinerary tuned to your dates, pace and the places you picked — ready in seconds.",
+  "aiHubGenerate": "Generate my plan",
+  "aiGenerating": "Crafting your plan…",
+  "aiPlanReady": "Your plan is ready",
+  "aiNeedsDestination": "Add a destination first.",
+  "aiPlanUnavailable": "AI planning isn't available yet.",
+  "aiPlanNetworkError": "Couldn't reach the planner. Check your connection and try again.",
+  "aiPlanEmpty": "Couldn't build a plan. Try again in a moment.",
+  "aiPlanFailed": "Couldn't generate a plan. Try again.",
+  "aiNeedDescription": "Describe your trip first.",
+  "aiReadingTrip": "Reading your trip…",
+  "aiParseEmpty": "Couldn't find a place in that. Try naming a city.",
+  "aiParseFailed": "Couldn't read your trip. Try again.",
+  "orStartManually": "Or start manually",
+  "startBuildItinerary": "Build itinerary",
+  "startBuildItinerarySub": "Add days and activities yourself",
+  "startUploadDocs": "Upload tickets & documents",
+  "startUploadDocsSub": "Flights, hotels, passports — all in one place",
+  "startChecklist": "Create a checklist",
+  "startChecklistSub": "Track what to pack and prepare",
+  "deleteTripAction": "Delete trip",
+  "deleteTripTitle": "Delete this trip?",
+  "deleteTripBody": "This removes the trip and its details. This can’t be undone.",
+  "deleteConfirm": "Delete",
+  "tripDeleted": "Trip deleted",
+  "dayLabel": "Day",
+  "emptyDayTitle": "Nothing planned yet",
+  "emptyDayBody": "Add your first activity for this day.",
+  "addActivity": "Add activity",
+  "newActivity": "New activity",
+  "editActivity": "Edit activity",
+  "activityTitleLabel": "Activity",
+  "activityTitleHint": "e.g. Bosphorus sunset walk",
+  "activityTitleRequired": "Add a short title",
+  "activityPlaceLabel": "Place",
+  "activityPlaceHint": "e.g. Karaköy",
+  "activityTimeLabel": "Time",
+  "activityAddTime": "Add a time",
+  "activityKindLabel": "Type",
+  "activityDayLabel": "Day",
+  "kindFlight": "Flight",
+  "kindStay": "Stay",
+  "kindFood": "Food",
+  "kindSight": "Sight",
+  "kindTransport": "Transport",
+  "kindActivity": "Activity",
+  "save": "Save",
+  "selectTime": "Select time",
+  "setTime": "Set time",
+  "deleteActivity": "Delete activity",
+  "deleteActivityTitle": "Delete this activity?",
+  "aiAssistTitle": "Some days are still open",
+  "aiAssistBody": "Let Ventus draft them for you",
+  "planAction": "Plan",
+  "checklistProgress": "{done} of {total} done",
+  "@checklistProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "checklistItemHint": "e.g. Passport valid 6+ months",
+  "renameChecklistItem": "Rename item",
+  "itemDeleted": "Item deleted",
+  "undo": "Undo",
+  "emptyChecklistTitle": "Nothing to check off yet",
+  "emptyChecklistBody": "Add what you need to pack and prepare.",
+  "checklistCatBeforeYouGo": "Before you go",
+  "checklistCatPack": "Pack",
+  "checklistCatOnArrival": "On arrival",
+  "defChkVisa": "Check / apply for visa",
+  "defChkInsurance": "Travel insurance",
+  "defChkCheckin": "Online check-in",
+  "defChkCash": "Exchange currency / cash",
+  "defChkPassport": "Passport",
+  "defChkTickets": "Tickets (flight / train)",
+  "defChkId": "ID card",
+  "defChkCharger": "Charger / adapter",
+  "defChkSim": "Local SIM / eSIM",
+  "defChkHotel": "Hotel check-in",
+  "defChkTransport": "Local transport",
+  "addItem": "Add item",
+  "addToChecklist": "Add to checklist",
+  "editChecklistItem": "Edit item",
+  "deleteChecklistItem": "Delete item",
+  "checklistCategoryLabel": "Category",
+  "setReminder": "Set a reminder",
+  "dueBy": "Do by {date}",
+  "@dueBy": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "documentsCount": "{count, plural, one{{count} file} other{{count} files}}",
+  "@documentsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "docPhotoName": "Photo",
+  "docFileName": "File",
+  "docGroupTickets": "Tickets",
+  "docGroupStays": "Stays",
+  "docGroupIdentity": "Identity",
+  "docGroupOther": "Other",
+  "docGroupTripWide": "Trip-wide",
+  "docTypeTicket": "Ticket",
+  "docTypeStay": "Stay",
+  "docTypeId": "ID",
+  "docTypeOther": "Other",
+  "uploadDocument": "Upload document",
+  "addDocumentTitle": "Add a document",
+  "addDocumentBody": "Tickets, vouchers & IDs stay private to this trip.",
+  "sourceFiles": "Files",
+  "sourceFilesSub": "PDF, Pages, anything",
+  "sourceCamera": "Camera",
+  "sourceCameraSub": "Scan a paper ticket or ID",
+  "sourcePhotos": "Photos",
+  "sourcePhotosSub": "Pick from your library",
+  "saveDocumentTitle": "Save document",
+  "documentTypeLabel": "Type",
+  "linkToDayLabel": "Link to day (optional)",
+  "saveToDocuments": "Save to Documents",
+  "docDayWithDate": "Day {day} · {date}",
+  "@docDayWithDate": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "docDayShort": "Day {day}",
+  "@docDayShort": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "editDocumentTitle": "Edit document",
+  "documentNameLabel": "Name",
+  "documentNameHint": "Document name",
+  "deleteDocument": "Delete document",
+  "deleteDocumentTitle": "Delete this document?",
+  "deleteDocumentBody": "This permanently removes the file. This can’t be undone.",
+  "documentDeleted": "Document deleted",
+  "docActionShare": "Share",
+  "docActionSave": "Save",
+  "docActionEdit": "Edit",
+  "docActionDelete": "Delete",
+  "documentLinkedTo": "Linked to {day}",
+  "@documentLinkedTo": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "openFile": "Open",
+  "previewUnavailable": "Preview isn’t available here.",
+  "connectToView": "Connect to the internet to view this file.",
+  "emptyDocumentsTitle": "No documents yet",
+  "emptyDocumentsBody": "Upload your tickets, vouchers and IDs to keep them handy.",
+  "uploadFailed": "Couldn’t upload — try again.",
+  "budgetRemaining": "Remaining",
+  "budgetOfTotal": "of {total}",
+  "@budgetOfTotal": {
+    "placeholders": {
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "budgetSpentUsed": "{spent} spent · {percent}% used",
+  "@budgetSpentUsed": {
+    "placeholders": {
+      "spent": {
+        "type": "String"
+      },
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "budgetLeftPct": "{percent}% left",
+  "@budgetLeftPct": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "budgetByCategory": "By category",
+  "budgetExpenses": "Expenses",
+  "addExpense": "Add expense",
+  "editExpense": "Edit expense",
+  "editBudget": "Edit budget",
+  "budgetTotalLabel": "Total trip budget",
+  "budgetAllocateByCategory": "Allocate by category",
+  "budgetAllocated": "Allocated",
+  "budgetSave": "Save budget",
+  "budgetCurrency": "Currency",
+  "expCatStay": "Stay",
+  "expCatFood": "Food",
+  "expCatSight": "Sights",
+  "expCatTransport": "Transport",
+  "expCatOther": "Other",
+  "expenseNoteHint": "Add a note…",
+  "addAmountTo": "Add {amount} to {category}",
+  "@addAmountTo": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "category": {
+        "type": "String"
+      }
+    }
+  },
+  "budgetUnassigned": "Unassigned",
+  "deleteExpense": "Delete expense",
+  "deleteExpenseTitle": "Delete this expense?",
+  "expenseDeleted": "Expense deleted",
+  "amountRequired": "Enter an amount",
+  "emptyExpensesBody": "No expenses logged yet.",
+  "setBudgetTitle": "Set your trip budget",
+  "setBudgetBody": "Add a total and Ventus tracks what’s left as you spend.",
+  "setBudget": "Set a budget",
+  "privacySectionAppLock": "App lock",
+  "privacySectionAccount": "Account",
+  "privacySectionDanger": "Danger zone",
+  "privacyChangePin": "Change PIN",
+  "privacyChangePinSub": "Quick-unlock PIN for this device",
+  "privacyChangePasswordSub": "Update your account password",
+  "privacyDeleteAccount": "Delete account",
+  "privacyDeleteAccountSub": "Permanently remove your account and data",
+  "deleteAccountTitle": "Delete account?",
+  "deleteAccountBody": "This permanently deletes your account and all your trips. This can't be undone.",
+  "accountDeleted": "Your account has been deleted",
+  "changePinTitle": "Change PIN",
+  "changePinVerifyTitle": "Enter current PIN",
+  "changePinVerifyBody": "Confirm it's you before changing your PIN.",
+  "changePinNewTitle": "Choose a new PIN",
+  "changePinNewBody": "Pick a 4-digit PIN you'll remember.",
+  "changePinConfirmTitle": "Re-enter new PIN",
+  "changePinConfirmBody": "Type your new PIN again to confirm.",
+  "changePinWrong": "Incorrect PIN. Try again.",
+  "changePinMismatch": "PINs didn't match. Start again.",
+  "pinChanged": "PIN updated",
+  "pinTooWeak": "That PIN is too easy to guess. Try a different one.",
+  "pinLockedOut": "Too many attempts. Try again in",
+  "changePasswordTitle": "Change password",
+  "changePasswordAction": "Update password",
+  "currentPasswordLabel": "Current password",
+  "newPasswordLabel": "New password",
+  "confirmPasswordLabel": "Confirm new password",
+  "passwordsDontMatch": "Passwords don't match.",
+  "currentPasswordIncorrect": "Current password is incorrect.",
+  "passwordChanged": "Password updated",
+  "authWeakPassword": "Password is too weak. Use at least 8 characters.",
+  "authSamePassword": "New password must be different from the current one.",
+  "proTitle": "Ventus Pro",
+  "proTagline": "Plan without limits.",
+  "proBillingYearly": "Yearly",
+  "proBillingMonthly": "Monthly",
+  "proSave": "Save 30%",
+  "proPerYear": "/yr",
+  "proPerMonth": "/mo",
+  "proYearlyEquiv": "≈ $3.50/mo",
+  "proBilledMonthly": "billed monthly",
+  "proColFeature": "Feature",
+  "proColFree": "Free",
+  "proColPro": "Pro",
+  "proRowTrips": "Active trips",
+  "proRowAiPlans": "AI day plans",
+  "proRowOfflineMaps": "Offline maps",
+  "proRowCollaborators": "Collaborators",
+  "proRowVault": "Document vault",
+  "proFreeAiPlansPerMonth": "5/mo",
+  "proCtaTrial": "Start 7-day free trial",
+  "proComingSoon": "We're still building Ventus Pro. We'll let you know when it's ready.",
+  "proThenYearly": "Then $41.99/yr · cancel anytime",
+  "proThenMonthly": "Then $4.99/mo · cancel anytime",
+  "notificationsTitle": "Notifications",
+  "notifToday": "Today",
+  "notifEarlier": "Earlier",
+  "notifMarkRead": "Mark all read",
+  "notifEmptyTitle": "No notifications yet",
+  "notifEmptyBody": "Trip activity and AI updates will show up here.",
+  "notifNewCount": "{count} new",
+  "@notifNewCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifCollabInvitedTitle": "Invited {email}",
+  "@notifCollabInvitedTitle": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "notifCollabInvitedBody": "Added to {trip}. Invite sent.",
+  "@notifCollabInvitedBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "notifCollabInvitedBodyShort": "Invite sent.",
+  "notifAiReadyTitle": "Your AI day plan is ready",
+  "notifAiReadyBody": "Ventus drafted a plan for {trip}.",
+  "@notifAiReadyBody": {
+    "placeholders": {
+      "trip": {
+        "type": "String"
+      }
+    }
+  },
+  "notifAccepted": "Accepted",
+  "notifAcceptInvite": "Accept",
+  "notifGenericTitle": "Update",
+  "notifWelcomeTitle": "Welcome to Ventus 👋",
+  "notifWelcomeBody": "Your account is ready. Plan your first trip and let Ventus handle the details.",
+  "timeJustNow": "Just now",
+  "timeMinutesAgo": "{count}m ago",
+  "@timeMinutesAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "timeHoursAgo": "{count}h ago",
+  "@timeHoursAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "timeYesterday": "Yesterday",
+  "timeDaysAgo": "{count}d ago",
+  "@timeDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changeCoverPhoto": "Change cover photo",
+  "coverUpdated": "Cover updated",
+  "coverRemove": "Remove cover photo",
+  "notifDeleteAll": "Delete all",
+  "notifConfirmMarkAllReadTitle": "Mark all as read?",
+  "notifConfirmMarkAllReadBody": "All notifications will be marked as read.",
+  "notifConfirmDeleteAllTitle": "Delete all notifications?",
+  "notifConfirmDeleteAllBody": "This permanently removes all your notifications. This can’t be undone.",
+  "notifMarkReadConfirm": "Mark read",
+  "notifDeleteAllConfirm": "Delete all",
+  "@tipExampleBill": {
+    "placeholders": {
+      "glyph": {
+        "type": "String"
+      }
+    }
+  },
+  "tripStatDaysLeft": "days to go",
+  "tripStatPlanned": "planned",
+  "greetingMorning": "Good morning, {name}",
+  "@greetingMorning": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "greetingAfternoon": "Good afternoon, {name}",
+  "@greetingAfternoon": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "greetingEvening": "Good evening, {name}",
+  "@greetingEvening": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "nextStepEyebrow": "Next step",
+  "nextStepPlanTitle": "Build your day-by-day plan",
+  "nextStepPlanBody": "Add the first activity — the rest comes easily.",
+  "nextStepChecklistTitle": "Start a checklist",
+  "nextStepChecklistBody": "What shouldn't you forget before leaving?",
+  "nextStepBudgetTitle": "Set a budget",
+  "nextStepBudgetBody": "Track spending as it happens.",
+  "nextStepDocsTitle": "Add your documents",
+  "nextStepDocsBody": "Keep tickets and bookings in one place.",
+  "planCompleteTitle": "Plan complete",
+  "planCompleteBody": "Every day is planned. Have a great trip!",
+  "tripDeleteOwnerOnly": "Only the owner can delete this trip.",
+  "collabTripOwner": "Trip owner",
+  "overviewReadiness": "Getting ready",
+  "overviewNextUp": "Up next",
+  "readinessDaysPlanned": "{planned}/{total} days planned",
+  "@readinessDaysPlanned": {
+    "placeholders": {
+      "planned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "readinessActivities": "{count, plural, one{{count} activity} other{{count} activities}}",
+  "@readinessActivities": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "readinessBudgetNotSet": "Not set yet",
+  "readinessNoDocs": "Nothing uploaded",
+  "readinessEmpty": "Nothing here yet",
+  "openInMaps": "Open in maps",
+  "taxiSection": "Taxi",
+  "datesPickStartOnly": "You said {count, plural, one{{count} night} other{{count} nights}} — just pick the day you leave.",
+  "@datesPickStartOnly": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "checklistAllDone": "All set. Safe travels!",
+  "profileSectionSupport": "Support",
+  "menuAbout": "About",
+  "menuHelp": "Help",
+  "menuContact": "Contact us",
+  "aboutTagline": "Plan, keep and follow your trip in one place.",
+  "aboutLegalSection": "Legal",
+  "contactMailSubject": "Ventus support",
+  "contactMailBody": "Hi, my question/problem:\n\n\n— App: {version}\n— Device: {device}",
+  "@contactMailBody": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      },
+      "device": {
+        "type": "String"
+      }
+    }
+  },
+  "contactMailFailed": "Couldn't open your mail app. Write to us at support@ventus.app",
+  "helpQ1": "How do I create a trip?",
+  "helpA1": "Tap the + button in the middle of the home screen, then pick the place and dates. You can also choose “Plan with AI” and describe your trip in a sentence — it finds the place, dates and who's going.",
+  "helpQ2": "How does the AI plan work?",
+  "helpA2": "On your trip's page tap “Generate my plan” and Ventus suggests a day-by-day plan. It's guidance only — always double-check times, prices and bookings yourself.",
+  "helpQ3": "Does it work offline?",
+  "helpA3": "Your trips, day plan, checklist and budget are stored on your phone and open without internet. They sync when you're back online. AI, maps, weather and currency need internet.",
+  "helpQ4": "Where are my documents stored?",
+  "helpA4": "Your tickets and other documents are kept securely in private storage that only you can open. Nobody sees them unless you share them.",
+  "helpQ5": "How do I open a place on the map?",
+  "helpA5": "In the day plan tap the compass icon on the right of an activity card. The maps and taxi apps on your phone appear — pick one.",
+  "helpQ6": "How do I delete my account?",
+  "helpA6": "Profile → Privacy & security → Delete account. This permanently deletes your account and all your trips and can't be undone."
+}
