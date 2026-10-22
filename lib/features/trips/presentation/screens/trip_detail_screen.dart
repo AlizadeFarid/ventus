@@ -418,8 +418,6 @@ class _HubState extends ConsumerState<_Hub>
           trip: trip,
           plannedPercent: plannedPercent,
           collapse: _collapse,
-          onStartPlanning: () =>
-              _tabController.animateTo(HubTab.itinerary.index),
         ),
       ),
     );
@@ -824,13 +822,9 @@ class _CoverBackground extends StatelessWidget {
     required this.trip,
     required this.plannedPercent,
     required this.collapse,
-    required this.onStartPlanning,
   });
 
   final Trip trip;
-
-  /// Switches the hub to the itinerary tab (the 0%-planned call to action).
-  final VoidCallback onStartPlanning;
 
   /// Live planning progress computed from the itinerary (days with activities).
   final int plannedPercent;
@@ -903,8 +897,12 @@ class _CoverBackground extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  VentusGlassPill(icon: VentusIcons.clock, label: countdown),
-                  const SizedBox(height: 10),
+                  // Nothing planned yet: the countdown moves down beside the
+                  // dates, where the percentage would otherwise sit.
+                  if (plannedPercent != 0) ...[
+                    VentusGlassPill(icon: VentusIcons.clock, label: countdown),
+                    const SizedBox(height: 10),
+                  ],
                   if (eyebrow != null) ...[
                     Text(
                       eyebrow,
@@ -956,31 +954,10 @@ class _CoverBackground extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(width: 10),
-                      // Nothing planned yet: the percentage says nothing, so
-                      // offer the next step instead.
                       if (plannedPercent == 0)
-                        VentusTap(
-                          onTap: onStartPlanning,
-                          padding: const EdgeInsets.symmetric(vertical: 4),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(
-                                l10n.tripStartPlanning,
-                                style: const TextStyle(
-                                  fontSize: AppFontSize.sm,
-                                  fontWeight: FontWeight.w700,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              const SizedBox(width: 4),
-                              const VentusIcon(
-                                VentusIcons.chevronRight,
-                                size: 14,
-                                color: Colors.white,
-                              ),
-                            ],
-                          ),
+                        VentusGlassPill(
+                          icon: VentusIcons.clock,
+                          label: countdown,
                         )
                       else
                         Text(

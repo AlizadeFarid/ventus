@@ -142,7 +142,6 @@ class _PopulatedHome extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = context.l10n;
     final featured = ref.watch(featuredTripProvider);
-    final others = ref.watch(otherTripsProvider);
     final trips = ref.watch(tripsProvider).asData?.value ?? const [];
 
     return RefreshIndicator(
@@ -173,36 +172,6 @@ class _PopulatedHome extends ConsumerWidget {
                 index: 2,
                 child: _FeaturedTripSection(trip: featured),
               ),
-            if (others.isNotEmpty) ...[
-              VentusSectionHeader(
-                padding: const EdgeInsets.fromLTRB(
-                  AppSpacing.screen,
-                  24,
-                  AppSpacing.screen,
-                  12,
-                ),
-                title: l10n.yourTrips,
-                actionLabel: l10n.seeAll,
-                onAction: () => context.push(AppRoutes.allTrips),
-              ),
-              SizedBox(
-                height: 198,
-                child: ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: AppSpacing.screen,
-                  ),
-                  itemCount: others.length + 1,
-                  separatorBuilder: (_, _) => const SizedBox(width: 14),
-                  itemBuilder: (context, i) => i < others.length
-                      ? TripCard(
-                          trip: others[i],
-                          onTap: () => _openTrip(context, others[i].id),
-                        )
-                      : _AddTripCard(onTap: () => openCreateTripFlow(context)),
-                ),
-              ),
-            ],
             const _AdBanner(),
             VentusSectionHeader(
               padding: const EdgeInsets.fromLTRB(
@@ -462,46 +431,6 @@ class _ModuleCard extends StatelessWidget {
   }
 }
 
-/// Trailing dashed card at the end of "Your trips" — a shortcut into the
-/// create-trip sheet (prototype state B1 → "Yeni").
-class _AddTripCard extends StatelessWidget {
-  const _AddTripCard({required this.onTap});
-
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final colors = context.colors;
-    final l10n = context.l10n;
-    return VentusTap(
-      onTap: onTap,
-      child: Container(
-        width: 84,
-        decoration: BoxDecoration(
-          color: colors.primarySoft,
-          borderRadius: AppRadius.brLg,
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            VentusIcon(VentusIcons.plus, size: 22, color: colors.primary),
-            const SizedBox(height: 6),
-            Text(
-              l10n.addNewTripShort,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: AppFontSize.caption,
-                fontWeight: FontWeight.w700,
-                color: context.primaryFill,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
 /// Opens the trip-switcher bottom sheet (prototype state F): lists every
 /// upcoming trip, lets the user pick which one is featured on Home.
 Future<void> _openTripSwitcher(
@@ -701,7 +630,8 @@ class _HomeSearchBar extends StatelessWidget {
       ),
       child: VentusSearchButton(
         label: context.l10n.homeSearchHint,
-        onTap: () => context.push(AppRoutes.explore),
+        // This pill reads as a search field, so land with the keyboard up.
+        onTap: () => context.push(AppRoutes.explore, extra: true),
       ),
     );
   }

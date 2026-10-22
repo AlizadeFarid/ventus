@@ -668,7 +668,7 @@ class _SuggestRow extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             child: Row(
               children: [
                 VentusLeadIcon(icon),
@@ -805,10 +805,7 @@ class _AiBody extends StatelessWidget {
             decoration: BoxDecoration(
               color: colors.surface,
               borderRadius: AppRadius.brLg,
-              border: Border.all(color: colors.primary, width: 1.5),
-              boxShadow: [
-                BoxShadow(color: colors.ring, blurRadius: 0, spreadRadius: 3),
-              ],
+              boxShadow: context.focusRing,
             ),
             child: Stack(
               children: [
