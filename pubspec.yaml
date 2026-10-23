@@ -130,6 +130,10 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  # Bundled photos (the Welcome hero) — available on the first frame, offline.
+  assets:
+    - assets/images/
+
   # Bundled rather than fetched via google_fonts: the app is local-first, and
   # downloading the faces on first use meant the very first launch (and any
   # offline launch) rendered in the platform fallback and then visibly

@@ -25,6 +25,7 @@ class VentusTextField extends StatefulWidget {
     this.errorText,
     this.obscure = false,
     this.keyboardType,
+    this.textCapitalization = TextCapitalization.none,
     this.textInputAction,
     this.onChanged,
     this.onSubmitted,
@@ -47,6 +48,7 @@ class VentusTextField extends StatefulWidget {
   /// Password mode — obscures text and shows an eye/eye-off reveal toggle.
   final bool obscure;
   final TextInputType? keyboardType;
+  final TextCapitalization textCapitalization;
   final TextInputAction? textInputAction;
   final ValueChanged<String>? onChanged;
   final ValueChanged<String>? onSubmitted;
@@ -86,14 +88,8 @@ class _VentusTextFieldState extends State<VentusTextField> {
     final type = context.typography;
     final hasError = widget.errorText != null;
 
-    // At rest the field is defined by its fill, not an outline. A border only
-    // appears for the two states that must be unmistakable: focus and error.
-    final borderColor = hasError
-        ? colors.danger
-        : _focused
-        ? colors.primary
-        : null;
-
+    // At rest the field is defined by its fill, not an outline. Focus and error
+    // add one thin line (see `focusRing`); nothing else changes but the fill.
     final fillColor = _focused || hasError
         ? colors.surface
         : colors.surfaceSand;
@@ -111,74 +107,79 @@ class _VentusTextFieldState extends State<VentusTextField> {
           ),
           const SizedBox(height: AppSpacing.s2),
         ],
-        AnimatedContainer(
-          duration: const Duration(milliseconds: 150),
-          height: AppSizes.controlLg,
-          padding: const EdgeInsets.symmetric(horizontal: AppSpacing.s4),
-          decoration: BoxDecoration(
-            color: fillColor,
-            borderRadius: AppRadius.brMd,
-            border: borderColor == null
-                ? null
-                : Border.all(color: borderColor, width: 1.5),
-            boxShadow: _focused
-                ? [
-                    BoxShadow(
-                      color: colors.ring,
-                      blurRadius: 0,
-                      spreadRadius: 3,
+        // The whole box is the tap target, not just the line of text inside it:
+        // the icon, the padding and the empty space all focus the field.
+        GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: _focusNode.requestFocus,
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 150),
+            height: AppSizes.controlLg,
+            padding: const EdgeInsets.symmetric(horizontal: AppSpacing.s4),
+            decoration: BoxDecoration(
+              color: fillColor,
+              borderRadius: AppRadius.brMd,
+              boxShadow: hasError
+                  ? context.errorRing
+                  : _focused
+                  ? context.focusRing
+                  : null,
+            ),
+            child: Row(
+              children: [
+                if (widget.icon != null) ...[
+                  VentusIcon(widget.icon!, size: 20, color: colors.muted),
+                  const SizedBox(width: AppSpacing.s3),
+                ],
+                Expanded(
+                  child: TextField(
+                    controller: widget.controller,
+                    focusNode: _focusNode,
+                    obscureText: widget.obscure && !_reveal,
+                    keyboardType: widget.keyboardType,
+                    textCapitalization: widget.textCapitalization,
+                    // Single-line fields end on "Done" (closes the keyboard) unless a form
+                    // asks for "Next" to walk to the following field.
+                    textInputAction:
+                        widget.textInputAction ?? TextInputAction.done,
+                    inputFormatters: widget.inputFormatters,
+                    onChanged: widget.onChanged,
+                    onSubmitted: widget.onSubmitted,
+                    autofillHints: widget.autofillHints,
+                    cursorColor: colors.primary,
+                    style: type.body.copyWith(
+                      fontWeight: FontWeight.w500,
+                      color: colors.ink,
                     ),
-                  ]
-                : null,
-          ),
-          child: Row(
-            children: [
-              if (widget.icon != null) ...[
-                VentusIcon(widget.icon!, size: 20, color: colors.muted),
-                const SizedBox(width: AppSpacing.s3),
+                    decoration: InputDecoration(
+                      isCollapsed: true,
+                      border: InputBorder.none,
+                      hintText: widget.hintText,
+                      hintStyle: type.body.copyWith(color: colors.muted),
+                    ),
+                  ),
+                ),
+                if (widget.obscure)
+                  VentusTap(
+                    onTap: () => setState(() => _reveal = !_reveal),
+                    semanticLabel: _reveal
+                        ? context.l10n.hidePassword
+                        : context.l10n.showPassword,
+                    feedback: VentusTapFeedback.none,
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpacing.s2,
+                      12,
+                      0,
+                      12,
+                    ),
+                    child: VentusIcon(
+                      _reveal ? VentusIcons.eyeOff : VentusIcons.eye,
+                      size: 20,
+                      color: colors.muted,
+                    ),
+                  ),
               ],
-              Expanded(
-                child: TextField(
-                  controller: widget.controller,
-                  focusNode: _focusNode,
-                  obscureText: widget.obscure && !_reveal,
-                  keyboardType: widget.keyboardType,
-                  // Single-line fields end on "Done" (closes the keyboard) unless a form
-                  // asks for "Next" to walk to the following field.
-                  textInputAction:
-                      widget.textInputAction ?? TextInputAction.done,
-                  inputFormatters: widget.inputFormatters,
-                  onChanged: widget.onChanged,
-                  onSubmitted: widget.onSubmitted,
-                  autofillHints: widget.autofillHints,
-                  cursorColor: colors.primary,
-                  style: type.body.copyWith(
-                    fontWeight: FontWeight.w500,
-                    color: colors.ink,
-                  ),
-                  decoration: InputDecoration(
-                    isCollapsed: true,
-                    border: InputBorder.none,
-                    hintText: widget.hintText,
-                    hintStyle: type.body.copyWith(color: colors.muted),
-                  ),
-                ),
-              ),
-              if (widget.obscure)
-                VentusTap(
-                  onTap: () => setState(() => _reveal = !_reveal),
-                  semanticLabel: _reveal
-                      ? context.l10n.hidePassword
-                      : context.l10n.showPassword,
-                  feedback: VentusTapFeedback.none,
-                  padding: const EdgeInsets.fromLTRB(AppSpacing.s2, 12, 0, 12),
-                  child: VentusIcon(
-                    _reveal ? VentusIcons.eyeOff : VentusIcons.eye,
-                    size: 20,
-                    color: colors.muted,
-                  ),
-                ),
-            ],
+            ),
           ),
         ),
         if (hasError || widget.helper != null) ...[

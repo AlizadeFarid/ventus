@@ -23,4 +23,20 @@ extension ThemeContextX on BuildContext {
 
   /// Convenience flag for branching on the active brightness.
   bool get isDark => Theme.of(this).brightness == Brightness.dark;
+
+  /// Colour of the one focus treatment used by every text input: the brand
+  /// fill tone, softened, so a focused field is clearly marked without a loud
+  /// coral outline.
+  Color get focusColor => primaryFill.withValues(alpha: 0.6);
+
+  /// Focus treatment for input containers: a single 1px line drawn as a shadow
+  /// (so, unlike a real border, it never shifts the field's contents).
+  List<BoxShadow> get focusRing => [
+    BoxShadow(color: focusColor, spreadRadius: 1),
+  ];
+
+  /// Same shape as [focusRing], in the error colour.
+  List<BoxShadow> get errorRing => [
+    BoxShadow(color: colors.danger, spreadRadius: 1),
+  ];
 }

@@ -290,7 +290,7 @@ class _PlaceDetailScreenState extends ConsumerState<PlaceDetailScreen> {
         imageUrl: d.imageUrl,
       ),
     );
-    context.push(AppRoutes.createTrip);
+    context.push(AppRoutes.createTrip, extra: const CreateTripSeeded());
   }
 }
 
@@ -311,97 +311,101 @@ class _HeroBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = context.colors;
-    return TripPhoto(
+    return DestinationPhotoHero(
+      id: destination.id,
       imageUrl: destination.imageUrl,
-      child: Stack(
-        children: [
-          const Positioned.fill(
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Color(0x731F1B18),
-                    Color(0x001F1B18),
-                    Color(0x8C1F1B18),
-                  ],
-                  stops: [0, 0.35, 1],
-                ),
-              ),
-            ),
-          ),
-          Positioned(
-            left: AppSpacing.screen,
-            right: AppSpacing.screen,
-            bottom: 42,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  destination.nameFor(lang),
-                  style: const TextStyle(
-                    fontSize: AppFontSize.h1,
-                    fontWeight: FontWeight.w800,
-                    letterSpacing: -0.8,
-                    color: Colors.white,
+      child: TripPhoto(
+        imageUrl: destination.imageUrl,
+        child: Stack(
+          children: [
+            const Positioned.fill(
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Color(0x731F1B18),
+                      Color(0x001F1B18),
+                      Color(0x8C1F1B18),
+                    ],
+                    stops: [0, 0.35, 1],
                   ),
                 ),
-                const SizedBox(height: 5),
-                Row(
-                  children: [
-                    VentusIcon(
-                      VentusIcons.mapPin,
-                      size: 14,
-                      color: Colors.white.withValues(alpha: 0.9),
+              ),
+            ),
+            Positioned(
+              left: AppSpacing.screen,
+              right: AppSpacing.screen,
+              bottom: 42,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    destination.nameFor(lang),
+                    style: const TextStyle(
+                      fontSize: AppFontSize.h1,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: -0.8,
+                      color: Colors.white,
                     ),
-                    const SizedBox(width: 5),
-                    Flexible(
-                      child: Text(
-                        destination.countryFor(lang),
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          fontSize: AppFontSize.sm,
-                          color: Colors.white.withValues(alpha: 0.9),
+                  ),
+                  const SizedBox(height: 5),
+                  Row(
+                    children: [
+                      VentusIcon(
+                        VentusIcons.mapPin,
+                        size: 14,
+                        color: Colors.white.withValues(alpha: 0.9),
+                      ),
+                      const SizedBox(width: 5),
+                      Flexible(
+                        child: Text(
+                          destination.countryFor(lang),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontSize: AppFontSize.sm,
+                            color: Colors.white.withValues(alpha: 0.9),
+                          ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-              ],
+                    ],
+                  ),
+                ],
+              ),
             ),
-          ),
-          // Page-coloured sheet edge overlapping the photo, so the content
-          // reads as a card rising over it instead of a hard horizontal cut.
-          Positioned(
-            left: 0,
-            right: 0,
-            bottom: 0,
-            height: 24,
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                color: colors.bg,
-                borderRadius: const BorderRadius.vertical(
-                  top: Radius.circular(AppRadius.xl),
+            // Page-coloured sheet edge overlapping the photo, so the content
+            // reads as a card rising over it instead of a hard horizontal cut.
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              height: 24,
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  color: colors.bg,
+                  borderRadius: const BorderRadius.vertical(
+                    top: Radius.circular(AppRadius.xl),
+                  ),
                 ),
               ),
             ),
-          ),
-          // Wipe to the background colour as it collapses so the pinned toolbar
-          // (with the fading title) reads on a clean background.
-          Positioned.fill(
-            child: ValueListenableBuilder<double>(
-              valueListenable: collapse,
-              builder: (context, t, _) {
-                final a = ((t - 0.35) / 0.65).clamp(0.0, 1.0);
-                return IgnorePointer(
-                  child: ColoredBox(color: colors.bg.withValues(alpha: a)),
-                );
-              },
+            // Wipe to the background colour as it collapses so the pinned toolbar
+            // (with the fading title) reads on a clean background.
+            Positioned.fill(
+              child: ValueListenableBuilder<double>(
+                valueListenable: collapse,
+                builder: (context, t, _) {
+                  final a = ((t - 0.35) / 0.65).clamp(0.0, 1.0);
+                  return IgnorePointer(
+                    child: ColoredBox(color: colors.bg.withValues(alpha: a)),
+                  );
+                },
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

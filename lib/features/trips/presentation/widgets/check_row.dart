@@ -20,6 +20,7 @@ class CheckRow extends StatelessWidget {
     this.onEdit,
     this.dueLabel,
     this.trailing,
+    this.verticalPadding = 11,
   });
 
   final String label;
@@ -35,6 +36,9 @@ class CheckRow extends StatelessWidget {
 
   /// Optional trailing widget (e.g. a "From itinerary" badge).
   final Widget? trailing;
+
+  /// Space above and below the row; the hit areas grow with it.
+  final double verticalPadding;
 
   @override
   Widget build(BuildContext context) {
@@ -101,7 +105,7 @@ class CheckRow extends StatelessWidget {
         feedback: VentusTapFeedback.none,
         semanticLabel: label,
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 11),
+          padding: EdgeInsets.symmetric(vertical: verticalPadding),
           child: Row(
             children: [
               box,
@@ -121,7 +125,7 @@ class CheckRow extends StatelessWidget {
           onTap: onTap,
           feedback: VentusTapFeedback.none,
           semanticLabel: label,
-          padding: const EdgeInsets.fromLTRB(0, 11, 11, 11),
+          padding: EdgeInsets.fromLTRB(0, verticalPadding, 11, verticalPadding),
           child: box,
         ),
         Expanded(
@@ -129,7 +133,7 @@ class CheckRow extends StatelessWidget {
             onTap: onEdit,
             feedback: VentusTapFeedback.none,
             semanticLabel: context.l10n.edit,
-            padding: const EdgeInsets.symmetric(vertical: 11),
+            padding: EdgeInsets.symmetric(vertical: verticalPadding),
             child: Align(alignment: Alignment.centerLeft, child: text),
           ),
         ),

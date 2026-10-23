@@ -71,72 +71,75 @@ class _VentusSearchFieldState extends State<VentusSearchField> {
   Widget build(BuildContext context) {
     final colors = context.colors;
     final type = context.typography;
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 150),
-      height: AppSizes.controlMd,
-      padding: const EdgeInsets.symmetric(horizontal: AppSpacing.s4),
-      decoration: BoxDecoration(
-        color: colors.surface,
-        borderRadius: AppRadius.brMd,
-        boxShadow: _focused
-            ? [BoxShadow(color: colors.ring, blurRadius: 0, spreadRadius: 1.5)]
-            : _searchRim,
-      ),
-      child: Row(
-        children: [
-          if (widget.onBack == null)
-            VentusIcon(VentusIcons.search, size: 20, color: colors.muted)
-          else
-            VentusTap(
-              onTap: widget.onBack,
-              feedback: VentusTapFeedback.none,
-              semanticLabel: context.l10n.back,
-              padding: const EdgeInsets.only(right: 2),
-              child: VentusIcon(
-                VentusIcons.arrowLeft,
-                size: 20,
-                color: colors.ink,
+    // The whole bar is the tap target, not just the line of text inside it.
+    return GestureDetector(
+      behavior: HitTestBehavior.opaque,
+      onTap: _node.requestFocus,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 150),
+        height: AppSizes.controlMd,
+        padding: const EdgeInsets.symmetric(horizontal: AppSpacing.s4),
+        decoration: BoxDecoration(
+          color: colors.surface,
+          borderRadius: AppRadius.brMd,
+          boxShadow: _focused ? context.focusRing : _searchRim,
+        ),
+        child: Row(
+          children: [
+            if (widget.onBack == null)
+              VentusIcon(VentusIcons.search, size: 20, color: colors.muted)
+            else
+              VentusTap(
+                onTap: widget.onBack,
+                feedback: VentusTapFeedback.none,
+                semanticLabel: context.l10n.back,
+                padding: const EdgeInsets.only(right: 2),
+                child: VentusIcon(
+                  VentusIcons.arrowLeft,
+                  size: 20,
+                  color: colors.ink,
+                ),
+              ),
+            const SizedBox(width: AppSpacing.s3),
+            Expanded(
+              child: TextField(
+                controller: widget.controller,
+                focusNode: _node,
+                autofocus: widget.autofocus,
+                onChanged: widget.onChanged,
+                onSubmitted: widget.onSubmitted,
+                textInputAction: TextInputAction.search,
+                cursorColor: colors.primary,
+                style: type.body.copyWith(
+                  fontWeight: FontWeight.w500,
+                  color: colors.ink,
+                ),
+                decoration: InputDecoration(
+                  isCollapsed: true,
+                  border: InputBorder.none,
+                  hintText: widget.hintText,
+                  hintStyle: type.body.copyWith(color: colors.muted),
+                ),
               ),
             ),
-          const SizedBox(width: AppSpacing.s3),
-          Expanded(
-            child: TextField(
-              controller: widget.controller,
-              focusNode: _node,
-              autofocus: widget.autofocus,
-              onChanged: widget.onChanged,
-              onSubmitted: widget.onSubmitted,
-              textInputAction: TextInputAction.search,
-              cursorColor: colors.primary,
-              style: type.body.copyWith(
-                fontWeight: FontWeight.w500,
-                color: colors.ink,
-              ),
-              decoration: InputDecoration(
-                isCollapsed: true,
-                border: InputBorder.none,
-                hintText: widget.hintText,
-                hintStyle: type.body.copyWith(color: colors.muted),
-              ),
-            ),
-          ),
-          ValueListenableBuilder<TextEditingValue>(
-            valueListenable: widget.controller,
-            builder: (context, value, _) => value.text.isEmpty
-                ? const SizedBox.shrink()
-                : VentusTap(
-                    onTap: _clear,
-                    feedback: VentusTapFeedback.none,
-                    semanticLabel: context.l10n.clear,
-                    padding: const EdgeInsets.only(left: AppSpacing.s2),
-                    child: VentusIcon(
-                      VentusIcons.close,
-                      size: 18,
-                      color: colors.muted,
+            ValueListenableBuilder<TextEditingValue>(
+              valueListenable: widget.controller,
+              builder: (context, value, _) => value.text.isEmpty
+                  ? const SizedBox.shrink()
+                  : VentusTap(
+                      onTap: _clear,
+                      feedback: VentusTapFeedback.none,
+                      semanticLabel: context.l10n.clear,
+                      padding: const EdgeInsets.only(left: AppSpacing.s2),
+                      child: VentusIcon(
+                        VentusIcons.close,
+                        size: 18,
+                        color: colors.muted,
+                      ),
                     ),
-                  ),
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
     );
   }

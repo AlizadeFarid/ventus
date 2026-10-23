@@ -187,7 +187,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeWhereTo => 'Where to?';
 
   @override
-  String get homeSearchHint => 'City, country or place';
+  String get homeSearchHint => 'Where to?';
 
   @override
   String get createSheetTitle => 'New trip';
@@ -652,10 +652,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get forgotBody =>
-      'Enter the email linked to your account and we’ll send a reset link.';
+      'Enter the email linked to your account and we’ll send you a reset code.';
 
   @override
-  String get sendResetLink => 'Send reset link';
+  String get sendResetLink => 'Send code';
 
   @override
   String get resetSent => 'Reset link sent. Check your inbox.';
@@ -888,51 +888,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get unitImperialDesc => 'Miles, °F';
 
   @override
-  String get notificationSettingsTitle => 'Notification settings';
-
-  @override
-  String get notifSectionTripActivity => 'Trip activity';
-
-  @override
-  String get notifSectionTravelAlerts => 'Travel alerts';
-
-  @override
-  String get notifSectionVentus => 'Ventus';
-
-  @override
-  String get notifCollaboratorChanges => 'Collaborator changes';
-
-  @override
-  String get notifCollaboratorChangesSub => 'When someone edits the trip';
-
-  @override
-  String get notifItineraryUpdates => 'Itinerary updates';
-
-  @override
-  String get notifChecklistReminders => 'Checklist reminders';
-
-  @override
-  String get notifChecklistRemindersSub => 'Due-date nudges';
-
-  @override
-  String get notifWeatherChanges => 'Weather changes';
-
-  @override
-  String get notifDocumentExpiry => 'Document expiry';
-
-  @override
-  String get notifDocumentExpirySub => 'Passport & visa checks';
-
-  @override
-  String get notifCheckInDeparture => 'Check-in & departure';
-
-  @override
-  String get notifTravelTips => 'Travel tips';
-
-  @override
-  String get notifProductNews => 'Product news & offers';
-
-  @override
   String get collaboratorsTitle => 'Collaborators';
 
   @override
@@ -1040,10 +995,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get menuCurrencyUnits => 'Currency & units';
 
   @override
-  String get menuSettings => 'Settings';
+  String get menuSettings => 'Appearance & language';
 
   @override
-  String get menuPrivacySecurity => 'Privacy & security';
+  String get menuPrivacySecurity => 'Account & security';
 
   @override
   String get profileSectionPreferences => 'Preferences';
@@ -1055,7 +1010,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get logOut => 'Log out';
 
   @override
-  String get settingsTitle => 'Settings';
+  String get settingsTitle => 'Appearance & language';
 
   @override
   String get appearance => 'Appearance';
@@ -1527,7 +1482,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get editActivity => 'Edit activity';
 
   @override
-  String get activityTitleLabel => 'Activity';
+  String get activityTitleLabel => 'Name';
 
   @override
   String get activityTitleHint => 'e.g. Bosphorus sunset walk';
@@ -1546,6 +1501,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get activityAddTime => 'Add a time';
+
+  @override
+  String get activityMoreDetails => 'Add place or time';
 
   @override
   String get activityKindLabel => 'Type';
@@ -2137,7 +2095,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String notifCollabInvitedBody(String trip) {
-    return 'Added to $trip. Invite sent.';
+    return 'Trip: $trip. Invite sent.';
   }
 
   @override
@@ -2148,7 +2106,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String notifAiReadyBody(String trip) {
-    return 'Ventus drafted a plan for $trip.';
+    return 'Trip: $trip';
   }
 
   @override

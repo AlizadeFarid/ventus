@@ -32,7 +32,10 @@ import '../../../../core/theme/app_spacing.dart';
 /// bar that only opened the AI planner, so Home's "Where to?" led somewhere the
 /// user could not actually search.
 class ExploreScreen extends ConsumerWidget {
-  const ExploreScreen({super.key});
+  const ExploreScreen({super.key, this.autofocusSearch = false});
+
+  /// Open with the keyboard up — set when arriving from a search field.
+  final bool autofocusSearch;
 
   /// Curated destinations whose name or country contains the query, in the
   /// active language.
@@ -95,6 +98,7 @@ class ExploreScreen extends ConsumerWidget {
             const SizedBox(height: 8),
             Expanded(
               child: VentusSearchLayout(
+                autofocus: autofocusSearch,
                 hintText: context.l10n.exploreSearchHint,
                 // Searching: the same grid/results, filtered, without the AI
                 // shortcut (it is an alternative to searching).
@@ -318,10 +322,16 @@ class _Results extends ConsumerWidget {
                 crossAxisSpacing: 12,
                 childAspectRatio: 0.82,
               ),
-              delegate: SliverChildBuilderDelegate(
-                (context, i) => _DestinationCard(destination: matches[i]),
-                childCount: matches.length,
-              ),
+              delegate: SliverChildBuilderDelegate((context, i) {
+                final card = _DestinationCard(destination: matches[i]);
+                return i < 6
+                    ? VentusReveal(
+                        key: ValueKey('dest-${matches[i].id}'),
+                        index: i,
+                        child: card,
+                      )
+                    : card;
+              }, childCount: matches.length),
             ),
           ),
         ],
@@ -395,7 +405,7 @@ class _SuggestionRow extends ConsumerWidget {
             lon: suggestion.lon,
           ),
         );
-        context.push(AppRoutes.createTrip);
+        context.push(AppRoutes.createTrip, extra: const CreateTripSeeded());
       },
       child: Container(
         padding: const EdgeInsets.fromLTRB(16, 14, 14, 14),
@@ -546,64 +556,68 @@ class _DestinationCard extends ConsumerWidget {
       feedback: VentusTapFeedback.scaleFade,
       semanticLabel:
           '${destination.nameFor(lang)}, ${destination.countryFor(lang)}',
-      child: TripPhoto(
+      child: DestinationPhotoHero(
+        id: destination.id,
         imageUrl: destination.imageUrl,
-        borderRadius: AppRadius.brLg,
-        child: Stack(
-          children: [
-            const Positioned.fill(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.bottomCenter,
-                    end: Alignment.topCenter,
-                    colors: [Color(0xE01F1B18), Color(0x001F1B18)],
-                    stops: [0.0, 0.7],
+        child: TripPhoto(
+          imageUrl: destination.imageUrl,
+          borderRadius: AppRadius.brLg,
+          child: Stack(
+            children: [
+              const Positioned.fill(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.bottomCenter,
+                      end: Alignment.topCenter,
+                      colors: [Color(0xE01F1B18), Color(0x001F1B18)],
+                      stops: [0.0, 0.7],
+                    ),
                   ),
                 ),
               ),
-            ),
-            Positioned(
-              top: 4,
-              right: 4,
-              child: _HeartButton(
-                saved: saved,
-                onTap: () => ref
-                    .read(savedControllerProvider.notifier)
-                    .toggle(savedPlaceFrom(destination, lang)),
+              Positioned(
+                top: 4,
+                right: 4,
+                child: _HeartButton(
+                  saved: saved,
+                  onTap: () => ref
+                      .read(savedControllerProvider.notifier)
+                      .toggle(savedPlaceFrom(destination, lang)),
+                ),
               ),
-            ),
-            Positioned(
-              left: 13,
-              right: 13,
-              bottom: 12,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    destination.nameFor(lang),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(
-                      fontSize: AppFontSize.body,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.white,
+              Positioned(
+                left: 13,
+                right: 13,
+                bottom: 12,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      destination.nameFor(lang),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(
+                        fontSize: AppFontSize.body,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
-                  Text(
-                    destination.countryFor(lang),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                      fontSize: AppFontSize.caption,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white.withValues(alpha: 0.95),
+                    Text(
+                      destination.countryFor(lang),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: AppFontSize.caption,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white.withValues(alpha: 0.95),
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

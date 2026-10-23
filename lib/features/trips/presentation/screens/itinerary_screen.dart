@@ -351,10 +351,15 @@ class _ActivitySheetState extends ConsumerState<_ActivitySheet> {
   late final TextEditingController _title;
   late final TextEditingController _place;
   late int _day;
+  // Not editable here; kept so editing never changes an item's type.
   late ActivityKind _kind;
   int? _startMinutes;
   bool _showTitleError = false;
   String _placeQuery = '';
+
+  /// Place, time and type stay folded for a new activity: only the title is
+  /// required, so the sheet opens as one field and a Save button.
+  late bool _showDetails;
 
   // Floating autocomplete anchored to the place field, so suggestions overlay
   // the form below instead of pushing it down.
@@ -388,6 +393,7 @@ class _ActivitySheetState extends ConsumerState<_ActivitySheet> {
     _day = e?.day ?? widget.initialDay;
     _kind = e?.kind ?? ActivityKind.activity;
     _startMinutes = e?.startMinutes;
+    _showDetails = e != null;
     // Close the suggestions whenever the place field loses focus (tap-outside).
     _placeFocus.addListener(() {
       if (!_placeFocus.hasFocus) _placeOverlay.hide();
@@ -436,13 +442,76 @@ class _ActivitySheetState extends ConsumerState<_ActivitySheet> {
                     ),
                   ),
                 ),
-                Text(
-                  _isEdit ? l10n.editActivity : l10n.newActivity,
-                  style: context.typography.h2.copyWith(
-                    fontSize: AppFontSize.h3,
-                    fontWeight: FontWeight.w700,
-                    color: colors.ink,
-                  ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        _isEdit ? l10n.editActivity : l10n.newActivity,
+                        style: context.typography.h2.copyWith(
+                          fontSize: AppFontSize.h3,
+                          fontWeight: FontWeight.w700,
+                          color: colors.ink,
+                        ),
+                      ),
+                    ),
+                    // The day is already known from where the sheet was opened,
+                    // so it is a compact dropdown here, not a form section.
+                    if (widget.dayCount > 1)
+                      PopupMenuButton<int>(
+                        padding: EdgeInsets.zero,
+                        position: PopupMenuPosition.under,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: AppRadius.brMd,
+                        ),
+                        color: colors.surface,
+                        constraints: const BoxConstraints(maxHeight: 280),
+                        onSelected: (d) => setState(() => _day = d),
+                        itemBuilder: (_) => [
+                          for (var d = 1; d <= widget.dayCount; d++)
+                            PopupMenuItem(
+                              value: d,
+                              child: Text(
+                                '${l10n.dayLabel} $d',
+                                style: TextStyle(
+                                  fontWeight: d == _day
+                                      ? FontWeight.w700
+                                      : FontWeight.w500,
+                                  color: d == _day
+                                      ? colors.primary
+                                      : colors.ink,
+                                ),
+                              ),
+                            ),
+                        ],
+                        child: Container(
+                          height: 36,
+                          padding: const EdgeInsets.only(left: 14, right: 10),
+                          decoration: BoxDecoration(
+                            color: colors.surfaceSand,
+                            borderRadius: AppRadius.brFull,
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                '${l10n.dayLabel} $_day',
+                                style: TextStyle(
+                                  fontSize: AppFontSize.body,
+                                  fontWeight: FontWeight.w600,
+                                  color: colors.ink,
+                                ),
+                              ),
+                              const SizedBox(width: 4),
+                              VentusIcon(
+                                VentusIcons.chevronDown,
+                                size: 18,
+                                color: colors.muted,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                  ],
                 ),
                 const SizedBox(height: 18),
                 VentusTextField(
@@ -460,91 +529,85 @@ class _ActivitySheetState extends ConsumerState<_ActivitySheet> {
                     }
                   },
                 ),
-                const SizedBox(height: 14),
-                CompositedTransformTarget(
-                  key: _placeAnchorKey,
-                  link: _placeLink,
-                  child: OverlayPortal(
-                    controller: _placeOverlay,
-                    overlayChildBuilder: (_) => CompositedTransformFollower(
-                      link: _placeLink,
-                      targetAnchor: Alignment.bottomLeft,
-                      followerAnchor: Alignment.topLeft,
-                      showWhenUnlinked: false,
-                      child: Align(
-                        alignment: Alignment.topLeft,
-                        child: SizedBox(
-                          width: MediaQuery.of(context).size.width - 40,
-                          child: _PlaceSuggestions(
-                            query: _placeQuery,
-                            maxHeight: _placeDropdownMaxHeight(),
-                            onPick: (name) {
-                              _place.text = name;
-                              setState(() => _placeQuery = '');
-                              _placeOverlay.hide();
-                              FocusScope.of(context).unfocus();
-                            },
+                if (!_showDetails) ...[
+                  const SizedBox(height: 6),
+                  VentusTap(
+                    onTap: () => setState(() => _showDetails = true),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          VentusIcon(
+                            VentusIcons.plus,
+                            size: 18,
+                            color: colors.primary,
+                          ),
+                          const SizedBox(width: 8),
+                          Text(
+                            l10n.activityMoreDetails,
+                            style: TextStyle(
+                              fontSize: AppFontSize.body,
+                              fontWeight: FontWeight.w600,
+                              color: colors.primary,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ] else ...[
+                  const SizedBox(height: 14),
+                  CompositedTransformTarget(
+                    key: _placeAnchorKey,
+                    link: _placeLink,
+                    child: OverlayPortal(
+                      controller: _placeOverlay,
+                      overlayChildBuilder: (_) => CompositedTransformFollower(
+                        link: _placeLink,
+                        targetAnchor: Alignment.bottomLeft,
+                        followerAnchor: Alignment.topLeft,
+                        showWhenUnlinked: false,
+                        child: Align(
+                          alignment: Alignment.topLeft,
+                          child: SizedBox(
+                            width: MediaQuery.of(context).size.width - 40,
+                            child: _PlaceSuggestions(
+                              query: _placeQuery,
+                              maxHeight: _placeDropdownMaxHeight(),
+                              onPick: (name) {
+                                _place.text = name;
+                                setState(() => _placeQuery = '');
+                                _placeOverlay.hide();
+                                FocusScope.of(context).unfocus();
+                              },
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    child: VentusTextField(
-                      label: l10n.activityPlaceLabel,
-                      controller: _place,
-                      focusNode: _placeFocus,
-                      hintText: l10n.activityPlaceHint,
-                      icon: VentusIcons.mapPin,
-                      textInputAction: TextInputAction.next,
-                      onChanged: (v) {
-                        setState(() => _placeQuery = v);
-                        if (v.trim().length >= kPlaceSearchMinChars) {
-                          _placeOverlay.show();
-                        } else {
-                          _placeOverlay.hide();
-                        }
-                      },
+                      child: VentusTextField(
+                        label: l10n.activityPlaceLabel,
+                        controller: _place,
+                        focusNode: _placeFocus,
+                        hintText: l10n.activityPlaceHint,
+                        icon: VentusIcons.mapPin,
+                        textInputAction: TextInputAction.next,
+                        onChanged: (v) {
+                          setState(() => _placeQuery = v);
+                          if (v.trim().length >= kPlaceSearchMinChars) {
+                            _placeOverlay.show();
+                          } else {
+                            _placeOverlay.hide();
+                          }
+                        },
+                      ),
                     ),
                   ),
-                ),
-                const SizedBox(height: 18),
-                _FieldLabel(l10n.activityTimeLabel),
-                const SizedBox(height: 8),
-                _TimeField(
-                  minutes: _startMinutes,
-                  onPick: _pickTime,
-                  onClear: () => setState(() => _startMinutes = null),
-                ),
-                const SizedBox(height: 18),
-                _FieldLabel(l10n.activityKindLabel),
-                const SizedBox(height: 8),
-                Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  children: [
-                    for (final kind in ActivityKind.values)
-                      VentusChip(
-                        label: _kindLabel(l10n, kind),
-                        icon: activityKindIcon(kind),
-                        active: kind == _kind,
-                        onTap: () => setState(() => _kind = kind),
-                      ),
-                  ],
-                ),
-                if (widget.dayCount > 1) ...[
-                  const SizedBox(height: 18),
-                  _FieldLabel(l10n.activityDayLabel),
-                  const SizedBox(height: 8),
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 8,
-                    children: [
-                      for (var d = 1; d <= widget.dayCount; d++)
-                        VentusChip(
-                          label: '${l10n.dayLabel} $d',
-                          active: d == _day,
-                          onTap: () => setState(() => _day = d),
-                        ),
-                    ],
+                  const SizedBox(height: 14),
+                  _TimeField(
+                    minutes: _startMinutes,
+                    onPick: _pickTime,
+                    onClear: () => setState(() => _startMinutes = null),
                   ),
                 ],
                 const SizedBox(height: 24),
@@ -650,15 +713,6 @@ class _ActivitySheetState extends ConsumerState<_ActivitySheet> {
       showVentusError(context, failed);
     }
   }
-
-  String _kindLabel(AppLocalizations l10n, ActivityKind kind) => switch (kind) {
-    ActivityKind.flight => l10n.kindFlight,
-    ActivityKind.stay => l10n.kindStay,
-    ActivityKind.food => l10n.kindFood,
-    ActivityKind.sight => l10n.kindSight,
-    ActivityKind.transport => l10n.kindTransport,
-    ActivityKind.activity => l10n.kindActivity,
-  };
 }
 
 /// Inline place autocomplete shown under the activity's "Place" field, reusing
@@ -1008,23 +1062,6 @@ class _TimeWheelSheetState extends State<_TimeWheelSheet> {
   }
 }
 
-class _FieldLabel extends StatelessWidget {
-  const _FieldLabel(this.text);
-
-  final String text;
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: context.typography.sm.copyWith(
-        fontWeight: FontWeight.w600,
-        color: context.colors.ink2,
-      ),
-    );
-  }
-}
-
 class _TimeField extends StatelessWidget {
   const _TimeField({
     required this.minutes,
@@ -1047,9 +1084,8 @@ class _TimeField extends StatelessWidget {
         height: AppSizes.controlLg,
         padding: const EdgeInsets.symmetric(horizontal: 16),
         decoration: BoxDecoration(
-          color: colors.surface,
+          color: colors.surfaceSand,
           borderRadius: AppRadius.brMd,
-          boxShadow: context.shadows.card,
         ),
         child: Row(
           children: [

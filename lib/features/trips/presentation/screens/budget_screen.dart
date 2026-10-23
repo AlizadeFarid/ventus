@@ -836,6 +836,11 @@ class _AddExpenseSheetState extends ConsumerState<_AddExpenseSheet> {
   late final TextEditingController _note;
   int? _day;
 
+  // Keyed so the picked category can be scrolled into view when the sheet opens.
+  final Map<ExpenseCategory, GlobalKey> _catKeys = {
+    for (final c in ExpenseCategory.values) c: GlobalKey(),
+  };
+
   bool get _isEdit => widget.existing != null;
 
   @override
@@ -846,6 +851,11 @@ class _AddExpenseSheetState extends ConsumerState<_AddExpenseSheet> {
     _category = e?.category ?? ExpenseCategory.food;
     _note = TextEditingController(text: e?.note ?? '');
     _day = e?.day;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final ctx = _catKeys[_category]?.currentContext;
+      if (ctx == null) return;
+      Scrollable.ensureVisible(ctx, alignment: 0.5);
+    });
   }
 
   @override
@@ -872,7 +882,7 @@ class _AddExpenseSheetState extends ConsumerState<_AddExpenseSheet> {
             AppSpacing.screen,
             10,
             AppSpacing.screen,
-            22,
+            36,
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -942,21 +952,34 @@ class _AddExpenseSheetState extends ConsumerState<_AddExpenseSheet> {
               ),
               const SizedBox(height: 14),
               // Category chips.
+              // The soft right edge hints that the row scrolls; the end padding
+              // lets the last chip clear it.
               SizedBox(
                 height: 40,
-                child: ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: ExpenseCategory.values.length,
-                  separatorBuilder: (_, _) => const SizedBox(width: 8),
-                  itemBuilder: (context, i) {
-                    final cat = ExpenseCategory.values[i];
-                    return VentusChip(
-                      label: expenseCategoryLabel(l10n, cat),
-                      icon: expenseCategoryIcon(cat),
-                      active: cat == _category,
-                      onTap: () => setState(() => _category = cat),
-                    );
-                  },
+                child: ShaderMask(
+                  blendMode: BlendMode.dstIn,
+                  shaderCallback: (rect) => const LinearGradient(
+                    colors: [Colors.black, Colors.black, Colors.transparent],
+                    stops: [0, 0.9, 1],
+                  ).createShader(rect),
+                  child: ListView.separated(
+                    scrollDirection: Axis.horizontal,
+                    padding: const EdgeInsets.only(right: 28),
+                    itemCount: ExpenseCategory.values.length,
+                    separatorBuilder: (_, _) => const SizedBox(width: 8),
+                    itemBuilder: (context, i) {
+                      final cat = ExpenseCategory.values[i];
+                      return KeyedSubtree(
+                        key: _catKeys[cat],
+                        child: VentusChip(
+                          label: expenseCategoryLabel(l10n, cat),
+                          icon: expenseCategoryIcon(cat),
+                          active: cat == _category,
+                          onTap: () => setState(() => _category = cat),
+                        ),
+                      );
+                    },
+                  ),
                 ),
               ),
               const SizedBox(height: 14),
@@ -987,7 +1010,8 @@ class _AddExpenseSheetState extends ConsumerState<_AddExpenseSheet> {
                 iconLeft: VentusIcons.check,
                 full: true,
                 loading: saving,
-                onPressed: () => _save(context),
+                // Nothing to save until an amount is typed.
+                onPressed: _value > 0 ? () => _save(context) : null,
               ),
             ],
           ),
@@ -1419,7 +1443,7 @@ class _AllocRow extends StatelessWidget {
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: AppRadius.brMd,
-                borderSide: BorderSide(color: colors.primary, width: 1.5),
+                borderSide: BorderSide(color: context.focusColor),
               ),
             ),
           ),

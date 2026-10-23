@@ -1,6 +1,4 @@
-import '../../../../core/theme/app_sizes.dart';
 import 'dart:ui';
-import '../../../../core/theme/app_overlay.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -10,9 +8,16 @@ import '../../../../core/extensions/theme_context_extension.dart';
 import '../../../../core/l10n/l10n_extension.dart';
 import '../../../../core/router/app_router.dart';
 import '../../../../core/storage/app_storage.dart';
+import '../../../../core/theme/app_overlay.dart';
 import '../../../../core/theme/app_radius.dart';
-import '../../../../shared/widgets/widgets.dart';
+import '../../../../core/theme/app_sizes.dart';
+import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_typography.dart';
+import '../../../../shared/widgets/widgets.dart';
+
+/// Where the bundled hero photo lives. Drop a portrait JPG here; until it
+/// exists the screen falls back to the remote copy, then to the gradient.
+const _heroAsset = 'assets/images/welcome.jpg';
 
 /// Welcome · variant A (photo-forward), from the prototype `Auth.jsx`.
 ///
@@ -23,9 +28,7 @@ class WelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Brand hero from the public-assets bucket; null offline/dev → the gradient
-    // below shows on its own.
-    final hero = AppStorage.publicUrl(
+    final remoteHero = AppStorage.publicUrl(
       StorageBuckets.publicAssets,
       'welcome.jpg',
     );
@@ -36,17 +39,25 @@ class WelcomeScreen extends StatelessWidget {
         body: Stack(
           fit: StackFit.expand,
           children: [
-            // Fallback gradient behind the photo (and while it loads / fails).
-            DecoratedBox(
+            // Shown behind the photo and whenever there is no photo at all: a
+            // warm ink → deep coral sweep that stays inside the palette (the
+            // old teal → coral blend muddied to olive-brown in the middle).
+            const DecoratedBox(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [context.colors.sea, context.colors.primary],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Color(0xFF3A2A24), Color(0xFF1F1B18)],
                 ),
               ),
             ),
-            if (hero != null) RetryNetworkImage(url: hero, fit: BoxFit.cover),
+            Image.asset(
+              _heroAsset,
+              fit: BoxFit.cover,
+              errorBuilder: (_, _, _) => remoteHero == null
+                  ? const SizedBox.shrink()
+                  : RetryNetworkImage(url: remoteHero, fit: BoxFit.cover),
+            ),
             const DecoratedBox(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -64,26 +75,29 @@ class WelcomeScreen extends StatelessWidget {
             ),
             SafeArea(
               child: Padding(
-                padding: const EdgeInsets.fromLTRB(26, 12, 26, 38),
+                padding: const EdgeInsets.fromLTRB(
+                  AppSpacing.screen,
+                  AppSpacing.s3,
+                  AppSpacing.screen,
+                  AppSpacing.s8,
+                ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const VentusLogo(
-                      size: 22,
-                      color: Color(0xFFFFFFFF),
-                      // Mark left null → defaults to the theme primary.
-                    ),
+                    const VentusLogo(size: 26, color: AppOverlay.onPhoto),
                     const Spacer(),
-                    _Headline(),
-                    const SizedBox(height: 22),
+                    const _Headline(),
+                    const SizedBox(height: AppSpacing.s6),
                     VentusButton(
                       label: context.l10n.getStarted,
                       iconRight: VentusIcons.arrowRight,
+                      variant: VentusButtonVariant.onPhoto,
+                      size: VentusButtonSize.lg,
                       full: true,
                       // push (not go) so the form screens keep a back stack.
                       onPressed: () => context.push(AppRoutes.createAccount),
                     ),
-                    const SizedBox(height: 12),
+                    const SizedBox(height: AppSpacing.s3),
                     _GlassButton(
                       label: context.l10n.haveAccount,
                       onTap: () => context.push(AppRoutes.signIn),
@@ -100,6 +114,8 @@ class WelcomeScreen extends StatelessWidget {
 }
 
 class _Headline extends StatelessWidget {
+  const _Headline();
+
   @override
   Widget build(BuildContext context) {
     final type = context.typography;
@@ -109,32 +125,19 @@ class _Headline extends StatelessWidget {
       children: [
         Text(
           l10n.welcomeTagline,
-          style: type.eyebrow.copyWith(
-            fontSize: AppFontSize.caption,
-            fontWeight: FontWeight.w700,
-            letterSpacing: 12 * 0.14,
-            color: AppOverlay.onPhotoMuted,
-          ),
+          style: type.eyebrow.copyWith(color: AppOverlay.onPhotoMuted),
         ),
-        const SizedBox(height: 12),
+        const SizedBox(height: AppSpacing.s3),
         Text(
           l10n.welcomeHeadline,
-          style: type.display.copyWith(
-            fontSize: AppFontSize.display,
-            height: 42 / 38,
-            letterSpacing: 38 * -0.03,
-            color: const Color(0xFFFFFFFF),
-          ),
+          style: type.display.copyWith(color: AppOverlay.onPhoto),
         ),
-        const SizedBox(height: 14),
+        const SizedBox(height: AppSpacing.s3),
         ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 300),
+          constraints: const BoxConstraints(maxWidth: 320),
           child: Text(
             l10n.welcomeSubtitle,
-            style: type.body.copyWith(
-              height: 23 / 16,
-              color: AppOverlay.onPhotoMuted,
-            ),
+            style: type.body.copyWith(color: AppOverlay.onPhotoStrong),
           ),
         ),
       ],
@@ -142,7 +145,8 @@ class _Headline extends StatelessWidget {
   }
 }
 
-/// Translucent, blurred "glass" secondary button unique to the welcome screen.
+/// Frosted secondary action. Same height and pill shape as the primary CTA
+/// above it, with the label set exactly like a [VentusButton] label.
 class _GlassButton extends StatelessWidget {
   const _GlassButton({required this.label, required this.onTap});
 
@@ -159,20 +163,19 @@ class _GlassButton extends StatelessWidget {
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
           child: Container(
-            // Same height and pill shape as the primary CTA above it, so the
-            // two read as one pair. Frosted fill only, no outline.
-            height: AppSizes.controlMd,
+            height: AppSizes.controlLg,
             alignment: Alignment.center,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: AppOverlay.glassFill,
               borderRadius: AppRadius.brFull,
             ),
             child: Text(
               label,
-              style: const TextStyle(
-                fontSize: AppFontSize.body,
-                fontWeight: FontWeight.w600,
-                color: Color(0xFFFFFFFF),
+              style: context.typography.body.copyWith(
+                fontWeight: FontWeight.w700,
+                letterSpacing: AppFontSize.body * -0.01,
+                height: 1,
+                color: AppOverlay.onPhoto,
               ),
             ),
           ),

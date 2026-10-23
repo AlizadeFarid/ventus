@@ -187,7 +187,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get homeWhereTo => 'Hara gedirik?';
 
   @override
-  String get homeSearchHint => 'Şəhər, ölkə və ya yer';
+  String get homeSearchHint => 'Hara getmək istəyirsən?';
 
   @override
   String get createSheetTitle => 'Yeni səyahət';
@@ -653,10 +653,10 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get forgotBody =>
-      'Hesabına bağlı e-poçtu yaz, sıfırlama linki göndərək.';
+      'Hesabına bağlı e-poçtu yaz, sənə sıfırlama kodu göndərək.';
 
   @override
-  String get sendResetLink => 'Sıfırlama linki göndər';
+  String get sendResetLink => 'Kod göndər';
 
   @override
   String get resetSent => 'Sıfırlama linki göndərildi. Poçtunu yoxla.';
@@ -889,51 +889,6 @@ class AppLocalizationsAz extends AppLocalizations {
   String get unitImperialDesc => 'Mil, °F';
 
   @override
-  String get notificationSettingsTitle => 'Bildiriş ayarları';
-
-  @override
-  String get notifSectionTripActivity => 'Səyahət fəaliyyəti';
-
-  @override
-  String get notifSectionTravelAlerts => 'Səyahət xəbərdarlıqları';
-
-  @override
-  String get notifSectionVentus => 'Ventus';
-
-  @override
-  String get notifCollaboratorChanges => 'Səyahətdə dəyişikliklər';
-
-  @override
-  String get notifCollaboratorChangesSub => 'Kimsə səyahəti dəyişəndə';
-
-  @override
-  String get notifItineraryUpdates => 'Gün planı yenilikləri';
-
-  @override
-  String get notifChecklistReminders => 'Yoxlama siyahısı';
-
-  @override
-  String get notifChecklistRemindersSub => 'Son tarix xatırlatmaları';
-
-  @override
-  String get notifWeatherChanges => 'Hava dəyişiklikləri';
-
-  @override
-  String get notifDocumentExpiry => 'Sənədin müddəti';
-
-  @override
-  String get notifDocumentExpirySub => 'Pasport və viza yoxlamaları';
-
-  @override
-  String get notifCheckInDeparture => 'Check-in və yola düşmə';
-
-  @override
-  String get notifTravelTips => 'Səyahət məsləhətləri';
-
-  @override
-  String get notifProductNews => 'Məhsul xəbərləri və təkliflər';
-
-  @override
   String get collaboratorsTitle => 'Birgə planlayanlar';
 
   @override
@@ -1042,10 +997,10 @@ class AppLocalizationsAz extends AppLocalizations {
   String get menuCurrencyUnits => 'Valyuta və vahidlər';
 
   @override
-  String get menuSettings => 'Tənzimləmələr';
+  String get menuSettings => 'Görünüş və dil';
 
   @override
-  String get menuPrivacySecurity => 'Məxfilik və təhlükəsizlik';
+  String get menuPrivacySecurity => 'Hesab və təhlükəsizlik';
 
   @override
   String get profileSectionPreferences => 'Tərcihlər';
@@ -1057,7 +1012,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get logOut => 'Çıxış';
 
   @override
-  String get settingsTitle => 'Tənzimləmələr';
+  String get settingsTitle => 'Görünüş və dil';
 
   @override
   String get appearance => 'Görünüş';
@@ -1530,7 +1485,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get editActivity => 'Fəaliyyəti redaktə et';
 
   @override
-  String get activityTitleLabel => 'Fəaliyyət';
+  String get activityTitleLabel => 'Ad';
 
   @override
   String get activityTitleHint => 'məs. Bosfor gün batımı gəzintisi';
@@ -1549,6 +1504,9 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get activityAddTime => 'Vaxt əlavə et';
+
+  @override
+  String get activityMoreDetails => 'Yer və ya vaxt əlavə et';
 
   @override
   String get activityKindLabel => 'Növ';
@@ -2139,7 +2097,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String notifCollabInvitedBody(String trip) {
-    return '$trip səyahətinə əlavə edildi. Dəvət göndərildi.';
+    return 'Səyahət: $trip. Dəvət göndərildi.';
   }
 
   @override
@@ -2150,7 +2108,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String notifAiReadyBody(String trip) {
-    return 'Ventus $trip üçün plan hazırladı.';
+    return 'Səyahət: $trip';
   }
 
   @override

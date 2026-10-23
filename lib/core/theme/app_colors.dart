@@ -154,27 +154,35 @@ class AppColors extends ThemeExtension<AppColors> {
     gradientHero: heroGradient,
   );
 
+  /// Dark palette: neutral greys, the way iOS and Material build theirs. The
+  /// old values leaned warm brown (red > green > blue in every surface), which
+  /// read as a yellowish tint — most visible on the nav bar and cards. Depth
+  /// comes from lighter surfaces stacking on a dark canvas (bg < surface <
+  /// surfaceSand), not from shadows, which vanish on dark. Text is off-white
+  /// rather than pure white to avoid glare; the brand coral is the only hue.
   static const AppColors dark = AppColors(
-    bg: Color(0xFF17120F),
-    surface: Color(0xFF241C18),
-    surfaceSand: Color(0xFF2F2521),
-    ink: Color(0xFFF7EFE9),
-    ink2: Color(0xFFDDD3CC),
-    muted: Color(0xFFA89D95),
-    line: Color(0xFF3A2F2A),
-    lineStrong: Color(0xFF4B3E38),
+    bg: Color(0xFF121212),
+    surface: Color(0xFF1E1E1E),
+    surfaceSand: Color(0xFF2A2A2A),
+    ink: Color(0xFFF2F2F2),
+    ink2: Color(0xFFD0D0D0),
+    muted: Color(0xFF9B9B9B),
+    line: Color(0xFF2C2C2C),
+    lineStrong: Color(0xFF444444),
     primary: Color(0xFFFF6B4A),
     primaryPress: Color(0xFFFF8466),
-    primarySoft: Color(0xFF3A201A),
-    onPrimary: Color(0xFF1A1412),
+    // Coral at ~12% over the surface, so a tinted chip still reads as brand
+    // without turning the whole card brown.
+    primarySoft: Color(0xFF3A2724),
+    onPrimary: Color(0xFF1A1A1A),
     sea: Color(0xFF6FC9BC),
-    seaSoft: Color(0xFF17332F),
+    seaSoft: Color(0xFF1B2E2B),
     amber: Color(0xFFFFC266),
     amberSoft: Color(0x29FFC266),
     success: Color(0xFF4ADE80),
-    successSoft: Color(0xFF1C2A22),
+    successSoft: Color(0xFF1C2B23),
     danger: Color(0xFFFF7A70),
-    dangerSoft: Color(0xFF3A1B18),
+    dangerSoft: Color(0xFF3A1F1D),
     ring: Color(0x4DFF6B4A), // rgba(255,107,74,0.30)
     gradientMain: _gradientMain,
     gradientHero: heroGradient,

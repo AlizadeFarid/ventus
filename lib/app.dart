@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'core/config/env.dart';
@@ -58,6 +59,19 @@ class VentusApp extends ConsumerWidget {
         content = GestureDetector(
           behavior: HitTestBehavior.translucent,
           onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
+          child: content,
+        );
+        // Status-bar icons follow the theme: dark glyphs on the light canvas,
+        // light glyphs on the dark one. Without this the style set by the
+        // photo-backed Welcome screen (white icons) stuck around after
+        // leaving it, leaving the clock invisible on every light screen.
+        // Screens with a photo behind the status bar (Welcome) still set their
+        // own region, and the nearest one wins.
+        final isDark = Theme.of(context).brightness == Brightness.dark;
+        content = AnnotatedRegion<SystemUiOverlayStyle>(
+          value:
+              (isDark ? SystemUiOverlayStyle.light : SystemUiOverlayStyle.dark)
+                  .copyWith(statusBarColor: Colors.transparent),
           child: content,
         );
         if (showFakeBanner) {

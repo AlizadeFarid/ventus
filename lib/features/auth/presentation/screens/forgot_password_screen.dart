@@ -5,14 +5,12 @@ import 'package:go_router/go_router.dart';
 import '../../../../core/extensions/theme_context_extension.dart';
 import '../../../../core/l10n/l10n_extension.dart';
 import '../../../../core/router/app_router.dart';
-import '../../../../core/theme/app_radius.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/utils/validators.dart';
 import '../../../../shared/widgets/widgets.dart';
 import '../../application/auth_controller.dart';
 import '../field_error_l10n.dart';
 import '../widgets/auth_footer_link.dart';
-import '../../../../core/theme/app_typography.dart';
 
 /// Forgot password, from the prototype `Auth.jsx` (ForgotA).
 class ForgotPasswordScreen extends ConsumerStatefulWidget {
@@ -56,78 +54,73 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
     final loading = ref.watch(authControllerProvider).isLoading;
 
     return Scaffold(
-      appBar: VentusAppBar(title: l10n.resetPasswordTitle),
+      appBar: const VentusAppBar(),
       body: SafeArea(
         top: false,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(
-            AppSpacing.s6,
-            AppSpacing.s6,
-            AppSpacing.s6,
-            AppSpacing.s5,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                width: 64,
-                height: 64,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: colors.primarySoft,
-                  borderRadius: BorderRadius.circular(AppRadius.lg),
+        // Scrolls when the keyboard leaves less room than the form needs;
+        // otherwise it fills the screen so the footer link stays at the bottom.
+        child: CustomScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+          slivers: [
+            SliverFillRemaining(
+              hasScrollBody: false,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  AppSpacing.screen,
+                  AppSpacing.s2,
+                  AppSpacing.screen,
+                  AppSpacing.s5,
                 ),
-                child: VentusIcon(
-                  VentusIcons.lock,
-                  size: 30,
-                  color: colors.primary,
-                ),
-              ),
-              const SizedBox(height: AppSpacing.s5),
-              Text(
-                l10n.forgotTitle,
-                style: type.h1.copyWith(
-                  fontSize: AppFontSize.h1,
-                  height: 31 / 27,
-                ),
-              ),
-              const SizedBox(height: AppSpacing.s3),
-              Text(
-                l10n.forgotBody,
-                style: type.body.copyWith(height: 23 / 16, color: colors.muted),
-              ),
-              const SizedBox(height: AppSpacing.s6),
-              VentusTextField(
-                label: l10n.emailLabel,
-                icon: VentusIcons.mail,
-                hintText: l10n.emailHint,
-                controller: _email,
-                keyboardType: TextInputType.emailAddress,
-                textInputAction: TextInputAction.done,
-                autofillHints: const [AutofillHints.email],
-                errorText: _emailError?.message(l10n),
-                onChanged: (_) {
-                  if (_emailError != null) setState(() => _emailError = null);
-                },
-                onSubmitted: (_) => _submit(),
-              ),
-              const SizedBox(height: AppSpacing.s6),
-              VentusButton(
-                label: l10n.sendResetLink,
-                full: true,
-                loading: loading,
-                onPressed: _submit,
-              ),
-              const Spacer(),
-              Center(
-                child: AuthFooterLink(
-                  question: l10n.rememberedIt,
-                  action: l10n.backToSignIn,
-                  onTap: () => context.pop(),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(l10n.forgotTitle, style: type.h1),
+                    const SizedBox(height: AppSpacing.s2),
+                    Text(
+                      l10n.forgotBody,
+                      style: type.body.copyWith(color: colors.muted),
+                    ),
+                    const SizedBox(height: AppSpacing.s6),
+                    VentusTextField(
+                      label: l10n.emailLabel,
+                      icon: VentusIcons.mail,
+                      hintText: l10n.emailHint,
+                      controller: _email,
+                      keyboardType: TextInputType.emailAddress,
+                      textInputAction: TextInputAction.done,
+                      autofillHints: const [AutofillHints.email],
+                      errorText: _emailError?.message(l10n),
+                      onChanged: (_) {
+                        if (_emailError != null) {
+                          setState(() => _emailError = null);
+                        }
+                      },
+                      onSubmitted: (_) => _submit(),
+                    ),
+                    const SizedBox(height: AppSpacing.s6),
+                    VentusButton(
+                      label: l10n.sendResetLink,
+                      size: VentusButtonSize.lg,
+                      full: true,
+                      loading: loading,
+                      onPressed: _submit,
+                    ),
+                    const Spacer(),
+                    // Minimum gap: when errors make the form fill the screen the Spacer
+                    // collapses to zero and the footer would touch the buttons above.
+                    const SizedBox(height: AppSpacing.s6),
+                    Center(
+                      child: AuthFooterLink(
+                        question: l10n.rememberedIt,
+                        action: l10n.backToSignIn,
+                        onTap: () => context.pop(),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

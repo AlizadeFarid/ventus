@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/extensions/theme_context_extension.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../shared/widgets/widgets.dart';
 
@@ -20,7 +21,7 @@ class AuthSocialRow extends StatelessWidget {
         Expanded(
           child: VentusButton(
             label: 'Google',
-            variant: VentusButtonVariant.social,
+            variant: VentusButtonVariant.tonal,
             size: VentusButtonSize.md,
             iconLeft: VentusIcons.google,
             full: true,
@@ -31,9 +32,10 @@ class AuthSocialRow extends StatelessWidget {
         Expanded(
           child: VentusButton(
             label: 'Apple',
-            variant: VentusButtonVariant.social,
+            variant: VentusButtonVariant.tonal,
             size: VentusButtonSize.md,
             iconLeft: VentusIcons.apple,
+            iconColor: context.colors.ink,
             full: true,
             onPressed: onApple,
           ),

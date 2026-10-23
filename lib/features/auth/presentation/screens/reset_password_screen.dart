@@ -6,7 +6,6 @@ import 'package:go_router/go_router.dart';
 import '../../../../core/extensions/theme_context_extension.dart';
 import '../../../../core/l10n/l10n_extension.dart';
 import '../../../../core/router/app_router.dart';
-import '../../../../core/theme/app_radius.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/utils/validators.dart';
 import '../../../../shared/widgets/widgets.dart';
@@ -14,7 +13,6 @@ import '../../application/auth_controller.dart';
 import '../../domain/auth_exception.dart';
 import '../auth_error_l10n.dart';
 import '../field_error_l10n.dart';
-import '../../../../core/theme/app_typography.dart';
 
 /// Completes a password reset with the 6-digit code emailed to the user, then
 /// sets a new password. Fully in-app (no deep link). Reached from the forgot
@@ -106,51 +104,32 @@ class _ResetPasswordScreenState extends ConsumerState<ResetPasswordScreen> {
     final loading = ref.watch(authControllerProvider).isLoading;
 
     return Scaffold(
-      appBar: VentusAppBar(title: l10n.resetPasswordTitle),
+      appBar: const VentusAppBar(),
       body: SafeArea(
         top: false,
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           padding: const EdgeInsets.fromLTRB(
-            AppSpacing.s6,
-            AppSpacing.s6,
-            AppSpacing.s6,
+            AppSpacing.screen,
+            AppSpacing.s2,
+            AppSpacing.screen,
             AppSpacing.s8,
           ),
           children: [
-            Container(
-              width: 64,
-              height: 64,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: colors.primarySoft,
-                borderRadius: BorderRadius.circular(AppRadius.lg),
-              ),
-              child: VentusIcon(
-                VentusIcons.lock,
-                size: 30,
-                color: colors.primary,
-              ),
-            ),
-            const SizedBox(height: AppSpacing.s5),
-            Text(
-              l10n.resetCodeTitle,
-              style: type.h1.copyWith(
-                fontSize: AppFontSize.h1,
-                height: 31 / 27,
-              ),
-            ),
-            const SizedBox(height: AppSpacing.s3),
+            Text(l10n.resetCodeTitle, style: type.h1),
+            const SizedBox(height: AppSpacing.s2),
             Text(
               l10n.resetCodeBody(widget.email),
-              style: type.body.copyWith(height: 23 / 16, color: colors.muted),
+              style: type.body.copyWith(color: colors.muted),
             ),
             const SizedBox(height: AppSpacing.s6),
             VentusTextField(
               label: l10n.resetCodeLabel,
-              icon: VentusIcons.mail,
+              icon: VentusIcons.shield,
               hintText: l10n.resetCodeHint,
               controller: _code,
               keyboardType: TextInputType.number,
+              autofillHints: const [AutofillHints.oneTimeCode],
               textInputAction: TextInputAction.next,
               inputFormatters: [
                 FilteringTextInputFormatter.digitsOnly,
@@ -195,6 +174,7 @@ class _ResetPasswordScreenState extends ConsumerState<ResetPasswordScreen> {
             const SizedBox(height: AppSpacing.s6),
             VentusButton(
               label: l10n.resetSubmit,
+              size: VentusButtonSize.lg,
               full: true,
               loading: loading,
               onPressed: _submit,
@@ -203,9 +183,13 @@ class _ResetPasswordScreenState extends ConsumerState<ResetPasswordScreen> {
             Center(
               child: VentusTap(
                 onTap: loading ? null : _resend,
+                padding: const EdgeInsets.symmetric(
+                  vertical: AppSpacing.s3,
+                  horizontal: AppSpacing.s4,
+                ),
                 child: Text(
                   l10n.resetResend,
-                  style: type.caption.copyWith(
+                  style: type.sm.copyWith(
                     fontWeight: FontWeight.w600,
                     color: context.primaryFill,
                   ),

@@ -149,7 +149,9 @@ abstract final class AppTheme {
         backgroundColor: colors.surface,
         surfaceTintColor: Colors.transparent,
         elevation: 0,
-        shape: const RoundedRectangleBorder(borderRadius: AppRadius.brXl),
+        // Same radius as cards: a small dialog with the sheet radius (32) read
+        // almost like a pill and crowded its own buttons into the corners.
+        shape: const RoundedRectangleBorder(borderRadius: AppRadius.brLg),
         insetPadding: const EdgeInsets.symmetric(horizontal: 32, vertical: 24),
         titleTextStyle: typography.h3.copyWith(
           fontSize: AppFontSize.h3,

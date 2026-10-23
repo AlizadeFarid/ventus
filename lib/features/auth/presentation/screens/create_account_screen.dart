@@ -15,7 +15,6 @@ import '../auth_error_l10n.dart';
 import '../field_error_l10n.dart';
 import '../widgets/auth_footer_link.dart';
 import '../widgets/auth_social_row.dart';
-import '../../../../core/theme/app_typography.dart';
 
 /// Create account · variant B (minimal), from the prototype `Auth.jsx`.
 class CreateAccountScreen extends ConsumerStatefulWidget {
@@ -30,7 +29,8 @@ class _CreateAccountScreenState extends ConsumerState<CreateAccountScreen> {
   final _name = TextEditingController();
   final _email = TextEditingController();
   final _password = TextEditingController();
-  bool _agreed = true;
+  // Consent is never pre-ticked: the user has to opt in themselves.
+  bool _agreed = false;
   FieldError? _nameError;
   FieldError? _emailError;
   FieldError? _passwordError;
@@ -162,108 +162,125 @@ class _CreateAccountScreenState extends ConsumerState<CreateAccountScreen> {
       appBar: const VentusAppBar(),
       body: SafeArea(
         top: false,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(
-            AppSpacing.s6,
-            AppSpacing.s2,
-            AppSpacing.s6,
-            AppSpacing.s5,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                l10n.createAccountTitle,
-                style: type.display.copyWith(
-                  fontSize: AppFontSize.h1,
-                  height: 34 / 30,
-                  letterSpacing: 30 * -0.03,
+        // Scrolls when the keyboard (or a large text size) leaves less room than
+        // the form needs; otherwise it fills the screen so the footer link stays
+        // pinned to the bottom.
+        child: CustomScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+          slivers: [
+            SliverFillRemaining(
+              hasScrollBody: false,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  AppSpacing.screen,
+                  AppSpacing.s2,
+                  AppSpacing.screen,
+                  AppSpacing.s5,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(l10n.createAccountTitle, style: type.h1),
+                    const SizedBox(height: AppSpacing.s2),
+                    Text(
+                      l10n.createAccountSubtitle,
+                      style: type.body.copyWith(color: colors.muted),
+                    ),
+                    const SizedBox(height: AppSpacing.s6),
+                    VentusTextField(
+                      label: l10n.fullNameLabel,
+                      icon: VentusIcons.user,
+                      hintText: l10n.fullNameHint,
+                      controller: _name,
+                      textCapitalization: TextCapitalization.words,
+                      textInputAction: TextInputAction.next,
+                      autofillHints: const [AutofillHints.name],
+                      errorText: _nameError?.message(l10n),
+                      onChanged: (_) {
+                        if (_nameError != null) {
+                          setState(() => _nameError = null);
+                        }
+                      },
+                    ),
+                    const SizedBox(height: AppSpacing.s4),
+                    VentusTextField(
+                      label: l10n.emailLabel,
+                      icon: VentusIcons.mail,
+                      hintText: l10n.emailHint,
+                      controller: _email,
+                      keyboardType: TextInputType.emailAddress,
+                      textInputAction: TextInputAction.next,
+                      autofillHints: const [AutofillHints.email],
+                      errorText: _emailError?.message(l10n),
+                      onChanged: (_) {
+                        if (_emailError != null) {
+                          setState(() => _emailError = null);
+                        }
+                      },
+                    ),
+                    const SizedBox(height: AppSpacing.s4),
+                    VentusTextField(
+                      label: l10n.passwordLabel,
+                      icon: VentusIcons.lock,
+                      hintText: l10n.passwordHintMin,
+                      controller: _password,
+                      obscure: true,
+                      textInputAction: TextInputAction.done,
+                      autofillHints: const [AutofillHints.newPassword],
+                      errorText: _passwordError?.message(l10n),
+                      onChanged: (_) {
+                        if (_passwordError != null) {
+                          setState(() => _passwordError = null);
+                        }
+                      },
+                      onSubmitted: (_) => _submit(),
+                    ),
+                    const SizedBox(height: AppSpacing.s6),
+                    VentusCheckbox(
+                      value: _agreed,
+                      labelWidget: _agreeLabel(context),
+                      onChanged: (v) => setState(() => _agreed = v),
+                    ),
+                    const SizedBox(height: AppSpacing.s6),
+                    VentusButton(
+                      label: l10n.createAccountAction,
+                      size: VentusButtonSize.lg,
+                      full: true,
+                      loading: loading,
+                      onPressed: _submit,
+                    ),
+                    const SizedBox(height: AppSpacing.s4),
+                    VentusDivider(label: l10n.orDivider),
+                    const SizedBox(height: AppSpacing.s4),
+                    AuthSocialRow(
+                      onGoogle: () => _oauth(
+                        ref
+                            .read(authControllerProvider.notifier)
+                            .signInWithGoogle,
+                      ),
+                      onApple: () => _oauth(
+                        ref
+                            .read(authControllerProvider.notifier)
+                            .signInWithApple,
+                      ),
+                    ),
+                    const Spacer(),
+                    // Minimum gap: when errors make the form fill the screen the Spacer
+                    // collapses to zero and the footer would touch the buttons above.
+                    const SizedBox(height: AppSpacing.s6),
+                    Center(
+                      child: AuthFooterLink(
+                        question: l10n.alreadyHaveAccount,
+                        action: l10n.signInAction,
+                        // Swap to the sibling screen while keeping welcome underneath.
+                        onTap: () => context.pushReplacement(AppRoutes.signIn),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              const SizedBox(height: AppSpacing.s2),
-              Text(
-                l10n.createAccountSubtitle,
-                style: type.body.copyWith(color: colors.muted),
-              ),
-              const SizedBox(height: AppSpacing.s6),
-              VentusTextField(
-                label: l10n.fullNameLabel,
-                icon: VentusIcons.user,
-                hintText: l10n.fullNameHint,
-                controller: _name,
-                textInputAction: TextInputAction.next,
-                autofillHints: const [AutofillHints.name],
-                errorText: _nameError?.message(l10n),
-                onChanged: (_) {
-                  if (_nameError != null) setState(() => _nameError = null);
-                },
-              ),
-              const SizedBox(height: AppSpacing.s4),
-              VentusTextField(
-                label: l10n.emailLabel,
-                icon: VentusIcons.mail,
-                hintText: l10n.emailHint,
-                controller: _email,
-                keyboardType: TextInputType.emailAddress,
-                textInputAction: TextInputAction.next,
-                autofillHints: const [AutofillHints.email],
-                errorText: _emailError?.message(l10n),
-                onChanged: (_) {
-                  if (_emailError != null) setState(() => _emailError = null);
-                },
-              ),
-              const SizedBox(height: AppSpacing.s4),
-              VentusTextField(
-                label: l10n.passwordLabel,
-                icon: VentusIcons.lock,
-                hintText: l10n.passwordHintMin,
-                controller: _password,
-                obscure: true,
-                textInputAction: TextInputAction.done,
-                autofillHints: const [AutofillHints.newPassword],
-                errorText: _passwordError?.message(l10n),
-                onChanged: (_) {
-                  if (_passwordError != null) {
-                    setState(() => _passwordError = null);
-                  }
-                },
-                onSubmitted: (_) => _submit(),
-              ),
-              const SizedBox(height: AppSpacing.s4),
-              VentusCheckbox(
-                value: _agreed,
-                labelWidget: _agreeLabel(context),
-                onChanged: (v) => setState(() => _agreed = v),
-              ),
-              const SizedBox(height: AppSpacing.s4),
-              VentusButton(
-                label: l10n.createAccountAction,
-                full: true,
-                loading: loading,
-                onPressed: _submit,
-              ),
-              const SizedBox(height: AppSpacing.s4),
-              VentusDivider(label: l10n.orDivider),
-              const SizedBox(height: AppSpacing.s4),
-              AuthSocialRow(
-                onGoogle: () => _oauth(
-                  ref.read(authControllerProvider.notifier).signInWithGoogle,
-                ),
-                onApple: () => _oauth(
-                  ref.read(authControllerProvider.notifier).signInWithApple,
-                ),
-              ),
-              const Spacer(),
-              Center(
-                child: AuthFooterLink(
-                  question: l10n.alreadyHaveAccount,
-                  action: l10n.signInAction,
-                  // Swap to the sibling screen while keeping welcome underneath.
-                  onTap: () => context.pushReplacement(AppRoutes.signIn),
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

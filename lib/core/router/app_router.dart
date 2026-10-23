@@ -21,7 +21,6 @@ import '../../features/dev/design_gallery_screen.dart';
 import '../../features/profile/presentation/screens/profile_screen.dart';
 import '../../features/profile/presentation/screens/currency_units_screen.dart';
 import '../../features/profile/presentation/screens/edit_profile_screen.dart';
-import '../../features/profile/presentation/screens/notifications_screen.dart';
 import '../../features/notifications/presentation/screens/notifications_feed_screen.dart';
 import '../../features/profile/presentation/screens/about_screen.dart';
 import '../../features/profile/presentation/screens/help_screen.dart';
@@ -95,7 +94,6 @@ abstract final class AppRoutes {
   static const editProfile = '/profile/edit';
   static const currencyUnits = '/profile/units';
   static const notifications = '/profile/notifications';
-  static const notificationSettings = '/profile/notifications/settings';
   static const privacySecurity = '/profile/privacy';
   static const about = '/profile/about';
   static const help = '/profile/help';
@@ -130,7 +128,6 @@ const _protectedRoutes = {
   AppRoutes.editProfile,
   AppRoutes.currencyUnits,
   AppRoutes.notifications,
-  AppRoutes.notificationSettings,
   AppRoutes.privacySecurity,
   AppRoutes.about,
   AppRoutes.help,
@@ -308,7 +305,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           final entry = state.extra is CreateTripEntry
               ? state.extra as CreateTripEntry
               : CreateTripEntry.manual;
-          return CreateTripFlow(entry: entry);
+          return CreateTripFlow(
+            entry: entry,
+            seeded: state.extra is CreateTripSeeded,
+          );
         },
       ),
       GoRoute(
@@ -344,10 +344,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoutes.notifications,
         builder: (context, state) => const NotificationsFeedScreen(),
-      ),
-      GoRoute(
-        path: AppRoutes.notificationSettings,
-        builder: (context, state) => const NotificationsScreen(),
       ),
       GoRoute(
         path: AppRoutes.about,
@@ -403,7 +399,8 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: AppRoutes.explore,
-        builder: (context, state) => const ExploreScreen(),
+        builder: (context, state) =>
+            ExploreScreen(autofocusSearch: state.extra == true),
       ),
       GoRoute(
         path: AppRoutes.explorePlacePath,

@@ -1125,12 +1125,22 @@ class _DiscoverRow extends ConsumerWidget {
               separatorBuilder: (_, _) => const SizedBox(width: 12),
               itemBuilder: (context, i) {
                 final d = items[i];
-                return DiscoverCard(
+                final card = DiscoverCard(
                   title: d.nameFor(lang),
                   country: d.countryFor(lang),
                   imageUrl: d.imageUrl ?? '',
+                  heroId: d.id,
                   onTap: () => context.push(AppRoutes.explorePlace(d.id)),
                 );
+                // Only the cards on screen at first paint stagger in; ones
+                // scrolled into view later just appear.
+                return i < 4
+                    ? VentusReveal(
+                        key: ValueKey('discover-${d.id}'),
+                        index: i + 3,
+                        child: card,
+                      )
+                    : card;
               },
             ),
     );

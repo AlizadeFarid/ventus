@@ -442,72 +442,79 @@ class DiscoverCard extends StatelessWidget {
     required this.title,
     required this.country,
     required this.imageUrl,
+    this.heroId,
     this.onTap,
   });
 
   final String title;
   final String country;
   final String imageUrl;
+
+  /// Destination id; when set, the photo flies into the Place Detail header.
+  final String? heroId;
   final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
-    return VentusTap(
-      onTap: onTap,
-      child: TripPhoto(
-        imageUrl: imageUrl,
-        seed: '$country-$title',
-        width: 132,
-        height: 168,
-        borderRadius: AppRadius.brLg,
-        child: Stack(
-          children: [
-            Positioned.fill(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      Colors.transparent,
-                      Colors.black.withValues(alpha: 0.72),
-                    ],
-                    stops: const [0.45, 1],
-                  ),
+    final card = TripPhoto(
+      imageUrl: imageUrl,
+      seed: '$country-$title',
+      width: 132,
+      height: 168,
+      borderRadius: AppRadius.brLg,
+      child: Stack(
+        children: [
+          Positioned.fill(
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Colors.transparent,
+                    Colors.black.withValues(alpha: 0.72),
+                  ],
+                  stops: const [0.45, 1],
                 ),
               ),
             ),
-            Positioned(
-              left: 13,
-              right: 13,
-              bottom: 12,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    country.toUpperCase(),
-                    style: const TextStyle(
-                      fontSize: AppFontSize.eyebrow,
-                      fontWeight: FontWeight.w700,
-                      letterSpacing: 0.5,
-                      color: AppOverlay.onPhotoMuted,
-                    ),
+          ),
+          Positioned(
+            left: 13,
+            right: 13,
+            bottom: 12,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  country.toUpperCase(),
+                  style: const TextStyle(
+                    fontSize: AppFontSize.eyebrow,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 0.5,
+                    color: AppOverlay.onPhotoMuted,
                   ),
-                  const SizedBox(height: 2),
-                  Text(
-                    title,
-                    style: const TextStyle(
-                      fontSize: AppFontSize.h3,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.white,
-                    ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  title,
+                  style: const TextStyle(
+                    fontSize: AppFontSize.h3,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
+    );
+    return VentusTap(
+      onTap: onTap,
+      child: heroId == null
+          ? card
+          : DestinationPhotoHero(id: heroId!, imageUrl: imageUrl, child: card),
     );
   }
 }

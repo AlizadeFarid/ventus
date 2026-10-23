@@ -14,7 +14,6 @@ import '../auth_error_l10n.dart';
 import '../field_error_l10n.dart';
 import '../widgets/auth_footer_link.dart';
 import '../widgets/auth_social_row.dart';
-import '../../../../core/theme/app_typography.dart';
 
 /// Sign in · variant B (minimal), from the prototype `Auth.jsx`.
 class SignInScreen extends ConsumerStatefulWidget {
@@ -85,110 +84,129 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
       appBar: const VentusAppBar(),
       body: SafeArea(
         top: false,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(
-            AppSpacing.s6,
-            AppSpacing.s2,
-            AppSpacing.s6,
-            AppSpacing.s5,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                l10n.welcomeBack,
-                style: type.display.copyWith(
-                  fontSize: AppFontSize.h1,
-                  height: 34 / 30,
-                  letterSpacing: 30 * -0.03,
+        // Scrolls when the keyboard (or a large text size) leaves less room than
+        // the form needs; otherwise it fills the screen so the footer link stays
+        // pinned to the bottom.
+        child: CustomScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+          slivers: [
+            SliverFillRemaining(
+              hasScrollBody: false,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  AppSpacing.screen,
+                  AppSpacing.s2,
+                  AppSpacing.screen,
+                  AppSpacing.s5,
                 ),
-              ),
-              const SizedBox(height: AppSpacing.s2),
-              Text(
-                l10n.signInSubtitle,
-                style: type.body.copyWith(color: colors.muted),
-              ),
-              const SizedBox(height: AppSpacing.s6),
-              VentusTextField(
-                label: l10n.emailLabel,
-                icon: VentusIcons.mail,
-                hintText: l10n.emailHint,
-                controller: _email,
-                keyboardType: TextInputType.emailAddress,
-                textInputAction: TextInputAction.next,
-                autofillHints: const [AutofillHints.email],
-                errorText: _emailError?.message(l10n),
-                onChanged: (_) {
-                  if (_emailError != null) setState(() => _emailError = null);
-                },
-              ),
-              const SizedBox(height: AppSpacing.s4),
-              VentusTextField(
-                label: l10n.passwordLabel,
-                icon: VentusIcons.lock,
-                hintText: '••••••••',
-                controller: _password,
-                obscure: true,
-                textInputAction: TextInputAction.done,
-                autofillHints: const [AutofillHints.password],
-                errorText: _passwordError?.message(l10n),
-                onChanged: (_) {
-                  if (_passwordError != null) {
-                    setState(() => _passwordError = null);
-                  }
-                },
-                onSubmitted: (_) => _submit(),
-              ),
-              const SizedBox(height: AppSpacing.s3),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  VentusCheckbox(
-                    value: _remember,
-                    label: l10n.rememberMe,
-                    onChanged: (v) => setState(() => _remember = v),
-                  ),
-                  VentusTap(
-                    onTap: () => context.push(AppRoutes.forgotPassword),
-                    child: Text(
-                      l10n.forgot,
-                      style: type.caption.copyWith(
-                        fontWeight: FontWeight.w600,
-                        color: context.primaryFill,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(l10n.welcomeBack, style: type.h1),
+                    const SizedBox(height: AppSpacing.s2),
+                    Text(
+                      l10n.signInSubtitle,
+                      style: type.body.copyWith(color: colors.muted),
+                    ),
+                    const SizedBox(height: AppSpacing.s6),
+                    VentusTextField(
+                      label: l10n.emailLabel,
+                      icon: VentusIcons.mail,
+                      hintText: l10n.emailHint,
+                      controller: _email,
+                      keyboardType: TextInputType.emailAddress,
+                      textInputAction: TextInputAction.next,
+                      autofillHints: const [AutofillHints.email],
+                      errorText: _emailError?.message(l10n),
+                      onChanged: (_) {
+                        if (_emailError != null) {
+                          setState(() => _emailError = null);
+                        }
+                      },
+                    ),
+                    const SizedBox(height: AppSpacing.s4),
+                    VentusTextField(
+                      label: l10n.passwordLabel,
+                      icon: VentusIcons.lock,
+                      hintText: '••••••••',
+                      controller: _password,
+                      obscure: true,
+                      textInputAction: TextInputAction.done,
+                      autofillHints: const [AutofillHints.password],
+                      errorText: _passwordError?.message(l10n),
+                      onChanged: (_) {
+                        if (_passwordError != null) {
+                          setState(() => _passwordError = null);
+                        }
+                      },
+                      onSubmitted: (_) => _submit(),
+                    ),
+                    const SizedBox(height: AppSpacing.s4),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        VentusCheckbox(
+                          value: _remember,
+                          label: l10n.rememberMe,
+                          onChanged: (v) => setState(() => _remember = v),
+                        ),
+                        VentusTap(
+                          onTap: () => context.push(AppRoutes.forgotPassword),
+                          padding: const EdgeInsets.symmetric(
+                            vertical: AppSpacing.s2,
+                            horizontal: AppSpacing.s1,
+                          ),
+                          child: Text(
+                            l10n.forgot,
+                            style: type.sm.copyWith(
+                              fontWeight: FontWeight.w600,
+                              color: context.primaryFill,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: AppSpacing.s6),
+                    VentusButton(
+                      label: l10n.signInAction,
+                      size: VentusButtonSize.lg,
+                      full: true,
+                      loading: loading,
+                      onPressed: _submit,
+                    ),
+                    const SizedBox(height: AppSpacing.s4),
+                    VentusDivider(label: l10n.orDivider),
+                    const SizedBox(height: AppSpacing.s4),
+                    AuthSocialRow(
+                      onGoogle: () => _oauth(
+                        ref
+                            .read(authControllerProvider.notifier)
+                            .signInWithGoogle,
+                      ),
+                      onApple: () => _oauth(
+                        ref
+                            .read(authControllerProvider.notifier)
+                            .signInWithApple,
                       ),
                     ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: AppSpacing.s4),
-              VentusButton(
-                label: l10n.signInAction,
-                full: true,
-                loading: loading,
-                onPressed: _submit,
-              ),
-              const SizedBox(height: AppSpacing.s4),
-              VentusDivider(label: l10n.orDivider),
-              const SizedBox(height: AppSpacing.s4),
-              AuthSocialRow(
-                onGoogle: () => _oauth(
-                  ref.read(authControllerProvider.notifier).signInWithGoogle,
-                ),
-                onApple: () => _oauth(
-                  ref.read(authControllerProvider.notifier).signInWithApple,
+                    const Spacer(),
+                    // Minimum gap: when errors make the form fill the screen the Spacer
+                    // collapses to zero and the footer would touch the buttons above.
+                    const SizedBox(height: AppSpacing.s6),
+                    Center(
+                      child: AuthFooterLink(
+                        question: l10n.newToVentus,
+                        action: l10n.createAccountAction,
+                        // Swap to the sibling screen while keeping welcome underneath.
+                        onTap: () =>
+                            context.pushReplacement(AppRoutes.createAccount),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              const Spacer(),
-              Center(
-                child: AuthFooterLink(
-                  question: l10n.newToVentus,
-                  action: l10n.createAccountAction,
-                  // Swap to the sibling screen while keeping welcome underneath.
-                  onTap: () => context.pushReplacement(AppRoutes.createAccount),
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

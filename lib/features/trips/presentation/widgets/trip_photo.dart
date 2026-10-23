@@ -106,3 +106,33 @@ class TripPhoto extends StatelessWidget {
     );
   }
 }
+
+/// Hero tag for a destination's photo, shared by the cards that show it (Home
+/// Discover row, Explore grid) and the Place Detail header, so opening a place
+/// grows the photo in place.
+String destinationHeroTag(String id) => 'destination-$id';
+
+/// Wraps [child] in a [Hero] that flies only the bare photo, not the card's
+/// overlay text and gradient, which would stretch and clip mid-flight.
+class DestinationPhotoHero extends StatelessWidget {
+  const DestinationPhotoHero({
+    super.key,
+    required this.id,
+    required this.imageUrl,
+    required this.child,
+  });
+
+  final String id;
+  final String? imageUrl;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return Hero(
+      tag: destinationHeroTag(id),
+      flightShuttleBuilder: (_, _, _, _, _) =>
+          TripPhoto(imageUrl: imageUrl, seed: id),
+      child: child,
+    );
+  }
+}

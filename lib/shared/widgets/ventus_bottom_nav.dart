@@ -92,11 +92,11 @@ class _Tab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = context.colors;
-    // Active: the darkest ink (higher contrast than the muted idle tone, which
-    // coral is not), a heavier stroke, and a small coral dot underneath — so
-    // the cue survives without a background disc and never competes with the
-    // centre "+".
-    final color = active ? colors.ink : colors.muted;
+    // Active: the brand colour, outline only, with a slightly heavier stroke and
+    // a small dot underneath. Colour alone is a weak cue, so the stroke weight
+    // and the dot back it up. The centre "+" is a solid disc, so the two never
+    // read as the same element.
+    final color = active ? context.primaryFill : colors.muted;
 
     // Icons only, equal widths: the bar stays balanced around the centre "+".
     // The label is kept for screen readers.
@@ -110,13 +110,18 @@ class _Tab extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              VentusIcon(icon, size: 24, color: color, filled: active),
+              VentusIcon(
+                icon,
+                size: 24,
+                color: color,
+                stroke: active ? 2.0 : 1.7,
+              ),
               const SizedBox(height: 5),
               AnimatedContainer(
                 duration: const Duration(milliseconds: 220),
                 curve: Curves.easeOutCubic,
                 width: active ? 5 : 0,
-                height: active ? 5 : 0,
+                height: 5,
                 decoration: BoxDecoration(
                   color: context.primaryFill,
                   shape: BoxShape.circle,
@@ -137,34 +142,28 @@ class _AddButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colors = context.colors;
-
-    return VentusTap(
-      onTap: onTap,
-      semanticLabel: context.l10n.createSheetTitle,
-      child: Container(
-        // A circle like the active tab's disc, a touch larger, so the two read
-        // as one family while the fill and glow keep this the primary action.
-        width: 52,
-        height: 52,
-        margin: const EdgeInsets.symmetric(horizontal: 4),
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-          color: context.primaryFill,
-          shape: BoxShape.circle,
-          boxShadow: [
-            BoxShadow(
-              color: context.primaryFill.withValues(alpha: 0.32),
-              offset: const Offset(0, 5),
-              blurRadius: 14,
-            ),
-          ],
-        ),
-        child: VentusIcon(
-          VentusIcons.plus,
-          size: 24,
-          stroke: 2.4,
-          color: colors.onPrimary,
+    // Same slot as a tab (equal width, same height, same icon size and the
+    // same reserved dot row) so the "+" sits on exactly the same line as the
+    // other icons. Only the heavier stroke tells it apart.
+    return Expanded(
+      child: VentusTap(
+        onTap: onTap,
+        semanticLabel: context.l10n.createSheetTitle,
+        excludeChildSemantics: true,
+        child: SizedBox(
+          height: 48,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              VentusIcon(
+                VentusIcons.plus,
+                size: 24,
+                stroke: 2.4,
+                color: context.colors.ink,
+              ),
+              const SizedBox(height: 10),
+            ],
+          ),
         ),
       ),
     );

@@ -14,9 +14,17 @@ import 'steps/travelers_step.dart';
 /// [createTripControllerProvider] state. Entered via [AppRoutes.createTrip] with
 /// a [CreateTripEntry] telling the first step which entry style to show.
 class CreateTripFlow extends ConsumerStatefulWidget {
-  const CreateTripFlow({super.key, this.entry = CreateTripEntry.manual});
+  const CreateTripFlow({
+    super.key,
+    this.entry = CreateTripEntry.manual,
+    this.seeded = false,
+  });
 
   final CreateTripEntry entry;
+
+  /// A destination was already added by the caller: keep that draft and start
+  /// on the step after "Where?".
+  final bool seeded;
 
   @override
   ConsumerState<CreateTripFlow> createState() => _CreateTripFlowState();
@@ -24,13 +32,15 @@ class CreateTripFlow extends ConsumerStatefulWidget {
 
 class _CreateTripFlowState extends ConsumerState<CreateTripFlow> {
   static const _stepCount = 4;
-  final _pageController = PageController();
-  int _index = 0;
+  late final _pageController = PageController(initialPage: _index);
+  late int _index = widget.seeded ? 1 : 0;
 
   @override
   void initState() {
     super.initState();
-    // Reset any prior draft and seed the chosen entry style.
+    // Reset any prior draft and seed the chosen entry style — unless the caller
+    // already seeded a destination, which the reset would wipe.
+    if (widget.seeded) return;
     WidgetsBinding.instance.addPostFrameCallback((_) {
       ref.read(createTripControllerProvider.notifier).start(widget.entry);
     });

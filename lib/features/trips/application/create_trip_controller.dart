@@ -12,6 +12,13 @@ import '../domain/trip_stop.dart';
 /// AI-led description screen. Only changes the first step's presentation.
 enum CreateTripEntry { manual, ai }
 
+/// Route `extra` for opening Create Trip with a destination already added (from
+/// Explore or a place page). The flow keeps that draft instead of resetting it
+/// and opens on the travelers step, since "Where?" is already answered.
+class CreateTripSeeded {
+  const CreateTripSeeded();
+}
+
 /// A place added to the in-progress route. [imageUrl] is kept only for the
 /// review cover preview; persistence uses [TripStop] (name/country/position).
 class DraftStop {

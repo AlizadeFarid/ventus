@@ -68,13 +68,6 @@ class PrivacySecurityScreen extends ConsumerWidget {
                         ? l10n.privacyChangePasswordSub
                         : l10n.setPasswordNote,
                     onTap: () => context.push(AppRoutes.changePassword),
-                  ),
-                  _Row(
-                    icon: VentusIcons.logout,
-                    label: l10n.logOut,
-                    danger: true,
-                    showChevron: false,
-                    onTap: () => _confirmSignOut(context, ref),
                     last: true,
                   ),
                 ],
@@ -99,18 +92,6 @@ class PrivacySecurityScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
-
-  Future<void> _confirmSignOut(BuildContext context, WidgetRef ref) async {
-    final l10n = context.l10n;
-    final ok = await confirmVentusAction(
-      context,
-      title: l10n.signOutTitle,
-      body: l10n.signOutBody,
-      confirmLabel: l10n.signOut,
-    );
-    if (!ok) return;
-    ref.read(authControllerProvider.notifier).signOut();
   }
 
   Future<void> _confirmDelete(BuildContext context, WidgetRef ref) async {

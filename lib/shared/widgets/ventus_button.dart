@@ -5,13 +5,25 @@ import 'package:flutter/services.dart';
 
 import '../../core/extensions/theme_context_extension.dart';
 import '../../core/theme/app_radius.dart';
+import '../../core/theme/app_overlay.dart';
 import 'ventus_icon.dart';
 import '../../core/theme/app_typography.dart';
 
 /// [tonal] is a raised white button with a brand-coloured icon: a clearly
 /// active action that still ranks below [primary] (e.g. the AI planner next to
 /// "New trip"). A neutral grey fill on a white card reads as disabled.
-enum VentusButtonVariant { primary, tonal, secondary, ghost, social, danger }
+enum VentusButtonVariant {
+  primary,
+  tonal,
+  secondary,
+  ghost,
+  social,
+  danger,
+
+  /// White pill with dark text, for the main action over a photo or a dark
+  /// hero, where the coral fill would sink into the scrim.
+  onPhoto,
+}
 
 enum VentusButtonSize { lg, md, sm }
 
@@ -31,6 +43,7 @@ class VentusButton extends StatefulWidget {
     this.loading = false,
     this.iconLeft,
     this.iconRight,
+    this.iconColor,
   });
 
   final String label;
@@ -45,6 +58,10 @@ class VentusButton extends StatefulWidget {
   /// Icon names from [VentusIcons].
   final String? iconLeft;
   final String? iconRight;
+
+  /// Overrides the variant's left-icon colour (e.g. a brand glyph that must stay
+  /// ink rather than take the variant's accent).
+  final Color? iconColor;
 
   @override
   State<VentusButton> createState() => _VentusButtonState();
@@ -84,7 +101,8 @@ class _VentusButtonState extends State<VentusButton> {
                 VentusIcon(
                   widget.iconLeft!,
                   size: spec.iconSize,
-                  color: style.iconColor ?? style.foreground,
+                  color:
+                      widget.iconColor ?? style.iconColor ?? style.foreground,
                 ),
                 SizedBox(width: spec.gap),
               ],
@@ -255,6 +273,10 @@ class _VariantStyle {
         background: colors.surfaceSand,
         foreground: colors.ink,
         shadow: shadows.sm,
+      ),
+      VentusButtonVariant.onPhoto => const _VariantStyle(
+        background: AppOverlay.onPhoto,
+        foreground: Color(0xFF1F1B18),
       ),
       VentusButtonVariant.danger => _VariantStyle(
         background: colors.danger,

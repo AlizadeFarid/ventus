@@ -126,12 +126,12 @@ class _VentusPinInputState extends State<VentusPinInput> {
                   enabledBorder: OutlineInputBorder(
                     borderRadius: AppRadius.brMd,
                     borderSide: filled
-                        ? BorderSide(color: colors.primary, width: 1.5)
+                        ? BorderSide(color: context.focusColor)
                         : BorderSide.none,
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: AppRadius.brMd,
-                    borderSide: BorderSide(color: colors.primary, width: 1.5),
+                    borderSide: BorderSide(color: context.focusColor),
                   ),
                 ),
               ),

@@ -48,7 +48,12 @@ class ProfileScreen extends ConsumerWidget {
           VentusTabTitle(l10n.navProfile),
           Expanded(
             child: SingleChildScrollView(
-              padding: const EdgeInsets.fromLTRB(AppSpacing.screen, 0, AppSpacing.screen, 16),
+              padding: const EdgeInsets.fromLTRB(
+                AppSpacing.screen,
+                0,
+                AppSpacing.screen,
+                16,
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -58,7 +63,8 @@ class ProfileScreen extends ConsumerWidget {
                     _ProBanner(onTap: () => context.push(AppRoutes.pro)),
                     const SizedBox(height: 24),
                   ],
-                  VentusSectionLabel(l10n.profileSectionPreferences),
+                  // Saved places are content the user built, not a preference,
+                  // so they sit apart from the settings below.
                   _MenuCard(
                     items: [
                       _MenuItemData(
@@ -66,16 +72,16 @@ class ProfileScreen extends ConsumerWidget {
                         label: l10n.navSaved,
                         onTap: () => context.push(AppRoutes.saved),
                       ),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+                  VentusSectionLabel(l10n.profileSectionPreferences),
+                  _MenuCard(
+                    items: [
                       _MenuItemData(
                         icon: VentusIcons.settings,
                         label: l10n.menuSettings,
                         onTap: () => context.push(AppRoutes.settings),
-                      ),
-                      _MenuItemData(
-                        icon: VentusIcons.bell,
-                        label: l10n.notificationSettingsTitle,
-                        onTap: () =>
-                            context.push(AppRoutes.notificationSettings),
                       ),
                       _MenuItemData(
                         icon: VentusIcons.wallet,
@@ -490,7 +496,7 @@ class _MenuRow extends StatelessWidget {
                 data.label,
                 style: TextStyle(
                   fontSize: AppFontSize.sm,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w700,
                   color: fg,
                 ),
               ),

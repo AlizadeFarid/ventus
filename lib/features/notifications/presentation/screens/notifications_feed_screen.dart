@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../core/extensions/theme_context_extension.dart';
 import '../../../../core/l10n/l10n_extension.dart';
-import '../../../../core/theme/app_colors.dart';
+import '../../../../core/router/app_router.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../../../shared/widgets/widgets.dart';
 import '../../application/notifications_controller.dart';
@@ -134,13 +135,23 @@ class _NotifRow extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final colors = context.colors;
     final l10n = context.l10n;
-    final visual = _visualFor(item.kind, colors);
+    final visual = _visualFor(item.kind);
     final (title, body) = _textFor(item, l10n);
 
     // If the user already has this trip in their local database, they have
     // already accepted the invite (or they are the owner).
     final trips = ref.watch(tripsProvider).asData?.value ?? [];
     final isAccepted = trips.any((t) => t.id == item.tripId);
+
+    // Where a tap leads: the trip the event is about (when it is still here),
+    // or, for the welcome note, the start of a first trip.
+    String? destination() {
+      if (item.kind == NotificationType.welcome) return AppRoutes.createTrip;
+      if (item.tripId != null && isAccepted) {
+        return AppRoutes.tripDetail(item.tripId!);
+      }
+      return null;
+    }
 
     return Dismissible(
       key: ValueKey(item.id),
@@ -150,23 +161,23 @@ class _NotifRow extends ConsumerWidget {
       },
       background: const VentusSwipeDeleteBackground(),
       child: VentusTap(
-        onTap: onTap,
+        onTap: () {
+          onTap();
+          final to = destination();
+          if (to != null) context.push(to);
+        },
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 14),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                width: 40,
-                height: 40,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: visual.bg,
-                  borderRadius: AppRadius.brSm,
-                ),
-                child: VentusIcon(visual.icon, size: 19, color: visual.fg),
+              // A bare glyph in a quiet tone: the shape tells the kinds apart, so
+              // no tinted tile (which was the same colour for all of them).
+              Padding(
+                padding: const EdgeInsets.only(top: 1),
+                child: VentusIcon(visual.icon, size: 20, color: colors.ink2),
               ),
-              const SizedBox(width: 13),
+              const SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -182,8 +193,8 @@ class _NotifRow extends ConsumerWidget {
                     ),
                     if (body != null) ...[
                       const SizedBox(height: 3),
-                      Text(
-                        body,
+                      _ExpandableBody(
+                        text: body,
                         style: TextStyle(
                           fontSize: AppFontSize.sm,
                           height: 1.4,
@@ -264,6 +275,68 @@ class _NotifRow extends ConsumerWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// Notification body clamped to three lines. Only when it really overflows does
+/// a "Read more" link appear, which opens the full text in place — no popup, so
+/// the short, common case costs nothing.
+class _ExpandableBody extends StatefulWidget {
+  const _ExpandableBody({required this.text, required this.style});
+
+  final String text;
+  final TextStyle style;
+
+  @override
+  State<_ExpandableBody> createState() => _ExpandableBodyState();
+}
+
+class _ExpandableBodyState extends State<_ExpandableBody> {
+  static const _maxLines = 3;
+  bool _expanded = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final painter = TextPainter(
+          text: TextSpan(text: widget.text, style: widget.style),
+          maxLines: _maxLines,
+          textDirection: Directionality.of(context),
+          textScaler: MediaQuery.textScalerOf(context),
+        )..layout(maxWidth: constraints.maxWidth);
+        final overflows = painter.didExceedMaxLines;
+        painter.dispose();
+
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              widget.text,
+              maxLines: _expanded ? null : _maxLines,
+              overflow: _expanded
+                  ? TextOverflow.visible
+                  : TextOverflow.ellipsis,
+              style: widget.style,
+            ),
+            if (overflows && !_expanded)
+              VentusTap(
+                onTap: () => setState(() => _expanded = true),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 4),
+                  child: Text(
+                    context.l10n.readMore,
+                    style: widget.style.copyWith(
+                      fontWeight: FontWeight.w700,
+                      color: context.primaryFill,
+                    ),
+                  ),
+                ),
+              ),
+          ],
+        );
+      },
     );
   }
 }
@@ -366,19 +439,19 @@ class _FeedMenu extends ConsumerWidget {
   }
 }
 
-/// Icon + soft background + foreground colour for a notification kind.
-typedef _Visual = ({String icon, Color bg, Color fg});
+/// Glyph for a notification kind.
+typedef _Visual = ({String icon});
 
-_Visual _visualFor(NotificationType kind, AppColors c) {
+_Visual _visualFor(NotificationType kind) {
   switch (kind) {
     case NotificationType.welcome:
-      return (icon: VentusIcons.compass, bg: c.primarySoft, fg: c.primary);
+      return (icon: VentusIcons.compass);
     case NotificationType.collaboratorInvited:
-      return (icon: VentusIcons.user, bg: c.primarySoft, fg: c.primary);
+      return (icon: VentusIcons.user);
     case NotificationType.aiPlanReady:
-      return (icon: VentusIcons.sparkle, bg: c.primarySoft, fg: c.primary);
+      return (icon: VentusIcons.sparkle);
     case NotificationType.generic:
-      return (icon: VentusIcons.bell, bg: c.primarySoft, fg: c.primary);
+      return (icon: VentusIcons.bell);
   }
 }
 

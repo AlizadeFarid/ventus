@@ -17,6 +17,7 @@ class VentusSearchLayout extends StatefulWidget {
     required this.hintText,
     required this.resultsBuilder,
     required this.child,
+    this.autofocus = false,
     this.padding = const EdgeInsets.fromLTRB(
       AppSpacing.screen,
       0,
@@ -31,6 +32,10 @@ class VentusSearchLayout extends StatefulWidget {
 
   /// The screen content shown while the search is idle.
   final Widget child;
+
+  /// Focus the field as soon as the screen opens, so a user who tapped a
+  /// search entry point elsewhere can type straight away.
+  final bool autofocus;
   final EdgeInsetsGeometry padding;
 
   @override
@@ -47,6 +52,11 @@ class _VentusSearchLayoutState extends State<VentusSearchLayout> {
   void initState() {
     super.initState();
     _focus.addListener(_onFocus);
+    if (widget.autofocus) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _focus.requestFocus();
+      });
+    }
   }
 
   void _onFocus() {

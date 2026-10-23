@@ -427,7 +427,7 @@ abstract class AppLocalizations {
   /// No description provided for @homeSearchHint.
   ///
   /// In en, this message translates to:
-  /// **'City, country or place'**
+  /// **'Where to?'**
   String get homeSearchHint;
 
   /// No description provided for @createSheetTitle.
@@ -1266,13 +1266,13 @@ abstract class AppLocalizations {
   /// No description provided for @forgotBody.
   ///
   /// In en, this message translates to:
-  /// **'Enter the email linked to your account and we’ll send a reset link.'**
+  /// **'Enter the email linked to your account and we’ll send you a reset code.'**
   String get forgotBody;
 
   /// No description provided for @sendResetLink.
   ///
   /// In en, this message translates to:
-  /// **'Send reset link'**
+  /// **'Send code'**
   String get sendResetLink;
 
   /// No description provided for @resetSent.
@@ -1695,96 +1695,6 @@ abstract class AppLocalizations {
   /// **'Miles, °F'**
   String get unitImperialDesc;
 
-  /// No description provided for @notificationSettingsTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Notification settings'**
-  String get notificationSettingsTitle;
-
-  /// No description provided for @notifSectionTripActivity.
-  ///
-  /// In en, this message translates to:
-  /// **'Trip activity'**
-  String get notifSectionTripActivity;
-
-  /// No description provided for @notifSectionTravelAlerts.
-  ///
-  /// In en, this message translates to:
-  /// **'Travel alerts'**
-  String get notifSectionTravelAlerts;
-
-  /// No description provided for @notifSectionVentus.
-  ///
-  /// In en, this message translates to:
-  /// **'Ventus'**
-  String get notifSectionVentus;
-
-  /// No description provided for @notifCollaboratorChanges.
-  ///
-  /// In en, this message translates to:
-  /// **'Collaborator changes'**
-  String get notifCollaboratorChanges;
-
-  /// No description provided for @notifCollaboratorChangesSub.
-  ///
-  /// In en, this message translates to:
-  /// **'When someone edits the trip'**
-  String get notifCollaboratorChangesSub;
-
-  /// No description provided for @notifItineraryUpdates.
-  ///
-  /// In en, this message translates to:
-  /// **'Itinerary updates'**
-  String get notifItineraryUpdates;
-
-  /// No description provided for @notifChecklistReminders.
-  ///
-  /// In en, this message translates to:
-  /// **'Checklist reminders'**
-  String get notifChecklistReminders;
-
-  /// No description provided for @notifChecklistRemindersSub.
-  ///
-  /// In en, this message translates to:
-  /// **'Due-date nudges'**
-  String get notifChecklistRemindersSub;
-
-  /// No description provided for @notifWeatherChanges.
-  ///
-  /// In en, this message translates to:
-  /// **'Weather changes'**
-  String get notifWeatherChanges;
-
-  /// No description provided for @notifDocumentExpiry.
-  ///
-  /// In en, this message translates to:
-  /// **'Document expiry'**
-  String get notifDocumentExpiry;
-
-  /// No description provided for @notifDocumentExpirySub.
-  ///
-  /// In en, this message translates to:
-  /// **'Passport & visa checks'**
-  String get notifDocumentExpirySub;
-
-  /// No description provided for @notifCheckInDeparture.
-  ///
-  /// In en, this message translates to:
-  /// **'Check-in & departure'**
-  String get notifCheckInDeparture;
-
-  /// No description provided for @notifTravelTips.
-  ///
-  /// In en, this message translates to:
-  /// **'Travel tips'**
-  String get notifTravelTips;
-
-  /// No description provided for @notifProductNews.
-  ///
-  /// In en, this message translates to:
-  /// **'Product news & offers'**
-  String get notifProductNews;
-
   /// No description provided for @collaboratorsTitle.
   ///
   /// In en, this message translates to:
@@ -1986,13 +1896,13 @@ abstract class AppLocalizations {
   /// No description provided for @menuSettings.
   ///
   /// In en, this message translates to:
-  /// **'Settings'**
+  /// **'Appearance & language'**
   String get menuSettings;
 
   /// No description provided for @menuPrivacySecurity.
   ///
   /// In en, this message translates to:
-  /// **'Privacy & security'**
+  /// **'Account & security'**
   String get menuPrivacySecurity;
 
   /// No description provided for @profileSectionPreferences.
@@ -2016,7 +1926,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsTitle.
   ///
   /// In en, this message translates to:
-  /// **'Settings'**
+  /// **'Appearance & language'**
   String get settingsTitle;
 
   /// No description provided for @appearance.
@@ -2790,7 +2700,7 @@ abstract class AppLocalizations {
   /// No description provided for @activityTitleLabel.
   ///
   /// In en, this message translates to:
-  /// **'Activity'**
+  /// **'Name'**
   String get activityTitleLabel;
 
   /// No description provided for @activityTitleHint.
@@ -2828,6 +2738,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add a time'**
   String get activityAddTime;
+
+  /// No description provided for @activityMoreDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Add place or time'**
+  String get activityMoreDetails;
 
   /// No description provided for @activityKindLabel.
   ///
@@ -3924,7 +3840,7 @@ abstract class AppLocalizations {
   /// No description provided for @notifCollabInvitedBody.
   ///
   /// In en, this message translates to:
-  /// **'Added to {trip}. Invite sent.'**
+  /// **'Trip: {trip}. Invite sent.'**
   String notifCollabInvitedBody(String trip);
 
   /// No description provided for @notifCollabInvitedBodyShort.
@@ -3942,7 +3858,7 @@ abstract class AppLocalizations {
   /// No description provided for @notifAiReadyBody.
   ///
   /// In en, this message translates to:
-  /// **'Ventus drafted a plan for {trip}.'**
+  /// **'Trip: {trip}'**
   String notifAiReadyBody(String trip);
 
   /// No description provided for @notifAccepted.

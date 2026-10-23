@@ -61,7 +61,6 @@ class ChecklistBody extends ConsumerWidget {
           _CategoryBlock(
             category: category,
             items: items.where((i) => i.category == category).toList(),
-            onAdd: () => _openSheet(context, ref, category: category),
             onToggle: (item) {
               ref.read(checklistControllerProvider.notifier).toggle(item);
               // Ticking the last open item is the "ready to go" moment.
@@ -182,8 +181,11 @@ class _ProgressHeader extends StatelessWidget {
           borderRadius: AppRadius.brFull,
           child: Container(
             height: 6,
+            // Full width explicitly: left to its child, the track shrank to
+            // the width of the fill and so was never visible behind it.
+            width: double.infinity,
             // A track that stays visible on the page background at 0%.
-            color: colors.lineStrong,
+            color: colors.muted.withValues(alpha: 0.25),
             child: AnimatedFractionallySizedBox(
               duration: const Duration(milliseconds: 420),
               curve: Curves.easeOutCubic,
@@ -198,13 +200,12 @@ class _ProgressHeader extends StatelessWidget {
   }
 }
 
-/// One category section: an eyebrow label and a card of its items plus an
-/// "Add item" footer (prototype `Documents.jsx` → ChecklistCat).
+/// One category section: an eyebrow label and a card of its items (prototype
+/// `Documents.jsx` → ChecklistCat). Adding lives in the header's one "+".
 class _CategoryBlock extends StatelessWidget {
   const _CategoryBlock({
     required this.category,
     required this.items,
-    required this.onAdd,
     required this.onToggle,
     required this.onEdit,
     required this.onDelete,
@@ -212,7 +213,6 @@ class _CategoryBlock extends StatelessWidget {
 
   final ChecklistCategory category;
   final List<ChecklistItem> items;
-  final VoidCallback onAdd;
   final ValueChanged<ChecklistItem> onToggle;
   final ValueChanged<ChecklistItem> onEdit;
   final ValueChanged<ChecklistItem> onDelete;
@@ -222,6 +222,13 @@ class _CategoryBlock extends StatelessWidget {
     final colors = context.colors;
     final l10n = context.l10n;
     final lang = context.languageCode;
+    // Open items first, ticked ones sink to the bottom of their card so the
+    // card shrinks to what is left. The sort is stable, so the user's order
+    // holds within each group.
+    final items = [
+      ...this.items.where((i) => !i.done),
+      ...this.items.where((i) => i.done),
+    ];
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(
@@ -247,7 +254,10 @@ class _CategoryBlock extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 4,
+                  ),
                   child: Column(
                     children: [
                       for (var i = 0; i < items.length; i++)
@@ -271,34 +281,10 @@ class _CategoryBlock extends StatelessWidget {
                                   ),
                             onTap: () => onToggle(items[i]),
                             onEdit: () => onEdit(items[i]),
+                            verticalPadding: 9,
                           ),
                         ),
                     ],
-                  ),
-                ),
-                // A text link, not a filled pill: it repeats under every
-                // category, so it must stay quieter than the items above.
-                VentusTap(
-                  onTap: onAdd,
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 6, 16, 14),
-                    child: Row(
-                      children: [
-                        VentusIcon(
-                          VentusIcons.plus,
-                          size: 16,
-                          color: colors.primary,
-                        ),
-                        const SizedBox(width: 8),
-                        Text(
-                          l10n.addItem,
-                          style: context.typography.sm.copyWith(
-                            fontWeight: FontWeight.w700,
-                            color: context.primaryFill,
-                          ),
-                        ),
-                      ],
-                    ),
                   ),
                 ),
               ],
